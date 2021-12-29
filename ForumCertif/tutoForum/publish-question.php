@@ -1,24 +1,25 @@
 <?php
-require 'actions/signupAction.php';
+require('actions/securityAction.php');
 include 'includes/head.php';
 include 'includes/navbar.php';
 ?>
 
-<body class="row centerJust centerAlign">
+<body>
+
     <h1>Inscription</h1>
     <form method="POST" class="column centerJust centerAlign">
 
 
         <div class="column centerJust margTop margBottom">
-            <label for="pseudo">Pseudo</label>
-            <input type="text" name="pseudo">
+            <label for="pseudo">Titre de la question</label>
+            <input type="text" name="title">
         </div>
         <div class="column centerJust margTop margBottom">
-            <label for="lastname">Nom</label>
+            <label for="lastname">Description de la question</label>
             <input type="text" name="lastname">
         </div>
         <div class="column centerJust margTop margBottom">
-            <label for="firstname">Prénom</label>
+            <label for="firstname">Contenu de la question</label>
             <input type="text" name="firstname">
         </div>
         <div class="column centerJust margTop margBottom">

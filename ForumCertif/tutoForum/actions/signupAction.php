@@ -19,7 +19,7 @@ if (isset($_POST['validate'])) {
         $checkIfUserAlreadyExists->execute(array($user_pseudo));
 
         // si rowcount() est égal à 0 (donc si il y a 0 pseudo identique)
-        if ($checkIfUserAlreadyExists->rowcount() == 0) {
+        if ($checkIfUserAlreadyExists->rowCount() == 0) {
 
             // Insère l'utilisateur et ses propriétés
             $insertUserOnWebsite = $bdd->prepare('INSERT INTO users(pseudo, nom, prenom, mdp) VALUES(?, ?, ?, ?)');
