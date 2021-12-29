@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.margTop {
+    margin: max(0.5vw, 5px);
+}
+
+.margBottom {
+    margin: max(0.5vw, 5px);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.centerJust {
+    justify-content: center;
+}
+
+.spaceEvenly {
+    justify-content: space-evenly;
+}
+
+.centerAlign {
+    align-items: center;
+}

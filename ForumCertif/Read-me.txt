@@ -1,0 +1,25 @@
+Sommaire:
+
+- Inscription / Connexion
+- Publier une question
+- Modifier une question
+- Supprimer une question
+- Rechercher et afficher les questions
+- Répondre à une question
+- Afficher le profil d'un utilisateur (avec ses publications)
+
+Dossier actions : 
+(models = récupère des données, fait des requêtes dans la bdd, en gros validation, lecture et enregistrement. 
+controller = il traite les actions de l'utilisateur, modifie les données du modèle et de la vue)
+- Va stocker toutes les actions ne nos pages. 
+  Par exemple il contiendra les fichiers PHP qui vont s'occuper de toutes les vérifications,
+  et aussi toutes les requêtes vers la base de données
+
+Dossier assets : 
+(view = ce qui est affiché à l'utilisateur)
+- Il contiendra les fichiers CSS et JavaScript 
+(je vais plutôt créer 1 dossiers CSS et 1 dossiers JavaScript dedans)
+
+Dossier includes :
+- Code à inclure dans les pages (navbar, head, etc...)
+
