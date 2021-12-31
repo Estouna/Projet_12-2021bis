@@ -3,16 +3,27 @@
     padding: 0;
 }
 
+html {
+    background-image: url("../images/circuitblack.png");
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+
 body {
+    background-color: rgba(0, 0, 0, 0.98);
+    width: 100%;
     min-height: 100vh;
+    color: white;
 }
 
-.margTop {
-    margin: max(0.5vw, 5px);
+ul {
+    list-style: none;
+    text-decoration: none;
 }
 
-.margBottom {
-    margin: max(0.5vw, 5px);
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .row {
@@ -36,3 +47,44 @@ body {
 .centerAlign {
     align-items: center;
 }
+
+.gap {
+    gap: max(1vw, 10px);
+}
+
+/* ---------------------------------------------- HEADER ---------------------------------------------- */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid rgb(8, 248, 200);
+}
+
+nav {
+    top: 0;
+    font-size: max(1.1vw, 12px);
+    background-color: black;
+
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    width: max(8vw, 61px);
+    color: white;
+    padding: 0.5vw;
+    transition: 0.7s;
+}
+
+nav ul li a:hover {
+    color: rgb(8, 248, 200);
+    letter-spacing: max(0.1vw, 1px);
+}
+
+.a-contact {
+    border: none;
+}
+
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END HEADER xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */

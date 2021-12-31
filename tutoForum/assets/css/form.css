@@ -1,0 +1,56 @@
+form {
+    border: 5px double rgb(8, 248, 200);
+    box-shadow: inset 0 0 50px 1px rgb(8, 248, 200);
+    padding: max(1.8vw, 9px);
+    border-radius: 10px;
+    width: max(25vw, 270px);
+    min-height: 70vh;
+}
+
+legend {
+    font-size: max(2vw, 25px);
+    margin-bottom: max(2vw, 10px);
+    letter-spacing: max(0.5vw, 1px);
+}
+
+.labelInput {
+    margin-top: max(0.4vw, 7px);
+    margin-bottom: max(0.4vw, 7px);
+}
+
+label {
+    margin-bottom: max(0.4vw, 3px);
+    font-size: max(0.9vw, 12px);
+    letter-spacing: max(0.1vw, 1px);
+}
+
+input, #validate, #connect {
+    background-color: black;
+    color: rgb(8, 248, 200);
+    border: 3px double rgb(8, 248, 200);
+    border-radius: 10px;
+}
+
+input {
+    padding: max(0.4vw, 5px);
+    width: max(20vw, 240px);
+    font-size: max(0.9vw, 12px);
+    letter-spacing: max(0.05vw, 1px);
+}
+
+input:focus {
+    outline: 2px solid white;
+}
+
+#validate, #connect {
+    padding: max(0.5, 5px);
+    width: max(10vw, 90px);
+    margin-top: max(1vw, 10px);
+    color: white;
+}
+
+.a-login, .a-signup {
+    font-size: max(0.9vw, 11px);
+    margin-top: max(1.5vw, 11px);
+    letter-spacing: max(0.05vw, 1px);
+}
