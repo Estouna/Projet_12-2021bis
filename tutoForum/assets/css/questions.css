@@ -1,0 +1,55 @@
+.blockModifQuestion {
+    background: #e2e2e2;
+    box-shadow: inset 10px -10px 10px #5c5c5c,
+        inset -10px 10px 25px #ffffff;
+    border: 4px double rgb(0, 220, 176);
+    padding: max(1.8vw, 9px);
+    border-radius: 10px;
+    width: max(90vw, 270px);
+    min-height: 60vh;
+    color: rgb(90, 90, 90);
+    margin-top: max(1vw, 10px);
+}
+
+.h1TitleArticles {
+    font-size: max(2vw, 15px);
+    margin-top: max(1vw, 10px);
+    margin-bottom: max(2vw, 10px);
+    color: rgb(90, 90, 90);
+}
+
+.titleQuestion {
+    font-size: max(1.5vw, 15px);
+}
+
+.bodyQuestion {
+    margin-top: max(1vw, 10px);
+}
+
+.p-auteur, .p-date, .p-decription {
+    font-size: max(1vw, 12px);
+}
+
+.link-acceder, .link-modifier {
+    display: block;
+    margin-top: max(1vw, 10px);
+    font-size: max(1.1vw, 13px);
+    color: rgb(90, 90, 90);
+    padding: max(0.8vw, 5px);
+    width: max(10vw, 100px);
+    background: #eeeeee;
+    box-shadow: inset 3px -3px 15px #838383,
+        inset -5px 5px 3px #ffffff;
+
+    border: 5px double rgb(0, 182, 146);
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.link-acceder:hover, .link-modifier:hover {
+    color: black;
+    background: #dddddd;
+    box-shadow: inset 6px -6px 15px #484848,
+        inset -2px 2px 3px #ffffff;
+}

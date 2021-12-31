@@ -1,10 +1,10 @@
 <?php
-require('actions/loginAction.php');
+require('actions/users/loginAction.php');
 include 'includes/header.php';
 ?>
 
-<body class="column centerJust centerAlign">
-    <main>
+<body>
+    <main class="column centerJust centerAlign">
 
         <form action="" method="POST" class="formLogin row centerJust centerAlign">
 

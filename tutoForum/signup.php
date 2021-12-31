@@ -1,9 +1,9 @@
 <?php
-require 'actions/signupAction.php';
+require 'actions/users/signupAction.php';
 include 'includes/header.php';
 ?>
 
-<body class="column centerJust centerAlign">
+<body>
     <main class="column centerJust centerAlign">
 
         <form method="POST" id="formSignUp" class="column centerJust centerAlign">
