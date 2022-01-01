@@ -19,9 +19,9 @@ include 'includes/header.php';
                         <p class="p-auteur">Auteur : <?= $question['pseudo_auteur'] ?></p>
                         <p class="p-date">le <?= $question['date_publication'] ?></p>
                     </div>
-                    <div class="row gap">
-                        <a class="link-acceder" href="#">Accéder à l'article</a>
-                        <a class="link-modifier" href="#">Modifier l'article</a>
+                    <div class="row centerAlign centerJust">
+                        <a class="link-acceder" href="#">Accéder à la question</a>
+                        <a class="link-modifier" href="edit-question.php">Modifier la question</a>
                     </div>
                 </div>
             </div>

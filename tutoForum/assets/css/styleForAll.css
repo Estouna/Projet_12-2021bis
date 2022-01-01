@@ -1,3 +1,25 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("polices/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url("polices/Roboto-Thin.ttf");
+}
+
+:root {
+    /* ---------------Variable couleur----------------- */
+    --color-black: rgb(0, 0, 0);
+    --color-white: rgb(255, 255, 255);
+    --color-font-general: rgb(90, 90, 90);
+    --color-green: rgb(0, 220, 176);
+
+    /* ---------------Variable font-family------------- */
+    --font-roboReg: "Roboto-Regular", arial, sans-serif;
+    --font-roboThin: "Roboto-Thin", arial, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,32 +32,41 @@ html {
 }
 
 body {
+    font-family: var(--font-roboReg);
+    color: var(--color-font-general);
+    width: 100%;
+    min-height: 100vh;
     background: #e2e2e2fa;
     box-shadow: inset 15px -15px 15px #4d4d4d,
         inset -20px 60px 30px #ffffff;
-    width: 100%;
-    min-height: 100vh;
+}
+
+main {
+    min-height: 90vh;
+}
+
+.red, .green {
+    margin-top: max(1vw, 10px);
+    font-size: max(1vw, 14px);
 }
 
 .red {
     color: red;
-    font-size: max(1vw, 14px);
     text-decoration: underline;
 }
 
 .green {
     color: green;
-    font-size: max(1vw, 14px);
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
     text-decoration: none;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    list-style-type: none;
 }
 
 .row {
@@ -67,33 +98,107 @@ a {
 /* ---------------------------------------------- HEADER ---------------------------------------------- */
 header {
     width: 100%;
-    background: #e8e8e8;
-    box-shadow: inset 5px -5px 10px #808080,
+    height: 50px;
+    background: #e6e6e6;
+    box-shadow: inset 5px -5px 9px #808080,
         inset -5px 5px 5px #ffffff;
-    border-bottom: 3px solid rgb(8, 248, 200);
+    border-bottom: 4px solid var(--color-green);
 }
 
-nav {
+/* MAIN MENU */
+#navMenu {
     font-size: max(1.1vw, 12px);
 }
 
-nav ul li a {
+#navMenu ul li a {
     display: block;
     text-align: center;
     width: max(8vw, 61px);
-    color: rgb(90, 90, 90);
+    color: var(--color-font-general);
     padding: 0.5vw;
     transition: 0.7s;
 }
 
-nav ul li a:hover {
-    color: rgb(8, 248, 200);
+#navMenu ul li a:hover {
+    color: var(--color-green);
     letter-spacing: max(0.1vw, 1px);
 }
 
 .a-link {
     border: none;
 }
+
+/* END MAIN MENU */
+
+/* MENU ACCOUNT */
+
+#navConnect {
+    position: fixed;
+    top: 5px;
+    right: 10px;
+}
+
+.spanNav {
+    cursor: pointer;
+}
+
+.iconPerso {
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    background-color: var(--color-green);
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+    margin-bottom: 10px;
+}
+
+.iconPerso:hover {
+    background-color: var(--color-white);
+    border: 2px solid var(--color-green);
+    color: var(--color-green);
+}
+
+.slide {
+    background-color: #ededed;
+    clear: both;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    transition: height .2s ease;
+}
+
+.slide li {
+    padding: max(0.4vw, 5px);
+}
+
+.slide li a {
+    font-size: max(0.9vw, 12px);
+    color: var(--color-font-general);
+    transition: 0.3s;
+}
+
+.slide li a:hover {
+    color: var(--color-green);
+}
+
+#touch {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch:checked+.slide {
+    height: max(10vh, 170px);
+    box-shadow: 0 0 1px 2px var(--color-green), inset 0 0 10px 2px #808080;
+}
+
+
+/* END MENU ACCOUNT */
+
 
 
 

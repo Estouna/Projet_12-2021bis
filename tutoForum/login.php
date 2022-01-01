@@ -6,7 +6,7 @@ include 'includes/header.php';
 <body>
     <main class="column centerJust centerAlign">
 
-        <form action="" method="POST" class="formLogin row centerJust centerAlign">
+        <form action="" method="POST" class="formLogin column centerJust centerAlign">
 
             <div class="container column">
                 <div class="bloc-form column">

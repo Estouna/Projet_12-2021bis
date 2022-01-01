@@ -7,7 +7,7 @@ include('includes/header.php');
 <body>
     <main class="column centerJust centerAlign">
 
-        <form method="POST" class="column centerJust centerAlign">
+        <form id="formTextarea" method="POST" class="column centerJust centerAlign">
             <div class="row centerJust margTop margBottom">
                 <legend>Question</legend>
             </div>
@@ -23,9 +23,9 @@ include('includes/header.php');
                 <label for="firstname">Contenu de la question</label>
                 <textarea class="textarea3" name="content"></textarea>
             </div>
-            <div>
-                <button id="question" type="submit" name="validate">Publier</button>
-                <li><a href="my-questions.php">Modifier mes questions</a></li>
+            <div class="row gap centerJust centerAlign">
+                <input id="question" type="submit" name="validate" value="Publier">
+                <a class="a-modif" href="edit-question.php">Modifier mes questions</a>
             </div>
             <div class="message row centerJust centerAlign">
                 <?php

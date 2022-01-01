@@ -1,20 +1,24 @@
+/* ---------------------------------------------- FORM SIGNUP LOGIN ---------------------------------------------- */
 form {
-    background: #e2e2e2;
-    box-shadow: inset 10px -10px 10px #5c5c5c,
-        inset -10px 10px 25px #ffffff;
-    border: 4px double rgb(0, 220, 176);
-    /*box-shadow: inset 0 0 50px 1px rgb(8, 248, 200);*/
     padding: max(1.8vw, 9px);
     border-radius: 10px;
     width: max(25vw, 270px);
     min-height: 70vh;
-    color: rgb(90, 90, 90);
     margin-top: max(2vw, 20px);
+    border: 6px double var(--color-green);
+    background: #e2e2e2;
+    box-shadow: 0px 0px 5px 3px #969696, inset 4px -4px 5px #5e5e5e,
+        inset -4px 4px 5px #ffffff;
+}
+
+#formTextarea {
+    width: max(90vw, 290px);
+    min-height: 80vh;
 }
 
 legend {
     font-size: max(2.2vw, 30px);
-    margin-bottom: max(2vw, 10px);
+    margin-bottom: max(1vw, 10px);
     letter-spacing: max(0.5vw, 1px);
 }
 
@@ -29,49 +33,135 @@ label {
     letter-spacing: max(0.1vw, 1px);
 }
 
-input {
-    background: #e8e8e8;
-    box-shadow: inset 6px -6px 15px #444444,
-        inset -2px 2px 5px #ffffff;
-    /*background-color: black;
-    color: rgb(8, 248, 200);*/
-    border: 5px double rgb(0, 182, 146);
-    border-radius: 10px;
-}
-
-input {
+input, textarea {
     padding: max(0.4vw, 5px);
-    width: max(20vw, 240px);
     font-size: max(0.9vw, 12px);
     letter-spacing: max(0.05vw, 1px);
-    color: rgb(90, 90, 90);
+    color: var(--color-font-general);
+    border: 6px double var(--color-green);
+    border-radius: 10px;
+    background-color: #e1e1e1;
+    box-shadow: 0px 0px 5px 3px #969696, inset 4px -4px 5px #5e5e5e,
+        inset -4px 4px 5px #ffffff;
+    transition: 0.3s;
+}
+
+input:hover {
+    background-color: #e1e1e1;
+    box-shadow: 0px 0px 5px 3px #969696, inset 0px 0px 8px 5px #5e5e5e,
+        inset -1px 1px 1px #ffffff;
+}
+
+
+input {
+    width: max(20vw, 240px);
+}
+
+textarea {
+    width: max(60vw, 240px);
+    min-height: max(25vh, 200px);
+}
+
+.textarea1, .textarea2 {
+    min-height: max(4vh, 30px);
 }
 
 input:focus {
-    outline: 2px solid white;
+    outline: 2px solid var(--color-white);
+    background-color: #e1e1e1;
+    box-shadow: 0px 0px 5px 3px #969696, inset 0px 0px 9px 5px #5e5e5e,
+        inset -1px 1px 1px #ffffff;
+}
+
+textarea:focus {
+    outline: 2px solid var(--color-white);
+    background-color: #e1e1e1;
+    box-shadow: 0px 0px 5px 3px #969696, inset 0px 0px 12px 8px #5e5e5e,
+        inset -1px 1px 1px #ffffff;
 }
 
 #validate, #connect, #question {
-    padding: max(0.5, 5px);
+    padding: max(0.5vw, 5px);
     width: max(10vw, 100px);
     margin-top: max(1vw, 10px);
-    color: rgb(90, 90, 90);
-    background: #eeeeee;
-    box-shadow: inset 3px -3px 15px #838383,
-        inset -5px 5px 3px #ffffff;
-    transition: 0.5s;
+    margin-bottom: max(1vw, 10px);
+    border: 4px double var(--color-green);
 }
 
 #validate:hover, #connect:hover, #question:hover {
-    color: black;
+    color: rgb(53, 53, 53);
+}
+
+.a-login, .a-signup, .a-modif {
+    font-size: max(0.9vw, 11px);
+    margin-top: max(1.5vw, 11px);
+    letter-spacing: max(0.05vw, 0.5px);
+    color: var(--color-green);
+}
+
+.a-login:hover, .a-signup:hover, .a-modif:hover {
+    color: rgb(0, 182, 146);
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END FORM SIGNUP LOGIN xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* ---------------------------------------------- FORM QUESTIONS ---------------------------------------------- */
+
+.blockModifQuestion {
+    background: #e2e2e2;
+    box-shadow: inset 10px -10px 10px #5c5c5c,
+        inset -10px 10px 25px #ffffff;
+    border: 4px double var(--color-green);
+    border-radius: 10px;
+    width: max(90vw, 270px);
+    min-height: 13vh;
+    color: var(--color-font-general);
+    margin-top: max(1vw, 10px);
+}
+
+.h1TitleArticles {
+    font-size: max(2vw, 15px);
+    margin-top: max(1vw, 10px);
+    margin-bottom: max(2vw, 10px);
+    color: var(--color-font-general);
+}
+
+.titleQuestion {
+    font-size: max(1.5vw, 15px);
+    padding: max(1.8vw, 9px);
+    border-bottom: 2px solid var(--color-green);
+}
+
+.bodyQuestion {
+    margin-top: max(2vw, 15px);
+    padding: max(1.8vw, 9px);
+}
+
+.p-auteur, .p-date, .p-decription {
+    font-size: max(1vw, 12px);
+}
+
+.link-acceder, .link-modifier {
+    display: block;
+    margin: 4vw 1vw 2vw 1vw;
+    font-size: max(1.1vw, 11px);
+    color: var(--color-font-general);
+    padding: max(0.5vw, 4px);
+    width: max(11vw, 125px);
+    background: #eeeeee;
+    box-shadow: inset 3px -3px 15px #838383,
+        inset -5px 5px 3px #ffffff;
+    border: 5px double var(--color-green);
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.link-acceder:hover, .link-modifier:hover {
+    color: var(--color-black);
     background: #dddddd;
     box-shadow: inset 6px -6px 15px #484848,
         inset -2px 2px 3px #ffffff;
 }
 
-.a-login, .a-signup {
-    font-size: max(0.9vw, 11px);
-    margin-top: max(1.5vw, 11px);
-    letter-spacing: max(0.05vw, 0.5px);
-    color: rgb(0, 182, 146);
-}
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END FORM QUESTIONS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
