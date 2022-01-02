@@ -1,4 +1,5 @@
 <?php
+
 require('actions/database.php');
 // require car s'il y a une erreur type "databse.php" le code qui va suivre va s'exécuter et ne sera pas sécurisé
 
@@ -53,7 +54,7 @@ if (isset($_POST['validate'])) {
                                 $_SESSION['mail'] = $usersInfos['mail'];
 
                                 // On redirige l'utilisateur sur la page d'accueil
-                                header('Location: index.php');
+                                header('Location: profil.php');
                             } else
                             //confirmation mdp erreur 
                             {

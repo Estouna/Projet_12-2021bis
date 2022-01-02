@@ -24,7 +24,7 @@ include 'includes/header.php';
                         </div>
                         <div class="labelInput column centerJust centerAlign">
                             <input id="connect" type="submit" name="validate" value="Se connecter">
-                            <a class="a-signup" href="signup.php">S'incrire</a>
+                            <a class="a-signup" href="signup.php">Pas encore de compte ? S'incrire</a>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,26 @@
+.blockProfil {
+    background: #e2e2e2;
+    box-shadow: inset 10px -10px 10px #5c5c5c,
+        inset -10px 10px 25px #ffffff;
+    border: 4px double var(--color-green);
+    border-radius: 10px;
+    width: max(90vw, 270px);
+    min-height: 80vh;
+    color: var(--color-font-general);
+    padding: 2vw;
+    margin-top: max(1vw, 10px);
+}
+
+.title-profil {
+    font-size: max(3vw, 20px);
+    font-family: var(--font-roboThin);
+    margin-top: max(1vw, 10px);
+}
+
+.p-profil {
+    font-size: max(1vw, 12px);
+}
+
+.pseudoMail {
+    margin-top: max(4vw, 30px);
+}

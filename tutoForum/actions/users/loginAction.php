@@ -1,4 +1,5 @@
 <?php
+session_start();
 require('actions/database.php');
 
 // Validation du formulaire
@@ -25,7 +26,7 @@ if (isset($_POST['validate'])) {
                 $_SESSION['pseudo'] = $usersInfos['pseudo'];
                 $_SESSION['mail'] = $usersInfos['mail'];
                 // Redirige vers la page d'accueil
-                header('Location: index.php');
+                header('Location: profil.php');
             } else {
                 $erreur = "Votre mot de passe est incorrect";
             }

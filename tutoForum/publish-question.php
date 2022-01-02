@@ -1,6 +1,6 @@
 <?php
-require('actions/questions/publish-questionAction.php');
 require('actions/users/securityAction.php');
+require('actions/questions/publish-questionAction.php');
 include('includes/header.php');
 ?>
 
@@ -9,23 +9,23 @@ include('includes/header.php');
 
         <form id="formTextarea" method="POST" class="column centerJust centerAlign">
             <div class="row centerJust margTop margBottom">
-                <legend>Question</legend>
+                <legend>Publier une question</legend>
             </div>
             <div class="column centerJust">
-                <label for="pseudo">Titre de la question</label>
-                <textarea class="textarea1" name="title"></textarea>
+                <label for="title">Titre de la question</label>
+                <input class="textTitle" name="title">
             </div>
             <div class="column centerJust">
-                <label for="lastname">Description de la question</label>
+                <label for="description">Description de la question</label>
                 <textarea class="textarea2" name="description"></textarea>
             </div>
             <div class="column centerJust">
-                <label for="firstname">Contenu de la question</label>
+                <label for="content">Contenu de la question</label>
                 <textarea class="textarea3" name="content"></textarea>
             </div>
             <div class="row gap centerJust centerAlign">
                 <input id="question" type="submit" name="validate" value="Publier">
-                <a class="a-modif" href="edit-question.php">Modifier mes questions</a>
+                <a class="a-modif" href="my-questions.php">Afficher mes questions</a>
             </div>
             <div class="message row centerJust centerAlign">
                 <?php

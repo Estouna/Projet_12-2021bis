@@ -1,13 +1,28 @@
 <?php
-include('includes/header.php');
+require('actions/users/securityAction.php');
+include 'includes/header.php';
 ?>
+
 
 <body>
     <main class="column centerJust centerAlign">
-
-        <a href="../tutoForum/publish-question.php">Publier</a>
-        <a href="../tutoForum/my-questions.php">Publications</a>
-        <a href="../tutoForum/actions/users/logoutAction.php">Déconnexion</a>
+        <?php
+        if (isset($_SESSION['auth'])) {
+        ?>
+            <div class="blockProfil column">
+                <div class="row centerJust">
+                    <h1 class="title-profil">Mon profil</h1>
+                </div>
+                <div class="pseudoMail column gap">
+                    <p class="p-profil">Pseudo : <?= $_SESSION['pseudo'] ?></p>
+                    <p class="p-profil">Email : <?= $_SESSION['mail'] ?></p>
+                </div>
+            </div>
+        <?php
+        } else {
+            header('Location: login.php');
+        }
+        ?>
 
     </main>
 </body>
