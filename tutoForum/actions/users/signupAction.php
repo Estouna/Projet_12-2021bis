@@ -15,7 +15,7 @@ if (isset($_POST['validate'])) {
     //Si les champs sont remplis (!empty)
     {
         $pseudolength = strlen($user_pseudo);
-        if ($pseudolength <= 30)
+        if ($pseudolength <= 20)
         //Vérifie le nombre de caractères
         {
             $checkIfUserAlreadyExists = $bdd->prepare('SELECT pseudo FROM users WHERE pseudo = ?');
@@ -54,7 +54,7 @@ if (isset($_POST['validate'])) {
                                 $_SESSION['mail'] = $usersInfos['mail'];
 
                                 // On redirige l'utilisateur sur la page d'accueil
-                                header('Location: profil.php');
+                                header('Location: AAB-login.php');
                             } else
                             //confirmation mdp erreur 
                             {
@@ -82,7 +82,7 @@ if (isset($_POST['validate'])) {
         } else
         //nombre de caractères erreur 
         {
-            $erreur = "Votre pseudo ne doit pas dépasser 30 caractères !";
+            $erreur = "Votre pseudo ne doit pas dépasser 20 caractères !";
         }
     } else
     //Si les champs ne sont pas remplis erreur 

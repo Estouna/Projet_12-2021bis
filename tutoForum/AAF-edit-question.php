@@ -18,7 +18,7 @@ include 'includes/header.php';
                 </div>
                 <div class="column centerJust">
                     <label for="title">Titre de la question</label>
-                    <input class="textTitle" name="title" value="<?= $question_title; ?>">
+                    <input class="textTitle input-form" name="title" value="<?= $question_title; ?>">
                 </div>
                 <div class="column centerJust">
                     <label for="description">Description de la question</label>
@@ -29,8 +29,8 @@ include 'includes/header.php';
                     <textarea class="textareaContent" name="content"><?= $question_content ?></textarea>
                 </div>
                 <div class="row gap centerJust centerAlign">
-                    <input id="question" type="submit" name="validate" value="Modifier">
-                    <a class="a-modif" href="my-questions.php">Afficher mes questions</a>
+                    <input id="question" class="btn-green" type="submit" name="validate" value="MODIFIER">
+                    <a class="a-return" href="AAE-my-questions.php">Retour</a>
                 </div>
             </form>
         <?php

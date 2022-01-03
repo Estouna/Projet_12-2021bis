@@ -1,8 +1,8 @@
 .blockProfil {
-    background: #e2e2e2;
+    background: #e6e6e6;
     box-shadow: inset 10px -10px 10px #5c5c5c,
         inset -10px 10px 25px #ffffff;
-    border: 4px double var(--color-green);
+    border: 2px solid var(--color-green);
     border-radius: 10px;
     width: max(90vw, 270px);
     min-height: 80vh;
@@ -11,16 +11,47 @@
     margin-top: max(1vw, 10px);
 }
 
-.title-profil {
-    font-size: max(3vw, 20px);
+.sectionTitle {
+    font-size: max(1.2vw, 20px);
     font-family: var(--font-roboThin);
     margin-top: max(1vw, 10px);
+    margin-bottom: max(2vw, 20px);
+
 }
 
-.p-profil {
+.nameProfil {
+    font-size: max(2vw, 20px);
+    color: var(--color-green);
+}
+
+.title-profil {}
+
+.p-profil, .a-publier, .a-deco {
     font-size: max(1vw, 12px);
 }
 
-.pseudoMail {
-    margin-top: max(4vw, 30px);
+.sectionBody1 {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.blockLinkProfil, .pseudoMail {
+    width: 40%;
+    border: 1px solid var(--color-green);
+    border-left: none;
+    border-right: none;
+    padding: max(1vw, 5px);
+}
+
+.a-publier, .a-deco {
+    color: var(--color-green);
+    transition: 0.2s;
+}
+
+.a-deco {
+    margin-top: max(2vw, 20px);
+}
+
+.a-deco:hover, .a-publier:hover {
+    color: var(--color-font-general);
 }

@@ -26,7 +26,7 @@ if (isset($_POST['validate'])) {
                 $_SESSION['pseudo'] = $usersInfos['pseudo'];
                 $_SESSION['mail'] = $usersInfos['mail'];
                 // Redirige vers la page d'accueil
-                header('Location: profil.php');
+                header('Location: AAC-profil.php');
             } else {
                 $erreur = "Votre mot de passe est incorrect";
             }

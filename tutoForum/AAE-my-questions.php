@@ -20,9 +20,9 @@ include 'includes/header.php';
                         <p class="p-date">le <?= $question['date_publication'] ?></p>
                     </div>
                     <div class="row centerAlign centerJust">
-                        <a class="link-acceder" href="#">Afficher</a>
-                        <a class="link-modifier" href="edit-question.php?id=<?= $question['id'] ?>">Modifier</a>
-                        <a class="link-supprimer" href="actions/questions/deleteQuestionAction.php?id=<?= $question['id'] ?>">Supprimer</a>
+                        <a class="link-acceder btn-green row centerJust centerAlign" href="#">AFFICHER</a>
+                        <a class="link-modifier btn-green row centerJust centerAlign" href="AAF-edit-question.php?id=<?= $question['id'] ?>">MODIFIER</a>
+                        <a class="link-supprimer row centerJust centerAlign" href="actions/questions/deleteQuestionAction.php?id=<?= $question['id'] ?>">SUPPRIMER</a>
                     </div>
                 </div>
             </div>

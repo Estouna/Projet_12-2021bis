@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['auth'])) {
-    header('Location: login.php');
+    header('Location: AAB-login.php');
 }
 
 require('../database.php');
@@ -20,7 +20,7 @@ if (isset($_GET['id']) and !empty($_GET['id'])) {
             $deleteThisQuestion = $bdd->prepare('DELETE FROM questions WHERE id = ?');
             $deleteThisQuestion->execute(array($idOfTheQuestion));
 
-            header('Location: ../../my-questions.php');
+            header('Location: ../../AAE-my-questions.php');
         } else {
             $erreur = "Vous n'avez pas le droit de supprimer une question qui ne vous appartient pas !";
         }

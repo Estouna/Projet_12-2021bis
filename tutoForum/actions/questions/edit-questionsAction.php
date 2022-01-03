@@ -18,7 +18,7 @@ if (isset($_POST['validate'])) {
         $editQuestionOnWebsite->execute(array($new_question_title, $new_question_description, $new_question_content, $idOfQuestion)); // si marche pas utiliser ($_GET['id']) à la place $idOfQuestion 
 
         // Redirige vers la page d'affichage des questions de l'utilisateur
-        header('Location: my-questions.php');
+        header('Location: AAE-my-questions.php');
     } else {
         $erreur = "Veuillez compléter tous les champs.";
     }
