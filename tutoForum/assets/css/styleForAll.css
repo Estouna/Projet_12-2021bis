@@ -9,8 +9,8 @@
 }
 
 @font-face {
-    font-family: "Roboto-BoldCondensed";
-    src: url("../fonts/Roboto-BoldCondensed.ttf");
+    font-family: "Roboto-Condensed";
+    src: url("../fonts/Roboto-Condensed.ttf");
 }
 
 :root {
@@ -18,12 +18,12 @@
     --color-black: rgb(0, 0, 0);
     --color-white: rgb(255, 255, 255);
     --color-font-general: rgb(162, 162, 162);
-    --color-green: rgb(2, 230, 184);
+    --color-green: rgb(0, 225, 180);
 
     /* ---------------Variable font-family------------- */
     --font-roboReg: "Roboto-Regular", arial, sans-serif;
     --font-roboThin: "Roboto-Thin", arial, sans-serif;
-    --font-roboBoldCond: "Roboto-BoldCondensed", arial, sans-serif;
+    --font-roboBoldCond: "Roboto-Condensed", arial, sans-serif;
 }
 
 * {
@@ -51,8 +51,11 @@ main {
     min-height: 90vh;
 }
 
+.message {
+    margin-top: max(1vw, 20px);
+}
+
 .red, .green {
-    margin-top: max(1vw, 10px);
     font-size: max(1vw, 14px);
 }
 
@@ -88,8 +91,17 @@ a {
     justify-content: center;
 }
 
+.spaceAround {
+    justify-content: space-around;
+}
+
 .spaceEvenly {
     justify-content: space-evenly;
+}
+
+
+.spaceBetwwen {
+    justify-content: space-between;
 }
 
 .centerAlign {
@@ -103,35 +115,52 @@ a {
 /* ---------------------------------------------- HEADER ---------------------------------------------- */
 
 header {
+    position: relative;
+    justify-content: center;
     width: 100%;
-    height: 50px;
-    background: #e8e8e8;
-    box-shadow: inset 5px -5px 9px #808080,
-        inset -5px 5px 5px #ffffff;
-    border-bottom: 2px solid var(--color-green);
+    height: 40px;
+    background: var(--color-green);
+    box-shadow: inset 4px -4px 5px rgb(0, 138, 110),
+        inset -4px 4px 8px rgb(175, 255, 239), inset -2px 2px 3px rgb(255, 255, 255);
+    box-sizing: border-box;
 }
 
 /* MAIN MENU */
 #navMenu {
-    font-size: max(1.1vw, 14px);
+    font-size: max(0.9vw, 12px);
 }
 
-#navMenu ul li a {
+.navMenu-li {
+    margin: 0px 5px;
+}
+
+.navMenu-li a {
     display: block;
     text-align: center;
-    width: max(7vw, 50px);
-    color: var(--color-font-general);
-    padding: 0.5vw;
+    width: max(7vw, 100px);
+    color: white;
     transition: 0.7s;
 }
 
-#navMenu ul li a:hover {
-    color: var(--color-green);
-    letter-spacing: max(0.1vw, 1px);
+.navMenu-li a:hover {
+    color: rgb(143, 255, 233);
+    letter-spacing: max(0.1vw, 2px);
 }
 
-.a-link {
-    border: none;
+.hamburger {
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--color-white);
 }
 
 /* END MAIN MENU */
@@ -140,9 +169,9 @@ header {
 
 /* MENU ACCOUNT */
 #navConnect {
-    position: fixed;
-    top: 5px;
-    right: 1px;
+    position: absolute;
+    top: 2px;
+    right: 10px;
 }
 
 .spanNav {
@@ -152,15 +181,14 @@ header {
 
 .iconPersoCo, .iconPersoDeco {
     padding: 2px;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 50px;
     transition: 0.5s;
     background-color: var(--color-green);
     border: 2px solid rgb(242, 242, 242);
     box-shadow: inset 0px 0px 5px 1px rgb(0, 141, 113);
     color: var(--color-white);
-    margin-bottom: 13px;
 }
 
 .iconPersoCo:hover, .iconPersoDeco:hover {
@@ -179,10 +207,11 @@ header {
     text-align: center;
     border-radius: 10px;
     transition: height .1s ease;
+    margin-top: -7px;
 }
 
 .slide li, .slide2 li {
-    padding: 5px 30px 5px 30px;
+    padding: 5px 20px 5px 20px;
 }
 
 .slide li a, .slide2 li a {
@@ -196,13 +225,12 @@ header {
 }
 
 #touch {
-    position: absolute;
     opacity: 0;
     height: 0px;
 }
 
 #touch:checked+.slide {
-    height: 200px;
+    height: 150px;
     box-shadow: 0 0 1px 1px var(--color-green), inset 0 0 10px 2px #808080;
 }
 
@@ -215,3 +243,69 @@ header {
 /* END MENU ACCOUNT */
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END HEADER xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+
+/* ---------------------------------------------- MEDIAQUERIES ---------------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+    header {
+        justify-content: flex-start;
+    }
+
+    .spanNav {
+        cursor: pointer;
+        justify-content: flex-end;
+    }
+
+    .navMenu-ul {
+        position: fixed;
+        left: -100%;
+        top: 45px;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+        padding: 20px 0;
+        color: var(--color-white);
+        background: rgb(0, 189, 151);
+        box-shadow: inset 0px 0px 25px 5px rgb(0, 119, 95);
+        border-top: 2px solid var(--color-green);
+        border-bottom: 2px solid var(--color-green);
+    }
+
+    .navMenu-ul.active {
+        left: 0;
+    }
+
+    .navMenu-li a {
+        margin: 10px;
+        color: var(--color-white);
+    }
+
+    .hamburger {
+        position: relative;
+        top: 2px;
+        left: 10px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .slide li, .slide2 li {
+        padding: 5px 20px 5px 20px;
+    }
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END MEDIAQUERIES xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
