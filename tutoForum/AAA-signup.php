@@ -1,5 +1,5 @@
 <?php
-require 'actions/users/signupAction.php';
+require 'actions/users/AAA-signupAction.php';
 include 'includes/header.php';
 include 'includes/footer.php';
 ?>

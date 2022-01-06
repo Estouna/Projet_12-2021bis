@@ -50,8 +50,9 @@
 
                 <ul class="slide column centerJust centerAlign">
                     <li><a href="../tutoForum/AAC-profil.php"><?= $_SESSION['pseudo'] ?></a></li>
+                    <li><a href="../tutoForum/AAH-searchQuestions.php">Rechercher</a></li>
                     <li><a href="../tutoForum/AAD-publish-question.php">Publier</a></li>
-                    <li><a href="../tutoForum/AAE-my-questions.php">Publications</a></li>
+                    <li><a href="../tutoForum/AAE-my-questions.php">Mes posts</a></li>
                     <li><a href="../tutoForum/actions/users/logoutAction.php">Déconnexion</a></li>
                 </ul>
 
@@ -93,7 +94,8 @@
                 <input type="checkbox" id="touch">
 
                 <ul class="slide2 column centerJust centerAlign">
-                    <li><a href="../../tutoForum/AAB-login.php">Connexion</a></li>
+                    <li><a href="../tutoForum/AAH-searchQuestions.php">Rechercher</a></li>
+                    <li><a href="../tutoForum/AAB-login.php">Connexion</a></li>
                 </ul>
 
             </nav>

@@ -53,7 +53,7 @@ if (isset($_POST['validate'])) {
                                 $_SESSION['pseudo'] = $usersInfos['pseudo'];
                                 $_SESSION['mail'] = $usersInfos['mail'];
 
-                                // On redirige l'utilisateur sur la page d'accueil
+                                // On redirige l'utilisateur sur la page login.php
                                 header('Location: AAB-login.php');
                             } else
                             //confirmation mdp erreur 

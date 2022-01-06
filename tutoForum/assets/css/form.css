@@ -1,3 +1,86 @@
+/* ---------------------------------------------- NEUMORPHISM EFFECT ---------------------------------------------- */
+.block-post {
+    width: max(60vw, 270px);
+    min-height: 50vh;
+    border: 4px double transparent;
+    outline: 4px double var(--color-green);
+    border-radius: 10px;
+    margin-top: max(1vw, 10px);
+}
+
+.title-post {
+    padding: max(1vw, 9px);
+    font-family: var(--font-roboThin);
+    text-shadow: 0.2px 0.2px 1.5px rgb(0, 121, 97),
+        -0.2px -0.2px 1.5px rgb(0, 121, 97);
+    font-size: max(1.5vw, 20px);
+    border-bottom: 1px solid var(--color-green);
+    min-height: 5vh;
+    color: var(--color-green);
+}
+
+.a-post {
+    color: var(--color-green);
+}
+
+.content-post {
+    padding: max(1vw, 9px);
+    font-size: max(1.1vw, 15px);
+    min-height: 30vh;
+    border-bottom: 1px solid var(--color-green);
+}
+
+.authorDate-post {
+    padding: max(1vw, 9px);
+    font-size: max(0.8vw, 10px);
+    min-height: 5vh;
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END BLOCK NEUMORPHISM EFFECT  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+
+/* ---------------------------------------------- NEUMORPHISM EFFECT ---------------------------------------------- */
+form, input, button, textarea, .btn-green, .blockModifQuestion, .block-post {
+    background-color: #ecebeb;
+    box-shadow: -7px 7px 7px 0px #969696, inset 2px -2px 2px #b8b7b7,
+        inset -2px 2px 2px #ffffff;
+    transition: 0.2s;
+}
+
+.barSearch, .btnSearch {
+    box-shadow: -2px 2px 5px 0px #969696, inset 2px -2px 4px #979797,
+        inset -3px 3px 3px #ffffff;
+}
+
+.btn-effacer {
+    background-color: #f32b2b;
+    box-shadow: -7px 7px 7px 0px #969696, inset 4px -4px 3px #960000,
+        inset -4px 4px 5px #ffcfcf;
+    transition: 0.2s;
+}
+
+form:focus, input:focus, button:focus, textarea:focus, .btn-green:focus {
+    background-color: #e1e1e1;
+    box-shadow: 0px 0px 1px 1px #969696, inset -5px 5px 9px 0px #5e5e5e,
+        inset 3px -3px 5px #ffffff;
+    color: rgb(135, 135, 135);
+}
+
+.btn-effacer:focus {
+    background-color: #cc0000;
+    box-shadow: 0px 0px 5px 3px #969696, inset -5px 5px 9px 0px #940000,
+        inset 3px -3px 5px #ffcfcf;
+    color: rgb(209, 209, 209);
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END BLOCK NEUMORPHISM EFFECT  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+
 /* ---------------------------------------------- BLOCK FORM ---------------------------------------------- */
 form {
     padding: max(1vw, 9px);
@@ -7,12 +90,9 @@ form {
 }
 
 form, .blockModifQuestion {
-    border: 8px double transparent;
-    outline: 6px double var(--color-green);
-    background-color: #f2f0f0;
-    box-shadow: -10px 10px 10px 0px #969696, inset 2px -2px 5px #767676,
-        inset -3px 3px 4px #ffffff;
-    border-radius: 30px;
+    border: 4px double transparent;
+    outline: 4px double var(--color-green);
+    border-radius: 10px;
 }
 
 #formTextarea {
@@ -24,27 +104,36 @@ form, .blockModifQuestion {
     width: max(50vw, 270px);
     min-height: 15vh;
     color: var(--color-font-general);
-    margin-bottom: max(5vw, 30px);
+    margin-bottom: max(3vw, 30px);
 }
 
 .form-search {
-    width: max(90vw, 290px);
-    margin-top: max(2vw, 20px);
-    margin-bottom: max(3vw, 15px);
-    min-height: 11vh;
-    padding: 2px 0;
+    position: sticky;
+    top: 0px;
+    width: max(95vw, 300px);
+    margin-bottom: max(3vw, 30px);
+    min-height: 30px;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    z-index: 1;
 }
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END BLOCK FORM xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 
 
+
 /* ---------------------------------------------- TITLES, LEGENDS, LABELS, DESCRIPTIONS ETC ---------------------------------------------- */
 legend {
+    font-family: var(--font-roboThin);
     font-size: max(1.8vw, 20px);
     margin-bottom: max(1vw, 9px);
     letter-spacing: max(0.5vw, 1px);
     color: var(--color-green);
+    text-shadow: 0.2px 0.2px 1.5px rgb(0, 121, 97),
+        -0.2px -0.2px 1.5px rgb(0, 121, 97);
 }
 
 label {
@@ -73,32 +162,38 @@ label {
 
 /* FORM MY QUESTIONS  */
 .h1TitleArticles {
+    font-family: var(--font-roboThin);
     font-size: max(2vw, 22px);
     margin-top: max(1.5vw, 10px);
     margin-bottom: max(2vw, 10px);
     color: var(--color-green);
+    text-shadow: 0.2px 0.2px 1.5px rgb(0, 121, 97),
+        -0.2px -0.2px 1.5px rgb(0, 121, 97);
+    letter-spacing: max(0.1vw, 1px);
 }
 
 .titleQuestion {
-    font-size: max(1.5vw, 14px);
+    font-size: max(1.4vw, 15px);
+    letter-spacing: max(0.1vw, 1px);
     padding: max(1vw, 9px);
     border-bottom: 1px solid var(--color-green);
 }
 
 .p-decription {
-    font-size: max(1.3vw, 13px);
+    font-size: max(1.1vw, 13px);
     padding: max(1vw, 9px);
     border-bottom: 1px solid var(--color-font-general);
 }
 
 .p-auteur, .p-date {
-    font-size: max(0.8vw, 9px);
+    font-size: max(0.8vw, 10px);
     padding: max(1vw, 9px);
 }
 
 /* END FORM MY QUESTIONS */
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END TITLES, LEGENDS, LABELS, DESCRIPTIONS ETC xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
 
 
 
@@ -121,22 +216,16 @@ textarea {
     width: max(25vw, 240px);
 }
 
-.input-form, textarea, .barSearch, .textTitle {
-    border: max(0.3vw, 1px) solid transparent;
+
+.input-form, textarea, .textTitle {
+    border: max(0.2vw, 1px) solid transparent;
     outline: max(0.1vw, 1px) solid var(--color-green);
     border-radius: 10px;
-    background-color: #ecebeb;
-    box-shadow: -5px 5px 10px 0px #969696, inset 2px -2px 4px #979797,
-        inset -3px 3px 3px #ffffff;
-    transition: 0.3s;
 }
 
-.input-form:focus, textarea:focus, .barSearch:focus, .textTitle:focus {
-    outline: max(0.1vw, 1px) solid var(--color-green);
-    background-color: #e1e1e1;
-    box-shadow: 0px 0px 5px 3px #969696, inset -5px 5px 9px 0px #5e5e5e,
-        inset 3px -3px 5px #ffffff;
-    color: rgb(135, 135, 135);
+.barSearch {
+    border: max(0.3vw, 1px) solid transparent;
+    outline: none;
 }
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx TEXTAREA, INPUT (type long), ETC xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
@@ -147,14 +236,16 @@ textarea {
 /* ---------------------------------------------- BUTTONS ---------------------------------------------- */
 /* CIRCLE BUTTONS */
 .btn-green, .btn-effacer {
+    font-family: var(--font-roboThin);
     width: 110px;
     height: 110px;
     font-size: max(0.8vw, 10px);
     font-family: var(--font-roboReg);
-    text-shadow: 0.2px 0.2px 0.8px rgb(0, 121, 97),
-        -0.2px -0.2px 0.8px rgb(0, 121, 97);
+    text-shadow: 0.1px 0.1px 1px rgb(0, 121, 97),
+        -0.1px -0.1px 1px rgb(0, 121, 97);
     color: var(--color-green);
     border-radius: 50%;
+    letter-spacing: max(0.05vw, 0.5px);
 }
 
 #signup, #connect, #publier, #modifier {
@@ -162,17 +253,6 @@ textarea {
 }
 
 
-.btnSearch {
-    width: 65px;
-    height: 65px;
-    font-size: max(0.4vw, 10px);
-    font-family: var(--font-roboBoldCond);
-    color: var(--color-green);
-    border-radius: 50%;
-    margin: 0px 20px;
-    border: max(0.2vw, 1px) solid transparent;
-    outline: max(0.2vw, 1px) solid var(--color-green);
-}
 
 .btn-afficher, .btn-modifier, .btn-effacer {
     margin-top: max(4vw, 20px);
@@ -181,46 +261,39 @@ textarea {
     margin-right: max(1vw, 10px);
 }
 
-.btn-green, .btnSearch {
-    border: max(0.3vw, 1px) solid transparent;
-    outline: max(0.3vw, 1px) solid var(--color-green);
-    background-color: #ecebeb;
-    box-shadow: -7px 7px 7px 0px #969696, inset 2px -2px 2px #b8b7b7,
-        inset -2px 2px 2px #ffffff;
-    transition: 0.3s;
+.btn-green {
+    border: max(0.2vw, 1px) solid transparent;
+    outline: max(0.2vw, 1px) solid var(--color-green);
 }
 
 .btn-green:focus, .btnSearch:focus {
-    background-color: #e1e1e1;
-    box-shadow: 0px 0px 5px 3px #969696, inset -5px 5px 9px 0px #6e6e6e,
-        inset 3px -3px 5px #ffffff;
-    color: rgb(0, 148, 119);
+    color: rgb(0, 146, 117);
 }
 
 .btn-green:hover, .btnSearch:hover {
-    color: rgb(0, 196, 157);
+    color: rgb(0, 197, 158);
 }
 
 
 .btn-effacer {
     border: max(0.3vw, 2px) double transparent;
     outline: max(0.1vw, 2px) double #f32b2b;
-    background-color: #f32b2b;
-    box-shadow: -7px 7px 7px 0px #969696, inset 4px -4px 3px #960000,
-        inset -4px 4px 5px #ffcfcf;
     color: var(--color-white);
-    transition: 0.3s;
-}
-
-.btn-effacer:focus {
-    background-color: #cc0000;
-    color: rgb(209, 209, 209);
-    box-shadow: 0px 0px 5px 3px #969696, inset -5px 5px 9px 0px #940000,
-        inset 3px -3px 5px #ffcfcf;
 }
 
 .btn-effacer:hover {
     color: rgb(214, 214, 214);
+}
+
+.btnSearch {
+    font-size: max(0.9vw, 12px);
+    font-family: var(--font-roboBoldCond);
+    margin-left: 1px;
+    padding: max(0.6vw, 8px);
+    border-radius: 0px;
+    border: max(0.3vw, 1px) solid transparent;
+    outline: none;
+    color: var(--color-font-general);
 }
 
 
@@ -249,7 +322,7 @@ textarea {
 
 /* ---------------------------------------------- MEDIAQUERIES ---------------------------------------------- */
 @media only screen and (min-width: 651px) and (max-width: 1200px) {
-    form, .blockModifQuestion, #formTextarea, .form-search {
+    form, .blockModifQuestion, #formTextarea {
         width: 450px;
     }
 
@@ -260,16 +333,10 @@ textarea {
     .barSearch {
         width: 260px;
     }
-
-    .btnSearch {
-        width: 40px;
-        height: 40px;
-        font-size: 7px;
-    }
 }
 
-@media only screen and (min-width: 395px) and (max-width: 650px) {
-    form, .blockModifQuestion, #formTextarea, .form-search {
+@media only screen and (min-width: 390px) and (max-width: 650px) {
+    form, .blockModifQuestion, #formTextarea {
         width: 350px;
     }
 
@@ -292,13 +359,7 @@ textarea {
     }
 
     .barSearch {
-        width: 200px;
-    }
-
-    .btnSearch {
-        width: 40px;
-        height: 40px;
-        font-size: 7px;
+        width: 190px;
     }
 }
 

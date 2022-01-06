@@ -8,7 +8,7 @@ require('actions/database.php');
 $getAllQuestions = $bdd->query('SELECT id, id_auteur, titre, description, pseudo_auteur, date_publication FROM questions ORDER BY id DESC LIMIT 0,5');
 
 // Si la variable existe et que le champ de recherche n'est pas vide
-if (isset($_GET['search']) and !empty($GET['search'])) {
+if (isset($_GET['search']) and !empty($_GET['search'])) {
 
     // La recherche
     // Utiliser prepare/execute avec un ? serait trop précis, les recherches tapées devrait correspondre au mot près

@@ -23,6 +23,7 @@ include 'includes/footer.php';
                         <p class="p-profil">Email : <?= $_SESSION['mail'] ?></p>
                     </div>
                     <div class="blockLinkProfil column centerJust gap">
+                        <a class="a-publier a-links" href="AAH-searchQuestions.php">Rechercher un sujet</a>
                         <a class="a-publier a-links" href="AAD-publish-question.php">Publier</a>
                         <a class="a-publier a-links" href="AAE-my-questions.php">Modifier un message</a>
                         <a class="a-deco a-links" href="actions/users/logoutAction.php">Déconnexion</a>

@@ -43,8 +43,8 @@ body {
     width: 100%;
     min-height: 100vh;
     background: #eeeeeefa;
-    box-shadow: inset 10px -10px 15px #4d4d4d,
-        inset -20px 60px 30px #ffffff;
+    box-shadow: inset 10px -10px 30px #4d4d4d,
+        inset -10px 10px 30px #ffffff;
 }
 
 main {
@@ -75,6 +75,10 @@ ul {
 a {
     text-decoration: none;
     list-style-type: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .row {
@@ -118,10 +122,12 @@ header {
     position: relative;
     justify-content: center;
     width: 100%;
-    height: 40px;
+    height: 45px;
     background: var(--color-green);
-    box-shadow: inset 4px -4px 5px rgb(0, 138, 110),
-        inset -4px 4px 8px rgb(175, 255, 239), inset -2px 2px 3px rgb(255, 255, 255);
+    box-shadow: 0px 2px 10px rgb(0, 0, 0),
+        inset 4px -4px 5px rgb(0, 138, 110),
+        inset -4px 4px 8px rgb(175, 255, 239),
+        inset -2px 2px 3px rgb(255, 255, 255);
     box-sizing: border-box;
 }
 
@@ -170,7 +176,7 @@ header {
 /* MENU ACCOUNT */
 #navConnect {
     position: absolute;
-    top: 2px;
+    top: 3px;
     right: 10px;
 }
 
@@ -181,8 +187,8 @@ header {
 
 .iconPersoCo, .iconPersoDeco {
     padding: 2px;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     border-radius: 50px;
     transition: 0.5s;
     background-color: var(--color-green);
@@ -199,6 +205,7 @@ header {
 }
 
 .slide, .slide2 {
+    position: relative;
     background-color: #ededed;
     clear: both;
     width: 100%;
@@ -208,6 +215,7 @@ header {
     border-radius: 10px;
     transition: height .1s ease;
     margin-top: -7px;
+    z-index: 10;
 }
 
 .slide li, .slide2 li {
@@ -230,12 +238,12 @@ header {
 }
 
 #touch:checked+.slide {
-    height: 150px;
+    height: 165px;
     box-shadow: 0 0 1px 1px var(--color-green), inset 0 0 10px 2px #808080;
 }
 
 #touch:checked+.slide2 {
-    height: 50px;
+    height: 80px;
     box-shadow: 0 0 1px 1px var(--color-green), inset 0 0 10px 2px #808080;
 }
 
@@ -262,7 +270,7 @@ header {
     .navMenu-ul {
         position: fixed;
         left: -100%;
-        top: 45px;
+        top: 55px;
         flex-direction: column;
         width: 100%;
         transition: 0.3s;
@@ -272,6 +280,7 @@ header {
         box-shadow: inset 0px 0px 25px 5px rgb(0, 119, 95);
         border-top: 2px solid var(--color-green);
         border-bottom: 2px solid var(--color-green);
+        z-index: 5;
     }
 
     .navMenu-ul.active {

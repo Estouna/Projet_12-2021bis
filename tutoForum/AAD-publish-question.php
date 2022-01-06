@@ -1,6 +1,6 @@
 <?php
 require('actions/users/securityAction.php');
-require('actions/questions/publish-questionAction.php');
+require('actions/questions/AAD-publish-questionAction.php');
 include('includes/header.php');
 include 'includes/footer.php';
 ?>

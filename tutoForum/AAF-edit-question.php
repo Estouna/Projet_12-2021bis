@@ -1,7 +1,7 @@
 <?php
 require('actions/users/securityAction.php');
-require('actions/questions/getInfosOfEditedQuestionAction.php');
-require('actions/questions/edit-questionsAction.php');
+require('actions/questions/AAF-getInfosOfEditedQuestionAction.php');
+require('actions/questions/AAF-edit-questionsAction.php');
 include 'includes/header.php';
 include 'includes/footer.php';
 ?>
