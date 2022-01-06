@@ -30,8 +30,8 @@ include 'includes/footer.php';
                 <textarea class="textareaContent" name="content"><?= $question_content ?></textarea>
             </div>
             <div class="row gap centerJust centerAlign">
-                <input id="question" class="btn-green" type="submit" name="validate" value="MODIFIER">
-                <a class="a-return" href="AAE-my-questions.php">Retour</a>
+                <input id="modifier" class="btn-green" type="submit" name="validate" value="MODIFIER">
+                <a class="a-return a-links" href="AAE-my-questions.php">Retour</a>
             </div>
         </form>
     <?php

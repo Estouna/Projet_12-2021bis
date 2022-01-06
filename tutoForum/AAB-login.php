@@ -25,7 +25,7 @@ include 'includes/footer.php';
                     </div>
                     <div class="labelInput column centerJust centerAlign">
                         <input id="connect" class="btn-green" type="submit" name="validate" value="CONNEXION">
-                        <a class="a-signup" href="AAA-signup.php">Pas encore de compte ? S'incrire</a>
+                        <a class="a-signup a-links" href="AAA-signup.php">Pas encore de compte ? S'incrire</a>
                     </div>
                 </div>
             </div>

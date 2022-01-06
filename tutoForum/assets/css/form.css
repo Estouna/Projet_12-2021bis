@@ -1,4 +1,4 @@
-/* ---------------------------------------------- FORM SIGNUP LOGIN ---------------------------------------------- */
+/* ---------------------------------------------- BLOCK FORM ---------------------------------------------- */
 form {
     padding: max(1vw, 9px);
     width: max(30vw, 270px);
@@ -20,16 +20,31 @@ form, .blockModifQuestion {
     min-height: 80vh;
 }
 
+.blockModifQuestion {
+    width: max(50vw, 270px);
+    min-height: 15vh;
+    color: var(--color-font-general);
+    margin-bottom: max(5vw, 30px);
+}
 
+.form-search {
+    width: max(90vw, 290px);
+    margin-top: max(2vw, 20px);
+    margin-bottom: max(3vw, 15px);
+    min-height: 11vh;
+    padding: 2px 0;
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END BLOCK FORM xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+/* ---------------------------------------------- TITLES, LEGENDS, LABELS, DESCRIPTIONS ETC ---------------------------------------------- */
 legend {
     font-size: max(1.8vw, 20px);
     margin-bottom: max(1vw, 9px);
     letter-spacing: max(0.5vw, 1px);
     color: var(--color-green);
-}
-
-.labelInput {
-    margin-bottom: max(0.5vw, 9px);
 }
 
 label {
@@ -39,39 +54,11 @@ label {
     color: var(--color-green);
 }
 
-textarea, .input-form, .barSearch {
-    padding: max(0.6vw, 8px);
-    font-size: max(0.9vw, 12px);
-    letter-spacing: max(0.05vw, 1px);
-    color: var(--color-font-general);
+.labelInput {
+    margin-bottom: max(0.5vw, 9px);
 }
 
-.input-form, .barSearch {
-    width: max(25vw, 240px);
-}
-
-
-.btn-green, .link-supprimer {
-    width: 110px;
-    height: 110px;
-    font-size: max(0.8vw, 10px);
-    font-family: var(--font-roboBoldCond);
-    color: var(--color-green);
-    letter-spacing: max(0.05vw, 1px);
-    border-radius: 50%;
-}
-
-.btnSearch {
-    width: 65px;
-    height: 65px;
-    font-size: max(0.4vw, 10px);
-    font-family: var(--font-roboBoldCond);
-    color: var(--color-green);
-    border-radius: 50%;
-    margin: 0px 20px;
-}
-
-
+/* FORM EDIT QUESTION */
 .textTitle {
     width: max(40vw, 240px);
     margin-bottom: max(0.5vw, 9px);
@@ -81,6 +68,48 @@ textarea, .input-form, .barSearch {
     min-height: max(2vh, 30px);
 }
 
+/* END FORM EDIT QUESTION */
+
+
+/* FORM MY QUESTIONS  */
+.h1TitleArticles {
+    font-size: max(2vw, 22px);
+    margin-top: max(1.5vw, 10px);
+    margin-bottom: max(2vw, 10px);
+    color: var(--color-green);
+}
+
+.titleQuestion {
+    font-size: max(1.5vw, 14px);
+    padding: max(1vw, 9px);
+    border-bottom: 1px solid var(--color-green);
+}
+
+.p-decription {
+    font-size: max(1.3vw, 13px);
+    padding: max(1vw, 9px);
+    border-bottom: 1px solid var(--color-font-general);
+}
+
+.p-auteur, .p-date {
+    font-size: max(0.8vw, 9px);
+    padding: max(1vw, 9px);
+}
+
+/* END FORM MY QUESTIONS */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END TITLES, LEGENDS, LABELS, DESCRIPTIONS ETC xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+/* ---------------------------------------------- TEXTAREA, INPUT (type long), ETC ---------------------------------------------- */
+textarea, .input-form, .barSearch, .textTitle {
+    padding: max(0.6vw, 8px);
+    font-size: max(0.9vw, 12px);
+    letter-spacing: max(0.05vw, 1px);
+    color: var(--color-font-general);
+}
+
 textarea {
     width: max(40vw, 240px);
     min-height: max(20vh, 200px);
@@ -88,17 +117,21 @@ textarea {
     resize: none;
 }
 
-.input-form, textarea, .barSearch {
+.input-form, .barSearch {
+    width: max(25vw, 240px);
+}
+
+.input-form, textarea, .barSearch, .textTitle {
     border: max(0.3vw, 1px) solid transparent;
     outline: max(0.1vw, 1px) solid var(--color-green);
     border-radius: 10px;
-    background-color: #f2f0f0;
+    background-color: #ecebeb;
     box-shadow: -5px 5px 10px 0px #969696, inset 2px -2px 4px #979797,
         inset -3px 3px 3px #ffffff;
     transition: 0.3s;
 }
 
-.input-form:focus, textarea:focus, .barSearch:focus {
+.input-form:focus, textarea:focus, .barSearch:focus, .textTitle:focus {
     outline: max(0.1vw, 1px) solid var(--color-green);
     background-color: #e1e1e1;
     box-shadow: 0px 0px 5px 3px #969696, inset -5px 5px 9px 0px #5e5e5e,
@@ -106,36 +139,94 @@ textarea {
     color: rgb(135, 135, 135);
 }
 
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx TEXTAREA, INPUT (type long), ETC xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+
+/* ---------------------------------------------- BUTTONS ---------------------------------------------- */
+/* CIRCLE BUTTONS */
+.btn-green, .btn-effacer {
+    width: 110px;
+    height: 110px;
+    font-size: max(0.8vw, 10px);
+    font-family: var(--font-roboReg);
+    text-shadow: 0.2px 0.2px 0.8px rgb(0, 121, 97),
+        -0.2px -0.2px 0.8px rgb(0, 121, 97);
+    color: var(--color-green);
+    border-radius: 50%;
+}
+
+#signup, #connect, #publier, #modifier {
+    margin-top: max(1vw, 5px);
+}
+
+
+.btnSearch {
+    width: 65px;
+    height: 65px;
+    font-size: max(0.4vw, 10px);
+    font-family: var(--font-roboBoldCond);
+    color: var(--color-green);
+    border-radius: 50%;
+    margin: 0px 20px;
+    border: max(0.2vw, 1px) solid transparent;
+    outline: max(0.2vw, 1px) solid var(--color-green);
+}
+
+.btn-afficher, .btn-modifier, .btn-effacer {
+    margin-top: max(4vw, 20px);
+    margin-bottom: max(2vw, 20px);
+    margin-left: max(1vw, 10px);
+    margin-right: max(1vw, 10px);
+}
+
 .btn-green, .btnSearch {
     border: max(0.3vw, 1px) solid transparent;
     outline: max(0.3vw, 1px) solid var(--color-green);
-    background-color: #f2f0f0;
-    box-shadow: -7px 7px 7px 0px #969696, inset 2px -2px 3px #979797,
+    background-color: #ecebeb;
+    box-shadow: -7px 7px 7px 0px #969696, inset 2px -2px 2px #b8b7b7,
         inset -2px 2px 2px #ffffff;
     transition: 0.3s;
 }
 
-.btnSearch {
-    border: max(0.2vw, 1px) solid transparent;
-    outline: max(0.2vw, 1px) solid var(--color-green);
+.btn-green:focus, .btnSearch:focus {
+    background-color: #e1e1e1;
+    box-shadow: 0px 0px 5px 3px #969696, inset -5px 5px 9px 0px #6e6e6e,
+        inset 3px -3px 5px #ffffff;
+    color: rgb(0, 148, 119);
 }
 
 .btn-green:hover, .btnSearch:hover {
     color: rgb(0, 196, 157);
 }
 
-.btn-green:focus, .btnSearch:focus {
-    background-color: #e1e1e1;
-    box-shadow: 0px 0px 5px 3px #969696, inset -5px 5px 9px 0px #5e5e5e,
-        inset 3px -3px 5px #ffffff;
-    color: rgb(0, 148, 119);
+
+.btn-effacer {
+    border: max(0.3vw, 2px) double transparent;
+    outline: max(0.1vw, 2px) double #f32b2b;
+    background-color: #f32b2b;
+    box-shadow: -7px 7px 7px 0px #969696, inset 4px -4px 3px #960000,
+        inset -4px 4px 5px #ffcfcf;
+    color: var(--color-white);
+    transition: 0.3s;
 }
 
-#validate, #connect, #question {
-    margin-top: max(1vw, 5px);
+.btn-effacer:focus {
+    background-color: #cc0000;
+    color: rgb(209, 209, 209);
+    box-shadow: 0px 0px 5px 3px #969696, inset -5px 5px 9px 0px #940000,
+        inset 3px -3px 5px #ffcfcf;
 }
 
-.a-login, .a-signup, .a-return {
+.btn-effacer:hover {
+    color: rgb(214, 214, 214);
+}
+
+
+
+/* TEXT LINKS */
+.a-links {
     font-size: max(0.7vw, 12px);
     margin-top: max(1vw, 20px);
     letter-spacing: max(0.05vw, 0.5px);
@@ -143,87 +234,20 @@ textarea {
     transition: 0.3s;
 }
 
-.a-login:hover, .a-signup:hover, .a-return:hover {
+.a-links:hover {
     color: rgb(0, 179, 143);
 }
 
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END FORM SIGNUP LOGIN xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END BUTTONS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
-/* ---------------------------------------------- FORM QUESTIONS ---------------------------------------------- */
 
-.blockModifQuestion {
-    width: max(50vw, 290px);
-    min-height: 15vh;
-    color: var(--color-font-general);
-    margin-bottom: max(3vw, 15px);
-}
 
-.form-search {
-    width: max(90vw, 290px);
-    margin-top: max(2vw, 20px);
-    margin-bottom: max(3vw, 15px);
-    min-height: 9vh;
-    padding: 2px 0;
-}
 
-.h1TitleArticles {
-    font-size: max(1.1vw, 12px);
-    margin-top: max(1.5vw, 10px);
-    margin-bottom: max(2vw, 10px);
-    color: var(--color-font-general);
-}
-
-.titleQuestion {
-    font-size: max(1.1vw, 12px);
-    padding: max(1.8vw, 9px);
-    border-bottom: 2px solid var(--color-green);
-}
-
-.bodyQuestion {
-    margin-top: max(2vw, 15px);
-    padding: max(1.8vw, 9px);
-}
-
-.p-auteur, .p-date, .p-decription {
-    font-size: max(0.8vw, 12px);
-}
-
-.link-acceder, .link-modifier, .link-supprimer {
-    margin-top: max(4vw, 20px);
-    margin-bottom: max(2vw, 20px);
-    margin-left: max(1vw, 10px);
-    margin-right: max(1vw, 10px);
-}
-
-.link-supprimer {
-    border: max(0.3vw, 2px) double transparent;
-    outline: max(0.1vw, 2px) double #f32b2b;
-    background-color: #f32b2b;
-    box-shadow: 0px 0px 3px 4px #969696, inset 4px -4px 3px #960000,
-        inset -4px 4px 5px #ffcfcf;
-    color: var(--color-white);
-    transition: 0.3s;
-}
-
-.link-supprimer:focus {
-    background-color: #cc0000;
-    color: rgb(209, 209, 209);
-    box-shadow: 0px 0px 5px 3px #969696, inset -5px 5px 9px 0px #940000,
-        inset 3px -3px 5px #ffcfcf;
-}
-
-.link-supprimer:hover {
-    color: rgb(214, 214, 214);
-}
-
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END FORM QUESTIONS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 
 
 
 /* ---------------------------------------------- MEDIAQUERIES ---------------------------------------------- */
-
-
 @media only screen and (min-width: 651px) and (max-width: 1200px) {
     form, .blockModifQuestion, #formTextarea, .form-search {
         width: 450px;
@@ -231,6 +255,16 @@ textarea {
 
     .input-form, .textTitle, textarea {
         width: 400px;
+    }
+
+    .barSearch {
+        width: 260px;
+    }
+
+    .btnSearch {
+        width: 40px;
+        height: 40px;
+        font-size: 7px;
     }
 }
 
@@ -242,12 +276,29 @@ textarea {
     .input-form, .textTitle, textarea {
         width: 300px;
     }
+
 }
 
 @media only screen and (max-width: 1000px) {
-    .btn-green, .link-supprimer {
+    .btn-green {
         width: 70px;
         height: 70px;
+    }
+
+    .btn-afficher, .btn-modifier, .btn-effacer {
+        width: 50px;
+        height: 50px;
+        font-size: max(0.8vw, 9px);
+    }
+
+    .barSearch {
+        width: 200px;
+    }
+
+    .btnSearch {
+        width: 40px;
+        height: 40px;
+        font-size: 7px;
     }
 }
 

@@ -46,8 +46,8 @@ include 'includes/footer.php';
                 </div>
 
                 <div class="labelInput column centerJust centerAlign">
-                    <input id="validate" class="btn-green" name="validate" type="submit" value="ENVOYER" />
-                    <a class="a-login" href="AAB-login.php">J'ai déjà un compte</a>
+                    <input id="signup" class="btn-green" name="validate" type="submit" value="ENVOYER" />
+                    <a class="a-login a-links" href="AAB-login.php">J'ai déjà un compte</a>
                 </div>
             </div>
         </div>

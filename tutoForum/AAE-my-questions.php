@@ -22,9 +22,9 @@ include 'includes/footer.php';
                     <p class="p-date"> le <?= $question['date_publication'] ?></p>
                 </div>
                 <div class="row centerAlign centerJust">
-                    <a class="link-acceder btn-green row centerJust centerAlign" href="#">AFFICHER</a>
-                    <a class="link-modifier btn-green row centerJust centerAlign" href="AAF-edit-question.php?id=<?= $question['id'] ?>">MODIFIER</a>
-                    <a class="link-supprimer row centerJust centerAlign" href="actions/questions/deleteQuestionAction.php?id=<?= $question['id'] ?>">SUPPRIMER</a>
+                    <a class="btn-afficher btn-green row centerJust centerAlign" href="#">AFFICHER</a>
+                    <a class="btn-modifier btn-green row centerJust centerAlign" href="AAF-edit-question.php?id=<?= $question['id'] ?>">MODIFIER</a>
+                    <a class="btn-effacer row centerJust centerAlign" href="actions/questions/deleteQuestionAction.php?id=<?= $question['id'] ?>">EFFACER</a>
                 </div>
             </div>
 

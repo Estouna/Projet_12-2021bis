@@ -12,11 +12,14 @@
 }
 
 .sectionTitle {
-    font-size: max(1.2vw, 20px);
     font-family: var(--font-roboThin);
     margin-top: max(1vw, 10px);
     margin-bottom: max(2vw, 20px);
 
+}
+
+.titleH1-profil {
+    font-size: max(1.5vw, 25px);
 }
 
 .nameProfil {
@@ -24,14 +27,12 @@
     color: var(--color-green);
 }
 
-.title-profil {}
 
 .p-profil, .a-publier, .a-deco {
-    font-size: max(1vw, 12px);
+    font-size: max(1vw, 11px);
 }
 
 .sectionBody1 {
-    justify-content: space-between;
     width: 100%;
 }
 

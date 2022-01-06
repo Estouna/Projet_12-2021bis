@@ -56,7 +56,7 @@ main {
 }
 
 .red, .green {
-    font-size: max(1vw, 14px);
+    font-size: max(1vw, 12px);
 }
 
 .red {
@@ -64,7 +64,7 @@ main {
 }
 
 .green {
-    color: green;
+    color: rgb(0, 148, 0);
 }
 
 ul {
@@ -100,7 +100,7 @@ a {
 }
 
 
-.spaceBetwwen {
+.spaceBetween {
     justify-content: space-between;
 }
 
@@ -143,7 +143,7 @@ header {
 }
 
 .navMenu-li a:hover {
-    color: rgb(143, 255, 233);
+    color: rgb(182, 255, 240);
     letter-spacing: max(0.1vw, 2px);
 }
 

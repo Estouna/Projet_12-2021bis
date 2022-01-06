@@ -14,7 +14,7 @@ include 'includes/footer.php';
         </div>
         <div class="column centerJust">
             <label for="title">Titre de la question</label>
-            <input class="textTitle input-form" name="title">
+            <input class="textTitle" name="title">
         </div>
         <div class="column centerJust">
             <label for="description">Description de la question</label>
@@ -22,11 +22,11 @@ include 'includes/footer.php';
         </div>
         <div class="column centerJust">
             <label for="content">Contenu de la question</label>
-            <textarea class="textarea3" name="content"></textarea>
+            <textarea class="textareaContent" name="content"></textarea>
         </div>
         <div class="row gap centerJust centerAlign">
-            <input id="question" class="btn-green" type="submit" name="validate" value="PUBLIER">
-            <a class="a-return" href="AAE-my-questions.php">Retour</a>
+            <input id="publier" class="btn-green" type="submit" name="validate" value="PUBLIER">
+            <a class="a-return a-links" href="AAE-my-questions.php">Retour</a>
         </div>
         <div class="message row centerJust centerAlign">
             <?php
