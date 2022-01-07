@@ -18,8 +18,9 @@
     --color-black: rgb(0, 0, 0);
     --color-white: rgb(255, 255, 255);
     --color-font-general: rgb(162, 162, 162);
-    --color-green: rgb(0, 225, 180);
-
+    --color-green: rgb(8, 248, 200);
+    --color-green-text: rgb(0, 221, 177);
+    /*rgb(8, 248, 200);*/
     /* ---------------Variable font-family------------- */
     --font-roboReg: "Roboto-Regular", arial, sans-serif;
     --font-roboThin: "Roboto-Thin", arial, sans-serif;
@@ -31,32 +32,29 @@
     padding: 0;
 }
 
-html {
+body {
+    font-family: var(--font-roboReg);
+    color: var(--color-font-general);
+    width: 100%;
     background-image: url("../images/circuitwhite.png");
     background-attachment: fixed;
     background-repeat: repeat;
 }
 
-body {
-    font-family: var(--font-roboReg);
-    color: var(--color-font-general);
-    width: 100%;
+main {
     min-height: 100vh;
-    background: #eeeeeefa;
+    background: rgba(238, 237, 237, 0.95);
     box-shadow: inset 10px -10px 30px #4d4d4d,
         inset -10px 10px 30px #ffffff;
 }
 
-main {
-    min-height: 90vh;
-}
-
 .message {
     margin-top: max(1vw, 20px);
+    margin-bottom: max(1vw, 20px);
 }
 
 .red, .green {
-    font-size: max(1vw, 12px);
+    font-size: max(1.5vw, 12px);
 }
 
 .red {
@@ -129,11 +127,12 @@ header {
         inset -4px 4px 8px rgb(175, 255, 239),
         inset -2px 2px 3px rgb(255, 255, 255);
     box-sizing: border-box;
+    margin-bottom: 2vh;
 }
 
 /* MAIN MENU */
 #navMenu {
-    font-size: max(0.9vw, 12px);
+    font-size: max(0.9vw, 15px);
 }
 
 .navMenu-li {
@@ -143,7 +142,7 @@ header {
 .navMenu-li a {
     display: block;
     text-align: center;
-    width: max(7vw, 100px);
+    width: max(7vw, 130px);
     color: white;
     transition: 0.7s;
 }
@@ -177,12 +176,12 @@ header {
 #navConnect {
     position: absolute;
     top: 3px;
-    right: 10px;
+    right: 15px;
 }
 
 .spanNav {
     cursor: pointer;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .iconPersoCo, .iconPersoDeco {
@@ -257,14 +256,9 @@ header {
 
 /* ---------------------------------------------- MEDIAQUERIES ---------------------------------------------- */
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 790px) {
     header {
         justify-content: flex-start;
-    }
-
-    .spanNav {
-        cursor: pointer;
-        justify-content: flex-end;
     }
 
     .navMenu-ul {
@@ -274,10 +268,10 @@ header {
         flex-direction: column;
         width: 100%;
         transition: 0.3s;
-        padding: 20px 0;
+        padding: 40px 0;
         color: var(--color-white);
-        background: rgb(0, 189, 151);
-        box-shadow: inset 0px 0px 25px 5px rgb(0, 119, 95);
+        background: rgb(1, 209, 168);
+        box-shadow: inset 0px 0px 15px 5px rgb(0, 119, 95);
         border-top: 2px solid var(--color-green);
         border-bottom: 2px solid var(--color-green);
         z-index: 5;
@@ -288,7 +282,7 @@ header {
     }
 
     .navMenu-li a {
-        margin: 10px;
+        margin: 20px;
         color: var(--color-white);
     }
 

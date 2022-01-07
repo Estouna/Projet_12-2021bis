@@ -1,19 +1,19 @@
 <?php
-require('actions/users/securityAction.php');
-require('actions/questions/AAF-getInfosOfEditedQuestionAction.php');
-require('actions/questions/AAF-edit-questionsAction.php');
-include 'includes/header.php';
-include 'includes/footer.php';
+require('../tutoForum/actions/users/securityAction.php');
+require('../tutoForum/actions/questions/AAF-getInfosOfEditedQuestionAction.php');
+require('../tutoForum/actions/questions/AAF-edit-questionsAction.php');
+include '../tutoForum/includes/head.php';
 ?>
 
 
 
-<main class="column centerJust centerAlign">
+<main class="column centerAlign">
+<?php include '../tutoForum/includes/navbar.php'; ?>
 
     <?php
     if (isset($question_content)) {
     ?>
-        <form id="formTextarea" method="POST" class="column centerJust centerAlign">
+        <form id="formTextarea" method="POST" class="form column centerJust centerAlign">
             <div class="row centerJust margTop margBottom">
                 <legend>Modifier une question</legend>
             </div>
@@ -31,7 +31,7 @@ include 'includes/footer.php';
             </div>
             <div class="row gap centerJust centerAlign">
                 <input id="modifier" class="btn-green" type="submit" name="validate" value="MODIFIER">
-                <a class="a-return a-links" href="AAE-my-questions.php">Retour</a>
+                <a class="a-return a-links" href="../tutoForum/AAE-my-questions.php">Retour</a>
             </div>
         </form>
     <?php
@@ -51,3 +51,4 @@ include 'includes/footer.php';
     </div>
 
 </main>
+<?php include '../tutoForum/includes/footer.php'; ?>

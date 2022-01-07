@@ -1,10 +1,11 @@
 <?php
-require('actions/users/securityAction.php');
-include 'includes/header.php';
-include 'includes/footer.php';
+require('../tutoForum/actions/users/securityAction.php');
+include '../tutoForum/includes/head.php';
 ?>
 
-<main class="column centerJust centerAlign">
+<main class="column centerAlign">
+    <?php include '../tutoForum/includes/navbar.php'; ?>
+
     <?php
     if (isset($_SESSION['auth'])) {
     ?>
@@ -23,10 +24,10 @@ include 'includes/footer.php';
                         <p class="p-profil">Email : <?= $_SESSION['mail'] ?></p>
                     </div>
                     <div class="blockLinkProfil column centerJust gap">
-                        <a class="a-publier a-links" href="AAH-searchQuestions.php">Rechercher un sujet</a>
-                        <a class="a-publier a-links" href="AAD-publish-question.php">Publier</a>
-                        <a class="a-publier a-links" href="AAE-my-questions.php">Modifier un message</a>
-                        <a class="a-deco a-links" href="actions/users/logoutAction.php">Déconnexion</a>
+                        <a class="a-profil" href="../tutoForum/AAH-searchQuestions.php">Rechercher un sujet</a>
+                        <a class="a-profil" href="../tutoForum/AAD-publish-question.php">Publier</a>
+                        <a class="a-profil" href="../tutoForum/AAE-my-questions.php">Modifier un message</a>
+                        <a class="a-profil a-deco" href="../tutoForum/actions/users/logoutAction.php">Se déconnecter</a>
                     </div>
                 </div>
                 <div class="row sectionBody2 centerJust centerAlign">
@@ -40,3 +41,4 @@ include 'includes/footer.php';
     ?>
 
 </main>
+<?php include '../tutoForum/includes/footer.php'; ?>

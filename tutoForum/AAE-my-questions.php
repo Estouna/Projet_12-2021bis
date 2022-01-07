@@ -1,12 +1,12 @@
 <?php
-require('actions/users/securityAction.php');
-require('actions/questions/AAE-my-questionsAction.php');
-include 'includes/header.php';
-include 'includes/footer.php';
+require('../tutoForum/actions/users/securityAction.php');
+require('../tutoForum/actions/questions/AAE-my-questionsAction.php');
+include '../tutoForum/includes/head.php';
 ?>
 
 
 <main class="column centerAlign">
+    <?php include '../tutoForum/includes/navbar.php'; ?>
 
     <h1 class="h1TitleArticles">Mes questions</h1>
     <?php
@@ -22,9 +22,9 @@ include 'includes/footer.php';
                     <p class="p-date"> le <?= $question['date_publication'] ?></p>
                 </div>
                 <div class="row centerAlign centerJust">
-                    <a class="btn-afficher btn-green row centerJust centerAlign" href="AAG-article.php?id=<?= $question['id']; ?>">AFFICHER</a>
-                    <a class="btn-modifier btn-green row centerJust centerAlign" href="AAF-edit-question.php?id=<?= $question['id'] ?>">MODIFIER</a>
-                    <a class="btn-effacer row centerJust centerAlign" href="actions/questions/deleteQuestionAction.php?id=<?= $question['id'] ?>">EFFACER</a>
+                    <a class="btn-afficher btn-green row centerJust centerAlign" href="../tutoForum/AAG-article.php?id=<?= $question['id']; ?>">AFFICHER</a>
+                    <a class="btn-modifier btn-green row centerJust centerAlign" href="../tutoForum/AAF-edit-question.php?id=<?= $question['id'] ?>">MODIFIER</a>
+                    <a class="btn-effacer row centerJust centerAlign" href="../tutoForum/actions/questions/deleteQuestionAction.php?id=<?= $question['id'] ?>">EFFACER</a>
                 </div>
             </div>
 
@@ -35,3 +35,4 @@ include 'includes/footer.php';
 
 
 </main>
+<?php include '../tutoForum/includes/footer.php'; ?>

@@ -1,14 +1,14 @@
 <?php
-require('actions/users/securityAction.php');
-require('actions/questions/AAD-publish-questionAction.php');
-include('includes/header.php');
-include 'includes/footer.php';
+require('../tutoForum/actions/users/securityAction.php');
+require('../tutoForum/actions/questions/AAD-publish-questionAction.php');
+include('../tutoForum/includes/head.php');
 ?>
 
 
-<main class="column centerJust centerAlign">
+<main class="column centerAlign">
+<?php include '../tutoForum/includes/navbar.php'; ?>
 
-    <form id="formTextarea" method="POST" class="column centerJust centerAlign">
+    <form id="formTextarea" method="POST" class="form column centerJust centerAlign">
         <div class="row centerJust margTop margBottom">
             <legend>Publier une question</legend>
         </div>
@@ -26,7 +26,7 @@ include 'includes/footer.php';
         </div>
         <div class="row gap centerJust centerAlign">
             <input id="publier" class="btn-green" type="submit" name="validate" value="PUBLIER">
-            <a class="a-return a-links" href="AAE-my-questions.php">Retour</a>
+            <a class="a-return a-links" href="../tutoForum/AAE-my-questions.php">Retour</a>
         </div>
         <div class="message row centerJust centerAlign">
             <?php
@@ -42,3 +42,4 @@ include 'includes/footer.php';
 
     </form>
 </main>
+<?php include '../tutoForum/includes/footer.php'; ?>

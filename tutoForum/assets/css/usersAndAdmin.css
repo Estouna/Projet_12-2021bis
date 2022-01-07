@@ -1,14 +1,12 @@
 .blockProfil {
     background: #e6e6e6;
-    box-shadow: inset 10px -10px 10px #5c5c5c,
-        inset -10px 10px 25px #ffffff;
+    box-shadow: inset 5px -5px 15px #5c5c5c,
+        inset -5px 5px 25px #ffffff;
     border: 2px solid var(--color-green);
     border-radius: 10px;
-    width: max(90vw, 270px);
-    min-height: 80vh;
-    color: var(--color-font-general);
-    padding: 2vw;
-    margin-top: max(1vw, 10px);
+    width: max(90vw, 310px);
+    padding-top: max(2vw, 20px);
+    padding-bottom: max(4vw, 40px);
 }
 
 .sectionTitle {
@@ -19,20 +17,14 @@
 }
 
 .titleH1-profil {
-    font-size: max(2.5vw, 25px);
+    font-size: max(2.5vw, 30px);
 }
 
 .nameProfil {
-    font-size: max(3vw, 20px);
+    font-size: max(3vw, 30px);
     color: var(--color-green);
     text-shadow: 0.2px 0.2px 2px rgb(0, 121, 97),
         -0.2px -0.2px 2px rgb(0, 121, 97);
-}
-
-
-.p-profil, .a-publier, .a-deco {
-    font-size: max(1vw, 11px);
-    color: var(--color-green);
 }
 
 .sectionBody1 {
@@ -44,18 +36,26 @@
     border: 1px solid var(--color-green);
     border-left: none;
     border-right: none;
-    padding: max(1vw, 5px);
+    padding-top: max(3vw, 10px);
+    padding-bottom: max(3vw, 10px);
 }
 
-.a-publier, .a-deco {
-    color: var(--color-green);
+.a-profil {
+    font-size: max(1vw, 11px);
+    color: var(--color-green-text);
+    margin-left: max(2vw, 8px);
     transition: 0.2s;
+}
+
+.p-profil {
+    font-size: max(1vw, 11px);
+    margin-left: max(2vw, 8px);
 }
 
 .a-deco {
     margin-top: max(2vw, 20px);
 }
 
-.a-deco:hover, .a-publier:hover {
+.a-deco:hover, .a-profil:hover {
     color: var(--color-font-general);
 }

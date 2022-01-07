@@ -2,7 +2,7 @@
 session_start();
 // Vérifie si l'utilisateur est authentifié
 if (!isset($_SESSION['auth'])) {
-    header('Location: AAB-login.php');
+    header('Location: ../../AAB-login.php');
 }
 
 require('../database.php');
