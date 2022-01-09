@@ -43,7 +43,7 @@ include '../tutoForum/includes/head.php';
             </div>
 
             <div class="authorDate-post">
-                <p>Publié par <a href="../tutoForum/profil2.php?id=<?= $question['id_auteur']; ?>"><?= $question['pseudo_auteur']; ?></a></p>
+                <p>Publié par <a class="a-auteur" href="../tutoForum/profil2.php?id=<?= $question['id_auteur']; ?>"><?= $question['pseudo_auteur']; ?></a></p>
                 <p>le <?= $question['date_publication']; ?></p>
             </div>
 

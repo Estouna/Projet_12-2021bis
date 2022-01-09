@@ -30,7 +30,7 @@
 .title-post {
     padding: max(1vw, 9px);
     font-family: var(--font-roboReg);
-    font-size: max(1.3vw, 20px);
+    font-size: max(1.3vw, 13px);
     border-bottom: 2px dotted var(--color-green);
     color: var(--color-green-text);
     background-color: rgba(0, 0, 0, 0.05);
@@ -40,15 +40,25 @@
 
 .a-title-post {
     color: var(--color-green-text);
+    transition: 0.3s;
+}
+
+.a-title-post:hover {
+    color: rgb(0, 179, 143);
 }
 
 .a-post {
     color: var(--color-green-text);
+    transition: 0.3s;
+}
+
+.a-post:hover {
+    color: rgb(0, 179, 143);
 }
 
 .content-post {
     padding: max(1vw, 9px);
-    font-size: max(1.1vw, 15px);
+    font-size: max(1.1vw, 13px);
     border-bottom: 2px dotted var(--color-green);
 }
 
@@ -79,7 +89,7 @@
 
 /* ---------------------------------------------- NEUMORPHISM EFFECT ---------------------------------------------- */
 input, button, textarea, .btn-green, .blockModifQuestion, .block-post, .neumorph-form {
-    background-color: #ecebeb;
+    background-color: #f5f5f5;
     box-shadow:
         inset 2px -2px 2px #b8b7b7,
         inset -2px 2px 2px #ffffff;
@@ -87,7 +97,7 @@ input, button, textarea, .btn-green, .blockModifQuestion, .block-post, .neumorph
 }
 
 .neumorph-btn {
-    background-color: #ecebeb;
+    background-color: #f5f5f5;
     box-shadow:
         -6px 6px 5px 0px #6d6d6d,
         inset 2px -2px 2px #b8b7b7,
@@ -147,7 +157,7 @@ form:focus, input:focus, button:focus, textarea:focus, .btn-green:focus {
 }
 
 .formAnswer {
-    width: max(50vw, 280px);
+    width: max(50vw, 300px);
     border: 4px double transparent;
     outline: 4px double var(--color-green);
     border-radius: 10px;
@@ -241,6 +251,15 @@ label {
     padding: max(1vw, 9px);
 }
 
+.a-auteur {
+    color: var(--color-green-text);
+    transition: 0.3s;
+}
+
+.a-auteur:hover {
+    color: rgb(0, 179, 143);
+}
+
 /* END FORM MY QUESTIONS */
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END TITLES, LEGENDS, LABELS, DESCRIPTIONS ETC xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
@@ -326,7 +345,7 @@ textarea {
 }
 
 .btn-green:hover, .btnSearch:hover {
-    color: rgb(1, 162, 129);
+    color: rgb(0, 179, 143);
 }
 
 
@@ -387,7 +406,7 @@ textarea {
 }
 
 @media screen and (min-width: 390px) and (max-width: 650px) {
-    .form, .blockModifQuestion, #formTextarea, .block-post {
+    .form, .blockModifQuestion, #formTextarea, .block-post, .formAnswer {
         width: 350px;
     }
 

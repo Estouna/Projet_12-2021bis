@@ -25,7 +25,7 @@ include '../tutoForum/includes/head.php';
                     <p><?= $question_content ?></p>
                 </div>
                 <div class="authorDate-post">
-                    <p>Publié par <?= '<a href="../tutoForum/profil2.php?id=' . $question_id_author . '">' . $question_pseudo_author . '</a> le ' . $question_publication_date; ?></p>
+                    <p>Publié par <?= '<a class="a-auteur" href="../tutoForum/profil2.php?id=' . $question_id_author . '">' . $question_pseudo_author . '</a> le ' . $question_publication_date; ?></p>
                 </div>
 
             </div>
@@ -80,7 +80,7 @@ include '../tutoForum/includes/head.php';
             ?>
         <?php
         } else {
-            ?>
+        ?>
 
             <div class="block-post show-content column centerJust post-margin">
                 <div class="title-post">
@@ -90,7 +90,7 @@ include '../tutoForum/includes/head.php';
                     <p><?= $question_content ?></p>
                 </div>
                 <div class="authorDate-post">
-                    <p>Publié par <?= '<a href="../tutoForum/profil2.php?id=' . $question_id_author . '">' . $question_pseudo_author . '</a> le ' . $question_publication_date; ?></p>
+                    <p>Publié par <?= '<a class="a-auteur" href="../tutoForum/profil2.php?id=' . $question_id_author . '">' . $question_pseudo_author . '</a> le ' . $question_publication_date; ?></p>
                 </div>
 
             </div>
@@ -110,9 +110,9 @@ include '../tutoForum/includes/head.php';
                     <div class="authorDate-post">
                         <p>Publié par <?= $answer['pseudo_auteur'] . ' le ' . $answer['date_publication'] ?></p>
                     </div>
-        
+
                 </div>
-            <?php
+    <?php
             }
         }
     }

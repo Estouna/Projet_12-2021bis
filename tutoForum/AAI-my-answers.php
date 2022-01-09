@@ -12,21 +12,23 @@ include '../tutoForum/includes/head.php';
     <?php
     while ($answer = $getAllMyAnswers->fetch()) {
     ?>
-        <div class="blockModifQuestion column">
+        <div class="shadow-green post-margin">
+            <div class="block-post neumorph-form column">
 
-            <div class="bodyQuestion">
-                <p class="p-decription">Contenu : <?= $answer['contenu'] ?></p>
-                <div class="row gap">
-                    <p class="p-auteur">Publier par <?= $answer['pseudo_auteur'] ?></p>
-                    <p class="p-date"> le <?= $answer['date_publication'] ?></p>
+                <div class="content-post">
+                    <p class="p-decription">Contenu : <?= $answer['contenu'] ?></p>
+                    <div class="row gap">
+                        <p class="p-auteur">Publier par <?= $answer['pseudo_auteur'] ?></p>
+                        <p class="p-date"> le <?= $answer['date_publication'] ?></p>
+                    </div>
+                    <div class="row centerAlign centerJust">
+                        <a class="btn-afficher btn-green neumorph-btn row centerJust centerAlign" href="../tutoForum/AAG-article.php?id=<?= $answer['id']; ?>">AFFICHER</a>
+                        <a class="btn-modifier btn-green neumorph-btn row centerJust centerAlign" href="../tutoForum/AAI-edit-answer.php?id=<?= $answer['id'] ?>">MODIFIER</a>
+                        <a class="btn-effacer row centerJust centerAlign" href="../tutoForum/actions/questions/deleteAnswerAction.php?id=<?= $answer['id'] ?>">EFFACER</a>
+                    </div>
                 </div>
-                <div class="row centerAlign centerJust">
-                    <a class="btn-afficher btn-green row centerJust centerAlign" href="../tutoForum/AAG-article.php?id=<?= $answer['id']; ?>">AFFICHER</a>
-                    <a class="btn-modifier btn-green row centerJust centerAlign" href="../tutoForum/AAI-edit-answer.php?id=<?= $answer['id'] ?>">MODIFIER</a>
-                    <a class="btn-effacer row centerJust centerAlign" href="../tutoForum/actions/questions/deleteAnswerAction.php?id=<?= $answer['id'] ?>">EFFACER</a>
-                </div>
+
             </div>
-
         </div>
     <?php
     }

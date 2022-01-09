@@ -1,0 +1,41 @@
+section {
+    min-height: 85vh;
+}
+
+.block-color {
+    margin-top: max(1vw, 12px);
+    margin-bottom: max(1vw, 12px);
+    border-radius: 20px;
+}
+
+.blockWhite {
+    background-color: rgba(255, 255, 255, 0.782);
+    border-radius: 20px;
+}
+
+.categ {
+    padding-top: max(4vw, 50px);
+    padding-bottom: max(4vw, 50px);
+    font-size: max(2vw, 30px);
+    font-family: var(--font-roboReg);
+    color: var(--color-white);
+    width: max(30vw, 200px);
+}
+
+.blockRed {
+    border: 6px double #ff0000;
+    background-color: rgba(246, 12.4, 12.4, 0.5);
+    box-shadow: 5px 2px 10px 0px rgb(138, 8, 8), inset 200px 0px 60px 0px rgb(246, 12, 12);
+}
+
+.blockBlue {
+    border: 6px double #1f27ff;
+    background-color: rgba(60.4, 67, 247.4, 0.4);
+    box-shadow: 5px 0px 10px 0px rgb(36, 39, 143), inset 200px 0px 60px 0px rgb(60, 66, 247);
+}
+
+.blockYellow {
+    border: 6px double #edb702;
+    background-color: rgba(237.5, 183.2, 2.0, 0.4);
+    box-shadow: 5px 0px 10px 0px rgb(128, 98, 1), inset 200px 0px 60px 0px rgb(238, 183, 2);
+}

@@ -60,8 +60,7 @@ if (isset($_SESSION['auth'])) {
                 <li class="navMenu-li"><a href="../../tutoForum/index.php">ACCUEIL</a></li>
                 <li class="navMenu-li"><a href="#">TUTO</a></li>
                 <li class="navMenu-li"><a href="#">FORUM</a></li>
-                <li class="navMenu-li"><a href="../../tutoForum/AAH-searchQuestions.php">RECHERCHER</a></li>
-                <li class="navMenu-li"><a href="../../tutoForum/AAB-login.php">CONNEXION</a></li>
+                <li class="navMenu-li"><a href="../../tutoForum/AAH-searchQuestions.php">RECHERCHE</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
