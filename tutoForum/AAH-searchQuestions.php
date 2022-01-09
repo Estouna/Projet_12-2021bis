@@ -11,14 +11,16 @@ include '../tutoForum/includes/head.php';
 
 
 
-    <form method="GET" class="form-search row centerJust centerAlign">
+    <form method="GET" class="shadow-green row centerJust centerAlign marginSearch">
 
-        <div class="row centerJust centerAlign">
-            <div>
-                <input type="search" name="search" class="barSearch">
-            </div>
-            <div>
-                <button class="btnSearch">Rechercher</button>
+        <div class="neumorph-form form-search">
+            <div class="row centerJust centerAlign">
+                <div>
+                    <input type="search" name="search" class="barSearch">
+                </div>
+                <div>
+                    <button class="btnSearch">Rechercher</button>
+                </div>
             </div>
         </div>
 
@@ -28,7 +30,7 @@ include '../tutoForum/includes/head.php';
     // On crée une variable $question qui est = à $getAllQuestions (variable qui stocke toutes les posts récupérès) et on les met dans un tableau avec fetch()
     while ($question = $getAllQuestions->fetch()) {
     ?>
-        <div class="block-post column centerJust">
+        <div class="block-post column centerJust post-margin">
 
             <div class="title-post">
                 <h5>
@@ -41,7 +43,7 @@ include '../tutoForum/includes/head.php';
             </div>
 
             <div class="authorDate-post">
-                <p>Publié par <?= $question['pseudo_auteur']; ?></p>
+                <p>Publié par <a href="../tutoForum/profil2.php?id=<?= $question['id_auteur']; ?>"><?= $question['pseudo_auteur']; ?></a></p>
                 <p>le <?= $question['date_publication']; ?></p>
             </div>
 

@@ -21,7 +21,7 @@
 }
 
 .nameProfil {
-    font-size: max(3vw, 30px);
+    font-size: max(2.5vw, 30px);
     color: var(--color-green);
     text-shadow: 0.2px 0.2px 2px rgb(0, 121, 97),
         -0.2px -0.2px 2px rgb(0, 121, 97);
@@ -41,15 +41,15 @@
 }
 
 .a-profil {
-    font-size: max(1vw, 11px);
+    font-size: max(1vw, 9px);
     color: var(--color-green-text);
-    margin-left: max(2vw, 8px);
+    margin-left: max(2vw, 3px);
     transition: 0.2s;
 }
 
 .p-profil {
-    font-size: max(1vw, 11px);
-    margin-left: max(2vw, 8px);
+    font-size: max(1vw, 10px);
+    margin-left: max(2vw, 3px);
 }
 
 .a-deco {

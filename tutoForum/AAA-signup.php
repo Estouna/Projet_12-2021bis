@@ -5,64 +5,65 @@ include '../tutoForum/includes/head.php';
 
 
 <main class="column centerAlign">
-<?php include '../tutoForum/includes/navbar.php'; ?>
-    
-    <form method="POST" id="formSignUp" class="form column centerJust centerAlign">
-        
-        <div class="container column">
-            <div class="bloc-form column">
-                
+    <?php include '../tutoForum/includes/navbar.php'; ?>
+
+    <form method="POST" class="shadow-green column centerJust centerAlign">
+
+        <div class="neumorph-form form">
+
+            <div class="column centerJust centerAlign">
                 <div class="row centerJust">
                     <legend>Inscription</legend>
                 </div>
-                
-                <div class="column">
+
+                <div class="column centerJust centerAlign">
                     <div class="labelInput column">
                         <label for="pseudo">Nom d'utilisateur :</label>
-                        <input type="text" name="pseudo" id="pseudo" class="input-form" placeholder="Pseudo" value="<?php if (isset($user_pseudo)) {
-                            echo $user_pseudo;
-                        } ?>" />
+                        <input type="text" name="pseudo" id="pseudo" class="input-form neumorph-btn" placeholder="Pseudo" value="<?php if (isset($user_pseudo)) {
+                                                                                                                                        echo $user_pseudo;
+                                                                                                                                    } ?>" />
                     </div>
                     <div class="labelInput column">
                         <label for="mail">Email :</label>
-                        <input type="email" name="mail" id="mail" class="input-form" placeholder="laurent@gmail.com" value="<?php if (isset($user_email)) {
-                            echo $user_email;
-                        } ?>" />
+                        <input type="email" name="mail" id="mail" class="input-form neumorph-btn" placeholder="laurent@gmail.com" value="<?php if (isset($user_email)) {
+                                                                                                                                                echo $user_email;
+                                                                                                                                            } ?>" />
                     </div>
                     <div class="labelInput column">
                         <label for="mail2">Confirmation de l'email :</label>
-                        <input type="email" name="mail2" id="mail2" class="input-form" placeholder="laurent@gmail.com" value="<?php if (isset($user_email2)) {
-                            echo $user_email2;
-                        } ?>" />
+                        <input type="email" name="mail2" id="mail2" class="input-form neumorph-btn" placeholder="laurent@gmail.com" value="<?php if (isset($user_email2)) {
+                                                                                                                                                echo $user_email2;
+                                                                                                                                            } ?>" />
                     </div>
                     <div class="labelInput column">
                         <label for="password">Mot de passe :</label>
-                        <input type="password" name="password" id="password" class="input-form" placeholder="Mot de passe" />
+                        <input type="password" name="password" id="password" class="input-form neumorph-btn" placeholder="Mot de passe" />
                     </div>
                     <div class="labelInput column">
                         <label for="password2">Confirmation du mot de passe :</label>
-                        <input type="password" name="password2" id="password2" class="input-form" placeholder="Confirmation du mot de passe" />
+                        <input type="password" name="password2" id="password2" class="input-form neumorph-btn" placeholder="Confirmation du mot de passe" />
                     </div>
                 </div>
-                
-                <div class="labelInput column centerJust centerAlign">
-                    <input id="signup" class="btn-green" name="validate" type="submit" value="ENVOYER" />
-                    <a class="a-login a-links" href="../tutoForum/AAB-login.php">J'ai déjà un compte</a>
+
+                <div class="column centerJust centerAlign">
+                    <input id="signup" class="btn-green neumorph-btn" name="validate" type="submit" value="ENVOYER" />
+                    <a class="a-links" href="../tutoForum/AAB-login.php">J'ai déjà un compte</a>
                 </div>
             </div>
+
+            <div class="message row centerJust centerAlign">
+                <?php
+                if (isset($erreur)) {
+                    echo '<span class="red">' . $erreur . "</span>";
+                }
+                if (isset($valide)) {
+                    echo '<span class="green">' . $valide . "</span>";
+                }
+                ?>
+            </div>
         </div>
-        
-        <div class="message row centerJust centerAlign">
-            <?php
-            if (isset($erreur)) {
-                echo '<span class="red">' . $erreur . "</span>";
-            }
-            if (isset($valide)) {
-                echo '<span class="green">' . $valide . "</span>";
-            }
-            ?>
-        </div>
+
     </form>
-    
+
 </main>
 <?php include '../tutoForum/includes/footer.php'; ?>

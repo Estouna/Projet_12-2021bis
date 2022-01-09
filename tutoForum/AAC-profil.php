@@ -25,8 +25,9 @@ include '../tutoForum/includes/head.php';
                     </div>
                     <div class="blockLinkProfil column centerJust gap">
                         <a class="a-profil" href="../tutoForum/AAH-searchQuestions.php">Rechercher un sujet</a>
-                        <a class="a-profil" href="../tutoForum/AAD-publish-question.php">Publier</a>
-                        <a class="a-profil" href="../tutoForum/AAE-my-questions.php">Modifier un message</a>
+                        <a class="a-profil" href="../tutoForum/AAD-publish-question.php">Publier un sujet</a>
+                        <a class="a-profil" href="../tutoForum/AAE-my-questions.php">Modifier mes sujets</a>
+                        <a class="a-profil" href="../tutoForum/AAI-my-answers.php">Modifier mes commentaires</a>
                         <a class="a-profil a-deco" href="../tutoForum/actions/users/logoutAction.php">Se déconnecter</a>
                     </div>
                 </div>

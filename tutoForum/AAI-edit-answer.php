@@ -1,7 +1,7 @@
 <?php
 require('../tutoForum/actions/users/securityAction.php');
-require('../tutoForum/actions/questions/AAF-getInfosOfEditedQuestionAction.php');
-require('../tutoForum/actions/questions/AAF-edit-questionsAction.php');
+require('../tutoForum/actions/questions/getInfosOfEditedAnswerAction.php');
+require('../tutoForum/actions/questions/editAnswersAction.php');
 include '../tutoForum/includes/head.php';
 ?>
 
@@ -11,36 +11,25 @@ include '../tutoForum/includes/head.php';
     <?php include '../tutoForum/includes/navbar.php'; ?>
 
     <?php
-    if (isset($question_content)) {
+    if (isset($answer_content)) {
     ?>
         <form method="POST" class="shadow-green column centerJust centerAlign">
 
             <div class="neumorph-form formTextarea form">
-
                 <div class="column centerJust centerAlign">
                     <div class="row centerJust">
-                        <legend>Modifier une question</legend>
+                        <legend>Modifier une réponse</legend>
                     </div>
 
-                    <div class="column">
-                        <label for="title">Titre de la question</label>
-                        <input class="textTitle neumorph-btn" name="title" value="<?= $question_title; ?>">
-                    </div>
-
-                    <div class="column">
-                        <label for="description">Description de la question</label>
-                        <textarea class="textareaDescription neumorph-btn" name="description"><?= $question_description; ?></textarea>
-                    </div>
-
-                    <div class="column">
-                        <label for="content">Contenu de la question</label>
-                        <textarea class="textareaContent neumorph-btn" name="content"><?= $question_content ?></textarea>
+                    <div class="column centerJust">
+                        <label for="content">Contenu de la réponse</label>
+                        <textarea class="textareaContent neumorph-btn" name="content"><?= $answer_content ?></textarea>
                     </div>
                 </div>
 
                 <div class="row gap centerJust centerAlign">
                     <input id="modifier" class="btn-green neumorph-btn" type="submit" name="validate" value="MODIFIER">
-                    <a class="a-links" href="../tutoForum/AAE-my-questions.php">Retour</a>
+                    <a class="a-links" href="../tutoForum/AAI-my-answers.php">Retour</a>
                 </div>
 
                 <div class="message row centerJust centerAlign">
