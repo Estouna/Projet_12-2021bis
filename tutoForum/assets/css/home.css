@@ -1,41 +1,228 @@
-section {
-    min-height: 85vh;
-}
-
-.block-color {
-    margin-top: max(1vw, 12px);
-    margin-bottom: max(1vw, 12px);
-    border-radius: 20px;
-}
-
-.blockWhite {
-    background-color: rgba(255, 255, 255, 0.782);
-    border-radius: 20px;
-}
-
-.categ {
-    padding-top: max(4vw, 50px);
-    padding-bottom: max(4vw, 50px);
-    font-size: max(2vw, 30px);
-    font-family: var(--font-roboReg);
+.p-home {
     color: var(--color-white);
-    width: max(30vw, 200px);
 }
 
-.blockRed {
+.h2-home {
+    font-size: max(2vw, 20px);
+    color: var(--color-white);
+    letter-spacing: max(0.1vw, 1px);
+    padding-top: clamp(40px, 5vw, 70px);
+    padding-bottom: clamp(40px, 5vw, 70px);
+    width: clamp(280px, 30vw, 500px);
+    transition: 0.4s;
+}
+
+.h2-home:hover {
+    font-size: max(2vw, 20px);
+    letter-spacing: max(0.6vw, 1px);
+}
+
+.block-container {
+    height: 90vh;
+}
+
+.block {
+    cursor: pointer;
+    margin: max(1vw, 5px);
+    border-radius: 20px;
+}
+
+
+#block1 {
     border: 6px double #ff0000;
-    background-color: rgba(246, 12.4, 12.4, 0.5);
+    background-color: rgba(246, 12.4, 12.4, 0.8);
     box-shadow: 5px 2px 10px 0px rgb(138, 8, 8), inset 200px 0px 60px 0px rgb(246, 12, 12);
 }
 
-.blockBlue {
+#block2 {
     border: 6px double #1f27ff;
-    background-color: rgba(60.4, 67, 247.4, 0.4);
+    background-color: rgba(60.4, 67, 247.4, 0.8);
     box-shadow: 5px 0px 10px 0px rgb(36, 39, 143), inset 200px 0px 60px 0px rgb(60, 66, 247);
 }
 
-.blockYellow {
+#block3 {
     border: 6px double #edb702;
-    background-color: rgba(237.5, 183.2, 2.0, 0.4);
+    background-color: rgba(255, 196, 3, 0.8);
     box-shadow: 5px 0px 10px 0px rgb(128, 98, 1), inset 200px 0px 60px 0px rgb(238, 183, 2);
+}
+
+#block4 {
+    border: 6px double var(--color-green);
+    background-color: rgba(0, 206, 165, 0.8);
+    box-shadow: inset 300px 0px 80px 0px rgb(0, 218, 174);
+}
+
+.close-block {
+    position: absolute;
+    color: var(--color-white);
+    top: 10px;
+    right: 30px;
+    font-size: max(2.5vw, 40px);
+    transition: 0.2s;
+}
+
+.close-block:hover, .close-block:focus {
+    color: var(--color-green);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.demo-box {
+    position: absolute;
+    display: none;
+    padding-top: 10px;
+    font-size: 2rem;
+    font-weight: 300;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0);
+    }
+
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+#demo_box1 {
+    border: 6px double var(--color-white);
+    background-color: rgb(253, 23, 23);
+}
+
+#demo_box2 {
+    border: 6px double var(--color-white);
+    background-color: rgb(69, 75, 255);
+}
+
+#demo_box3 {
+    border: 6px double var(--color-white);
+    background-color: rgb(255, 208, 54);
+}
+
+#demo_box4 {
+    border: 6px double var(--color-white);
+    background-color: rgb(78, 211, 184);
+}
+
+.overlay-content {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#demo_box1 {
+    -webkit-animation-name: move1;
+    -webkit-animation-duration: 0.6s;
+    animation-name: move1;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes move1 {
+    from {
+        top: -1000px;
+        left: -1000px;
+    }
+}
+
+@keyframes move1 {
+    from {
+        top: -1000px;
+        left: -1000px;
+    }
+}
+
+#demo_box2 {
+    -webkit-animation-name: move2;
+    -webkit-animation-duration: 0.6s;
+    animation-name: move2;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes move2 {
+    from {
+        top: -1000px;
+        left: 1000px;
+    }
+}
+
+@keyframes move2 {
+    from {
+        top: -1000px;
+        left: 1000px;
+    }
+}
+
+#demo_box3 {
+    -webkit-animation-name: move3;
+    -webkit-animation-duration: 0.6s;
+    animation-name: move3;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes move3 {
+    from {
+        top: 1000px;
+        left: -1000px;
+    }
+}
+
+@keyframes move3 {
+    from {
+        top: 1000px;
+        left: -1000px;
+    }
+}
+
+#demo_box4 {
+    -webkit-animation-name: move4;
+    -webkit-animation-duration: 0.6s;
+    animation-name: move4;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes move4 {
+    from {
+        top: 1000px;
+        left: 1000px;
+    }
+}
+
+@keyframes move4 {
+    from {
+        top: 1000px;
+        left: 1000px;
+    }
+}
+
+.test {
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (max-width: 790px) {
+    .duo-block {
+        flex-direction: column;
+    }
 }

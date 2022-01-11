@@ -10,57 +10,60 @@ include '../tutoForum/includes/head.php';
 <main class="column centerAlign">
     <?php include '../tutoForum/includes/navbar.php'; ?>
 
-    <?php
-    if (isset($question_content)) {
-    ?>
-        <form method="POST" class="shadow-green column centerJust centerAlign">
+    <section class="section-center column centerJust centerAlign">
 
-            <div class="neumorph-form formTextarea form">
+        <?php
+        if (isset($question_content)) {
+        ?>
+            <form method="POST" class="shadow-green column centerJust centerAlign">
 
-                <div class="column centerJust centerAlign">
-                    <div class="row centerJust">
-                        <legend>Modifier une question</legend>
+                <div class="neumorph-form formTextarea form">
+
+                    <div class="column centerJust centerAlign">
+                        <div class="row centerJust">
+                            <legend>Modifier une question</legend>
+                        </div>
+
+                        <div class="column">
+                            <label for="title">Titre de la question</label>
+                            <input class="textTitle neumorph-btn" name="title" value="<?= $question_title; ?>">
+                        </div>
+
+                        <div class="column">
+                            <label for="description">Description de la question</label>
+                            <textarea class="textareaDescription neumorph-btn" name="description"><?= $question_description; ?></textarea>
+                        </div>
+
+                        <div class="column">
+                            <label for="content">Contenu de la question</label>
+                            <textarea class="textareaContent neumorph-btn" name="content"><?= $question_content ?></textarea>
+                        </div>
                     </div>
 
-                    <div class="column">
-                        <label for="title">Titre de la question</label>
-                        <input class="textTitle neumorph-btn" name="title" value="<?= $question_title; ?>">
+                    <div class="row gap centerJust centerAlign">
+                        <input id="modifier" class="btn-green neumorph-btn" type="submit" name="validate" value="MODIFIER">
+                        <a class="a-links" href="../tutoForum/AAE-my-questions.php">Retour</a>
                     </div>
 
-                    <div class="column">
-                        <label for="description">Description de la question</label>
-                        <textarea class="textareaDescription neumorph-btn" name="description"><?= $question_description; ?></textarea>
+                    <div class="message row centerJust centerAlign">
+                        <?php
+                        if (isset($erreur)) {
+                            echo '<div class="block-mess"><span class="red">' . $erreur . "</span></div>";
+                        }
+                        if (isset($valide)) {
+                            echo '<span class="green">' . $valide . "</span>";
+                        }
+
+                        ?>
                     </div>
 
-                    <div class="column">
-                        <label for="content">Contenu de la question</label>
-                        <textarea class="textareaContent neumorph-btn" name="content"><?= $question_content ?></textarea>
-                    </div>
                 </div>
 
-                <div class="row gap centerJust centerAlign">
-                    <input id="modifier" class="btn-green neumorph-btn" type="submit" name="validate" value="MODIFIER">
-                    <a class="a-links" href="../tutoForum/AAE-my-questions.php">Retour</a>
-                </div>
-
-                <div class="message row centerJust centerAlign">
-                    <?php
-                    if (isset($erreur)) {
-                        echo '<div class="block-mess"><span class="red">' . $erreur . "</span></div>";
-                    }
-                    if (isset($valide)) {
-                        echo '<span class="green">' . $valide . "</span>";
-                    }
-
-                    ?>
-                </div>
-
-            </div>
-
-        </form>
-    <?php
-    }
-    ?>
+            </form>
+    </section>
+<?php
+        }
+?>
 
 
 </main>
