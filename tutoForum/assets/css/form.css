@@ -19,7 +19,6 @@
     font-size: max(1.3vw, 13px);
     border-bottom: 10px double var(--color-green);
     color: var(--color-white);
-    background-color: rgba(0, 0, 0, 0.07);
     border-radius: 5px 5px 0 0;
     letter-spacing: max(0.2vw, 1px);
 }
@@ -30,6 +29,7 @@
     color: var(--color-black);
     border-bottom: 1px solid var(--color-green);
     background-color: #e9e9e9;
+    min-height: 10vh;
 }
 
 .content-subject {
@@ -129,6 +129,7 @@
     padding: max(1vw, 9px);
     font-size: max(1.1vw, 13px);
     min-height: 20vh;
+    color: var(--color-black);
 }
 
 .authorDate-post {
@@ -137,6 +138,7 @@
     font-size: max(0.9vw, 10px);
     background-color: rgba(0, 0, 0, 0.07);
     border-radius: 0 0 5px 5px;
+    color: var(--color-black);
 }
 
 .modif-post {
@@ -183,9 +185,9 @@
 }
 
 .neumorph-subject {
-    background-color: #1c1c1c;
+    background-color: #ffffff0c;
     box-shadow:
-        inset 2px -2px 2px #000000,
+        inset 2px -2px 4px #000000,
         inset -1px 1px 1px #a7a7a7;
     transition: 0.3s;
 }
