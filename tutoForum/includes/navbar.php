@@ -39,7 +39,7 @@ if (isset($_SESSION['auth'])) {
                     <li><a href="../../tutoForum/AAC-profil.php"><?= $_SESSION['pseudo'] ?></a></li>
                     <li><a href="../../tutoForum/AAD-publish-question.php">Publier un sujet</a></li>
                     <li><a href="../../tutoForum/AAE-my-questions.php">Mes sujets</a></li>
-                    <li><a href="../../tutoForum/AAI-my-answers.php">Mes réponses</a></li>
+                    <li><a href="../../tutoForum/AAI-my-answers.php">Mes commentaires</a></li>
                     <li><a href="../../tutoForum/actions/users/logoutAction.php">Déconnexion</a></li>
                 </ul>
             </div>

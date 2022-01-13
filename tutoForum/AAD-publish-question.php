@@ -14,21 +14,21 @@ include('../tutoForum/includes/head.php');
 
                 <div class="column centerJust centerAlign">
                     <div class="row centerJust">
-                        <legend>Publier une question</legend>
+                        <legend>Publier un sujet</legend>
                     </div>
 
                     <div class="column">
-                        <label for="title">Titre de la question</label>
+                        <label for="title">Titre du sujet</label>
                         <input class="textTitle neumorph-btn" name="title">
                     </div>
 
                     <div class="column">
-                        <label for="description">Description de la question</label>
+                        <label for="description">Description du sujet</label>
                         <textarea class="textareaDescription neumorph-btn" name="description"></textarea>
                     </div>
 
                     <div class="column">
-                        <label for="content">Contenu de la question</label>
+                        <label for="content">Contenu du sujet</label>
                         <textarea class="textareaContent neumorph-btn" name="content"></textarea>
                     </div>
                 </div>

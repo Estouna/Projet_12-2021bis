@@ -13,8 +13,10 @@ if (isset($_POST['validate'])) {
         // nl2br permet en php de rajouter des balises <br /> quand l'utilisateur saute une ligne
         $question_description = nl2br(htmlspecialchars($_POST['description']));
         $question_content = nl2br(htmlspecialchars($_POST['content']));
+        // Défini le fuseau horaire
+        date_default_timezone_set('Europe/Paris');
         // date() est une fonction qui permet de mettre une date facilement
-        $question_date = date('d/m/Y');
+        $question_date = date('d/m/Y \à h:i');
         // Quand l'utilisateur s'est inscrit on a récupéré son id, son pseudo et son mail, même chose quand il se connecte, 
         // donc ici on peut les manipuler en incluant database.php qui déclare session_start()
         $question_id_author = $_SESSION['id'];

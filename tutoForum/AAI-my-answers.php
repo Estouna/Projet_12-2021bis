@@ -9,7 +9,7 @@ include '../tutoForum/includes/head.php';
     <?php include '../tutoForum/includes/navbar.php'; ?>
 
     <section class="section-center column centerJust centerAlign">
-        <h1 class="h1TitleArticles">Mes réponses</h1>
+        <h1 class="h1TitleArticles">Mes commentaires</h1>
         <?php
         while ($answer = $getAllMyAnswers->fetch()) {
         ?>

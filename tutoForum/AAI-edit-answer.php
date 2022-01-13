@@ -19,7 +19,7 @@ include '../tutoForum/includes/head.php';
                 <div class="neumorph-form formTextarea form">
                     <div class="column centerJust centerAlign">
                         <div class="row centerJust">
-                            <legend>Modifier une réponse</legend>
+                            <legend>Modifier un commentaire</legend>
                         </div>
 
                         <div class="column centerJust">

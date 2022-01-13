@@ -237,15 +237,13 @@ header::before {
 }
 
 .link-profil {
-    font-size: max(0.9vw, 11px);
+    font-size: max(0.9vw, 12px);
     margin-top: 10px;
     color: var(--color-white);
     transition: 0.5s;
 }
 
 .link-profil:hover {
-    font-size: max(0.9vw, 11px);
-    margin-top: 10px;
     color: var(--color-green);
 }
 

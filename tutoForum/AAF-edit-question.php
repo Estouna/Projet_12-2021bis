@@ -21,7 +21,7 @@ include '../tutoForum/includes/head.php';
 
                     <div class="column centerJust centerAlign">
                         <div class="row centerJust">
-                            <legend>Modifier une question</legend>
+                            <legend>Modifier un sujet</legend>
                         </div>
 
                         <div class="column">
