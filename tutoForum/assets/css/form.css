@@ -507,7 +507,7 @@ textarea {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 381px) and (max-width: 1200px) {
     .btn-green {
         width: 90px;
         height: 90px;
@@ -524,6 +524,20 @@ textarea {
         height: 140px;
     }
 
+}
+
+@media screen and (max-width: 380px) {
+    .btn-green {
+        width: 70px;
+        height: 70px;
+        font-size: 10px;
+    }
+
+    .btn-afficher, .btn-modifier, .btn-effacer {
+        width: 60px;
+        height: 60px;
+        font-size: 10px;
+    }
 }
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END MEDIAQUERIES xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */

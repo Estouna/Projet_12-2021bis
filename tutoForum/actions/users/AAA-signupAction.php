@@ -1,7 +1,7 @@
 <?php
 
-require('actions/database.php');
 // require car s'il y a une erreur type "databse.php" le code qui va suivre va s'exécuter et ne sera pas sécurisé
+require('actions/database.php');
 
 
 if (isset($_POST['validate'])) {
@@ -56,37 +56,29 @@ if (isset($_POST['validate'])) {
                                 // On redirige l'utilisateur sur la page login.php
                                 header('Location: AAB-login.php');
                             } else
-                            //confirmation mdp erreur 
                             {
-                                $erreur = "Vos mots de passes ne correspondent pas !";
+                                $erreur = "Vos mots de passes ne correspondent pas";
                             }
                         } else
-                        //Si le mail existe déjà erreur
                         {
-                            $erreur = "Adresse mail déjà utilisée !";
+                            $erreur = "Cette adresse mail est déjà utilisée";
                         }
                     } else
-                    //adresse mail non valide
                     {
-                        $erreur = "Votre adresse mail n'est pas valide' !";
+                        $erreur = "Votre adresse mail n'est pas valide";
                     }
                 } else
-                //confirmation mail erreur 
                 {
-                    $erreur = "Vos adresses mail ne correspondent pas !";
+                    $erreur = "Vos adresses mail ne correspondent pas";
                 }
             } else {
-                //pseudo déjà existant
-                $erreur = "Ce pseudo existe déjà !";
+                $erreur = "Ce pseudo existe déjà";
             }
-        } else
-        //nombre de caractères erreur 
-        {
-            $erreur = "Votre pseudo ne doit pas dépasser 20 caractères !";
+        } else {
+            $erreur = "Votre pseudo ne doit pas dépasser 20 caractères";
         }
     } else
-    //Si les champs ne sont pas remplis erreur 
     {
-        $erreur = "Tous les champs doivent être complétés !";
+        $erreur = "Tous les champs doivent être complétés";
     }
 }

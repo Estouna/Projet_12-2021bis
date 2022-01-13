@@ -30,6 +30,7 @@ include '../tutoForum/includes/head.php';
                             <a class="a-profil" href="../tutoForum/AAD-publish-question.php">Publier un sujet</a>
                             <a class="a-profil" href="../tutoForum/AAE-my-questions.php">Modifier mes sujets</a>
                             <a class="a-profil" href="../tutoForum/AAI-my-answers.php">Modifier mes commentaires</a>
+                            <a class="a-profil" href="../tutoForum/AACB-edit-profile.php">Modifier mon profil</a>
                             <a class="a-profil a-deco" href="../tutoForum/actions/users/logoutAction.php">Se déconnecter</a>
                         </div>
                     </div>
