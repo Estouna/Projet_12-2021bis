@@ -1,8 +1,8 @@
 <?php
 session_start();
-require('../tutoForum/actions/questions/AAG-showArticleContentAction.php');
-require('../tutoForum/actions/questions/postAnswerAction.php');
-require('../tutoForum/actions/questions/showAllAnswersOfQuestionAction.php');
+require('../tutoForum/actions/topic/AAG-showArticleContentAction.php');
+require('../tutoForum/actions/post/postAnswerAction.php');
+require('../tutoForum/actions/post/showAllAnswersOfQuestionAction.php');
 include '../tutoForum/includes/head.php';
 ?>
 
@@ -25,7 +25,7 @@ include '../tutoForum/includes/head.php';
                             <p><?= $question_content ?></p>
                         </div>
                         <div class="authorDate-subject">
-                            <p>Publié par <?= '<a class="a-auteur" href="../tutoForum/profil2.php?id=' . $question_id_author . '">' . $question_pseudo_author . '</a> le ' . $question_publication_date; ?></p>
+                            <p>Publié par <?= '<a class="a-auteur" href="../tutoForum/AACA-publicProfil.php?id=' . $question_id_author . '">' . $question_pseudo_author . '</a> le ' . $question_publication_date; ?></p>
                         </div>
                     </div>
                 </div>
@@ -65,14 +65,14 @@ include '../tutoForum/includes/head.php';
                         <div class="block-post neumorph-form show-content column centerJust">
                             <div class="title-post">
                                 <h5>
-                                    <a class="a-title-post" href="../tutoForum/profil2.php?id=<?= $answer['id_auteur']; ?>"><?= $answer['pseudo_auteur']; ?></a>
+                                    <a class="a-title-post" href="../tutoForum/AACA-publicProfil.php?id=<?= $answer['id_auteur']; ?>"><?= $answer['pseudo_auteur']; ?></a>
                                 </h5>
                             </div>
                             <div class="content-post">
                                 <p><?= $answer['contenu']; ?></p>
                             </div>
                             <div class="authorDate-post">
-                                <p>Publié par <a class="a-title-post" href="../tutoForum/profil2.php?id=<?= $answer['id_auteur']; ?>"><?= $answer['pseudo_auteur']; ?></a><?= ' le ' . $answer['date_publication'] ?></p>
+                                <p>Publié par <a class="a-title-post" href="../tutoForum/AACA-publicProfil.php?id=<?= $answer['id_auteur']; ?>"><?= $answer['pseudo_auteur']; ?></a><?= ' le ' . $answer['date_publication'] ?></p>
                             </div>
 
                         </div>
@@ -93,7 +93,7 @@ include '../tutoForum/includes/head.php';
                             <p><?= $question_content ?></p>
                         </div>
                         <div class="authorDate-subject">
-                            <p>Publié par <?= '<a class="a-auteur" href="../tutoForum/profil2.php?id=' . $question_id_author . '">' . $question_pseudo_author . '</a> le ' . $question_publication_date; ?></p>
+                            <p>Publié par <?= '<a class="a-auteur" href="../tutoForum/AACA-publicProfil.php?id=' . $question_id_author . '">' . $question_pseudo_author . '</a> le ' . $question_publication_date; ?></p>
                         </div>
 
                     </div>
@@ -107,7 +107,7 @@ include '../tutoForum/includes/head.php';
                         <div class="block-post neumorph-form show-content column centerJust">
                             <div class="title-post">
                                 <h5>
-                                    <a class="a-title-post" href="../tutoForum/profil2.php?id=<?= $answer['id_auteur']; ?>"><?= $answer['pseudo_auteur']; ?></a>
+                                    <a class="a-title-post" href="../tutoForum/AACA-publicProfil.php?id=<?= $answer['id_auteur']; ?>"><?= $answer['pseudo_auteur']; ?></a>
                                 </h5>
                             </div>
                             <div class="content-post">

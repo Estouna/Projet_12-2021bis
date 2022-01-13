@@ -1,7 +1,7 @@
 <?php
 require('../tutoForum/actions/users/securityAction.php');
-require('../tutoForum/actions/questions/getInfosOfEditedAnswerAction.php');
-require('../tutoForum/actions/questions/editAnswersAction.php');
+require('../tutoForum/actions/post/getInfosOfEditedAnswerAction.php');
+require('../tutoForum/actions/post/editAnswersAction.php');
 include '../tutoForum/includes/head.php';
 ?>
 

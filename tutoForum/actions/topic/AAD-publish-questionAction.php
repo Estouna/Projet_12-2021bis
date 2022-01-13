@@ -16,7 +16,7 @@ if (isset($_POST['validate'])) {
         // Défini le fuseau horaire
         date_default_timezone_set('Europe/Paris');
         // date() est une fonction qui permet de mettre une date facilement
-        $question_date = date('d/m/Y \à h:i');
+        $question_date = date('d/m/Y \à H:i');
         // Quand l'utilisateur s'est inscrit on a récupéré son id, son pseudo et son mail, même chose quand il se connecte, 
         // donc ici on peut les manipuler en incluant database.php qui déclare session_start()
         $question_id_author = $_SESSION['id'];

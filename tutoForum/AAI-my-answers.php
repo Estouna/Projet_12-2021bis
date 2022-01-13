@@ -1,6 +1,6 @@
 <?php
 require('../tutoForum/actions/users/securityAction.php');
-require('../tutoForum/actions/questions/my-answersAction.php');
+require('../tutoForum/actions/post/my-answersAction.php');
 include '../tutoForum/includes/head.php';
 ?>
 
@@ -27,7 +27,7 @@ include '../tutoForum/includes/head.php';
                     <div class="modif-post row centerAlign centerJust">
                         <a class="btn-afficher btn-green neumorph-btn row centerJust centerAlign" href="../tutoForum/AAG-article.php?id=<?= $answer['id']; ?>">AFFICHER</a>
                         <a class="btn-modifier btn-green neumorph-btn row centerJust centerAlign" href="../tutoForum/AAI-edit-answer.php?id=<?= $answer['id'] ?>">MODIFIER</a>
-                        <a class="btn-effacer row centerJust centerAlign" href="../tutoForum/actions/questions/deleteAnswerAction.php?id=<?= $answer['id'] ?>">EFFACER</a>
+                        <a class="btn-effacer row centerJust centerAlign" href="../tutoForum/actions/post/deleteAnswerAction.php?id=<?= $answer['id'] ?>">EFFACER</a>
                     </div>
                 </div>
 

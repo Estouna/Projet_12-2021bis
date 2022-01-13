@@ -1,6 +1,6 @@
 <?php
 require('../tutoForum/actions/users/securityAction.php');
-require('../tutoForum/actions/questions/AAD-publish-questionAction.php');
+require('../tutoForum/actions/topic/AAD-publish-questionAction.php');
 include('../tutoForum/includes/head.php');
 ?>
 

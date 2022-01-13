@@ -61,7 +61,7 @@ include '../tutoForum/includes/head.php';
                         </div>
 
                         <div class="authorDate-subject">
-                            <p>Publier par <?= '<a class="a-auteur" href="../tutoForum/profil2.php?id=' . $question['id_auteur'] . '">' . $question['pseudo_auteur'] . '</a> le ' . $question['date_publication']; ?></p>
+                            <p>Publier par <?= '<a class="a-auteur" href="../tutoForum/AACA-publicProfil.php?id=' . $question['id_auteur'] . '">' . $question['pseudo_auteur'] . '</a> le ' . $question['date_publication']; ?></p>
                         </div>
 
                     </div>

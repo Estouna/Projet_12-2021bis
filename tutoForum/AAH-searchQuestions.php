@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('../tutoForum/actions/questions/AAH-showSearchQuestionsAction.php');
+require('../tutoForum/actions/topic/AAH-showSearchQuestionsAction.php');
 include '../tutoForum/includes/head.php';
 ?>
 
@@ -44,7 +44,7 @@ include '../tutoForum/includes/head.php';
                     </div>
 
                     <div class="authorDate-subject">
-                        <p>Publié par <a class="a-auteur" href="../tutoForum/profil2.php?id=<?= $question['id_auteur']; ?>"><?= $question['pseudo_auteur']; ?></a><?= ' le ' . $question['date_publication']; ?></p>
+                        <p>Publié par <a class="a-auteur" href="../tutoForum/AACA-publicProfil.php?id=<?= $question['id_auteur']; ?>"><?= $question['pseudo_auteur']; ?></a><?= ' le ' . $question['date_publication']; ?></p>
                     </div>
 
                 </div>

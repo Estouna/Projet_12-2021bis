@@ -5,6 +5,7 @@ include '../tutoForum/includes/head.php';
 
 <main class="column centerAlign">
     <?php include '../tutoForum/includes/navbar.php'; ?>
+    
     <section class="section-center row centerJust centerAlign">
 
         <?php

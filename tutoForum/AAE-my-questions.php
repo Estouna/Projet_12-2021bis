@@ -1,6 +1,6 @@
 <?php
 require('../tutoForum/actions/users/securityAction.php');
-require('../tutoForum/actions/questions/AAE-my-questionsAction.php');
+require('../tutoForum/actions/topic/AAE-my-questionsAction.php');
 include '../tutoForum/includes/head.php';
 ?>
 
@@ -29,7 +29,7 @@ include '../tutoForum/includes/head.php';
                     <div class="modif-subject row centerAlign centerJust">
                         <a class="btn-afficher btn-green neumorph-btn row centerJust centerAlign" href="../tutoForum/AAG-article.php?id=<?= $question['id']; ?>">AFFICHER</a>
                         <a class="btn-modifier btn-green neumorph-btn row centerJust centerAlign" href="../tutoForum/AAF-edit-question.php?id=<?= $question['id'] ?>">MODIFIER</a>
-                        <a class="btn-effacer row centerJust centerAlign" href="../tutoForum/actions/questions/deleteQuestionAction.php?id=<?= $question['id'] ?>">EFFACER</a>
+                        <a class="btn-effacer row centerJust centerAlign" href="../tutoForum/actions/topic/deleteQuestionAction.php?id=<?= $question['id'] ?>">EFFACER</a>
                     </div>
                 </div>
             </div>
