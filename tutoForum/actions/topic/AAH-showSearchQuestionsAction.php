@@ -5,7 +5,7 @@ require('actions/database.php');
 
 // Récupère les questions par défaut sans la recherche
 // Récupère toutes les données de la table questions les classent par ordre du plus récent au moins récent et limite le nombre de question récupérée à 5
-$getAllQuestions = $bdd->query('SELECT id, id_auteur, titre, description, pseudo_auteur, date_publication FROM questions ORDER BY id DESC LIMIT 0,5');
+$getAllQuestions = $bdd->query('SELECT id, id_auteur, titre, description, pseudo_auteur, date_publication FROM questions ORDER BY id DESC LIMIT 0,20');
 
 // Si la variable existe et que le champ de recherche n'est pas vide
 if (isset($_GET['search']) and !empty($_GET['search'])) {

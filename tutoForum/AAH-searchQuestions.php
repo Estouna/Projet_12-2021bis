@@ -57,4 +57,16 @@ include '../tutoForum/includes/head.php';
 
     </section>
 </main>
+
+<div>
+    <a class="flex centerAll return-btn" href="#header">
+        <span class="span-btn">R</span>
+        <span class="span-btn">E</span>
+        <span class="span-btn">T</span>
+        <span class="span-btn">O</span>
+        <span class="span-btn">U</span>
+        <span class="span-btn">R</span>
+    </a>
+</div>
+
 <?php include '../tutoForum/includes/footer.php'; ?>

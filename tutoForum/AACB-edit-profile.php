@@ -4,57 +4,73 @@ require('actions/users/AACB-edit-profileAction.php');
 include '../tutoForum/includes/head.php';
 ?>
 
-
-
-
 <main class="column centerAlign">
     <?php include '../tutoForum/includes/navbar.php'; ?>
 
-    <section class="section-center row centerJust centerAlign">
+    <section class="section-center column centerAlign centerJust">
 
-        <form action="" method="POST" class="row centerH centerV">
 
-            <div class="container column centerH centerV">
-                <div class="bloc-form column centerH">
 
-                    <div class="row centerH">
-                        <legend>Edition de mon profil</legend>
+        <form action="" method="POST" class="blockProfil row centerJust">
+
+            <div class="container column centerJust centerAlign">
+
+                <div class="row">
+                    <legend>Modifier mon profil</legend>
+                </div>
+
+                <div class="column">
+
+                    <div class="column centerAlign">
+                        <P class="p-pseudoMailEdit">Votre pseudo actuel</P>
+                        <span class="name-EditProfil"><?php echo $user['pseudo']; ?></span>
+                        <p class="p-pseudoMailEdit">Votre mail actuel</p>
+                        <span class="email-EditProfil"><?php echo $user['mail']; ?></span>
                     </div>
 
-                    <div class="column centerH centerV">
-                        <div class="column">
-                            <label for="newPseudo">Nom d'utilisateur :</label>
-                            <input type="text" name="newPseudo" id="newPseudo" placeholder="Pseudo" value="<?php echo $user['pseudo']; ?>" />
+                    <div class="flex wrap-edit">
+
+                        <div class="labelInput-edit column">
+                            <label class="labelProfil-edit" for="newPseudo">Modifier mon pseudo</label>
+                            <input type="text" class="inputProfil-edit neumorph-btn" name="newPseudo" id="newPseudo" placeholder="Pseudo" />
                         </div>
 
-                        <div class="column">
-                            <label for="newMail">Email :</label>
-                            <input type="email" name="newMail" id="newMail" placeholder="laurent@gmail.com" value="<?php echo $user['mail']; ?>" />
-                        </div>
+                        <div class="labelInput-edit column centerJust">
+                            <div class="column">
+                                <label class="labelProfil-edit" for="newMail">Modifier mon email :</label>
+                                <input type="email" class="inputProfil-edit neumorph-btn" name="newMail" id="newMail" placeholder="laurent@gmail.com" />
+                            </div>
 
-                        <div class="column">
-                            <label for="newMail2">Confirmation de l'email :</label>
-                            <input type="email" name="newMail2" id="newMail2" placeholder="laurent@gmail.com" value="<?php echo $user['mail']; ?>" />
-                        </div>
-
-
-                        <div class="column">
-                            <label for="newPassword">Mot de passe :</label>
-                            <input type="password" name="newPassword" id="newPassword" placeholder="Mot de passe" />
+                            <div class="column">
+                                <label class="labelProfil-edit" for="newMail2">Confirmation de l'email:</label>
+                                <input type="email" class="inputProfil-edit neumorph-btn" name="newMail2" id="newMail2" placeholder="Confirmation de l'email" />
+                            </div>
                         </div>
 
 
-                        <div class="column">
-                            <label for="newPassword2">Confirmation du mot de passe :</label>
-                            <input type="password" name="newPassword2" id="newPassword2" placeholder="Confirmation du mot de passe" />
-                        </div>
-                    </div>
+                        <div class="labelInput-edit column centerJust">
+                            <div class="column">
+                                <label class="labelProfil-edit" for="newPassword">Modifier mon mot de passe :</label>
+                                <input type="password" class="inputProfil-edit neumorph-btn" name="newPassword" id="newPassword" placeholder="Mot de passe" />
+                            </div>
 
-                    <div class="row centerH">
-                        <input id="updateProfil" name="updateProfil" type="submit" value="MODIFIER" />
+                            <div class="column">
+                                <label class="labelProfil-edit" for="newPassword2">Confirmation du mot de passe:</label>
+                                <input type="password" class="inputProfil-edit neumorph-btn" name="newPassword2" id="newPassword2" placeholder="Confirmation du mot de passe" />
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
+
+                <div>
+                    <div class="row centerJust centerAlign">
+                        <input id="updateProfil" class="btn-green neumorph-btn" name="updateProfil" type="submit" value="MODIFIER" />
+                    </div>
+
+                </div>
+
                 <div class="message row centerJust centerAlign">
                     <?php
                     if (isset($erreur)) {
@@ -66,7 +82,9 @@ include '../tutoForum/includes/head.php';
 
                     ?>
                 </div>
+
             </div>
+
         </form>
 
     </section>

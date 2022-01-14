@@ -39,6 +39,7 @@
 
 html {
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -55,6 +56,7 @@ body {
 main {
     min-height: 100vh;
     background: rgba(17, 17, 17, 0.97);
+    scroll-behavior: smooth;
 }
 
 .section-center {
@@ -113,6 +115,16 @@ a, .unselectable {
     justify-content: center;
 }
 
+.centerAlign {
+    align-items: center;
+}
+
+.centerAll {
+    justify-content: center;
+    align-items: center;
+}
+
+
 .spaceAround {
     justify-content: space-around;
 }
@@ -126,12 +138,46 @@ a, .unselectable {
     justify-content: space-between;
 }
 
-.centerAlign {
-    align-items: center;
-}
 
 .gap {
     gap: max(1vw, 10px);
+}
+
+.return-btn {
+    flex-direction: column;
+    font-family: var(--font-roboBoldCond);
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    width: 35px;
+    height: 170px;
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border: 1px solid var(--color-white);
+    font-size: 15px;
+
+    transition: 0.7s;
+    border-radius: 5px;
+    box-shadow:
+        0 0 10px var(--color-green),
+        0 0 20px var(--color-green),
+        0 0 30px var(--color-green),
+        0 0 40px var(--color-green),
+        inset 0 0 3px var(--color-green),
+        inset 0 0 5px var(--color-green),
+        inset 0 0 10px var(--color-green),
+        inset 0 0 15px var(--color-green);
+
+}
+
+.span-btn {
+    padding: 2px 0;
+    transition: 0.5s;
+}
+
+.span-btn:hover {
+    padding: 10px 0px;
+    color: var(--color-green);
 }
 
 /* ---------------------------------------------- HEADER ---------------------------------------------- */
@@ -179,11 +225,8 @@ header::before {
 }
 
 .navMenu-li a:hover {
-    background-color: rgba(255, 255, 255, 0.15);
     letter-spacing: max(0.1vw, 2px);
-    padding-top: 0.4vw;
-    padding-bottom: 0.4vw;
-    box-shadow: 1px -1px 15px 0 rgba(255, 255, 255, 0.2), -1px 1px 15px 0 rgba(255, 255, 255, 0.2);
+    color: var(--color-green);
 }
 
 .hamburger {
@@ -303,7 +346,7 @@ header::before {
 
 /* ---------------------------------------------- MEDIAQUERIES ---------------------------------------------- */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     header {
         justify-content: flex-start;
     }
@@ -385,13 +428,49 @@ header::before {
     }
 
     .slide li, .slide2 li {
-        padding: 5px 8px;
+        padding: 5px 4px;
     }
 
     .navMenu-li a:hover {
         background-color: transparent;
         color: var(--color-green);
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .return-btn {
+        flex-direction: row;
+        font-family: var(--font-roboBoldCond);
+        position: fixed;
+        bottom: 1%;
+        right: 0;
+        width: 80px;
+        height: 20px;
+        color: var(--color-white);
+        background-color: var(--color-black);
+        border: 1px solid var(--color-white);
+        font-size: 10px;
+        transition: 0.1s;
+        border-radius: 5px;
+        box-shadow:
+            0 0 4px var(--color-green),
+            0 0 6px var(--color-green),
+            0 0 8px var(--color-green),
+            0 0 10px var(--color-green),
+            inset 0 0 2px var(--color-green),
+            inset 0 0 3px var(--color-green),
+            inset 0 0 4px var(--color-green),
+            inset 0 0 5px var(--color-green);
+    }
+
+    .span-btn {
+        padding: 0px 1px;
+        transition: 0.5s;
+    }
+
+    .span-btn:hover {
+        color: var(--color-green);
     }
 }
 

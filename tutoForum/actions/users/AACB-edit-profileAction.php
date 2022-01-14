@@ -13,8 +13,8 @@ if (isset($_SESSION['id'])) {
 
     // Vérifie que le pseudo ne soit pas vide et si newPseudo est différent de pseudo
     if (isset($_POST['newPseudo']) and !empty($_POST['newPseudo']) and $_POST['newPseudo'] != $user['pseudo']) {
-        $new_pseudo = htmlspecialchars($_POST['newPseudo']);
         //Vérifie le nombre de caractères
+        $new_pseudo = htmlspecialchars($_POST['newPseudo']);
         $pseudolength = strlen($new_pseudo);
         if ($pseudolength <= 20) {
 
@@ -28,7 +28,7 @@ if (isset($_SESSION['id'])) {
                 //envoi des nouveaux paramètres
                 $insert_pseudo->execute(array($new_pseudo, $_SESSION['id']));
                 $valide = "Vos modifications ont été prises en compte !";
-                header("Refresh: 2; URL=AAC-profil.php");
+                header("Refresh: 1; URL=AACB-edit-profile.php");
             } else {
                 $erreur = "Ce pseudo existe déjà !";
             }
@@ -38,45 +38,48 @@ if (isset($_SESSION['id'])) {
     }
 
 
-    //vérifie le mail, s'il n'est pas vide et si newmail est différent de mail
-
-    if (isset($_POST['newMail']) and !empty($_POST['newMail']) and $_POST['newMail'] != $user['mail']) {
-        $new_mail = htmlspecialchars($_POST['newMail']);
-        $new_mail2 = htmlspecialchars($_POST['newMail2']);
-        if ($new_mail == $new_mail2) {
-
+    //vérifie le mail, s'il n'est pas vide
+    if (isset($_POST['newMail']) and !empty($_POST['newMail']) and isset($_POST['newMail2']) and !empty($_POST['newMail2'])) {
+        // si newmail est différent de mail
+        if ($_POST['newMail'] != $user['mail']) {
+            $new_mail = htmlspecialchars($_POST['newMail']);
+            $new_mail2 = htmlspecialchars($_POST['newMail2']);
             //confirmation mail
+            if ($new_mail == $new_mail2) {
+                if (filter_var($new_mail, FILTER_VALIDATE_EMAIL)) {
+                    // Vérifie si le mail est valide
 
-
-            // Vérifie si le mail est valide
-            if (filter_var($new_mail, FILTER_VALIDATE_EMAIL)) {
-
-                // Vérifie si le mail n'existe pas déjà
-                $reqmail = $bdd->prepare("SELECT * FROM users WHERE mail = ?");
-                $reqmail->execute(array($new_mail));
-                $mailExist = $reqmail->rowCount();
-                if ($mailExist == 0) {
-                    $insert_mail = $bdd->prepare("UPDATE users SET mail = ? WHERE id = ?");
-                    //requête sql pour update membres mail (WHERE id est très important sinon cela mettrait à jour tous les mails de la table membres)
-                    $insert_mail->execute(array($new_mail, $_SESSION['id']));
-                    //envoi des nouveaux paramètres
-                    $valide = "Vos modifications ont été prises en compte !";
-                    header("Refresh: 2; URL=AAC-profil.php");
+                    // Vérifie si le mail n'existe pas déjà
+                    $reqmail = $bdd->prepare("SELECT * FROM users WHERE mail = ?");
+                    $reqmail->execute(array($new_mail));
+                    $mailExist = $reqmail->rowCount();
+                    if ($mailExist == 0) {
+                        $insert_mail = $bdd->prepare("UPDATE users SET mail = ? WHERE id = ?");
+                        //requête sql pour update membres mail (WHERE id est très important sinon cela mettrait à jour tous les mails de la table membres)
+                        $insert_mail->execute(array($new_mail, $_SESSION['id']));
+                        //envoi des nouveaux paramètres
+                        $valide = "Vos modifications ont été prises en compte !";
+                        header("Refresh: 1; URL=AACB-edit-profile.php");
+                    } else {
+                        $erreur = "Cette adresse mail est déjà utilisée";
+                    }
                 } else {
-                    $erreur = "Cette adresse mail est déjà utilisée";
+                    $erreur = "Votre adresse mail n'est pas valide";
                 }
             } else {
-                $erreur = "Votre adresse mail n'est pas valide";
+                $erreur = "Vos adresses mail ne correspondent pas";
             }
         } else {
-            $erreur = "Vos adresses mail ne correspondent pas";
+            $erreur = "L'adresse entrée est la même qu'actuellement";
         }
     }
+
 
     //vérifie le mdp1, s'il n'est pas vide et si newmdp1 est différent de mdp1
     if (isset($_POST['newPassword']) and !empty($_POST['newPassword']) and isset($_POST['newPassword2']) and !empty($_POST['newPassword2'])) {
         $new_password = ($_POST['newPassword']);
         $new_password2 = ($_POST['newPassword2']);
+
         if ($new_password == $new_password2) {
 
             $new_password = password_hash($_POST['newPassword'], PASSWORD_DEFAULT);
@@ -85,7 +88,7 @@ if (isset($_SESSION['id'])) {
             $insert_password->execute(array($new_password, $_SESSION['id']));
             //mdp1 ou mdp2 ça revient au même
             $valide = "Vos modifications ont été prises en compte !";
-            header("Refresh: 2; URL=AAC-profil.php");
+            header("Refresh: 1; URL=AACB-edit-profile.php");
         } else {
             $erreur = "Vos deux mots de passe ne correspondent pas";
         }

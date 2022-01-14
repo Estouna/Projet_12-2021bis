@@ -285,12 +285,12 @@
 /* ---------------------------------------------- TITLES, LEGENDS, LABELS, DESCRIPTIONS ETC ---------------------------------------------- */
 legend {
     font-family: var(--font-roboReg);
-    font-size: max(1.8vw, 18px);
-    margin-bottom: max(1vw, 9px);
+    font-size: max(1.8vw, 24px);
+    margin-bottom: max(1vw, 8px);
     letter-spacing: max(0.5vw, 1px);
     color: var(--color-green);
-    text-shadow: 0.2px 0.2px 1.5px rgb(0, 0, 0),
-        -0.2px -0.2px 1.5px rgb(0, 0, 0);
+    text-shadow: 0.2px 0.2px 1.5px rgb(0, 121, 97),
+        -0.2px -0.2px 1.5px rgb(0, 121, 97);
 }
 
 label {

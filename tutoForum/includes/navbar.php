@@ -1,9 +1,10 @@
 <?php
 
 if (isset($_SESSION['auth'])) {
+    require('actions/users/AAC-profilAction.php');
 ?>
 
-    <header class="row centerAlign">
+    <header id="header" class="row centerAlign">
 
         <nav id="navMenu">
             <div class="nav-block1">
@@ -23,7 +24,7 @@ if (isset($_SESSION['auth'])) {
 
 
         <nav id="navConnect">
-            <a class="link-profil" href="../../tutoForum/AAC-profil.php"><?= $_SESSION['pseudo'] ?></a>
+            <a class="link-profil" href="../../tutoForum/AAC-profil.php"><?= $userInfo['pseudo'] ?></a>
             <div>
                 <label for="touch">
                     <span class="spanNav row centerAlign">
@@ -36,7 +37,7 @@ if (isset($_SESSION['auth'])) {
                 <input type="checkbox" id="touch">
 
                 <ul class="slide column centerJust centerAlign">
-                    <li><a href="../../tutoForum/AAC-profil.php"><?= $_SESSION['pseudo'] ?></a></li>
+                    <li><a href="../../tutoForum/AAC-profil.php"><?= $userInfo['pseudo'] ?></a></li>
                     <li><a href="../../tutoForum/AAD-publish-question.php">Publier un sujet</a></li>
                     <li><a href="../../tutoForum/AAE-my-questions.php">Mes sujets</a></li>
                     <li><a href="../../tutoForum/AAI-my-answers.php">Mes commentaires</a></li>
@@ -53,7 +54,7 @@ if (isset($_SESSION['auth'])) {
 
 ?>
 
-    <header class="row centerAlign">
+    <header id="header" class="row centerAlign">
 
         <nav id="navMenu">
             <ul class="navMenu-ul row centerJust centerAlign">
