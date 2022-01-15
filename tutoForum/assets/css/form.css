@@ -7,7 +7,7 @@
 
 /* ---------------------------------------------- SUBJECT ---------------------------------------------- */
 .block-subject {
-    width: max(40vw, 300px);
+    width: max(40vw, 280px);
     border: 6px double transparent;
     outline: 5px double var(--color-green);
     border-radius: 10px;
@@ -89,9 +89,9 @@
 
 
 .shadow-green {
-    box-shadow: 0 0 4px var(--color-green),
-        0 0 7px var(--color-green),
-        0 0 13px var(--color-green),
+    box-shadow: 0 0 3px var(--color-green),
+        0 0 5px var(--color-green),
+        0 0 15px var(--color-green),
         0 0 25px var(--color-green);
     border-radius: 10px;
 }
@@ -523,7 +523,18 @@ textarea {
     .textarea-show-answers {
         height: 140px;
     }
+    
 
+}
+
+@media screen and (max-width: 380px) {
+    .shadow-green {
+    box-shadow: 0 0 3px var(--color-green),
+        0 0 5px var(--color-green),
+        0 0 10px var(--color-green),
+        0 0 20px var(--color-green);
+    border-radius: 10px;
+}
 }
 
 @media screen and (max-width: 380px) {
