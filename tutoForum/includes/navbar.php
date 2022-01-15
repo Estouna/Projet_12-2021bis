@@ -36,7 +36,7 @@ if (isset($_SESSION['auth'])) {
                 </label>
                 <input type="checkbox" id="touch">
 
-                <ul class="slide column centerJust centerAlign">
+                <ul class="slide column centerAll">
                     <li><a href="../../tutoForum/AAC-profil.php"><?= $userInfo['pseudo'] ?></a></li>
                     <li><a href="../../tutoForum/AAD-publish-question.php">Publier un sujet</a></li>
                     <li><a href="../../tutoForum/AAE-my-questions.php">Mes sujets</a></li>

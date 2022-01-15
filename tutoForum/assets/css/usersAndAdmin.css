@@ -33,11 +33,16 @@
 
 .sectionBody1 {
     width: 100%;
+    justify-content: center;
+}
+
+.gapXL {
+    gap: 10vw;
 }
 
 .blockLinkProfil, .pseudoMail {
     width: 40%;
-    border: 1px solid var(--color-green);
+    border: 5px double var(--color-green);
     border-left: none;
     border-right: none;
     padding-top: max(3vw, 10px);
@@ -45,14 +50,14 @@
 }
 
 .a-profil {
-    font-size: max(1vw, 9px);
+    font-size: max(1vw, 12px);
     color: var(--color-green-text);
     margin-left: max(2vw, 3px);
     transition: 0.2s;
 }
 
 .p-profil {
-    font-size: max(1vw, 10px);
+    font-size: max(1vw, 12px);
     margin-left: max(2vw, 3px);
 }
 
@@ -79,6 +84,7 @@
     text-shadow: 0.2px 0.2px 1px rgb(0, 121, 97),
         -0.2px -0.2px 1px rgb(0, 121, 97);
     margin-bottom: max(1vw, 1px);
+    letter-spacing: max(0.1vw, 1px);
 }
 
 .labelInput-edit {
@@ -92,6 +98,7 @@
     font-size: max(0.7vw, 9px);
     margin-top: max(0.4vw, 6px);
     margin-bottom: max(0.4vw, 4px);
+    letter-spacing: max(0.1vw, 1.5px);
 }
 
 .inputProfil-edit {
@@ -121,6 +128,20 @@
 @media screen and (max-width: 1000px) {
     .wrap-edit {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sectionBody1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blockLinkProfil, .pseudoMail {
+        width: 80%;
+        border: 3px double var(--color-green);
+        border-left: none;
+        border-right: none;
     }
 }
 
