@@ -25,15 +25,11 @@ include '../tutoForum/includes/head.php';
                 <div class="blockBodyProfil column">
 
                     <div class="row spaceBetween sectionBody1">
-                        <div class="pseudoMail column centerJust gap">
+                        <div class="pseudoMail column centerAll">
                             <p class="p-profil">Email : <?= $user_mail; ?></p>
                         </div>
-                        <div class="blockLinkProfil column centerJust gap">
+                    </div>
 
-                        </div>
-                    </div>
-                    <div class="row sectionBody2 centerJust centerAlign">
-                    </div>
                 </div>
             </div>
 

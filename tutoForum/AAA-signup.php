@@ -7,7 +7,7 @@ include '../tutoForum/includes/head.php';
 <main class="column centerAlign">
     <?php include '../tutoForum/includes/navbar.php'; ?>
 
-    <section class="section-center row centerJust centerAlign">
+    <section class="section-center row centerAll">
         <form method="POST" class="shadow-green column centerJust centerAlign">
 
             <div class="neumorph-form form">

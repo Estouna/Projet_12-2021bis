@@ -6,11 +6,17 @@ if (isset($_SESSION['auth'])) {
 
     <header id="header" class="row centerAlign">
 
-        <nav id="navMenu">
-            <div class="nav-block1">
-                <ul class="navMenu-ul row  centerAlign">
+        <nav id="navMenu centerAll">
+            <div class="nav-block1 centerAll">
+                <ul class="navMenu-ul row  centerAll">
                     <li class="navMenu-li"><a href="../../tutoForum/index.php">ACCUEIL</a></li>
-                    <li class="navMenu-li"><a href="#">TUTO</a></li>
+                    <li class="li-dropdown column centerAll unselectable">TUTO
+                        <ul class="panel column centerAll">
+                            <li class="navMenu-li"><a class=" a-html" href="../../tutoForum/BB-html.php">HTML</a></li>
+                            <li class="navMenu-li"><a class=" a-css" href="../../tutoForum/BB-css.php">CSS</a></li>
+                            <li class="navMenu-li"><a class=" a-java" href="../../tutoForum/BB-javascript.php">JavaScript</a></li>
+                        </ul>
+                    </li>
                     <li class="navMenu-li"><a href="#">FORUM</a></li>
                     <li class="navMenu-li"><a href="../../tutoForum/AAH-searchQuestions.php">RECHERCHER</a></li>
                 </ul>
@@ -59,7 +65,13 @@ if (isset($_SESSION['auth'])) {
         <nav id="navMenu">
             <ul class="navMenu-ul row centerJust centerAlign">
                 <li class="navMenu-li"><a href="../../tutoForum/index.php">ACCUEIL</a></li>
-                <li class="navMenu-li"><a href="#">TUTO</a></li>
+                <li class="li-dropdown column centerAll unselectable">TUTO
+                    <ul class="panel column centerAll">
+                        <li class="navMenu-li"><a class=" a-html" href="../../tutoForum/BB-html.php">HTML</a></li>
+                        <li class="navMenu-li"><a class=" a-css" href="../../tutoForum/BB-css.php">CSS</a></li>
+                        <li class="navMenu-li"><a class=" a-java" href="../../tutoForum/BB-javascript.php">JavaScript</a></li>
+                    </ul>
+                </li>
                 <li class="navMenu-li"><a href="#">FORUM</a></li>
                 <li class="navMenu-li"><a href="../../tutoForum/AAH-searchQuestions.php">RECHERCHE</a></li>
             </ul>

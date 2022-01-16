@@ -9,28 +9,36 @@ include '../tutoForum/includes/head.php';
     <div id="demo_box1" class="demo-box">
         <div class="close-block">&times;</div>
         <div class="overlay-content display1 column centerAll">
-            <p class="p-home">Section 1</p>
+            <p class="p-home">
+                <a class="a-home" href="../tutoForum/BB-html.php">Apprendre HTML</a>
+            </p>
         </div>
     </div>
 
     <div id="demo_box2" class="demo-box">
         <div class="close-block">&times;</div>
         <div class="overlay-content display2 column centerAll">
-            <p class="p-home">Section 2</p>
+            <p class="p-home">
+                <a class="a-home" href="../tutoForum/BB-css.php">Apprendre CSS</a>
+            </p>
         </div>
     </div>
 
     <div id="demo_box3" class="demo-box">
         <div class="close-block">&times;</div>
         <div class="overlay-content display3 column centerAll">
-            <p class="p-home">Section 3</p>
+            <p class="p-home">
+                <a class="a-home" href="../tutoForum/BB-javascript.php">Apprendre JavaScript</a>
+            </p>
         </div>
     </div>
 
     <div id="demo_box4" class="demo-box">
         <div class="close-block">&times;</div>
         <div class="overlay-content display4 column centerAll">
-            <p class="p-home">Section 4</p>
+            <p class="p-home">
+                Les codes de nos membres
+            </p>
         </div>
     </div>
 

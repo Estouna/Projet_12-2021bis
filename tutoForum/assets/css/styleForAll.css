@@ -140,31 +140,56 @@ a, .unselectable {
 
 
 .gap {
-    gap: max(1vw, 10px);
+    gap: max(1vw, 15px);
 }
 
 .return-btn {
     position: fixed;
-    bottom: 0%;
-    right: 0;
+    background-color: var(--color-black);
+    width: 40px;
+    height: 40px;
+    bottom: 5%;
+    right: 1px;
+    box-shadow: 0 0 2px var(--color-green),
+        0 0 4px var(--color-green),
+        0 0 6px var(--color-green),
+        0 0 8px var(--color-green);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.return-btn:hover {
+
+    width: 50px;
+    height: 50px;
+
+    color: var(--color-white);
+    transition: 0.7s;
+    box-shadow: 0 0 2px var(--color-white),
+        0 0 4px var(--color-white),
+        0 0 8px var(--color-white),
+        0 0 10px var(--color-white);
 }
 
 .btn-arrow {
-    width: 40px;
-    height: 40px;
-    transition: 0.5s;
-    background-color: var(--color-black);
+    width: 30px;
+    height: 30px;
+    transition: 0.7s;
     border-radius: 5px;
 }
 
 .btn-arrow:hover {
-    width: 50px;
-    height: 50px;
-    color: var(--color-white);
+    width: 40px;
+    height: 40px;
 }
 
 .a-btn {
     color: var(--color-green);
+    transition: 0.7s;
+}
+
+.a-btn:hover {
+    color: var(--color-white);
 }
 
 
@@ -198,14 +223,15 @@ header::before {
 
 /* MAIN MENU */
 #navMenu {
+    position: relative;
     font-size: max(0.9vw, 15px);
 }
 
-.navMenu-li {
+.navMenu-li, .li-dropdown {
     margin: 0px 5px;
 }
 
-.navMenu-li a {
+.navMenu-li a, .li-dropdown {
     display: block;
     text-align: center;
     width: max(7vw, 130px);
@@ -214,7 +240,7 @@ header::before {
     transition: 0.7s;
 }
 
-.navMenu-li a:hover {
+.navMenu-li a:hover, .li-dropdown:hover {
     letter-spacing: max(0.1vw, 2px);
     color: var(--color-green);
 }
@@ -234,6 +260,53 @@ header::before {
     transition: all 0.3s ease-in-out;
     background-color: var(--color-white);
 }
+
+/* Dropdown */
+.li-dropdown {
+    position: relative;
+    width: 100px;
+}
+
+.li-dropdown:hover ul {
+    height: 100px;
+    opacity: 1;
+}
+
+.panel {
+    position: absolute;
+    opacity: 0;
+    top: 35px;
+    font-size: max(0.7vw, 10px);
+    z-index: 1000;
+    height: 0;
+    width: 100px;
+    overflow: hidden;
+    -moz-transition: .2s all .2s;
+    -webkit-transition: .2s all .2s;
+    transition: .2s all .2s;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-top: 1px solid var(--color-green);
+    border-bottom: 1px solid var(--color-green);
+}
+
+.panel a {
+    display: block;
+    padding: 8px 5px;
+    letter-spacing: max(0.1vw, 2px);
+}
+
+.a-html {
+    margin-top: 10px;
+}
+
+.a-java {
+    margin-bottom: 10px;
+}
+
+/* End dropdown */
+
+
+
 
 /* END MAIN MENU */
 
@@ -353,7 +426,7 @@ header::before {
         width: 100%;
         -webkit-transition: 0.3s;
         transition: 0.3s;
-        padding: 40px 0;
+        padding: 30px 0;
         color: var(--color-white);
         background: var(--color-black);
         border-top: 2px solid var(--color-green);
@@ -402,6 +475,25 @@ header::before {
         color: var(--color-white);
     }
 
+    /* Dropdown */
+    .panel {
+        top: 0px;
+        left: 110px;
+        height: 0;
+        width: 90px;
+    }
+
+    .li-dropdown {
+        margin: 20px;
+    }
+
+    .panel a {
+        padding: 0;
+        margin: 5px;
+    }
+
+    /* End dropdown */
+
     .hamburger {
         position: relative;
         top: 2px;
@@ -409,6 +501,7 @@ header::before {
         display: block;
         cursor: pointer;
     }
+
 
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
@@ -422,6 +515,11 @@ header::before {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .iconPersoCo:hover, .iconPersoDeco:hover {
+        border: 2px solid var(--color-green);
+        color: var(--color-green);
+    }
+
     .slide li, .slide2 li {
         padding: 5px 4px;
     }
@@ -433,17 +531,128 @@ header::before {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (orientation: landscape) and (max-height: 800px) {
+    .navMenu-ul {
+        padding: 20px 0;
+    }
 
-    .btn-arrow {
+    .navMenu-li a {
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 800px) {
+
+    /*top page button*/
+    .return-btn {
+        bottom: 2%;
+    }
+
+    .return-btn:hover {
+        width: 40px;
+        height: 40px;
+        color: var(--color-green);
+        box-shadow: 0 0 2px var(--color-green),
+            0 0 4px var(--color-green),
+            0 0 6px var(--color-green),
+            0 0 8px var(--color-green);
+    }
+
+    .btn-arrow:hover {
         width: 30px;
         height: 30px;
     }
 
+    .a-btn:hover {
+        color: var(--color-green);
+    }
+
+    *, .hamburger {
+        cursor: none;
+    }
+}
+
+@media screen and (min-width: 346px) and (max-width: 550px) {
+
+    /*top page button*/
+    .return-btn {
+        width: 30px;
+        height: 30px;
+        bottom: 2%;
+    }
+
+    .return-btn:hover {
+        width: 30px;
+        height: 30px;
+        color: var(--color-green);
+        box-shadow: 0 0 2px var(--color-green),
+            0 0 4px var(--color-green),
+            0 0 6px var(--color-green),
+            0 0 8px var(--color-green);
+    }
+
+    .btn-arrow {
+        width: 25px;
+        height: 25px;
+    }
+
     .btn-arrow:hover {
-        width: 40px;
-        height: 40px;
-        color: var(--color-white);
+        width: 25px;
+        height: 25px;
+    }
+
+    .a-btn:hover {
+        color: var(--color-green);
+    }
+
+    *, .hamburger {
+        cursor: none;
+    }
+}
+
+@media screen and (max-width: 345px) {
+
+    /*top page button*/
+    .return-btn {
+        width: 20px;
+        height: 60px;
+        bottom: 2%;
+    }
+
+    .return-btn:hover {
+        width: 20px;
+        height: 60px;
+        color: var(--color-green);
+        box-shadow: 0 0 2px var(--color-green),
+            0 0 4px var(--color-green),
+            0 0 6px var(--color-green),
+            0 0 8px var(--color-green);
+    }
+
+    .btn-arrow {
+        width: 20px;
+        height: 50px;
+    }
+
+    .btn-arrow:hover {
+        width: 20px;
+        height: 50px;
+    }
+
+    .a-btn:hover {
+        color: var(--color-green);
+    }
+
+    *, .hamburger {
+        cursor: none;
+    }
+
+    /* Menu dropbox */
+    .panel {
+        top: 0px;
+        left: 100px;
+        height: 0;
+        width: 90px;
     }
 }
 

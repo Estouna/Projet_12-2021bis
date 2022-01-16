@@ -33,7 +33,7 @@ include('../tutoForum/includes/head.php');
                     </div>
                 </div>
 
-                <div class="row gap centerJust centerAlign">
+                <div class="row gap centerAll">
                     <input id="publier" class="btn-green neumorph-btn" type="submit" name="validate" value="PUBLIER">
                     <a class="a-links" href="../tutoForum/AAE-my-questions.php">Retour</a>
                 </div>

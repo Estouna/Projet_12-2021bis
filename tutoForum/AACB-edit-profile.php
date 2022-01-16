@@ -65,8 +65,9 @@ include '../tutoForum/includes/head.php';
                 </div>
 
                 <div>
-                    <div class="row centerJust centerAlign">
+                    <div class="row gap centerAll">
                         <input id="updateProfil" class="btn-green neumorph-btn" name="updateProfil" type="submit" value="MODIFIER" />
+                        <a class="a-links" href="../tutoForum//AAC-profil.php">Retour</a>
                     </div>
 
                 </div>

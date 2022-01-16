@@ -25,12 +25,12 @@ include '../tutoForum/includes/head.php';
                         <p class="p-profil">Email : <?= $userInfo['mail'] ?></p>
                     </div>
                     <div class="blockLinkProfil column centerAll gap">
-                        <a class="a-profil" href="../tutoForum/AAH-searchQuestions.php">Rechercher un sujet</a>
-                        <a class="a-profil" href="../tutoForum/AAD-publish-question.php">Publier un sujet</a>
-                        <a class="a-profil" href="../tutoForum/AAE-my-questions.php">Modifier mes sujets</a>
-                        <a class="a-profil" href="../tutoForum/AAI-my-answers.php">Modifier mes commentaires</a>
-                        <a class="a-profil" href="../tutoForum/AACB-edit-profile.php">Modifier mon profil</a>
-                        <a class="a-profil a-deco" href="../tutoForum/actions/users/logoutAction.php">Se déconnecter</a>
+                        <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AAH-searchQuestions.php">Rechercher un sujet</a>
+                        <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AAD-publish-question.php">Publier un sujet</a>
+                        <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AAE-my-questions.php">Modifier mes sujets</a>
+                        <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AAI-my-answers.php">Modifier mes commentaires</a>
+                        <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AACB-edit-profile.php">Modifier mon profil</a>
+                        <a class="a-deco row centerAll" href="../tutoForum/actions/users/logoutAction.php">Se déconnecter</a>
                     </div>
                 </div>
                 <div class="row sectionBody2 centerAll">
