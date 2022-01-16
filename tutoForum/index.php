@@ -10,7 +10,7 @@ include '../tutoForum/includes/head.php';
         <div class="close-block">&times;</div>
         <div class="overlay-content display1 column centerAll">
             <p class="p-home">
-                <a class="a-home" href="../tutoForum/BB-html.php">Apprendre HTML</a>
+                <a class="a-home" href="../tutoForum/EE-html.php">Apprendre HTML</a>
             </p>
         </div>
     </div>
@@ -19,7 +19,7 @@ include '../tutoForum/includes/head.php';
         <div class="close-block">&times;</div>
         <div class="overlay-content display2 column centerAll">
             <p class="p-home">
-                <a class="a-home" href="../tutoForum/BB-css.php">Apprendre CSS</a>
+                <a class="a-home" href="../tutoForum/EE-css.php">Apprendre CSS</a>
             </p>
         </div>
     </div>
@@ -28,7 +28,7 @@ include '../tutoForum/includes/head.php';
         <div class="close-block">&times;</div>
         <div class="overlay-content display3 column centerAll">
             <p class="p-home">
-                <a class="a-home" href="../tutoForum/BB-javascript.php">Apprendre JavaScript</a>
+                <a class="a-home" href="../tutoForum/EE-javascript.php">Apprendre JavaScript</a>
             </p>
         </div>
     </div>
