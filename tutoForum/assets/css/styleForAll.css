@@ -477,7 +477,7 @@ header::before {
 
     /* Dropdown */
     .panel {
-        top: 0px;
+        top: -40px;
         left: 110px;
         height: 0;
         width: 90px;
@@ -649,7 +649,7 @@ header::before {
 
     /* Menu dropbox */
     .panel {
-        top: 0px;
+        top: -40px;
         left: 100px;
         height: 0;
         width: 90px;

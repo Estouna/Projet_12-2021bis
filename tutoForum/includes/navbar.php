@@ -73,7 +73,7 @@ if (isset($_SESSION['auth'])) {
                     </ul>
                 </li>
                 <li class="navMenu-li"><a href="../../tutoForum/CC-forum.php">FORUM</a></li>
-                <li class="navMenu-li"><a href="../../tutoForum/AAH-searchQuestions.php">RECHERCHE</a></li>
+                <li class="navMenu-li"><a href="../../tutoForum/AAH-searchQuestions.php">RECHERCHER</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>

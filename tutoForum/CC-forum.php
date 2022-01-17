@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../tutoForum/includes/head.php';
 ?>
 
