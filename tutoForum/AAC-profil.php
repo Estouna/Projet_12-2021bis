@@ -5,6 +5,7 @@ include '../tutoForum/includes/head.php';
 ?>
 
 <main class="column centerAlign">
+    <!-- ------------------------------ NAVBAR ------------------------------ -->
     <?php include '../tutoForum/includes/navbar.php'; ?>
 
     <section class="section-center row centerAll">
@@ -13,6 +14,9 @@ include '../tutoForum/includes/head.php';
         <div class="blockProfil column">
 
             <div class="sectionTitle column centerAll">
+                <!-- 
+                    ------------------------------ PAGE TITLE ------------------------------
+                -->
                 <h1 class="titleH1-profil">Bienvenue</h1>
                 <span class="nameProfil"><?= $userInfo['pseudo']; ?></span>
             </div>
@@ -26,7 +30,7 @@ include '../tutoForum/includes/head.php';
                     </div>
                     <div class="blockLinkProfil column centerAll gap">
                         <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AAH-searchQuestions.php">Rechercher un sujet</a>
-                        <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AAD-publish-question.php">Publier un sujet</a>
+                        <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/CCB-publish-topicForum.php">Publier un sujet</a>
                         <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AAE-my-questions.php">Modifier mes sujets</a>
                         <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AAI-my-answers.php">Modifier mes commentaires</a>
                         <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AACB-edit-profile.php">Modifier mon profil</a>
@@ -40,4 +44,5 @@ include '../tutoForum/includes/head.php';
     </section>
 
 </main>
+<!-- ------------------------------ FOOTER ------------------------------ -->
 <?php include '../tutoForum/includes/footer.php'; ?>

@@ -7,6 +7,7 @@ include '../tutoForum/includes/head.php';
 ?>
 
 <main class="column centerAlign">
+    <!-- ------------------------------ NAVBAR ------------------------------ -->
     <?php include '../tutoForum/includes/navbar.php'; ?>
 
     <div class="block-fontArticle centerAll">
@@ -139,4 +140,5 @@ include '../tutoForum/includes/head.php';
     </div>
 
 </main>
+<!-- ------------------------------ FOOTER ------------------------------ -->
 <?php include '../tutoForum/includes/footer.php'; ?>

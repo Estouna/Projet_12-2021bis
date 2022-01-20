@@ -4,6 +4,7 @@ include '../tutoForum/includes/head.php';
 ?>
 
 <main class="column centerAlign">
+    <!-- ------------------------------ NAVBAR ------------------------------ -->
     <?php include '../tutoForum/includes/navbar.php'; ?>
 
     <section class="section-center row centerJust centerAlign">
@@ -12,6 +13,9 @@ include '../tutoForum/includes/head.php';
             <div class="neumorph-form form">
 
                 <div class="column centerJust centerAlign">
+                    <!-- 
+                         ------------------------------ PAGE TITLE ------------------------------
+                     -->
                     <div class="row centerJust">
                         <legend>Connexion</legend>
                     </div>
@@ -51,4 +55,5 @@ include '../tutoForum/includes/head.php';
     </section>
 
 </main>
+<!-- ------------------------------ FOOTER ------------------------------ -->
 <?php include '../tutoForum/includes/footer.php'; ?>

@@ -7,6 +7,7 @@ include '../tutoForum/includes/head.php';
 
 
 <main class="column centerAlign">
+    <!-- ------------------------------ NAVBAR ------------------------------ -->
     <?php include '../tutoForum/includes/navbar.php'; ?>
 
     <section class="section-center column centerJust centerAlign">
@@ -18,6 +19,9 @@ include '../tutoForum/includes/head.php';
             <div class="blockProfil column">
 
                 <div class="sectionTitle column centerJust centerAlign">
+                    <!-- 
+                         ------------------------------ PAGE TITLE ------------------------------
+                     -->
                     <h1 class="titleH1-profil">Publication de</h1>
                     <span class="nameProfil"><?= $user_pseudo; ?></span>
                 </div>
@@ -81,4 +85,5 @@ include '../tutoForum/includes/head.php';
         </div>
     </section>
 </main>
+<!-- ------------------------------ FOOTER ------------------------------ -->
 <?php include '../tutoForum/includes/footer.php'; ?>

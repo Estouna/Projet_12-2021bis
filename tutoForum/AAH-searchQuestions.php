@@ -7,6 +7,7 @@ include '../tutoForum/includes/head.php';
 
 <!-- En appuyant sur rechercher on verra dans l'URL ?search=mot entré avec des + entre les mots -->
 <main class="column centerAlign">
+    <!-- ------------------------------ NAVBAR ------------------------------ -->
     <?php include '../tutoForum/includes/navbar.php'; ?>
 
     <section class="section-center column centerAll">
@@ -67,5 +68,5 @@ include '../tutoForum/includes/head.php';
     
 </main>
 
-
+<!-- ------------------------------ FOOTER ------------------------------ -->
 <?php include '../tutoForum/includes/footer.php'; ?>

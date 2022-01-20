@@ -4,6 +4,7 @@ include '../tutoForum/includes/head.php';
 ?>
 
 <main class="main">
+    <!-- ------------------------------ NAVBAR ------------------------------ -->
     <?php include '../tutoForum/includes/navbar.php'; ?>
 
     <div id="demo_box1" class="demo-box">
@@ -64,4 +65,5 @@ include '../tutoForum/includes/head.php';
     </div>
 
 </main>
+<!-- ------------------------------ FOOTER ------------------------------ -->
 <?php include '../tutoForum/includes/footer.php'; ?>

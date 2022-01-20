@@ -4,14 +4,17 @@ include '../tutoForum/includes/head.php';
 ?>
 
 <main>
-<?php include '../tutoForum/includes/navbar.php'; ?>
+    <!-- ------------------------------ NAVBAR ------------------------------ -->
+    <?php include '../tutoForum/includes/navbar.php'; ?>
 
     <section class="section-center row centerAll">
-
+        <!-- 
+            ------------------------------ PAGE TITLE ------------------------------
+        -->
         <h1>CSS</h1>
 
     </section>
-    
-</main>
 
+</main>
+<!-- ------------------------------ FOOTER ------------------------------ -->
 <?php include '../tutoForum/includes/footer.php'; ?>

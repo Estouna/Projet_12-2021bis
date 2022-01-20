@@ -6,9 +6,13 @@ include '../tutoForum/includes/head.php';
 
 
 <main class="column centerAlign">
+    <!-- ------------------------------ NAVBAR ------------------------------ -->
     <?php include '../tutoForum/includes/navbar.php'; ?>
 
     <section class="section-center column centerJust centerAlign">
+        <!-- 
+            ------------------------------ PAGE TITLE ------------------------------
+         -->
         <h1 class="h1TitleArticles">Mes sujets</h1>
 
         <?php
@@ -41,4 +45,5 @@ include '../tutoForum/includes/head.php';
 
 
 </main>
+<!-- ------------------------------ FOOTER ------------------------------ -->
 <?php include '../tutoForum/includes/footer.php'; ?>

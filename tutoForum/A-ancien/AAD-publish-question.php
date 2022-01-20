@@ -6,6 +6,7 @@ include('../tutoForum/includes/head.php');
 
 
 <main class="column centerAlign">
+    <!-- ------------------------------ NAVBAR ------------------------------ -->
     <?php include '../tutoForum/includes/navbar.php'; ?>
     <section class="section-center row centerJust centerAlign">
         <form method="POST" class="shadow-green column centerJust centerAlign">
@@ -13,6 +14,9 @@ include('../tutoForum/includes/head.php');
             <div class="neumorph-form formTextarea form">
 
                 <div class="column centerJust centerAlign">
+                    <!-- 
+                         ------------------------------ PAGE TITLE ------------------------------
+                     -->
                     <div class="row centerJust">
                         <legend>Publier un sujet</legend>
                     </div>
@@ -35,7 +39,7 @@ include('../tutoForum/includes/head.php');
 
                 <div class="row gap centerAll">
                     <input id="publier" class="btn-green neumorph-btn" type="submit" name="validate" value="PUBLIER">
-                    <a class="a-links" href="../tutoForum/AAE-my-questions.php">Retour</a>
+                    <a class="a-links" href="../tutoForum/AAC-profil.php">Retour</a>
                 </div>
 
                 <div class="message row centerJust centerAlign">
@@ -50,7 +54,8 @@ include('../tutoForum/includes/head.php');
                     ?>
                 </div>
             </div>
+        </form>
     </section>
-    </form>
 </main>
+<!-- ------------------------------ FOOTER ------------------------------ -->
 <?php include '../tutoForum/includes/footer.php'; ?>

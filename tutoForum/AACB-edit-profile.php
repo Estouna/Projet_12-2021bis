@@ -5,6 +5,7 @@ include '../tutoForum/includes/head.php';
 ?>
 
 <main class="column centerAlign">
+    <!-- ------------------------------ NAVBAR ------------------------------ -->
     <?php include '../tutoForum/includes/navbar.php'; ?>
 
     <section class="section-center column centerAlign centerJust">
@@ -14,7 +15,9 @@ include '../tutoForum/includes/head.php';
         <form action="" method="POST" class="blockProfil row centerJust">
 
             <div class="container column centerJust centerAlign">
-
+                <!-- 
+                    ------------------------------ PAGE TITLE ------------------------------
+                -->
                 <div class="row">
                     <legend>Modifier mon profil</legend>
                 </div>
@@ -67,7 +70,7 @@ include '../tutoForum/includes/head.php';
                 <div>
                     <div class="row gap centerAll">
                         <input id="updateProfil" class="btn-green neumorph-btn" name="updateProfil" type="submit" value="MODIFIER" />
-                        <a class="a-links" href="../tutoForum//AAC-profil.php">Retour</a>
+                        <a class="a-links" href="../tutoForum/AAC-profil.php">Retour</a>
                     </div>
 
                 </div>
@@ -90,4 +93,5 @@ include '../tutoForum/includes/head.php';
 
     </section>
 </main>
+<!-- ------------------------------ FOOTER ------------------------------ -->
 <?php include '../tutoForum/includes/footer.php'; ?>

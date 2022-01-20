@@ -21,7 +21,7 @@ if (isset($_POST['validate'])) {
             $answer_date
         ));
 
-        header("Refresh: 1; URL=../../../tutoForum/AAG-article.php?id=$_GET[id]");
+        header("Refresh: 2; URL=AAG-article.php?id=$_GET[id]");
         $valide = "Message posté";
     } else {
         $erreur = "Veuillez saisir un message avant de répondre";

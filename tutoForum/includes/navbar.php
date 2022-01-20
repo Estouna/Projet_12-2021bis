@@ -17,7 +17,7 @@ if (isset($_SESSION['auth'])) {
                             <li class="navMenu-li"><a class=" a-java" href="../../tutoForum/EE-javascript.php">JavaScript</a></li>
                         </ul>
                     </li>
-                    <li class="navMenu-li"><a href="../../tutoForum/CC-forum.php">FORUM</a></li>
+                    <li class="navMenu-li"><a href="../../tutoForum/CCA-forum.php">FORUM</a></li>
                     <li class="navMenu-li"><a href="../../tutoForum/AAH-searchQuestions.php">RECHERCHER</a></li>
                 </ul>
             </div>
@@ -44,7 +44,7 @@ if (isset($_SESSION['auth'])) {
 
                 <ul class="slide column centerAll">
                     <li><a href="../../tutoForum/AAC-profil.php"><?= $userInfo['pseudo'] ?></a></li>
-                    <li><a href="../../tutoForum/AAD-publish-question.php">Publier un sujet</a></li>
+                    <li><a href="../../tutoForum/CCB-publish-topicForum.php">Publier un sujet</a></li>
                     <li><a href="../../tutoForum/AAE-my-questions.php">Mes sujets</a></li>
                     <li><a href="../../tutoForum/AAI-my-answers.php">Mes commentaires</a></li>
                     <li><a href="../../tutoForum/actions/users/logoutAction.php">Déconnexion</a></li>
@@ -72,7 +72,7 @@ if (isset($_SESSION['auth'])) {
                         <li class="navMenu-li"><a class=" a-java" href="../../tutoForum/EE-javascript.php">JavaScript</a></li>
                     </ul>
                 </li>
-                <li class="navMenu-li"><a href="../../tutoForum/CC-forum.php">FORUM</a></li>
+                <li class="navMenu-li"><a href="../../tutoForum/CCA-forum.php">FORUM</a></li>
                 <li class="navMenu-li"><a href="../../tutoForum/AAH-searchQuestions.php">RECHERCHER</a></li>
             </ul>
             <div class="hamburger">
