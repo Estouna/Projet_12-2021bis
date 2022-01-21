@@ -9,7 +9,7 @@ if (isset($_SESSION['auth'])) {
         <nav id="navMenu centerAll">
             <div class="nav-block1 centerAll">
                 <ul class="navMenu-ul row  centerAll">
-                    <li class="navMenu-li"><a href="../../tutoForum/index.php">ACCUEIL</a></li>
+                    <li class="navMenu-li"><a class="a-navMenu" href="../../tutoForum/index.php">ACCUEIL</a></li>
                     <li class="li-dropdown column centerAll unselectable">TUTO
                         <ul class="panel column centerAll">
                             <li class="navMenu-li"><a class=" a-html" href="../../tutoForum/EE-html.php">HTML</a></li>
@@ -17,8 +17,8 @@ if (isset($_SESSION['auth'])) {
                             <li class="navMenu-li"><a class=" a-java" href="../../tutoForum/EE-javascript.php">JavaScript</a></li>
                         </ul>
                     </li>
-                    <li class="navMenu-li"><a href="../../tutoForum/CCA-forum.php">FORUM</a></li>
-                    <li class="navMenu-li"><a href="../../tutoForum/AAH-searchQuestions.php">RECHERCHER</a></li>
+                    <li class="navMenu-li"><a class="a-navMenu" href="../../tutoForum/CCA-forum.php">FORUM</a></li>
+                    <li class="navMenu-li"><a class="a-navMenu" href="../../tutoForum/AAH-searchQuestions.php">RECHERCHER</a></li>
                 </ul>
             </div>
             <div class="hamburger">
@@ -64,7 +64,7 @@ if (isset($_SESSION['auth'])) {
 
         <nav id="navMenu">
             <ul class="navMenu-ul row centerJust centerAlign">
-                <li class="navMenu-li"><a href="../../tutoForum/index.php">ACCUEIL</a></li>
+                <li class="navMenu-li"><a class="a-navMenu" href="../../tutoForum/index.php">ACCUEIL</a></li>
                 <li class="li-dropdown column centerAll unselectable">TUTO
                     <ul class="panel column centerAll">
                         <li class="navMenu-li"><a class=" a-html" href="../../tutoForum/EE-html.php">HTML</a></li>
@@ -72,8 +72,8 @@ if (isset($_SESSION['auth'])) {
                         <li class="navMenu-li"><a class=" a-java" href="../../tutoForum/EE-javascript.php">JavaScript</a></li>
                     </ul>
                 </li>
-                <li class="navMenu-li"><a href="../../tutoForum/CCA-forum.php">FORUM</a></li>
-                <li class="navMenu-li"><a href="../../tutoForum/AAH-searchQuestions.php">RECHERCHER</a></li>
+                <li class="navMenu-li"><a class="a-navMenu" href="../../tutoForum/CCA-forum.php">FORUM</a></li>
+                <li class="navMenu-li"><a class="a-navMenu" href="../../tutoForum/AAH-searchQuestions.php">RECHERCHER</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>

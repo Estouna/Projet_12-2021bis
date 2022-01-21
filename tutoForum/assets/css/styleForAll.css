@@ -231,7 +231,7 @@ header::before {
     margin: 0px 5px;
 }
 
-.navMenu-li a, .li-dropdown {
+.a-navMenu, .li-dropdown {
     display: block;
     text-align: center;
     width: max(7vw, 130px);
@@ -240,7 +240,7 @@ header::before {
     transition: 0.7s;
 }
 
-.navMenu-li a:hover, .li-dropdown:hover {
+.a-navMenu:hover, .li-dropdown:hover {
     letter-spacing: max(0.1vw, 2px);
     color: var(--color-green);
 }
@@ -268,7 +268,7 @@ header::before {
 }
 
 .li-dropdown:hover ul {
-    height: 100px;
+    height: 120px;
     opacity: 1;
 }
 
@@ -291,16 +291,22 @@ header::before {
 
 .panel a {
     display: block;
-    padding: 8px 5px;
+    padding: 10px;
+    color: var(--color-white);
     letter-spacing: max(0.1vw, 2px);
+    transition: 0.5s;
+}
+
+.panel a:hover {
+    color: var(--color-green);
 }
 
 .a-html {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .a-java {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /* End dropdown */
@@ -470,7 +476,7 @@ header::before {
         left: 0;
     }
 
-    .navMenu-li a {
+    .a-navMenu {
         margin: 20px;
         color: var(--color-white);
     }
@@ -489,7 +495,7 @@ header::before {
 
     .panel a {
         padding: 0;
-        margin: 5px;
+        margin: 10px;
     }
 
     /* End dropdown */
@@ -524,7 +530,7 @@ header::before {
         padding: 5px 4px;
     }
 
-    .navMenu-li a:hover {
+    .a-navMenu:hover {
         background-color: transparent;
         color: var(--color-green);
         padding: 0;
@@ -536,7 +542,7 @@ header::before {
         padding: 20px 0;
     }
 
-    .navMenu-li a {
+    .a-navMenu {
         margin: 10px;
     }
 }
@@ -651,7 +657,6 @@ header::before {
     .panel {
         top: -40px;
         left: 100px;
-        height: 0;
         width: 90px;
     }
 }
