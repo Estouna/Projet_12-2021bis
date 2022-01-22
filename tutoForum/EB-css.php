@@ -11,10 +11,10 @@ include '../tutoForum/includes/head.php';
         <!-- 
             ------------------------------ PAGE TITLE ------------------------------
         -->
-        <h1>JavaScript</h1>
+        <h1>Tuto CSS</h1>
 
     </section>
 
 </main>
-<!-- ------------------------------ FOOTER------------------------------ -->
+<!-- ------------------------------ FOOTER ------------------------------ -->
 <?php include '../tutoForum/includes/footer.php'; ?>

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../tutoForum/assets/css/home.css">
     <link rel="stylesheet" href="../../tutoForum/assets/css/form.css">
     <link rel="stylesheet" href="../../tutoForum/assets/css/usersAndAdmin.css">
+    <link rel="stylesheet" href="../../tutoForum/assets/css/forum.css">
     <title>Forum</title>
 </head>
 

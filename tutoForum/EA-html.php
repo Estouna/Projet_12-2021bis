@@ -11,7 +11,7 @@ include '../tutoForum/includes/head.php';
         <!-- 
             ------------------------------ PAGE TITLE ------------------------------
         -->
-        <h1>CSS</h1>
+        <h1>Tuto HTML</h1>
 
     </section>
 

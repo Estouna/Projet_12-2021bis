@@ -1,0 +1,128 @@
+#h1-forum {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.container-topic {
+    width: 100%;
+    color: var(--color-white);
+}
+
+.block-list-topic {
+    width: 90%;
+}
+
+.col_topic {
+    width: 100%;
+    border: 1px solid var(--color-green);
+}
+
+/* Block subject and block authorCountLast */
+.block-title-subject, .block-post-subject {
+    width: 65%;
+}
+
+.block-post-authorCountLast, .block-title-authorCountLast {
+    width: 35%;
+}
+
+/* End */
+
+/* Sub block author, count, last*/
+.title_topic_author, .post-author {
+    width: 50%;
+}
+
+.title_topic_count, .post-count {
+    width: 18%;
+}
+
+.title_topic_date, .post-last-mess {
+    width: 32%;
+}
+
+/* End */
+
+.li-title span {
+    padding: max(0.5vw, 5px);
+}
+
+.li-title {
+    font-size: max(0.9vw, 12px);
+    border-bottom: 1px solid var(--color-green);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.li-list {
+    font-size: max(0.9vw, 11px);
+}
+
+
+.post-subject {
+    color: var(--color-green);
+    transition: 0.5s;
+}
+
+.post-subject:hover {
+    color: var(--color-white);
+}
+
+.post-author, .post-count, .post-last-mess {
+    font-size: max(0.8vw, 9px);
+    color: var(--color-white);
+    border-left: 1px solid var(--color-green);
+}
+
+.post-author {
+    word-wrap: break-word;
+}
+
+.block-post-subject, .post-author, .post-count, .post-last-mess {
+    padding-top: max(1vw, 5px);
+    padding-left: max(0.5vw, 5px);
+    padding-right: max(0.5vw, 5px);
+    padding-bottom: max(0.5vw, 10px);
+}
+
+
+
+/* ---------------------------------------------- MEDIAQUERIES ---------------------------------------------- */
+
+@media screen and (max-width: 850px) {
+    .li-list {
+        flex-direction: column;
+        margin: 20px 0;
+        border-top: 1px dotted var(--color-white);
+        border-bottom: 1px dotted var(--color-white);
+        background-color: black;
+    }
+
+    .block-title-subject, .block-post-subject {
+        width: 100%;
+    }
+
+    .block-title-authorCountLast, .post-count {
+        display: none;
+    }
+
+    .block-post-authorCountLast {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .block-post-subject {
+        padding-bottom: 5px;
+    }
+
+    .post-author, .post-last-mess {
+        border-left: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .block-list-topic {
+        width: 100%;
+    }
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END MEDIAQUERIES xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */

@@ -12,9 +12,9 @@ if (isset($_SESSION['auth'])) {
                     <li class="navMenu-li"><a class="a-navMenu" href="../../tutoForum/index.php">ACCUEIL</a></li>
                     <li class="li-dropdown column centerAll unselectable">TUTO
                         <ul class="panel column centerAll">
-                            <li class="navMenu-li"><a class=" a-html" href="../../tutoForum/EE-html.php">HTML</a></li>
-                            <li class="navMenu-li"><a class=" a-css" href="../../tutoForum/EE-css.php">CSS</a></li>
-                            <li class="navMenu-li"><a class=" a-java" href="../../tutoForum/EE-javascript.php">JavaScript</a></li>
+                            <li class="navMenu-li"><a class=" a-html" href="../../tutoForum/EA-html.php">HTML</a></li>
+                            <li class="navMenu-li"><a class=" a-css" href="../../tutoForum/EB-css.php">CSS</a></li>
+                            <li class="navMenu-li"><a class=" a-java" href="../../tutoForum/EC-javascript.php">JavaScript</a></li>
                         </ul>
                     </li>
                     <li class="navMenu-li"><a class="a-navMenu" href="../../tutoForum/CCA-forum.php">FORUM</a></li>
@@ -67,9 +67,9 @@ if (isset($_SESSION['auth'])) {
                 <li class="navMenu-li"><a class="a-navMenu" href="../../tutoForum/index.php">ACCUEIL</a></li>
                 <li class="li-dropdown column centerAll unselectable">TUTO
                     <ul class="panel column centerAll">
-                        <li class="navMenu-li"><a class=" a-html" href="../../tutoForum/EE-html.php">HTML</a></li>
-                        <li class="navMenu-li"><a class=" a-css" href="../../tutoForum/EE-css.php">CSS</a></li>
-                        <li class="navMenu-li"><a class=" a-java" href="../../tutoForum/EE-javascript.php">JavaScript</a></li>
+                        <li class="navMenu-li"><a class=" a-html" href="../../tutoForum/EA-html.php">HTML</a></li>
+                        <li class="navMenu-li"><a class=" a-css" href="../../tutoForum/EB-css.php">CSS</a></li>
+                        <li class="navMenu-li"><a class=" a-java" href="../../tutoForum/EC-javascript.php">JavaScript</a></li>
                     </ul>
                 </li>
                 <li class="navMenu-li"><a class="a-navMenu" href="../../tutoForum/CCA-forum.php">FORUM</a></li>
