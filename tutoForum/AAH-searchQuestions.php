@@ -10,7 +10,7 @@ include '../tutoForum/includes/head.php';
     <!-- ------------------------------ NAVBAR ------------------------------ -->
     <?php include '../tutoForum/includes/navbar.php'; ?>
 
-    <section class="section-center column centerAll">
+    <section class="section-center column centerAlign">
 
         <form method="GET" class="shadow-green row centerAll marginSearch">
 

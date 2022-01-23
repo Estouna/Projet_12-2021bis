@@ -1,4 +1,103 @@
+/* ---------------------------------------------- HTML FORUM HOME ---------------------------------------------- */
+.container-forum-home {
+    font-family: var(--font-roboThin);
+    color: var(--color-white);
+    width: 100%;
+    height: 100%;
+}
+
 #h1-forum {
+    font-family: var(--font-roboThin);
+    font-size: max(2.5vw, 25px);
+    color: var(--color-white);
+}
+
+.h2-circle {
+    font-family: var(--font-roboThin);
+    font-size: max(1.7vw, 25px);
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+}
+
+.h2-circle-general {
+    font-family: var(--font-roboThin);
+    font-size: max(1.7vw, 25px);
+}
+
+.a-general {
+    color: var(--color-white);
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+
+.a-general:hover {
+    color: var(--color-green);
+    letter-spacing: 7px;
+}
+
+.a-circle {
+    font-family: var(--font-roboReg);
+    font-size: max(0.8vw, 12px);
+    color: var(--color-white);
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.a-circle:hover {
+    letter-spacing: 3px;
+    color: var(--color-green);
+}
+
+.circle {
+    width: 270px;
+    height: 270px;
+    margin: max(1.5vw, 8px);
+    border-radius: 50%;
+    transition: 0.7s;
+}
+
+.circle:hover {
+    transform: scale(1.3);
+}
+
+.circle-red {
+    border: 6px double #640000;
+    background-color: rgba(255, 0, 0, 0.768);
+    box-shadow: 5px 2px 10px 0px rgb(0, 0, 0), inset 0px 0px 20px 2px rgb(146, 0, 0), inset 40px 0px 60px 0px rgb(150, 0, 0);
+}
+
+.circle-blue {
+    border: 6px double #00046b;
+    background-color: rgba(2, 11, 248, 0.7);
+    box-shadow: 5px 0px 10px 0px rgb(0, 0, 0), inset 0px 0px 20px 2px rgb(0, 4, 131), inset 40px 0px 60px 0px rgb(0, 4, 130);
+}
+
+.circle-yellow {
+    border: 6px double #6b5200;
+    background-color: rgba(255, 196, 3, 0.85);
+    box-shadow: 5px 0px 10px 0px rgb(0, 0, 0), inset 0px 0px 20px 2px rgb(157, 120, 0), inset 40px 0px 60px 0px rgb(165, 127, 0);
+}
+
+.circle-violet {
+    border: 6px double #350061;
+    background-color: rgba(152, 41, 243, 0.83);
+    box-shadow: 5px 0px 10px 0px rgb(0, 0, 0), inset 0px 0px 20px 2px rgb(62, 0, 124), inset 40px 0px 60px 0px rgb(64, 0, 128);
+}
+
+.circle-green {
+    border: 6px double rgb(0, 97, 78);
+    background-color: rgba(1, 255, 204, 0.7);
+    box-shadow: 5px 0px 10px 0px rgb(0, 0, 0), inset 0px 0px 20px 2px rgb(0, 130, 104), inset 40px 0px 60px 0px rgb(0, 130, 104);
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END FORUM HOME xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+/* ---------------------------------------------- HTML PAGE---------------------------------------------- */
+
+#h1-html {
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -84,11 +183,41 @@
     padding-bottom: max(0.5vw, 10px);
 }
 
+.h1-forum {
+    font-size: max(2vw, 11px);
+}
 
+.p-forum {
+    font-size: max(1vw, 10px);
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END HTML PAGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 /* ---------------------------------------------- MEDIAQUERIES ---------------------------------------------- */
 
 @media screen and (max-width: 850px) {
+
+    /* ----------------------- FORUM HOME -----------------------  */
+    .block-circle1, .block-circle2 {
+        flex-direction: column;
+    }
+
+    .circle {
+        width: 230px;
+        height: 230px;
+    }
+
+    .circle:hover {
+        transform: scale(1.1);
+    }
+
+    #h1-forum {
+        margin-bottom: 20px;
+    }
+
+    /* xxxxxxxxxxxxxxxxxxxxx END FORUM HOME xxxxxxxxxxxxxxxxxxxxx */
+
+    /* ----------------------- HTML PAGE -----------------------  */
     .li-list {
         flex-direction: column;
         margin: 20px 0;
@@ -117,6 +246,8 @@
     .post-author, .post-last-mess {
         border-left: none;
     }
+
+    /* xxxxxxxxxxxxxxxxxxxxx END HTML PAGE xxxxxxxxxxxxxxxxxxxxx */
 }
 
 @media screen and (max-width: 1000px) {

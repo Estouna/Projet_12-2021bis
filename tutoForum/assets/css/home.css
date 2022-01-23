@@ -1,37 +1,33 @@
-.h1-forum {
-    font-size: max(2vw, 11px);
-}
-
-.p-forum {
-    font-size: max(1vw, 10px);
-}
-
-.p-home {
+.ul-home {
+    font-family: var(--font-roboThin);
     color: var(--color-white);
-    font-size: max(2vw, 24px);
+    font-size: max(2.2vw, 23px);
 }
 
 .a-home {
+    letter-spacing: max(0.1vw, 1px);
     color: var(--color-white);
+    transition: 0.6s;
+}
+
+.a-home:hover {
+    letter-spacing: max(0.6vw, 1px);
+    color: var(--color-green);
 }
 
 .h2-home {
-    font-size: max(2vw, 20px);
+    font-family: var(--font-roboThin);
+    font-size: max(2.3vw, 25px);
     color: var(--color-white);
     letter-spacing: max(0.1vw, 1px);
     padding-top: clamp(40px, 5vw, 70px);
     padding-bottom: clamp(40px, 5vw, 70px);
-    width: clamp(280px, 30vw, 500px);
-    transition: 0.4s;
+    width: clamp(280px, 31vw, 500px);
+    transition: 0.6s;
 }
 
 .h2-home:hover {
-    font-size: max(2vw, 20px);
     letter-spacing: max(0.6vw, 1px);
-}
-
-.block-container {
-    height: 90vh;
 }
 
 .block {
@@ -118,27 +114,6 @@
     }
 }
 
-
-#demo_box1 {
-    border: 6px double var(--color-white);
-    background-color: rgb(218, 0, 0);
-}
-
-#demo_box2 {
-    border: 6px double var(--color-white);
-    background-color: rgb(0, 6, 192);
-}
-
-#demo_box3 {
-    border: 6px double var(--color-white);
-    background-color: rgb(228, 175, 0);
-}
-
-#demo_box4 {
-    border: 6px double var(--color-white);
-    background-color: rgb(0, 186, 149);
-}
-
 .overlay-content {
     margin: 0;
     width: 100%;
@@ -146,6 +121,8 @@
 }
 
 #demo_box1 {
+    border: 6px double var(--color-white);
+    background-color: rgb(218, 0, 0);
     -webkit-animation-name: move1;
     -webkit-animation-duration: 0.6s;
     animation-name: move1;
@@ -167,6 +144,8 @@
 }
 
 #demo_box2 {
+    border: 6px double var(--color-white);
+    background-color: rgb(0, 6, 192);
     -webkit-animation-name: move2;
     -webkit-animation-duration: 0.6s;
     animation-name: move2;
@@ -188,6 +167,8 @@
 }
 
 #demo_box3 {
+    border: 6px double var(--color-white);
+    background-color: rgb(228, 175, 0);
     -webkit-animation-name: move3;
     -webkit-animation-duration: 0.6s;
     animation-name: move3;
@@ -209,6 +190,8 @@
 }
 
 #demo_box4 {
+    border: 6px double var(--color-white);
+    background-color: rgb(0, 186, 149);
     -webkit-animation-name: move4;
     -webkit-animation-duration: 0.6s;
     animation-name: move4;
@@ -237,5 +220,14 @@
 @media screen and (max-width: 790px) {
     .duo-block {
         flex-direction: column;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 600px) and (max-width: 850px){
+    .block-container {
+        margin-top: -25px;
+    }
+    .duo-block {
+        flex-direction: row;
     }
 }

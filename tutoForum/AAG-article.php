@@ -10,7 +10,7 @@ include '../tutoForum/includes/head.php';
     <!-- ------------------------------ NAVBAR ------------------------------ -->
     <?php include '../tutoForum/includes/navbar.php'; ?>
 
-    <div class="block-fontArticle centerAll">
+    
         <section class="section-center column centerJust centerAlign">
             <?php
             if (isset($question_publication_date)) {
@@ -128,7 +128,7 @@ include '../tutoForum/includes/head.php';
             }
             ?>
 
-    </div>
+    
     </section>
     
     <div class="return-btn column centerAll">

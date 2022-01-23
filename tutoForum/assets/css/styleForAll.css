@@ -142,6 +142,9 @@ a, .unselectable {
 .gap {
     gap: max(1vw, 15px);
 }
+.gap-m {
+    gap: max(2vw, 20px);
+}
 
 .return-btn {
     position: fixed;

@@ -13,7 +13,7 @@ include '../tutoForum/includes/head.php';
             <!-- 
                 ------------------------------ PAGE TITLE ------------------------------
             -->
-            <h1 id="h1-forum">Forum HTML</h1>
+            <h1 id="h1-html">Tutos des membres</h1>
 
             <div class="block-list-topic row">
 

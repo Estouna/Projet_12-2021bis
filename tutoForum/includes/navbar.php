@@ -12,12 +12,12 @@ if (isset($_SESSION['auth'])) {
                     <li class="navMenu-li"><a class="a-navMenu" href="../../tutoForum/index.php">ACCUEIL</a></li>
                     <li class="li-dropdown column centerAll unselectable">TUTO
                         <ul class="panel column centerAll">
-                            <li class="navMenu-li"><a class=" a-html" href="../../tutoForum/EA-html.php">HTML</a></li>
-                            <li class="navMenu-li"><a class=" a-css" href="../../tutoForum/EB-css.php">CSS</a></li>
-                            <li class="navMenu-li"><a class=" a-java" href="../../tutoForum/EC-javascript.php">JavaScript</a></li>
+                            <li class="navMenu-li"><a class=" a-html" href="../../tutoForum/EA-tuto-html.php">HTML</a></li>
+                            <li class="navMenu-li"><a class=" a-css" href="../../tutoForum/EB-tuto-css.php">CSS</a></li>
+                            <li class="navMenu-li"><a class=" a-java" href="../../tutoForum/EC-tuto-javascript.php">JavaScript</a></li>
                         </ul>
                     </li>
-                    <li class="navMenu-li"><a class="a-navMenu" href="../../tutoForum/CCA-forum.php">FORUM</a></li>
+                    <li class="navMenu-li"><a class="a-navMenu" href="../../tutoForum/CA-forum-home.php">FORUM</a></li>
                     <li class="navMenu-li"><a class="a-navMenu" href="../../tutoForum/AAH-searchQuestions.php">RECHERCHER</a></li>
                 </ul>
             </div>
@@ -44,7 +44,7 @@ if (isset($_SESSION['auth'])) {
 
                 <ul class="slide column centerAll">
                     <li><a href="../../tutoForum/AAC-profil.php"><?= $userInfo['pseudo'] ?></a></li>
-                    <li><a href="../../tutoForum/CCB-publish-topicForum.php">Publier un sujet</a></li>
+                    <li><a href="../../tutoForum/CB-forum-publish-topic.php">Publier un sujet</a></li>
                     <li><a href="../../tutoForum/AAE-my-questions.php">Mes sujets</a></li>
                     <li><a href="../../tutoForum/AAI-my-answers.php">Mes commentaires</a></li>
                     <li><a href="../../tutoForum/actions/users/logoutAction.php">Déconnexion</a></li>
@@ -67,12 +67,12 @@ if (isset($_SESSION['auth'])) {
                 <li class="navMenu-li"><a class="a-navMenu" href="../../tutoForum/index.php">ACCUEIL</a></li>
                 <li class="li-dropdown column centerAll unselectable">TUTO
                     <ul class="panel column centerAll">
-                        <li class="navMenu-li"><a class=" a-html" href="../../tutoForum/EA-html.php">HTML</a></li>
-                        <li class="navMenu-li"><a class=" a-css" href="../../tutoForum/EB-css.php">CSS</a></li>
-                        <li class="navMenu-li"><a class=" a-java" href="../../tutoForum/EC-javascript.php">JavaScript</a></li>
+                        <li class="navMenu-li"><a class=" a-html" href="../../tutoForum/EA-tuto-html.php">HTML</a></li>
+                        <li class="navMenu-li"><a class=" a-css" href="../../tutoForum/EB-tuto-css.php">CSS</a></li>
+                        <li class="navMenu-li"><a class=" a-java" href="../../tutoForum/EC-tuto-javascript.php">JavaScript</a></li>
                     </ul>
                 </li>
-                <li class="navMenu-li"><a class="a-navMenu" href="../../tutoForum/CCA-forum.php">FORUM</a></li>
+                <li class="navMenu-li"><a class="a-navMenu" href="../../tutoForum/CA-forum-home.php">FORUM</a></li>
                 <li class="navMenu-li"><a class="a-navMenu" href="../../tutoForum/AAH-searchQuestions.php">RECHERCHER</a></li>
             </ul>
             <div class="hamburger">
