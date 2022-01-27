@@ -27,7 +27,7 @@
 .title-subject {
     padding: max(1vw, 9px);
     font-family: var(--font-roboReg);
-    font-size: max(1.2vw, 14px);
+    font-size: max(1.1vw, 14px);
     border-bottom: 5px double var(--color-green);
     color: var(--color-white);
     border-radius: 5px 5px 0 0;
@@ -38,7 +38,7 @@
     padding: max(1vw, 9px);
     font-size: max(0.8vw, 12px);
     color: var(--color-black);
-    background-color: #e9e9e9;
+    background-color: #ffffff;
     min-height: 10vh;
 }
 
@@ -47,7 +47,7 @@
     padding: max(1vw, 9px);
     font-size: max(1vw, 12px);
     color: var(--color-black);
-    min-height: 20vh;
+    min-height: 10vh;
 }
 
 .authorDate-subject {
@@ -334,6 +334,10 @@ label, .p-category {
 .textTitle {
     width: max(40vw, 240px);
     margin-bottom: max(0.5vw, 9px);
+}
+
+.cat-title {
+    font-size: max(1.2vw, 15px);
 }
 
 .select-cat {
@@ -631,7 +635,7 @@ textarea {
         height: 70px;
         font-size: 12px;
         text-shadow: .2px .2px 0.2px rgb(0, 121, 97),
-        -.2px -.2px 0.2px rgb(0, 121, 97);
+            -.2px -.2px 0.2px rgb(0, 121, 97);
     }
 
     .btn-afficher, .btn-modifier, .btn-effacer {

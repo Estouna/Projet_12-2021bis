@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('../tutoForum/actions/forum/CCA-forumAction.php');
+require('../tutoForum/actions/forum/CCB-forumAction.php');
 include '../tutoForum/includes/head.php';
 ?>
 
@@ -13,7 +13,14 @@ include '../tutoForum/includes/head.php';
             <!-- 
                 ------------------------------ PAGE TITLE ------------------------------
             -->
-            <h1 id="h1-html">Tutos des membres</h1>
+            <h1 id="h1-html">
+                <?php
+                if (isset($_GET['souscategorie'])) {
+                    echo $_GET['souscategorie'];
+                } else {
+                    echo $_GET['categorie'];
+                } ?>
+            </h1>
 
             <div class="block-list-topic row">
 
@@ -36,14 +43,15 @@ include '../tutoForum/includes/head.php';
                         LIST TOPICS
                     -->
                     <!-- On fait une boucle en récupérant $topics -->
+
                     <?php while ($subject = $topics->fetch()) { ?>
 
                         <li class="li-list flex">
                             <div class="block-post-subject">
-                                <a class="post-subject" href="#"><?= $subject['titre'] ?></a>
+                                <a class="post-subject" href="../tutoForum/AAG-article.php?id=<?= $subject['id_topic']; ?>"><?= $subject['titre'] ?></a>
                             </div>
                             <div class="block-post-authorCountLast row">
-                                <a class="post-author" href="#"><?= $subject['pseudo_auteur'] ?></a>
+                                <a class="post-author" href="../tutoForum/AACA-publicProfil.php?id=<?= $subject['id_auteur']; ?>"><?= $subject['pseudo_auteur'] ?></a>
                                 <span class="post-count">21000</span>
                                 <a class="post-last-mess" href="#"><?= $subject['date_publication'] ?></a>
                             </div>
@@ -52,8 +60,10 @@ include '../tutoForum/includes/head.php';
                     <?php } ?>
 
                 </ul>
-
             </div>
+
+            <a class="a-newTopic centerAll" href="../tutoForum/CB-forum-publish-topic.php?categorie=<?= $id_category ?>">Nouveau topic</a>
+
             <div class="message row centerJust centerAlign">
                 <?php
                 if (isset($erreur)) {

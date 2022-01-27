@@ -29,7 +29,7 @@ include '../tutoForum/includes/head.php';
                         <p class="p-auteur">Publier par <?= $answer['pseudo_auteur'] ?><?= ' le ' .  $answer['date_publication'] ?></p>
                     </div>
                     <div class="modif-post row centerAlign centerJust">
-                        <a class="btn-afficher btn-green neumorph-btn row centerJust centerAlign" href="../tutoForum/AAG-article.php?id=<?= $answer['id']; ?>">AFFICHER</a>
+                        <a class="btn-afficher btn-green neumorph-btn row centerJust centerAlign" href="../tutoForum/AAG-article.php?id=<?= $answer['id_question']; ?>">AFFICHER</a>
                         <a class="btn-modifier btn-green neumorph-btn row centerJust centerAlign" href="../tutoForum/AAI-edit-answer.php?id=<?= $answer['id'] ?>">MODIFIER</a>
                         <a class="btn-effacer row centerJust centerAlign" href="../tutoForum/actions/post/deleteAnswerAction.php?id=<?= $answer['id'] ?>">EFFACER</a>
                     </div>

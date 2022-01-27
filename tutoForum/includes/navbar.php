@@ -40,11 +40,11 @@ if (isset($_SESSION['auth'])) {
                         </svg>
                     </span>
                 </label>
-                <input type="checkbox" id="touch">
+                <input type="checkbox" id="touch" name="touch">
 
                 <ul class="slide column centerAll">
                     <li><a href="../../tutoForum/AAC-profil.php"><?= $userInfo['pseudo'] ?></a></li>
-                    <li><a href="../../tutoForum/CB-forum-publish-topic.php">Publier un sujet</a></li>
+                   <!-- <li><a href="../../tutoForum/CB-forum-publish-topic.php">Publier un sujet</a></li> -->
                     <li><a href="../../tutoForum/AAE-my-questions.php">Mes sujets</a></li>
                     <li><a href="../../tutoForum/AAI-my-answers.php">Mes commentaires</a></li>
                     <li><a href="../../tutoForum/actions/users/logoutAction.php">Déconnexion</a></li>
@@ -96,7 +96,7 @@ if (isset($_SESSION['auth'])) {
                         </svg>
                     </span>
                 </label>
-                <input type="checkbox" id="touch">
+                <input type="checkbox" id="touch" name="touch">
 
                 <ul class="slide2 column centerJust centerAlign">
                     <li><a href="../../tutoForum/AAB-login.php">Connexion</a></li>

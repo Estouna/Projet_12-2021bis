@@ -21,21 +21,19 @@ include '../tutoForum/includes/head.php';
                         $subCat->execute(array($c['id']));
                         $sub_categories = '';
                         while ($sc = $subCat->fetch()) {
-                            $sub_categories .= '<li><a class="a-circle" href="../tutoForum/CC-f-topics-view.php?categorie=' . url_custom_encode($c['name']) . '&souscategorie=' . url_custom_encode($sc['name']) . '">' . $sc['name'] . '</a></li> ';
+                            $sub_categories .= '<li><a class="a-circle" href="../tutoForum/ZZZ-verif-forum_topic.view.php?categorie=' . url_custom_encode($c['name']) . '&souscategorie=' . url_custom_encode($sc['name']) . '">' . $sc['name'] . '</a></li> ';
                         }
                         $sub_categories = substr($sub_categories, 0, -3);
                     ?>
 
                         <div class="circle circleAll btn-green  column centerAll">
-                            <h2 class="h2-circle"><a class="h2-a-circle" href="../tutoForum/CC-f-topics-view.php?categorie=<?= url_custom_encode($c['name']); ?>"><?= $c['name'] ?></a></h2>
+                            <h2 class="h2-circle"><a class="h2-a-circle" href="../tutoForum/ZZZ-verif-forum_topic.view.php?categorie=<?= url_custom_encode($c['name']); ?>"><?= $c['name'] ?></a></h2>
+
                             <ul class="ul-circle column centerAll gap">
                                 <?= $sub_categories ?>
                             </ul>
                         </div>
-
                     <?php } ?>
-
-
                 </div>
                 <!--
 

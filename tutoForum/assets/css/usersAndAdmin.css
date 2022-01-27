@@ -1,15 +1,21 @@
 /* ---------------------------------------------- PAGE PROFILE ---------------------------------------------- */
 
 
-.blockProfil {
+.blockProfil, .blockProfilPublic {
     background: #e6e6e6;
     box-shadow: inset 5px -5px 15px #5c5c5c,
         inset -5px 5px 25px #ffffff;
     border: 2px solid var(--color-green);
     border-radius: 10px;
     width: max(90vw, 310px);
+}
+
+.blockProfil{
     padding-top: max(2vw, 10px);
     padding-bottom: max(4vw, 10px);
+}
+.blockProfilPublic{
+    margin-top: max(1vw, 10px);
 }
 
 .sectionTitle {

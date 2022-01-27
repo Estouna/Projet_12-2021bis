@@ -140,10 +140,17 @@ a, .unselectable {
 
 
 .gap {
-    gap: max(1vw, 15px);
+    gap: max(1vw, 10px);
 }
 .gap-m {
     gap: max(2vw, 20px);
+}
+
+.margT{
+    margin-top: max(3vw, 30px);
+}
+.margB{
+    margin-bottom: max(8vw, 30px);
 }
 
 .return-btn {

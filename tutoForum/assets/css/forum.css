@@ -14,14 +14,33 @@
 
 .h2-circle {
     font-family: var(--font-roboThin);
-    font-size: max(1.7vw, 25px);
+    font-size: max(1.6vw, 30px);
     margin-bottom: 25px;
     letter-spacing: 3px;
 }
 
+.h2-a-circle, .a-newTopic {
+    color: var(--color-white);
+}
+
+.a-newTopic {
+    font-size: max(1vw, 12px);
+    color: var(--color-white);
+    border-radius: 10px;
+    margin-top: 20px;
+    border: max(0.1vw, 1px) solid transparent;
+    outline: max(0.1vw, 1px) solid var(--color-green);
+    padding: max(0.5vw, 5px);
+    background-color: #000000;
+    box-shadow:
+        -6px 6px 5px 0px #0c0c0c,
+        inset 1px -1px 2px #808080,
+        inset -1px 1px 1px #ffffff;
+}
+
 .h2-circle-general {
     font-family: var(--font-roboThin);
-    font-size: max(1.7vw, 25px);
+    font-size: max(1.6vw, 30px);
 }
 
 .a-general {
@@ -31,33 +50,40 @@
 }
 
 .a-general:hover {
-    color: var(--color-green);
-    letter-spacing: 7px;
+    letter-spacing: 6px;
 }
 
 .a-circle {
     font-family: var(--font-roboReg);
-    font-size: max(0.8vw, 12px);
+    font-size: max(0.8vw, 14px);
     color: var(--color-white);
     letter-spacing: 1px;
     transition: 0.5s;
 }
 
 .a-circle:hover {
-    letter-spacing: 3px;
-    color: var(--color-green);
+    letter-spacing: 2px;
 }
 
 .circle {
-    width: 270px;
-    height: 270px;
+    width: 250px;
+    height: 250px;
     margin: max(1.5vw, 8px);
     border-radius: 50%;
     transition: 0.7s;
 }
 
 .circle:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
+}
+
+.circleAll {
+    background-color: #00000083;
+    box-shadow:
+        -6px 6px 5px 0px #000000,
+        inset 2px -2px 2px #808080,
+        inset -2px 2px 30px #3d3d3d,
+        inset -2px 2px 2px #ffffff;
 }
 
 .circle-red {
@@ -157,18 +183,21 @@
 }
 
 
-.post-subject {
+.post-subject, .post-author {
     color: var(--color-green);
     transition: 0.5s;
 }
 
-.post-subject:hover {
+.post-subject:hover, .post-author:hover {
+    color: var(--color-white);
+}
+
+.post-count, .post-last-mess {
     color: var(--color-white);
 }
 
 .post-author, .post-count, .post-last-mess {
     font-size: max(0.8vw, 9px);
-    color: var(--color-white);
     border-left: 1px solid var(--color-green);
 }
 
@@ -195,6 +224,26 @@
 
 /* ---------------------------------------------- MEDIAQUERIES ---------------------------------------------- */
 
+@media screen and (min-width: 851px) and (max-width: 1450px) {
+    .circle {
+        width: 145px;
+        height: 145px;
+    }
+
+    .h2-circle {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .h2-circle-general {
+        font-size: 16px;
+    }
+
+    .a-circle {
+        font-size: 9px;
+    }
+}
+
 @media screen and (max-width: 850px) {
 
     /* ----------------------- FORUM HOME -----------------------  */
@@ -203,12 +252,12 @@
     }
 
     .circle {
-        width: 230px;
-        height: 230px;
+        width: 260px;
+        height: 260px;
     }
 
     .circle:hover {
-        transform: scale(1.1);
+        transform: scale(1.04);
     }
 
     #h1-forum {

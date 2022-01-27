@@ -16,7 +16,7 @@ include '../tutoForum/includes/head.php';
 
         ?>
 
-            <div class="blockProfil column">
+            <div class="blockProfilPublic column">
 
                 <div class="sectionTitle column centerJust centerAlign">
                     <!-- 
@@ -24,16 +24,6 @@ include '../tutoForum/includes/head.php';
                      -->
                     <h1 class="titleH1-profil">Publication de</h1>
                     <span class="nameProfil"><?= $user_pseudo; ?></span>
-                </div>
-
-                <div class="blockBodyProfil column">
-
-                    <div class="row spaceBetween sectionBody1">
-                        <div class="pseudoMail column centerAll">
-                            <p class="p-profil">Email : <?= $user_mail; ?></p>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
@@ -51,13 +41,9 @@ include '../tutoForum/includes/head.php';
 
                         <div class="description-subject">
                             <p>
-                                Description :<br />
+                                Description :
                                 <?= $question['description']; ?>
                             </p>
-                        </div>
-
-                        <div class="content-subject">
-                            <p><?= $question['contenu']; ?></p>
                         </div>
 
                         <div class="authorDate-subject">
