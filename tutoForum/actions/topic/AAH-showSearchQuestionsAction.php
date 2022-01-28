@@ -16,5 +16,5 @@ if (isset($_GET['search']) and !empty($_GET['search'])) {
 
     // Récupère toute les questions qui correspondent à la recherche (en fonction du titre)
     // LIKE = comme ou ressemblant à. Les % équivaut à peu importe ce qu'il y a avant et après (1er % avant, la recherche de l'utilisateur et 2e % après) 
-    $getAllQuestions = $bdd->query('SELECT id, id_auteur, titre, description, pseudo_auteur, date_publication FROM questions WHERE titre LIKE "%' . $usersSearch . '%" ORDER BY id DESC');
+    $getAllQuestions = $bdd->query('SELECT id, id_auteur, titre,  description, pseudo_auteur, date_publication FROM questions WHERE CONCAT(titre, pseudo_auteur) LIKE "%' . $usersSearch . '%" ORDER BY id DESC');
 }

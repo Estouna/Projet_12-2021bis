@@ -138,20 +138,73 @@ a, .unselectable {
     justify-content: space-between;
 }
 
-
+/* ---------------Margins and gutters----------------- */
+/* Gutters */
 .gap {
     gap: max(1vw, 10px);
 }
+
 .gap-m {
     gap: max(2vw, 20px);
 }
 
-.margT{
-    margin-top: max(3vw, 30px);
+.gap-l {
+    gap: max(3vw, 30px);
 }
-.margB{
+
+/* Margin top */
+.margT-s {
+    margin-top: max(1vw, 5px);
+}
+
+.margT-m {
+    margin-top: max(4vw, 15px);
+}
+
+.margT-l {
+    margin-top: max(8vw, 30px);
+}
+
+/* Margin bottom */
+.margB-s {
+    margin-bottom: max(1vw, 5px);
+}
+
+.margB-m {
+    margin-bottom: max(4vw, 15px);
+}
+
+.margB-l {
     margin-bottom: max(8vw, 30px);
 }
+
+/* Margin right */
+
+.margR-s {
+    margin-right: max(1vw, 5px);
+}
+
+.margR-m {
+    margin-right: max(4vw, 15px);
+}
+
+.margR-l {
+    margin-right: max(8vw, 30px);
+}
+/* Margin left */
+.margL-s {
+    margin-left: max(1vw, 5px);
+}
+
+.margL-m {
+    margin-left: max(4vw, 15px);
+}
+
+.margL-l {
+    margin-left: max(8vw, 30px);
+}
+
+/* ---------------End margins and gutters----------------- */
 
 .return-btn {
     position: fixed;
@@ -248,6 +301,7 @@ header::before {
     color: white;
     border-radius: 5px;
     transition: 0.7s;
+    padding: 6px 0;
 }
 
 .a-navMenu:hover, .li-dropdown:hover {
@@ -416,7 +470,7 @@ header::before {
 }
 
 #touch:checked+.slide2 {
-    height: 40px;
+    height: 30px;
 }
 
 

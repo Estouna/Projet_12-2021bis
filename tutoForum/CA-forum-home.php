@@ -11,7 +11,7 @@ include '../tutoForum/includes/head.php';
 
     <section class="section-center column centerAlign">
 
-        <h1 id="h1-forum" class="margT margB">FORUM</h1>
+        <h1 id="h1-forum" class="margT-m margB-m">FORUM</h1>
         <div class="container-forum-home column centerAll">
             <div class="block-circle column">
                 <div class="block-circle1 flex centerAll">

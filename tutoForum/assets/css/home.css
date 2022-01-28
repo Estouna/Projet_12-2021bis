@@ -1,7 +1,7 @@
 .ul-home {
     font-family: var(--font-roboThin);
     color: var(--color-white);
-    font-size: max(2.2vw, 23px);
+    font-size: max(2.2vw, 18px);
 }
 
 .a-home {
@@ -13,6 +13,18 @@
 .a-home:hover {
     letter-spacing: max(0.6vw, 1px);
     color: var(--color-green);
+}
+
+.h1-home {
+    font-size: max(2.3vw, 22px);
+    color: var(--color-white);
+    letter-spacing: max(0.2vw, 1.5px);
+}
+
+.p-subTitle {
+    color: var(--color-green);
+    font-size: max(0.8vw, 9px);
+    font-style: italic;
 }
 
 .h2-home {
@@ -223,10 +235,11 @@
     }
 }
 
-@media screen and (orientation: landscape) and (min-width: 600px) and (max-width: 850px){
+@media screen and (orientation: landscape) and (min-width: 600px) and (max-width: 850px) {
     .block-container {
         margin-top: -25px;
     }
+
     .duo-block {
         flex-direction: row;
     }
