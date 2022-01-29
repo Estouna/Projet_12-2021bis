@@ -1,6 +1,6 @@
 <?php
 require('../tutoForum/actions/users/securityAction.php');
-require('../tutoForum/actions/topic/CCB-publish-topicForumAction.php');
+require('../tutoForum/actions/topic/CB-publish-topicForumAction.php');
 include('../tutoForum/includes/head.php');
 ?>
 
@@ -53,33 +53,33 @@ include('../tutoForum/includes/head.php');
                     </div>
 
                     <!-- 
-                        ------------------------------ TOPIC DESCRIPTION ------------------------------
-                     -->
+                            ------------------------------ TOPIC DESCRIPTION ------------------------------
+                        -->
                     <div class="column">
                         <label for="description">Description du sujet</label>
                         <textarea class="textareaDescription neumorph-btn" name="topic-description"></textarea>
                     </div>
                     <!-- 
-                        ------------------------------ TOPIC CONTENT ------------------------------
-                     -->
+                            ------------------------------ TOPIC CONTENT ------------------------------
+                        -->
                     <div class="column">
                         <label for="content">Contenu du sujet</label>
                         <textarea class="textareaContent neumorph-btn" name="topic-content"></textarea>
                     </div>
                     <!-- 
-                        ------------------------------ TOPIC CHECKBOX NOTIFIED ------------------------------
-                     -->
+                            ------------------------------ TOPIC CHECKBOX NOTIFIED ------------------------------
+                        -->
                     <div class="row centerAll gap">
                         <input class="checkbox-notif" type="checkbox" name="topic-checkbox">
                         <label class="label-checkbox-notif" for="content">Me notifier les réponses par email</label>
                     </div>
                 </div>
                 <!-- 
-                     ------------------------------ TOPIC BTN SUBMIT ------------------------------
-                 -->
+                        ------------------------------ TOPIC BTN SUBMIT ------------------------------
+                    -->
                 <div class="row gap centerAll">
                     <input id="publier" class="btn-green neumorph-btn" type="submit" name="topic-validate" value="PUBLIER">
-                    <a class="a-links" href="../tutoForum/AAE-my-questions.php">Retour</a>
+                    <a class="a-links" href="../tutoForum/CA-forum-home.php">Retour</a>
                 </div>
                 <!-- 
                      ------------------------------ ERROR/VALID MESSAGE ------------------------------

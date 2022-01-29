@@ -191,6 +191,7 @@ a, .unselectable {
 .margR-l {
     margin-right: max(8vw, 30px);
 }
+
 /* Margin left */
 .margL-s {
     margin-left: max(1vw, 5px);
@@ -210,21 +211,21 @@ a, .unselectable {
     position: fixed;
     background-color: var(--color-black);
     width: 30px;
-    height: 30px;
-    bottom: 10%;
+    height: 80px;
+    bottom: 20%;
     right: 0.5%;
     box-shadow: 0 0 1px var(--color-green),
         0 0 2px var(--color-green),
         0 0 4px var(--color-green),
         0 0 6px var(--color-green);
-    border-radius: 5px;
+    border-radius: 50px;
     transition: 0.5s;
 }
 
 .return-btn:hover {
 
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 
     color: var(--color-white);
     transition: 0.5s;
@@ -235,15 +236,10 @@ a, .unselectable {
 }
 
 .btn-arrow {
-    width: 20px;
-    height: 20px;
-    transition: 0.5s;
-    border-radius: 5px;
-}
-
-.btn-arrow:hover {
     width: 30px;
     height: 30px;
+    transition: 0.5s;
+    border-radius: 5px;
 }
 
 .a-btn {
@@ -590,10 +586,6 @@ header::before {
         color: var(--color-green);
     }
 
-    .slide li, .slide2 li {
-        padding: 5px 4px;
-    }
-
     .a-navMenu:hover {
         background-color: transparent;
         color: var(--color-green);
@@ -615,22 +607,15 @@ header::before {
 
     /*top page button*/
     .return-btn {
-        bottom: 2%;
+        bottom: 5%;
     }
 
     .return-btn:hover {
-        width: 40px;
-        height: 40px;
         color: var(--color-green);
         box-shadow: 0 0 2px var(--color-green),
             0 0 4px var(--color-green),
             0 0 6px var(--color-green),
             0 0 8px var(--color-green);
-    }
-
-    .btn-arrow:hover {
-        width: 30px;
-        height: 30px;
     }
 
     .a-btn:hover {
@@ -647,13 +632,13 @@ header::before {
     /*top page button*/
     .return-btn {
         width: 30px;
-        height: 30px;
-        bottom: 2%;
+        height: 80px;
+        bottom: 5%;
     }
 
     .return-btn:hover {
         width: 30px;
-        height: 30px;
+        height: 80px;
         color: var(--color-green);
         box-shadow: 0 0 2px var(--color-green),
             0 0 4px var(--color-green),
@@ -662,11 +647,6 @@ header::before {
     }
 
     .btn-arrow {
-        width: 25px;
-        height: 25px;
-    }
-
-    .btn-arrow:hover {
         width: 25px;
         height: 25px;
     }
@@ -684,13 +664,13 @@ header::before {
 
     /*top page button*/
     .return-btn {
-        width: 20px;
+        width: 18px;
         height: 60px;
-        bottom: 2%;
+        bottom: 5%;
     }
 
     .return-btn:hover {
-        width: 20px;
+        width: 18px;
         height: 60px;
         color: var(--color-green);
         box-shadow: 0 0 2px var(--color-green),
@@ -700,13 +680,8 @@ header::before {
     }
 
     .btn-arrow {
-        width: 20px;
-        height: 50px;
-    }
-
-    .btn-arrow:hover {
-        width: 20px;
-        height: 50px;
+        width: 18px;
+        height: 18px;
     }
 
     .a-btn:hover {

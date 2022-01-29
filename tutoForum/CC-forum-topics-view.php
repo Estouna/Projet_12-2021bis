@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('../tutoForum/actions/forum/CCB-forumAction.php');
+require('../tutoForum/actions/forum/CB-forumAction.php');
 include '../tutoForum/includes/head.php';
 ?>
 
@@ -48,7 +48,7 @@ include '../tutoForum/includes/head.php';
 
                         <li class="li-list flex">
                             <div class="block-post-subject">
-                                <a class="post-subject" href="../tutoForum/AAG-article.php?id=<?= $subject['id_topic']; ?>"><?= $subject['titre'] ?></a>
+                                <a class="post-subject" href="../tutoForum/CD-f-show-topics.php?titre=<?= url_custom_encode($subject['titre']) ?>&id=<?= $subject['topic_base_id']; ?>"><?= $subject['titre'] ?></a>
                             </div>
                             <div class="block-post-authorCountLast row">
                                 <a class="post-author" href="../tutoForum/AACA-publicProfil.php?id=<?= $subject['id_auteur']; ?>"><?= $subject['pseudo_auteur'] ?></a>

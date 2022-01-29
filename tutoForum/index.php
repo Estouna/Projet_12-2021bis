@@ -14,7 +14,7 @@ include '../tutoForum/includes/head.php';
             <div class="overlay-content display1 column centerAll">
                 <ul class="ul-home column centerAll gap-l">
                     <li><a class="a-home" href="../tutoForum/EA-tuto-html.php">Apprendre les bases de HTML</a></li>
-                    <li><a class="a-home" href="../tutoForum/CC-f-topics-view.php?categorie=html&souscategorie=tutos-des-membres">Tutos HTML de nos membres</a></li>
+                    <li><a class="a-home" href="../tutoForum/CC-forum-topics-view.php?categorie=html&souscategorie=tutos-des-membres">Tutos HTML de nos membres</a></li>
                     <li><a class="a-home" href="../tutoForum/CA-forum-home.php">Forum</a></li>
                 </ul>
             </div>
@@ -25,7 +25,7 @@ include '../tutoForum/includes/head.php';
             <div class="overlay-content display2 column centerAll">
                 <ul class="ul-home column centerAll gap-l">
                     <li><a class="a-home" href="../tutoForum/EB-tuto-css.php">Apprendre les bases de CSS</a></li>
-                    <li><a class="a-home" href="../tutoForum/CC-f-topics-view.php?categorie=css&souscategorie=tutos-des-membres">Tutos CSS de nos membres</a></li>
+                    <li><a class="a-home" href="../tutoForum/CC-forum-topics-view.php?categorie=css&souscategorie=tutos-des-membres">Tutos CSS de nos membres</a></li>
                     <li><a class="a-home" href="../tutoForum/CA-forum-home.php">Forum</a></li>
                 </ul>
             </div>
@@ -36,7 +36,7 @@ include '../tutoForum/includes/head.php';
             <div class="overlay-content display3 column centerAll">
                 <ul class="ul-home column centerAll gap-l">
                     <li><a class="a-home" href="../tutoForum/EC-tuto-javascript.php">Apprendre les bases de JavaScript</a></li>
-                    <li><a class="a-home" href="../tutoForum/CC-f-topics-view.php?categorie=javascript&souscategorie=tutos-des-membres">Tutos JavaScript de nos membres</a></li>
+                    <li><a class="a-home" href="../tutoForum/CC-forum-topics-view.php?categorie=javascript&souscategorie=tutos-des-membres">Tutos JavaScript de nos membres</a></li>
                     <li><a class="a-home" href="../tutoForum/CA-forum-home.php">Forum</a></li>
                 </ul>
             </div>

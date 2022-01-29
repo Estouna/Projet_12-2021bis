@@ -43,8 +43,9 @@ if (isset($_GET['categorie']) and !empty($_GET['categorie'])) {
             }
         }
 
-        // Requête pour récupérer les données
-        $req = "SELECT * FROM questions 
+        // Requête pour récupérer les données 
+        // , questions.id topic_base_id est un alias (comme un champ copie) qui règle le problème avec l'id du lien la page CB-forumAction.php où l'id sélectionné n'était pas le bon, sans ce rajout l'id sélectionné était le dernier de la requête $req (users.id)
+        $req = "SELECT *, questions.id topic_base_id FROM questions 
             LEFT JOIN f_topics_categories ON questions.id = f_topics_categories.id_topic 
             LEFT JOIN f_category ON f_topics_categories.id_category = f_category.id 
             LEFT JOIN f_sub_category ON f_topics_categories.id_sub_category = f_sub_category.id 

@@ -56,14 +56,14 @@
 
 .a-circle {
     font-family: var(--font-roboReg);
-    font-size: max(0.8vw, 14px);
+    font-size: max(0.6vw, 14px);
     color: var(--color-white);
     letter-spacing: 1px;
     transition: 0.5s;
 }
 
 .a-circle:hover {
-    letter-spacing: 2px;
+    letter-spacing: 1.3px;
 }
 
 .circle {
@@ -180,7 +180,7 @@
 }
 
 .li-list {
-    font-size: max(0.9vw, 11px);
+    font-size: max(0.9vw, 13px);
 }
 
 
@@ -241,7 +241,7 @@
     }
 
     .a-circle {
-        font-size: 9px;
+        font-size: 7px;
     }
 }
 
@@ -290,7 +290,7 @@
     }
 
     .block-post-subject {
-        padding-bottom: 5px;
+        padding-bottom: 30px;
     }
 
     .post-author, .post-last-mess {
