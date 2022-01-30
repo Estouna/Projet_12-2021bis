@@ -48,7 +48,7 @@ if (isset($_GET['titre'], $_GET['id']) and !empty($_GET['titre']) and !empty($_G
 				));
 				
 				// Rafraîchit la page pour éviter de renvoyer le message en réactualisant la page
-				header("Refresh: 2; URL=CD-f-show-topics?titre=$_GET[titre]&id=$_GET[id]");
+				header("Refresh: 2; URL=CD-f-show-topics?titre=$_GET[titre]&id=$_GET[id]&page=$_GET[page]#answer");
 				
 				$valide_rep = "Votre réponse a bien été postée";
 				// Efface les données saisies dans le champ textarea
@@ -58,25 +58,51 @@ if (isset($_GET['titre'], $_GET['id']) and !empty($_GET['titre']) and !empty($_G
 			}
 		}
 
+		// Pagination
+
+		// Vérifie si la page existe dans l'url et si elle est supérieur à 1
 		if(isset($_GET['page']) AND $_GET['page'] > 1) {
-			$answersPerPage = 6;
+
+			// Réponses par page
+			$answersPerPage = 8;
 		 } else {
-			$answersPerPage = 5;
+			$answersPerPage = 8;
 		 }
+
+		 // Récupère toutes les réponses par l'id du topic
 		 $answersTotalReq = $bdd->prepare('SELECT * FROM answers WHERE id_question = ?');
+
+		 // Execute un tableau avec toutes les id
 		 $answersTotalReq->execute(array($get_id));
+
+		 // Pour calculer le nombre d'entrées dans la table answers
 		 $answersTotal = $answersTotalReq->rowCount();
+
+		 // Le nombre total de réponses divisé par le nombre de réponses par page = le nombre de pages totales. 
+		 // la fonction ceil() premet d'arrondir au nombre supérieur (afin d'éviter les nombres à virgule)
 		 $pagesTotal = ceil($answersTotal/$answersPerPage);
+
+		 // Vérifie si la variable de page existe dans l'url, 
+		 // si elle n' est pas vide, 
+		 // si elle est supérieur à 0 pour éviter l'erreur avec intval($_GET['page'] (qu'il n'affiche pas page=0)
+		 // et si la page affichée dans l'url est inférieur ou égal au nombre total de pages pour renvoyer à la page 1 si on dépasse le nombre total de pages dans l'url
 		 if(isset($_GET['page']) AND !empty($_GET['page']) AND $_GET['page'] > 0 AND $_GET['page'] <= $pagesTotal) {
+
+			// Sécurise $_GET['page'] en transformant les injections dans l'url en nombre (page=4)
 			$_GET['page'] = intval($_GET['page']);
+			// Une fois bien défini et sécurisé on passe $_GET['page'] en page courante ($currentPage)
 			$currentPage = $_GET['page'];
+
+			// Si la page n' est pas défini elle passe à 1
 		 } else {
 			$currentPage = 1;
 		 }
-		 $start = ($currentPage-1)*$answersPerPage;
 
-		$answers = $bdd->prepare('SELECT * FROM answers WHERE id_question = ? ORDER BY id ASC');
-		$answers->execute(array($get_id));
+		 // Défini le numéro de départ
+		 $start = ($currentPage-1)*$answersPerPage;
+		 // Récupère toutes les réponses par l'id du topic classé par ordre croissant et défini une limite de départ ($start) et jusqu'à quel nombre d'id on continue (ici 8)
+		 $answers = $bdd->prepare('SELECT * FROM answers WHERE id_question = ? ORDER BY id ASC LIMIT '.$start.','.$answersPerPage);
+	     $answers->execute(array($get_id));
 
 	} else {
 		$erreur = "Le titre ne correspond pas à son identifiant";

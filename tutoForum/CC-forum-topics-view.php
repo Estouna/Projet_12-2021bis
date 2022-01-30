@@ -34,7 +34,7 @@ include '../tutoForum/includes/head.php';
                         </div>
                         <div class="block-title-authorCountLast row">
                             <span class="title_topic_author">Auteur</span>
-                            <span class="title_topic_count">Nombre</span>
+                            <span class="title_topic_count">Nb</span>
                             <span class="title_topic_date">Post récent</span>
                         </div>
                     </li>
@@ -52,8 +52,8 @@ include '../tutoForum/includes/head.php';
                             </div>
                             <div class="block-post-authorCountLast row">
                                 <a class="post-author" href="../tutoForum/AACA-publicProfil.php?id=<?= $subject['id_auteur']; ?>"><?= $subject['pseudo_auteur'] ?></a>
-                                <span class="post-count">21000</span>
-                                <a class="post-last-mess" href="#"><?= $subject['date_publication'] ?></a>
+                                <span class="post-count"><?= reponse_nb_topic($subject['topic_base_id']) ?></span>
+                                <span class="post-last-mess"><?= last_answer_topic($subject['topic_base_id']) ?></span>
                             </div>
                         </li>
 

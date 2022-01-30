@@ -141,7 +141,7 @@ a, .unselectable {
 /* ---------------Margins and gutters----------------- */
 /* Gutters */
 .gap {
-    gap: max(1vw, 10px);
+    gap: clamp(10px, 1vw, 20px);
 }
 
 .gap-m {
@@ -207,9 +207,11 @@ a, .unselectable {
 
 /* ---------------End margins and gutters----------------- */
 
+/* ---------------------------------------------- BTN RETURN ---------------------------------------------- */
 .return-btn {
     position: fixed;
     background-color: var(--color-black);
+    color: var(--color-white);
     width: 30px;
     height: 80px;
     bottom: 20%;
@@ -223,11 +225,9 @@ a, .unselectable {
 }
 
 .return-btn:hover {
-
     width: 50px;
     height: 50px;
-
-    color: var(--color-white);
+    color: var(--color-green);
     transition: 0.5s;
     box-shadow: 0 0 1px var(--color-white),
         0 0 2px var(--color-white),
@@ -241,17 +241,7 @@ a, .unselectable {
     transition: 0.5s;
     border-radius: 5px;
 }
-
-.a-btn {
-    color: var(--color-green);
-    transition: 0.5s;
-}
-
-.a-btn:hover {
-    color: var(--color-white);
-}
-
-
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END BTN RETURN xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 
 /* ---------------------------------------------- HEADER ---------------------------------------------- */
@@ -297,7 +287,7 @@ header::before {
     color: white;
     border-radius: 5px;
     transition: 0.7s;
-    padding: 6px 0;
+    padding: 10px 0;
 }
 
 .a-navMenu:hover, .li-dropdown:hover {
@@ -335,7 +325,7 @@ header::before {
 .panel {
     position: absolute;
     opacity: 0;
-    top: 35px;
+    top: 42px;
     font-size: max(0.7vw, 10px);
     z-index: 1000;
     height: 0;
@@ -537,8 +527,13 @@ header::before {
     }
 
     .a-navMenu {
-        margin: 20px;
+        margin: 15px;
         color: var(--color-white);
+    }
+
+    .a-navMenu:hover {
+        background-color: transparent;
+        color: var(--color-green);
     }
 
     /* Dropdown */
@@ -586,11 +581,6 @@ header::before {
         color: var(--color-green);
     }
 
-    .a-navMenu:hover {
-        background-color: transparent;
-        color: var(--color-green);
-        padding: 0;
-    }
 }
 
 @media screen and (orientation: landscape) and (max-height: 800px) {
@@ -611,15 +601,11 @@ header::before {
     }
 
     .return-btn:hover {
-        color: var(--color-green);
-        box-shadow: 0 0 2px var(--color-green),
+        color: var(--color-white);
+        box-shadow: 0 0 1px var(--color-green),
+            0 0 2px var(--color-green),
             0 0 4px var(--color-green),
-            0 0 6px var(--color-green),
-            0 0 8px var(--color-green);
-    }
-
-    .a-btn:hover {
-        color: var(--color-green);
+            0 0 6px var(--color-green);
     }
 
     *, .hamburger {
@@ -639,20 +625,16 @@ header::before {
     .return-btn:hover {
         width: 30px;
         height: 80px;
-        color: var(--color-green);
-        box-shadow: 0 0 2px var(--color-green),
+        color: var(--color-white);
+        box-shadow: 0 0 1px var(--color-green),
+            0 0 2px var(--color-green),
             0 0 4px var(--color-green),
-            0 0 6px var(--color-green),
-            0 0 8px var(--color-green);
+            0 0 6px var(--color-green);
     }
 
     .btn-arrow {
         width: 25px;
         height: 25px;
-    }
-
-    .a-btn:hover {
-        color: var(--color-green);
     }
 
     *, .hamburger {
@@ -672,20 +654,16 @@ header::before {
     .return-btn:hover {
         width: 18px;
         height: 60px;
-        color: var(--color-green);
-        box-shadow: 0 0 2px var(--color-green),
+        color: var(--color-white);
+        box-shadow: 0 0 1px var(--color-green),
+            0 0 2px var(--color-green),
             0 0 4px var(--color-green),
-            0 0 6px var(--color-green),
-            0 0 8px var(--color-green);
+            0 0 6px var(--color-green);
     }
 
     .btn-arrow {
         width: 18px;
         height: 18px;
-    }
-
-    .a-btn:hover {
-        color: var(--color-green);
     }
 
     *, .hamburger {

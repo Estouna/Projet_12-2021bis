@@ -162,18 +162,14 @@
     border-radius: 0 0 5px 5px;
 }
 
-.label-answer {
-    margin-top: max(1vw, 10px);
-}
-
 .textarea-show-answers {
     width: max(50vw, 250px);
     height: 200px;
 }
 
 .answerButton {
-    margin-top: max(2vw, 5px);
-    margin-bottom: max(2vw, 5px);
+    margin-top: max(1vw, 5px);
+    margin-bottom: max(1vw, 5px);
 }
 
 
@@ -273,7 +269,7 @@
 }
 
 .formAnswer {
-    width: max(50vw, 290px);
+    padding: max(1vw, 10px);
     border: 4px double transparent;
     outline: 4px double var(--color-green);
     border-radius: 10px;
@@ -447,9 +443,9 @@ textarea {
 /* CIRCLE BUTTONS */
 .btn-green, .btn-effacer {
     font-family: var(--font-roboThin);
-    width: 110px;
-    height: 110px;
-    font-size: 17px;
+    width: 100px;
+    height: 100px;
+    font-size: 15px;
     color: var(--color-green);
     text-shadow: .2px .2px 0.9px rgb(0, 121, 97),
         -.2px -.2px 0.9px rgb(0, 121, 97);
@@ -527,7 +523,7 @@ textarea {
 
 /* ---------------------------------------------- MEDIAQUERIES ---------------------------------------------- */
 @media screen and (min-width: 701px) and (max-width: 1200px) {
-    .form, .blockModifQuestion, #formTextarea, .formAnswer {
+    .form, .blockModifQuestion, #formTextarea {
         width: 500px;
     }
 
@@ -545,7 +541,7 @@ textarea {
 }
 
 @media screen and (min-width: 390px) and (max-width: 700px) {
-    .form, .blockModifQuestion, #formTextarea, .formAnswer, .form-search {
+    .form, .blockModifQuestion, #formTextarea, .form-search {
         width: 350px;
     }
 
@@ -566,7 +562,8 @@ textarea {
     }
 }
 
-@media screen and (min-width: 391px) and (max-width: 1200px) {
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
     .btn-green {
         width: 90px;
         height: 90px;
@@ -625,9 +622,10 @@ textarea {
         border-top: 1px solid var(--color-green);
     }
 
-}
+    textarea {
+        min-height: 100px;
+    }
 
-@media screen and (max-width: 390px) {
     .legendMofifPost {
         font-size: 18px;
     }
@@ -635,7 +633,7 @@ textarea {
     .btn-green {
         width: 70px;
         height: 70px;
-        font-size: 12px;
+        font-size: 11px;
         text-shadow: .2px .2px 0.2px rgb(0, 121, 97),
             -.2px -.2px 0.2px rgb(0, 121, 97);
     }
@@ -650,5 +648,6 @@ textarea {
         font-size: 10px;
     }
 }
+
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END MEDIAQUERIES xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */

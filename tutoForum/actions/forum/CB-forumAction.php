@@ -1,6 +1,7 @@
 <?php
 require('actions/database.php');
 require('functions/url_custom_encode.php');
+require('functions/functions_forum.php');
 
 // Vérifie si catégorie existe dans l'URL
 if (isset($_GET['categorie']) and !empty($_GET['categorie'])) {

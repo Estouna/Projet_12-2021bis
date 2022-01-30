@@ -145,26 +145,26 @@
 
 /* Block subject and block authorCountLast */
 .block-title-subject, .block-post-subject {
-    width: 65%;
+    width: 60%;
 }
 
 .block-post-authorCountLast, .block-title-authorCountLast {
-    width: 35%;
+    width: 40%;
 }
 
 /* End */
 
 /* Sub block author, count, last*/
 .title_topic_author, .post-author {
-    width: 50%;
+    width: 38%;
 }
 
 .title_topic_count, .post-count {
-    width: 18%;
+    width: 12%;
 }
 
 .title_topic_date, .post-last-mess {
-    width: 32%;
+    width: 45%;
 }
 
 /* End */
@@ -219,6 +219,14 @@
 
 .p-forum {
     font-size: max(1vw, 10px);
+}
+
+.paging {
+    margin-top: 20px;
+}
+
+.a-paging {
+    color: var(--color-white);
 }
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END HTML PAGE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */

@@ -46,13 +46,31 @@ include '../tutoForum/includes/head.php';
 
                     </div>
                 </div>
+            <?php
+            }
+            ?>
 
-            <?php } ?>
+            <div class="paging row gap">
+                <?php
+                // une page est égal à 1; 
+                // une page est inférieur ou égal au nombre de réponses par page (il y a au moins 1 réponse par page et maximum 8 réponses)
+                // incrémente le nombre de page quand la limite de 8 réponses est atteinte   
+                for ($i = 1; $i <= $pagesTotal; $i++) {
+                    // echo $i . ' '; rajoute un espace autour de la page active (courante) et enlève le lien afin qu'on ne puisse plus recliquer dessus et voir aussi sur quelle page on est
+                    if ($i == $currentPage) {
+                        echo $i . ' ';
+                    } else {
+                        echo ' <a class="a-paging" href="CD-f-show-topics.php?titre=' . $get_titre . '&id=' . $get_id . '&page=' . $i . '">' . $i . '</a> ';
+                    }
+                }
+                ?>
+            </div>
+
 
             <!-- 
             ------------------------------ FORM ANSWER ------------------------------
         -->
-            <form method="POST" class="shadow-green column centerJust centerAlign post-margin">
+            <form action="#answer" id="answer" method="POST" class="shadow-green column centerJust centerAlign post-margin">
                 <div class="neumorph-form formAnswer">
 
                     <div class="column centerJust centerAlign">
@@ -118,7 +136,7 @@ include '../tutoForum/includes/head.php';
 
                     </div>
                 </div>
-                
+
         <?php
             }
         }
@@ -138,13 +156,13 @@ include '../tutoForum/includes/head.php';
 
     </section>
 
-    <div class="return-btn column centerAll">
-        <a class="a-btn column centerAll" href="#header">
+    
+        <a class="return-btn column centerAll" href="#header">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up btn-arrow" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
             </svg>
         </a>
-    </div>
+    
 
 </main>
 <!-- ------------------------------ FOOTER ------------------------------ -->
