@@ -7,13 +7,13 @@ include '../tutoForum/includes/head.php';
 
 <main class="column centerAlign">
     <!-- ------------------------------ NAVBAR ------------------------------ -->
-    <?php include '../tutoForum/includes/navbar.php'; ?>
+    <?php include '../tutoForum/includes/navbar-green.php'; ?>
 
     <section class="section-center column centerJust centerAlign">
         <!-- 
             ------------------------------ PAGE TITLE ------------------------------
         -->
-        <h1 class="h1TitleArticles">Mes commentaires</h1>
+        <h1 class="h1-title-article">Mes posts</h1>
         <?php
         while ($answer = $getAllMyAnswers->fetch()) {
         ?>
@@ -21,15 +21,12 @@ include '../tutoForum/includes/head.php';
                 <div class="block-post neumorph-form show-content column centerJust">
 
                     <div class="content-post">
-                        <p>Contenu :</br>
-                            </br>
-                            <?= $answer['contenu'] ?></p>
+                        <p class="p-content">Contenu : <?= $answer['contenu'] ?></p>
                     </div>
                     <div class="authorDate-post">
                         <p class="p-auteur">Publier par <?= $answer['pseudo_auteur'] ?><?= ' le ' .  $answer['date_publication'] ?></p>
                     </div>
                     <div class="modif-post row centerAlign centerJust">
-                        <a class="btn-afficher btn-green neumorph-btn row centerJust centerAlign" href="../tutoForum/AAG-article.php?id=<?= $answer['id_question']; ?>">AFFICHER</a>
                         <a class="btn-modifier btn-green neumorph-btn row centerJust centerAlign" href="../tutoForum/AAI-edit-answer.php?id=<?= $answer['id'] ?>">MODIFIER</a>
                         <a class="btn-effacer row centerJust centerAlign" href="../tutoForum/actions/post/deleteAnswerAction.php?id=<?= $answer['id'] ?>">EFFACER</a>
                     </div>

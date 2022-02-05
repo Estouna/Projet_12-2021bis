@@ -5,7 +5,7 @@ include '../tutoForum/includes/head.php';
 
 <main class="main">
     <!-- ------------------------------ NAVBAR ------------------------------ -->
-    <?php include '../tutoForum/includes/navbar.php'; ?>
+    <?php include '../tutoForum/includes/navbar-green.php'; ?>
     <section class="section-center column centerAll">
         <h1 class="h1-home">Bienvenue sur Tutotoform</h1>
         <p class="p-subTitle margB-m">Le site où vous trouverez tout ce qu'il vous faut pour apprendre à coder.</p>
@@ -76,5 +76,9 @@ include '../tutoForum/includes/head.php';
         </div>
     </section>
 </main>
-<!-- ------------------------------ FOOTER ------------------------------ -->
-<?php include '../tutoForum/includes/footer.php'; ?>
+
+<script src="../../tutoForum/assets/js/mainMenu.js"></script>
+<script src="../../tutoForum/assets/js/home.js"></script>
+</body>
+
+</html>

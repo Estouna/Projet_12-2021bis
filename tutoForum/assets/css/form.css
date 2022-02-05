@@ -352,9 +352,9 @@ label, .p-category {
 
 
 /* FORM MY QUESTIONS  */
-.h1TitleArticles {
-    font-family: var(--font-roboReg);
-    font-size: max(2vw, 22px);
+.h1-title-article {
+    font-family: var(--font-roboThin);
+    font-size: max(2.3vw, 24px);
     margin-top: max(1.5vw, 10px);
     margin-bottom: max(2vw, 10px);
     color: var(--color-white);
@@ -378,6 +378,10 @@ label, .p-category {
 
 .p-auteur, .p-date {
     font-size: max(0.8vw, 10px);
+    padding: max(1vw, 9px);
+}
+
+.p-content {
     padding: max(1vw, 9px);
 }
 

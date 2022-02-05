@@ -28,12 +28,12 @@ if (isset($_GET['categorie'])) {
             // Vérifie si les 3 champs existent
             if (isset($_POST['topic-title'], $_POST['topic-description'], $_POST['topic-content'])) {
 
-                // Sécurise les champs
+                // Sécurise les champs (nl2br permet le saut de ligne)
                 $id_author = $_SESSION['id'];
                 $pseudo_author = $_SESSION['pseudo'];
                 $title = htmlspecialchars($_POST['topic-title']);
-                $description = htmlspecialchars($_POST['topic-description']);
-                $content = htmlspecialchars($_POST['topic-content']);
+                $description = nl2br(htmlspecialchars($_POST['topic-description']));
+                $content = nl2br(htmlspecialchars($_POST['topic-content']));
                 date_default_timezone_set('Europe/Paris');
                 $topic_date = date('d/m/Y \à H:i');
                 $sub_category = htmlspecialchars($_POST['topic-SubCategory']);

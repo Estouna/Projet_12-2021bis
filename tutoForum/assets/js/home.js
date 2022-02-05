@@ -3,6 +3,7 @@ const demo_box1 = document.getElementById("demo_box1")
 const demo_box2 = document.getElementById("demo_box2")
 const demo_box3 = document.getElementById("demo_box3")
 const demo_box4 = document.getElementById("demo_box4")
+
 // Open
 block1.onclick = displayDemo_box1;
 function displayDemo_box1() {

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('actions/database.php');
+require('../actions/database.php');
 
 // Validation du formulaire
 if (isset($_POST['validate'])) {
@@ -26,20 +26,15 @@ if (isset($_POST['validate'])) {
                 $_SESSION['pseudo'] = $usersInfos['pseudo'];
                 $_SESSION['mail'] = $usersInfos['mail'];
                 $_SESSION['roles'] = $usersInfos['roles'];
-                // Redirige vers la page profil
-                if ($_SESSION['roles'] === "ADMIN") {
-                    header('Location: ../tutoForum/admin/home-admin.php ');
+                // Redirige vers page profil
+                if ($_SESSION['roles'] === "ADMIN"){
+                    header('Location: home-admin.php');
                 }
 
                 if ($_SESSION['roles'] === "MODERATEUR") {
-                    header('Location: ../tutoForum/admin/home-moderateur.php');
+                    header('Location: home-moderateur.php');
                 }
 
-                if ($_SESSION['roles'] === "membre") {
-                    header('Location: AAC-profil.php');
-                }
-
-                
             } else {
                 $erreur = "Votre mot de passe est incorrect";
             }

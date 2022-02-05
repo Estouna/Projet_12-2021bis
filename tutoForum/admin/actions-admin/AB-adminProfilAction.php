@@ -1,8 +1,7 @@
 <?php
-require('actions/database.php');
-$membre = $_SESSION['roles'] === "membre";
+require('../actions/database.php');
 
-if (isset($_SESSION['id'])) {
+if ($_SESSION['roles'] === "ADMIN") {
 
     //requête sur l'utilisateur pour son id
     $requser = $bdd->prepare('SELECT * FROM users WHERE id = ?');

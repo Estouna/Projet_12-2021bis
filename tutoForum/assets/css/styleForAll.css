@@ -18,8 +18,11 @@
     --color-black: rgb(0, 0, 0);
     --color-white: rgb(255, 255, 255);
     --color-font-general: rgb(121, 121, 121);
-    --color-green: rgb(8, 248, 200);
     --color-green-text: rgb(0, 221, 177);
+    --color-green: rgb(8, 248, 200);
+    --color-red: rgb(255, 95, 95);
+    --color-blue: rgb(255, 95, 95);
+    --color-yellow: rgb(255, 95, 95);
     /*rgb(8, 248, 200);*/
     /* ---------------Variable font-family------------- */
     --font-roboReg: "Roboto-Regular", arial, sans-serif;
@@ -216,10 +219,10 @@ a, .unselectable {
     height: 80px;
     bottom: 20%;
     right: 0.5%;
-    box-shadow: 0 0 1px var(--color-green),
-        0 0 2px var(--color-green),
-        0 0 4px var(--color-green),
-        0 0 6px var(--color-green);
+    box-shadow: 0 0 1px var(--color-white),
+        0 0 2px var(--color-white),
+        0 0 4px var(--color-white),
+        0 0 6px var(--color-white);
     border-radius: 50px;
     transition: 0.5s;
 }
@@ -227,12 +230,8 @@ a, .unselectable {
 .return-btn:hover {
     width: 50px;
     height: 50px;
-    color: var(--color-green);
+    color: var(--color-white);
     transition: 0.5s;
-    box-shadow: 0 0 1px var(--color-white),
-        0 0 2px var(--color-white),
-        0 0 4px var(--color-white),
-        0 0 6px var(--color-white);
 }
 
 .btn-arrow {
@@ -241,7 +240,160 @@ a, .unselectable {
     transition: 0.5s;
     border-radius: 5px;
 }
+
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END BTN RETURN xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+/* ---------------------------------------------- COLOR THEME ---------------------------------------------- */
+
+/* Border bottom header*/
+.header-green::before {
+    background: var(--color-green);
+    box-shadow: 0 0 5px var(--color-green),
+        0 0 10px var(--color-green),
+        0 0 15px var(--color-green),
+        0 0 30px var(--color-green);
+}
+
+.header-red::before {
+    background: var(--color-red);
+    box-shadow: 0 0 5px var(--color-red),
+        0 0 10px var(--color-red),
+        0 0 15px var(--color-red),
+        0 0 30px var(--color-red);
+}
+
+.header-blue::before {
+    background: var(--color-green);
+    box-shadow: 0 0 5px var(--color-green),
+        0 0 10px var(--color-green),
+        0 0 15px var(--color-green),
+        0 0 30px var(--color-green);
+}
+
+.header-yellow::before {
+    background: var(--color-green);
+    box-shadow: 0 0 5px var(--color-green),
+        0 0 10px var(--color-green),
+        0 0 15px var(--color-green),
+        0 0 30px var(--color-green);
+}
+
+
+/* Links */
+.a-navMenu-green:hover {
+    color: var(--color-green);
+}
+
+.a-navMenu-red:hover {
+    color: var(--color-red);
+}
+
+.a-navMenu-blue:hover {
+    color: var(--color-green);
+}
+
+.a-navMenu-yellow:hover {
+    color: var(--color-green);
+}
+
+
+/* Panel dropmenu*/
+.panel-green {
+    border-top: 1px solid var(--color-green);
+    border-bottom: 1px solid var(--color-green);
+}
+
+.panel-red {
+    border-top: 1px solid var(--color-red);
+    border-bottom: 1px solid var(--color-red);
+}
+
+.panel-blue {
+    border-top: 1px solid var(--color-green);
+    border-bottom: 1px solid var(--color-green);
+}
+
+.panel-yellow {
+    border-top: 1px solid var(--color-green);
+    border-bottom: 1px solid var(--color-green);
+}
+
+
+/* Icon account */
+.iconPersoCo-green, .iconPersoDeco-green {
+    border: 2px solid var(--color-green);
+    color: var(--color-green);
+}
+
+.iconPersoCo-red, .iconPersoDeco-red {
+    border: 2px solid var(--color-red);
+    color: var(--color-red);
+}
+
+.iconPersoCo-blue, .iconPersoDeco-blue {
+    border: 2px solid var(--color-green);
+    color: var(--color-green);
+}
+
+.iconPersoCo-yellow, .iconPersoDeco-yellow {
+    border: 2px solid var(--color-green);
+    color: var(--color-green);
+}
+
+.iconPersoCo-green:hover, .iconPersoDeco-green:hover,
+.iconPersoCo-red:hover, .iconPersoDeco-red:hover,
+.iconPersoCo-blue:hover, .iconPersoDeco-blue:hover,
+.iconPersoCo-yellow:hover, .iconPersoDeco-yellow:hover {
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+.iconPersoCo:hover, .iconPersoDeco:hover {
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+.iconPersoCo:hover, .iconPersoDeco:hover {
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+.iconPersoCo:hover, .iconPersoDeco:hover {
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+/* Panel account*/
+.slide-green, .slide2-green {
+    box-shadow: 0 0 1px var(--color-green),
+        0 0 2px var(--color-green),
+        0 0 4px var(--color-green),
+        0 0 6px var(--color-green);
+}
+
+.slide-red, .slide2-red {
+    box-shadow: 0 0 1px var(--color-red),
+        0 0 2px var(--color-red),
+        0 0 4px var(--color-red),
+        0 0 6px var(--color-red);
+}
+
+.slide-blue, .slide2-blue {
+    box-shadow: 0 0 1px var(--color-green),
+        0 0 2px var(--color-green),
+        0 0 4px var(--color-green),
+        0 0 6px var(--color-green);
+}
+
+.slide-yellow, .slide2-yellow {
+    box-shadow: 0 0 1px var(--color-green),
+        0 0 2px var(--color-green),
+        0 0 4px var(--color-green),
+        0 0 6px var(--color-green);
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END COLOR THEME xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 
 /* ---------------------------------------------- HEADER ---------------------------------------------- */
@@ -250,11 +402,11 @@ header {
     position: relative;
     justify-content: center;
     width: 100%;
-    height: 45px;
+    height: 50px;
     background-color: black;
 }
 
-header::before {
+.header-green::before, .header-red::before, .header-blue::before, .header-yellow::before {
     content: '';
     position: absolute;
     left: 50%;
@@ -263,12 +415,8 @@ header::before {
     width: 100%;
     height: 2px;
     z-index: 1;
-    background: var(--color-green);
-    box-shadow: 0 0 5px var(--color-green),
-        0 0 10px var(--color-green),
-        0 0 15px var(--color-green),
-        0 0 30px var(--color-green);
 }
+
 
 /* MAIN MENU */
 #navMenu {
@@ -292,7 +440,6 @@ header::before {
 
 .a-navMenu:hover, .li-dropdown:hover {
     letter-spacing: max(0.1vw, 2px);
-    color: var(--color-green);
 }
 
 .hamburger {
@@ -325,7 +472,7 @@ header::before {
 .panel {
     position: absolute;
     opacity: 0;
-    top: 42px;
+    top: 50px;
     font-size: max(0.7vw, 10px);
     z-index: 1000;
     height: 0;
@@ -335,9 +482,8 @@ header::before {
     -webkit-transition: .2s all .2s;
     transition: .2s all .2s;
     background-color: rgba(0, 0, 0, 0.9);
-    border-top: 1px solid var(--color-green);
-    border-bottom: 1px solid var(--color-green);
 }
+
 
 .panel a {
     display: block;
@@ -345,10 +491,6 @@ header::before {
     color: var(--color-white);
     letter-spacing: max(0.1vw, 2px);
     transition: 0.5s;
-}
-
-.panel a:hover {
-    color: var(--color-green);
 }
 
 .a-html {
@@ -371,8 +513,8 @@ header::before {
 /* MENU ACCOUNT */
 #navConnect {
     position: absolute;
-    top: 4px;
-    right: 8px;
+    top: 7px;
+    right: 2vw;
     display: flex;
     flex-direction: row;
 }
@@ -390,9 +532,8 @@ header::before {
     border-radius: 50px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    border: 2px solid var(--color-green);
-    color: var(--color-green);
 }
+
 
 .iconPersoCo:hover, .iconPersoDeco:hover {
     border: 2px solid var(--color-white);
@@ -400,15 +541,11 @@ header::before {
 }
 
 .link-profil {
-    font-size: max(0.9vw, 12px);
+    font-size: max(0.8vw, 12px);
     margin-top: 10px;
     color: var(--color-white);
     -webkit-transition: 0.5s;
     transition: 0.5s;
-}
-
-.link-profil:hover {
-    color: var(--color-green);
 }
 
 .slide, .slide2 {
@@ -422,13 +559,10 @@ header::before {
     border-radius: 5px;
     -webkit-transition: height .1s ease;
     transition: height .1s ease;
-    margin-top: -7px;
+    margin-top: -5px;
     z-index: 10;
-    box-shadow: 0 0 1px var(--color-green),
-        0 0 2px var(--color-green),
-        0 0 4px var(--color-green),
-        0 0 6px var(--color-green);
 }
+
 
 .slide li, .slide2 li {
     padding: 5px 13px 5px 13px;
@@ -442,17 +576,13 @@ header::before {
     transition: 0.3s;
 }
 
-.slide li a:hover, .slide2 li a:hover {
-    color: var(--color-green);
-}
-
 #touch {
     opacity: 0;
     height: 0px;
 }
 
 #touch:checked+.slide {
-    height: 160px;
+    height: 150px;
 }
 
 #touch:checked+.slide2 {
@@ -485,8 +615,6 @@ header::before {
         padding: 30px 0;
         color: var(--color-white);
         background: var(--color-black);
-        border-top: 2px solid var(--color-green);
-        border-bottom: 2px solid var(--color-green);
         z-index: 5;
     }
 
@@ -499,6 +627,33 @@ header::before {
         width: 100%;
         height: 2px;
         z-index: 1;
+    }
+
+    .navMenu-ul-green::before {
+        background: var(--color-green);
+        box-shadow: 0 0 5px var(--color-green),
+            0 0 10px var(--color-green),
+            0 0 15px var(--color-green),
+            0 0 30px var(--color-green);
+    }
+
+    .navMenu-ul-red::before {
+        background: var(--color-red);
+        box-shadow: 0 0 5px var(--color-red),
+            0 0 10px var(--color-red),
+            0 0 15px var(--color-red),
+            0 0 30px var(--color-red);
+    }
+
+    .navMenu-ul-blue::before {
+        background: var(--color-green);
+        box-shadow: 0 0 5px var(--color-green),
+            0 0 10px var(--color-green),
+            0 0 15px var(--color-green),
+            0 0 30px var(--color-green);
+    }
+
+    .navMenu-ul-yellow::before {
         background: var(--color-green);
         box-shadow: 0 0 5px var(--color-green),
             0 0 10px var(--color-green),
@@ -515,6 +670,33 @@ header::before {
         width: 100%;
         height: 2px;
         z-index: 1;
+    }
+
+    .navMenu-ul-green::after {
+        background: var(--color-green);
+        box-shadow: 0 0 5px var(--color-green),
+            0 0 10px var(--color-green),
+            0 0 15px var(--color-green),
+            0 0 30px var(--color-green);
+    }
+
+    .navMenu-ul-red::after {
+        background: var(--color-red);
+        box-shadow: 0 0 5px var(--color-red),
+            0 0 10px var(--color-red),
+            0 0 15px var(--color-red),
+            0 0 30px var(--color-red);
+    }
+
+    .navMenu-ul-blue::after {
+        background: var(--color-green);
+        box-shadow: 0 0 5px var(--color-green),
+            0 0 10px var(--color-green),
+            0 0 15px var(--color-green),
+            0 0 30px var(--color-green);
+    }
+
+    .navMenu-ul-yellow::after {
         background: var(--color-green);
         box-shadow: 0 0 5px var(--color-green),
             0 0 10px var(--color-green),
@@ -531,7 +713,22 @@ header::before {
         color: var(--color-white);
     }
 
-    .a-navMenu:hover {
+    .a-navMenu-green:hover {
+        background-color: transparent;
+        color: var(--color-green);
+    }
+
+    .a-navMenu-red:hover {
+        background-color: transparent;
+        color: var(--color-red);
+    }
+
+    .a-navMenu-blue:hover {
+        background-color: transparent;
+        color: var(--color-green);
+    }
+
+    .a-navMenu-yellow:hover {
         background-color: transparent;
         color: var(--color-green);
     }
@@ -576,11 +773,6 @@ header::before {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .iconPersoCo:hover, .iconPersoDeco:hover {
-        border: 2px solid var(--color-green);
-        color: var(--color-green);
-    }
-
 }
 
 @media screen and (orientation: landscape) and (max-height: 800px) {
@@ -600,14 +792,6 @@ header::before {
         bottom: 5%;
     }
 
-    .return-btn:hover {
-        color: var(--color-white);
-        box-shadow: 0 0 1px var(--color-green),
-            0 0 2px var(--color-green),
-            0 0 4px var(--color-green),
-            0 0 6px var(--color-green);
-    }
-
     *, .hamburger {
         cursor: none;
     }
@@ -625,11 +809,6 @@ header::before {
     .return-btn:hover {
         width: 30px;
         height: 80px;
-        color: var(--color-white);
-        box-shadow: 0 0 1px var(--color-green),
-            0 0 2px var(--color-green),
-            0 0 4px var(--color-green),
-            0 0 6px var(--color-green);
     }
 
     .btn-arrow {
@@ -654,11 +833,6 @@ header::before {
     .return-btn:hover {
         width: 18px;
         height: 60px;
-        color: var(--color-white);
-        box-shadow: 0 0 1px var(--color-green),
-            0 0 2px var(--color-green),
-            0 0 4px var(--color-green),
-            0 0 6px var(--color-green);
     }
 
     .btn-arrow {

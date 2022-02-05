@@ -5,7 +5,7 @@ include '../tutoForum/includes/head.php';
 
 <main>
     <!-- ------------------------------ NAVBAR ------------------------------ -->
-    <?php include '../tutoForum/includes/navbar.php'; ?>
+    <?php include '../tutoForum/includes/navbar-red.php'; ?>
 
     <section class="section-center row centerAll">
         <!-- 

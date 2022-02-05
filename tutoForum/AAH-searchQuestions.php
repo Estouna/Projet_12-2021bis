@@ -1,6 +1,7 @@
 <?php
 session_start();
 require('../tutoForum/actions/topic/AAH-showSearchQuestionsAction.php');
+require('../tutoForum/functions/url_custom_encode.php');
 include '../tutoForum/includes/head.php';
 ?>
 
@@ -8,7 +9,7 @@ include '../tutoForum/includes/head.php';
 <!-- En appuyant sur rechercher on verra dans l'URL ?search=mot entré avec des + entre les mots -->
 <main class="column centerAlign">
     <!-- ------------------------------ NAVBAR ------------------------------ -->
-    <?php include '../tutoForum/includes/navbar.php'; ?>
+    <?php include '../tutoForum/includes/navbar-green.php'; ?>
 
     <section class="section-center column centerAlign">
 
@@ -36,7 +37,7 @@ include '../tutoForum/includes/head.php';
 
                     <div class="title-subject">
                         <h5>
-                            <a class="a-subject" href="../tutoForum/AAG-article.php?id=<?= $question['id']; ?>"><?= $question['titre']; ?></a>
+                            <a class="a-subject" href="../tutoForum/CD-f-show-topics.php?titre=<?= url_custom_encode($question['titre']) ?>&id=<?= $question['id']; ?>"><?= $question['titre']; ?></a>
                         </h5>
                     </div>
 
@@ -58,14 +59,12 @@ include '../tutoForum/includes/head.php';
 
     </section>
 
-    <div class="return-btn column centerAll">
-        <a class="a-btn column centerAll" href="#header">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up btn-arrow" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
-            </svg>
-        </a>
-    </div>
-    
+    <a class="return-btn column centerAll" href="#header">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up btn-arrow" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+        </svg>
+    </a>
+
 </main>
 
 <!-- ------------------------------ FOOTER ------------------------------ -->

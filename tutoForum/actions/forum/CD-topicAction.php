@@ -48,7 +48,7 @@ if (isset($_GET['titre'], $_GET['id']) and !empty($_GET['titre']) and !empty($_G
 				));
 				
 				// Rafraîchit la page pour éviter de renvoyer le message en réactualisant la page
-				header("Refresh: 2; URL=CD-f-show-topics?titre=$_GET[titre]&id=$_GET[id]&page=$_GET[page]#answer");
+				header("Refresh: 2; URL=CD-f-show-topics.php?titre=$_GET[titre]&id=$_GET[id]&page=$_GET[page]");
 				
 				$valide_rep = "Votre réponse a bien été postée";
 				// Efface les données saisies dans le champ textarea

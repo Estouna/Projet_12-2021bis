@@ -1,11 +1,11 @@
 <?php
-require('../tutoForum/actions/users/AAB-loginAction.php');
-include '../tutoForum/includes/head.php';
+require('actions-admin/loginAction.php');
+include '../includes/head.php';
 ?>
 
 <main class="column centerAlign">
     <!-- ------------------------------ NAVBAR ------------------------------ -->
-    <?php include '../tutoForum/includes/navbar-green.php'; ?>
+    <?php //include 'includes-admin/navbar-admin.php'; ?>
 
     <section class="section-center row centerJust centerAlign">
         <form action="" method="POST" class="shadow-green column centerJust centerAlign">
@@ -17,7 +17,7 @@ include '../tutoForum/includes/head.php';
                          ------------------------------ PAGE TITLE ------------------------------
                      -->
                     <div class="row centerJust">
-                        <legend>Connexion</legend>
+                        <legend>Connexion admin</legend>
                     </div>
 
                     <div>
@@ -33,7 +33,6 @@ include '../tutoForum/includes/head.php';
 
                         <div class="column centerJust centerAlign">
                             <input id="connect" class="btn-green neumorph-btn" type="submit" name="validate" value="CONNEXION">
-                            <a class="a-links" href="../tutoForum/AAA-signup.php">Pas encore de compte ? S'incrire</a>
                         </div>
                     </div>
                 </div>
@@ -56,4 +55,4 @@ include '../tutoForum/includes/head.php';
 
 </main>
 <!-- ------------------------------ FOOTER ------------------------------ -->
-<?php include '../tutoForum/includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

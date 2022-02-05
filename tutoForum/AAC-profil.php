@@ -6,17 +6,17 @@ include '../tutoForum/includes/head.php';
 
 <main class="column centerAlign">
     <!-- ------------------------------ NAVBAR ------------------------------ -->
-    <?php include '../tutoForum/includes/navbar.php'; ?>
+    <?php include '../tutoForum/includes/navbar-green.php'; ?>
 
     <section class="section-center row centerAll">
 
 
         <div class="blockProfil column">
 
+            <!-- 
+                ------------------------------ PAGE TITLE ------------------------------
+            -->
             <div class="sectionTitle column centerAll">
-                <!-- 
-                    ------------------------------ PAGE TITLE ------------------------------
-                -->
                 <h1 class="titleH1-profil">Bienvenue</h1>
                 <span class="nameProfil"><?= $userInfo['pseudo']; ?></span>
             </div>
@@ -31,8 +31,8 @@ include '../tutoForum/includes/head.php';
                     <div class="blockLinkProfil column centerAll gap">
                         <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AAH-searchQuestions.php">Rechercher un sujet</a>
                       <!--  <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/CB-forum-publish-topic.php">Publier un sujet</a> -->
-                        <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AAE-my-questions.php">Modifier mes sujets</a>
-                        <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AAI-my-answers.php">Modifier mes commentaires</a>
+                        <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AAE-my-questions.php">Modifier mes topics</a>
+                        <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AAI-my-answers.php">Modifier mes posts</a>
                         <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AACB-edit-profile.php">Modifier mon profil</a>
                         <a class="a-deco row centerAll" href="../tutoForum/actions/users/logoutAction.php">Se déconnecter</a>
                     </div>
@@ -42,6 +42,7 @@ include '../tutoForum/includes/head.php';
             </div>
         </div>
     </section>
+    <?= var_dump($userInfo) ?>
 
 </main>
 <!-- ------------------------------ FOOTER ------------------------------ -->
