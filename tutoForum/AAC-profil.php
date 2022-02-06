@@ -30,7 +30,7 @@ include '../tutoForum/includes/head.php';
                     </div>
                     <div class="blockLinkProfil column centerAll gap">
                         <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AAH-searchQuestions.php">Rechercher un sujet</a>
-                      <!--  <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/CB-forum-publish-topic.php">Publier un sujet</a> -->
+                        <!--  <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/CB-forum-publish-topic.php">Publier un sujet</a> -->
                         <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AAE-my-questions.php">Modifier mes topics</a>
                         <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AAI-my-answers.php">Modifier mes posts</a>
                         <a class="a-profil neumorph-btn row centerAll" href="../tutoForum/AACB-edit-profile.php">Modifier mon profil</a>
@@ -42,7 +42,6 @@ include '../tutoForum/includes/head.php';
             </div>
         </div>
     </section>
-    <?= var_dump($userInfo) ?>
 
 </main>
 <!-- ------------------------------ FOOTER ------------------------------ -->

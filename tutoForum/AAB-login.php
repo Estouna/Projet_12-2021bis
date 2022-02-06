@@ -37,7 +37,6 @@ include '../tutoForum/includes/head.php';
                         </div>
                     </div>
                 </div>
-
                 <div class="message row centerJust centerAlign">
                     <?php
                     if (isset($erreur)) {
