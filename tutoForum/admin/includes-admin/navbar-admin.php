@@ -43,8 +43,9 @@ if ($_SESSION['roles'] === "ADMIN") {
                 <input type="checkbox" id="touch" name="touch">
 
                 <ul class="slide slide-green column centerAll">
-                    <li><a class="a-navMenu-green" href="../../tutoForum/AAE-my-questions.php">Mes topics</a></li>
-                    <li><a class="a-navMenu-green" href="../../tutoForum/AAI-my-answers.php">Mes posts</a></li>
+                    <li><a class="a-navMenu-green" href="../AAC-profil.php">Page utilisateur</a></li>
+                    <li><a class="a-navMenu-green" href="../AAE-my-questions.php">Mes topics</a></li>
+                    <li><a class="a-navMenu-green" href="../AAI-my-answers.php">Mes posts</a></li>
                     <li><a class="a-navMenu-green" href="actions-admin/logoutGestionAction.php">Déconnexion</a></li>
                 </ul>
             </div>

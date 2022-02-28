@@ -1,7 +1,8 @@
 <?php
 session_start();
-require('../tutoForum/actions/users/showUsersProfileAction.php');
-include '../tutoForum/includes/head.php';
+require('actions/users/showUsersProfileAction.php');
+include 'includes/head.php';
+require('functions/url_custom_encode.php');
 ?>
 
 
@@ -10,7 +11,7 @@ include '../tutoForum/includes/head.php';
     <!-- ------------------------------ NAVBAR ------------------------------ -->
     <?php include '../tutoForum/includes/navbar-green.php'; ?>
 
-    <section class="section-center column centerJust centerAlign">
+    <section class="section-center column centerAlign">
         <?php
         if (isset($getHisQuestions)) {
 
@@ -22,7 +23,7 @@ include '../tutoForum/includes/head.php';
                     <!-- 
                          ------------------------------ PAGE TITLE ------------------------------
                      -->
-                    <h1 class="titleH1-profil">Publication de</h1>
+                    <h1 class="titleH1-profil">Publications de</h1>
                     <span class="nameProfil"><?= $user_pseudo; ?></span>
                 </div>
             </div>
@@ -35,7 +36,7 @@ include '../tutoForum/includes/head.php';
 
                         <div class="title-subject">
                             <h5>
-                                <a class="a-post" href="../tutoForum/AAG-article.php?id=<?= $question['id']; ?>"><?= $question['titre']; ?></a>
+                                <a class="a-post" href="CD-f-show-topics.php?titre=<?= url_custom_encode($question['titre']) ?>&id=<?= $question['id']; ?>"><?= $question['titre']; ?></a>
                             </h5>
                         </div>
 

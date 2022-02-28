@@ -1,6 +1,7 @@
 <?php
 require('actions-admin/AA-adminSecurityAction.php');
 require('actions-admin/AB-adminProfilAction.php');
+require('../functions/url_custom_encode.php');
 include '../includes/head.php';
 ?>
 
@@ -18,7 +19,7 @@ include '../includes/head.php';
             -->
             <div class="sectionTitle column centerAll">
                 <h1 class="titleH1-profil">Bienvenue</h1>
-                <span class="nameProfil">Admin</span>
+                <span class="nameProfil"><?= $_SESSION['pseudo']; ?></span>
             </div>
 
             <div class="blockBodyProfil column">
@@ -28,16 +29,19 @@ include '../includes/head.php';
                     </div>
 
 
+                    <!-- 
+                        MODALS WINDOWS 1
+                    -->
                     <div id="demo_box5" class="demo-box-gestion">
-                        <div class="close-block">&times;</div>
+                        <div class="row flexEnd close-block2">&times;</div>
+                        <div class="overlayContent display1 column centerAll">
 
-                        <div class="overlay-content display1 column centerAll">
                             <div class="container-member column centerAlign">
 
                                 <div class="block-list-member row">
                                     <ul class="col_member">
                                         <!-- 
-                                            TOPIC TITLE BAR
+                                            USERS TITLE BAR
                                         -->
                                         <li class="li-title-member row">
                                             <div class="block-title-id row centerAll">
@@ -55,26 +59,25 @@ include '../includes/head.php';
                                         </li>
 
                                         <!-- 
-                                            LIST TOPICS
+                                            LIST USERS
                                         -->
-                                        <!-- On fait une boucle en récupérant $topics -->
+                                        <!-- On fait une boucle pour récupérer les membres-->
 
                                         <?php while ($user = $requser->fetch()) { ?>
 
                                             <li class="li-list-member flex">
                                                 <div class="block-id row">
-                                                    <span class="a-id" href="../tutoForum/AACA-publicProfil.php?id=<?= $user['pseudo'] ?>"><?= $user['id'] ?></span>
+                                                    <span class="a-id"><?= $user['id'] ?></span>
                                                 </div>
                                                 <div class="block-pseudo">
-                                                    <a class="a-pseudo" href="../tutoForum/CD-f-show-topics.php?titre=<?= $user['pseudo'] ?>&id=<?= $user['pseudo'] ?>"><?= $user['pseudo'] ?></a>
+                                                    <a class="a-pseudo" href="../AACA-publicProfil.php?id=<?= $user['id'] ?>"><?= $user['pseudo'] ?></a>
                                                 </div>
                                                 <div class="block-mail row">
                                                     <span class="a-mail"><?= $user['mail'] ?></span>
                                                 </div>
                                                 <div class="block-modif row spaceAround centerAll">
                                                     <div class="sub-block-pseudoBan row centerJust">
-                                                        <a class="a-modif a-modifPseudo row centerAll" href="#">Pseudo</a>
-                                                        <a class="a-modif row centerAll" href="#">Bannir</a>
+                                                        <a class="a-modif row centerAll" href="edit-profilMember.php?id=<?= $user['id'] ?>">Modifier</a>
                                                     </div>
                                                 </div>
                                             </li>
@@ -84,42 +87,90 @@ include '../includes/head.php';
                                     </ul>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
 
-
-
+                    <!-- 
+                        MODALS WINDOWS 2
+                    -->
                     <div id="demo_box6" class="demo-box-gestion">
-                        <div class="close-block">&times;</div>
-                        <div class="overlay-content display2 column centerAll">
-                            <ul class="ul-home column centerAll gap-l">
-                                <li><a class="a-home" href="#">ça arrive...</a></li>
-                            </ul>
+                        <div class="row flexEnd close-block2">&times;</div>
+                        <div class="overlayContent display2 column centerAll">
+
+                            <div class="container-member column centerAlign">
+
+                                <div class="block-list-member row">
+                                    <ul class="col_member">
+                                        <!-- 
+                                            TOPIC TITLE BAR
+                                        -->
+                                        <li class="li-title-member row">
+                                            <div class="block-title-id row centerAll">
+                                                <span class="title_id">Id</span>
+                                            </div>
+                                            <div class="block-title-pseudo row centerAll">
+                                                <span class="title_topic_subject">Pseudo</span>
+                                            </div>
+                                            <div class="block-title-mail row centerAll">
+                                                <span class="title_mail">Titre</span>
+                                            </div>
+                                            <div class="block-title-modif row centerAll">
+                                                <span class="title_modif">Modifications</span>
+                                            </div>
+                                        </li>
+
+                                        <!-- 
+                                            LIST TOPICS
+                                        -->
+                                        <!-- On fait une boucle pour récupérer les membres-->
+
+                                        <?php while ($topic = $getAllQuestionsUsers->fetch()) { ?>
+
+                                            <li class="li-list-member flex">
+                                                <div class="block-id row">
+                                                    <span class="a-id"><?= $topic['id'] ?></span>
+                                                </div>
+                                                <div class="block-pseudo">
+                                                    <a class="a-pseudo" href="../AACA-publicProfil.php?id=<?= $topic['id_auteur'] ?>"><?= $topic['pseudo_auteur'] ?></a>
+                                                </div>
+                                                <div class="block-mail row">
+                                                    <a class="a-titre" href="../CD-f-show-topics.php?titre=<?= url_custom_encode($topic['titre']) ?>&id=<?= $topic['id']; ?>"><?= $topic['titre'] ?></a>
+                                                </div>
+                                                <div class="block-modif row spaceAround centerAll">
+                                                    <div class="sub-block-pseudoBan row centerJust">
+                                                        <a class="a-modif row centerAll" href="edit-topicMember.php?id=<?= $topic['id'] ?>">Modifier</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        <?php } ?>
+
+                                    </ul>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
+                    <!-- 
+                        MODALS WINDOWS 3
+                    -->
                     <div id="demo_box7" class="demo-box-gestion">
-                        <div class="close-block">&times;</div>
-                        <div class="overlay-content display3 column centerAll">
+                        <div class="row flexEnd close-block2">&times;</div>
+                        <div class="overlayContent display3 column centerAll">
                             <ul class="ul-home column centerAll gap-l">
                                 <li><a class="a-home" href="#">ça arrive...</a></li>
                             </ul>
                         </div>
                     </div>
-
+                    <!-- 
+                        MODALS WINDOWS 4
+                    -->
                     <div id="demo_box8" class="demo-box-gestion">
-                        <div class="close-block">&times;</div>
-                        <div class="overlay-content display4 column centerAll">
-                            <ul class="ul-home column centerAll gap-l">
-                                <li><a class="a-home" href="#">ça arrive...</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div id="demo_box9" class="demo-box-gestion">
-                        <div class="close-block">&times;</div>
-                        <div class="overlay-content display4 column centerAll">
+                        <div class="row flexEnd close-block2">&times;</div>
+                        <div class="overlayContent display4 column centerAll">
                             <ul class="ul-home column centerAll gap-l">
                                 <li><a class="a-home" href="#">ça arrive...</a></li>
                             </ul>
@@ -128,27 +179,29 @@ include '../includes/head.php';
 
 
 
-
+                    <!-- 
+                        BUTTONS
+                    -->
                     <div class="blockLinkProfil column centerAll gap">
 
                         <div id="block5" class="blocks">
-                            <a class="a-profil neumorph-btn row centerAll" href="#">Afficher les membres</a>
+                            <p class="a-profil neumorph-btn row centerAll">Afficher les membres</p>
                         </div>
 
                         <div id="block6" class="blocks">
-                            <a class="a-profil neumorph-btn row centerAll" href="#">Afficher les topics</a>
+                            <p class="a-profil neumorph-btn row centerAll">Afficher les topics</p>
                         </div>
 
                         <div id="block7" class="blocks">
-                            <a class="a-profil neumorph-btn row centerAll" href="#">Afficher les posts</a>
+                            <p class="a-profil neumorph-btn row centerAll">Afficher les posts</p>
                         </div>
 
                         <div id="block8" class="blocks">
-                            <a class="a-profil neumorph-btn row centerAll" href="#">Créer un modérateur</a>
+                            <p class="a-profil neumorph-btn row centerAll">Créer un modérateur</p>
                         </div>
 
-                        <div id="block9" class="blocks">
-                            <a class="a-profil neumorph-btn row centerAll" href="#">Modifier mon profil</a>
+                        <div id="block" class="blocks">
+                            <a class="a-profil neumorph-btn row centerAll" href="../AAC-profil.php">Aller à ma page utilisateur</a>
                         </div>
 
                         <a class="a-deco row centerAll" href="actions-admin/logoutGestionAction.php">Se déconnecter</a>

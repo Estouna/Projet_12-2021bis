@@ -1,7 +1,8 @@
 <?php
-require('actions/database.php');
 
-// Valider le formulaire quand on clique sur modifier
+require('../actions/database.php');
+
+// Valide le formulaire quand on clique sur modifier
 if (isset($_POST['validate'])) {
 
     // Vérifier si les champs sont remplis
@@ -15,10 +16,10 @@ if (isset($_POST['validate'])) {
         // Modifier les informations de la question qui possède l'id rentré en parmamètres dans l'URL
         // Mettre à jour la table questions en mettant à jour titre, description et contenu qui possède l'id ? (récupéré dans l'URL) 
         $editQuestionOnWebsite = $bdd->prepare('UPDATE questions SET titre = ?, description = ?, contenu = ? WHERE id = ?');
-        $editQuestionOnWebsite->execute(array($new_question_title, $new_question_description, $new_question_content, $idOfQuestion)); // si marche pas utiliser ($_GET['id']) à la place $idOfQuestion 
+        $editQuestionOnWebsite->execute(array($new_question_title, $new_question_description, $new_question_content, $_GET['id'])); // si marche pas utiliser ($_GET['id']) à la place $idOfQuestion 
 
         // Redirige vers la page d'affichage des questions de l'utilisateur
-        header('Location: AAE-my-questions.php');
+        header("Refresh: 2; URL=edit-topicMember.php?id=$_GET[id]");
     } else {
         $erreur = "Veuillez modifier un champ avant de valider.";
     }

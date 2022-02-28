@@ -7,8 +7,8 @@ include '../tutoForum/includes/head.php';
 <main class="column centerAlign">
     <!-- ------------------------------ NAVBAR ------------------------------ -->
     <?php include '../tutoForum/includes/navbar-green.php'; ?>
+    
     <section class="section-center row centerAll">
-
         <!-- 
             ------------------------------ REGISTRATION FORM ------------------------------
         -->
@@ -75,7 +75,9 @@ include '../tutoForum/includes/head.php';
                         <a class="a-links" href="../tutoForum/AAB-login.php">J'ai déjà un compte</a>
                     </div>
                 </div>
-
+                <!-- 
+                    ------------------------------ VALID/ERROR MESSAGES ------------------------------
+                -->                                                                                                                                      
                 <div class="message row centerJust centerAlign">
                     <?php
                     if (isset($erreur)) {

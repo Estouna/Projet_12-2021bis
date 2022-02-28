@@ -13,7 +13,7 @@ include '../tutoForum/includes/head.php';
 
     <section class="section-center column centerAlign">
 
-        <form method="GET" class="shadow-green row centerAll marginSearch">
+        <form method="GET" class="row centerAll marginSearch">
 
             <div class="form-search neumorph-form">
                 <div class="row centerAll">

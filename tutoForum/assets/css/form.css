@@ -259,8 +259,7 @@
 }
 
 .form, .blockModifQuestion {
-    border: 4px double transparent;
-    outline: 4px double var(--color-green);
+    border: 4px double white;
     border-radius: 10px;
 }
 
@@ -458,7 +457,7 @@ textarea {
 }
 
 #signup, #connect, #publier, #modifier {
-    margin-top: max(1vw, 5px);
+    margin-top: max(1vw, 10px);
 }
 
 
