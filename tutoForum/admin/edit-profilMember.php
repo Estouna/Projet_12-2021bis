@@ -27,7 +27,7 @@ include '../includes/head.php';
                     <div class="column centerAlign">
                         <P class="p-pseudoMailEdit">Le pseudo actuel</P>
                         <span class="name-EditProfil"><?= $user['pseudo']; ?></span>
-                        <p class="p-pseudoMailEdit">Adresse mail actuelle</p>
+                        <p class="p-pseudoMailEdit">Adresse mail</p>
                         <span class="email-EditProfil"><?= $user['mail']; ?></span>
                     </div>
 
@@ -59,7 +59,7 @@ include '../includes/head.php';
 
             </div>
             <div class="blockBtn-banish row flexEnd">
-                <a class="row centerAll btn-banish" href="actions-admin/CAB-banishUser.php?id=<?= $user['id']; ?>">Bannir</a>
+                <a class="row centerAll btn-banish" onclick='return confirm(" Cette action est irréversible, êtes-vous sûr ? ")' href="actions-admin/CAB-banishUser.php?id=<?= $user['id']; ?>">Bannir</a>
             </div>
 
         </form>

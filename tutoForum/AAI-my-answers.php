@@ -28,7 +28,7 @@ include '../tutoForum/includes/head.php';
                     </div>
                     <div class="modif-post row centerAlign centerJust">
                         <a class="btn-modifier btn-green neumorph-btn row centerJust centerAlign" href="../tutoForum/AAI-edit-answer.php?id=<?= $answer['id'] ?>">MODIFIER</a>
-                        <a class="btn-effacer row centerJust centerAlign" href="../tutoForum/actions/post/deleteAnswerAction.php?id=<?= $answer['id'] ?>">EFFACER</a>
+                        <a class="btn-effacer row centerJust centerAlign" onclick='return confirm(" Cette action est irréversible, êtes-vous sûr ? ")' href="../tutoForum/actions/post/deleteAnswerAction.php?id=<?= $answer['id'] ?>">EFFACER</a>
                     </div>
                 </div>
 

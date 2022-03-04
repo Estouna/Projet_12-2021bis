@@ -22,6 +22,10 @@ include '../tutoForum/includes/head.php';
                 } ?>
             </h1>
 
+            <div class="block-newTopic row flexEnd margB-s margR-m">
+                <a class="a-newTopic row centerAll" href="../tutoForum/CB-forum-publish-topic.php?categorie=<?= $id_category ?>">Créer un nouveau sujet</a>
+            </div>
+
             <div class="block-list-topic row">
 
                 <ul class="col_topic">
@@ -62,7 +66,6 @@ include '../tutoForum/includes/head.php';
                 </ul>
             </div>
 
-            <a class="a-newTopic centerAll" href="../tutoForum/CB-forum-publish-topic.php?categorie=<?= $id_category ?>">Nouveau topic</a>
 
             <div class="message row centerJust centerAlign">
                 <?php

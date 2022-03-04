@@ -160,9 +160,59 @@ include '../includes/head.php';
                     <div id="demo_box7" class="demo-box-gestion">
                         <div class="row flexEnd close-block2">&times;</div>
                         <div class="overlayContent display3 column centerAll">
-                            <ul class="ul-home column centerAll gap-l">
-                                <li><a class="a-home" href="#">ça arrive...</a></li>
-                            </ul>
+
+                            <div class="container-member column centerAlign">
+
+                                <div class="block-list-member row">
+                                    <ul class="col_member">
+                                        <!-- 
+                                            POST TITLE BAR
+                                        -->
+                                        <li class="li-title-member row">
+                                            <div class="block-title-id_question row centerAll">
+                                                <span class="title_id">Id question</span>
+                                            </div>
+                                            <div class="block-title-pseudo_post row centerAll">
+                                                <span class="title_topic_subject">Pseudo</span>
+                                            </div>
+                                            <div class="block-title-date row centerAll">
+                                                <span class="title_mail">Date de publication</span>
+                                            </div>
+                                            <div class="block-title-modif_post row centerAll">
+                                                <span class="title_modif">Modifications</span>
+                                            </div>
+                                        </li>
+
+                                        <!-- 
+                                            LIST POSTS
+                                        -->
+                                        <!-- On fait une boucle pour récupérer les membres-->
+
+                                        <?php while ($answer = $getAllAnswersUsers->fetch()) { ?>
+
+                                            <li class="li-list-member flex">
+                                                <div class="block-id_question row">
+                                                    <span class="a-id"><?= $answer['id_question'] ?></span>
+                                                </div>
+                                                <div class="block-pseudo_post">
+                                                    <a class="a-pseudo" href="../AACA-publicProfil.php?id=<?= $answer['id_auteur'] ?>"><?= $answer['pseudo_auteur'] ?></a>
+                                                </div>
+                                                <div class="block-date row">
+                                                    <a class="a-titre"><?= $answer['date_publication'] ?></a>
+                                                </div>
+                                                <div class="block-modif_post row spaceAround centerAll">
+                                                    <div class="sub-block-pseudoBan row centerJust">
+                                                        <a class="a-modif row centerAll" href="edit-answerMember.php?id=<?= $answer['id'] ?>">Modifier</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                        <?php } ?>
+
+                                    </ul>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     <!-- 

@@ -219,8 +219,9 @@
 }
 
 .close-block2 {
-    position: sticky;
+    position: relative;
     top: 1px;
+    right: 5px;
     color: var(--color-white);
     font-size: max(2.5vw, 40px);
     transition: 0.2s;
@@ -249,12 +250,13 @@
     width: 90%;
 }
 
+/* Ensemble des colonnes */
 .col_member {
     width: 100%;
     border: 1px solid var(--color-green);
 }
 
-/* Block subject and block authorCountLast */
+/* Colonnes séparées */
 .block-title-id, .block-id {
     width: 8%;
 }
@@ -269,6 +271,23 @@
 
 .block-title-modif, .block-modif {
     width: 15%;
+}
+
+/* Colonnes séparées des posts */
+.block-title-id_question, .block-id_question {
+    width: 20%;
+}
+
+.block-title-pseudo_post, .block-pseudo_post {
+    width: 30%;
+}
+
+.block-title-date, .block-date {
+    width: 30%;
+}
+
+.block-title-modif_post, .block-modif_post {
+    width: 20%;
 }
 
 /* End */
@@ -304,7 +323,7 @@
 }
 
 .li-title-member {
-    font-size: max(0.9vw, 10px);
+    font-size: max(0.9vw, 9px);
     border-bottom: 1px solid var(--color-green);
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -327,15 +346,15 @@
     color: var(--color-white);
 }
 
-.block-pseudo, .block-mail, .block-modif {
+.block-pseudo, .block-pseudo_post, .block-mail, .block-date, .block-modif, .block-modif_post {
     border-left: 1px solid var(--color-green);
 }
 
-.block-pseudo, .a-id, .a-mail, .a-titre {
-    padding-top: max(1vw, 5px);
+.block-pseudo, .block-pseudo_post, .a-id, .a-mail, .a-titre {
+    padding-top: max(1vw, 10px);
     padding-left: max(0.5vw, 5px);
     padding-right: max(0.5vw, 5px);
-    padding-bottom: max(0.5vw, 10px);
+    padding-bottom: max(1vw, 10px);
 }
 
 /* END ARRAY */
@@ -348,6 +367,54 @@
 @media screen and (max-width: 1000px) {
     .wrap-edit {
         flex-direction: column;
+    }
+
+    .demo-box-gestion {
+        width: 100%;
+    }
+
+    .block-list-member {
+        background-color: rgba(0, 0, 0, 0.713);
+        width: 95%;
+    }
+
+    .col_member {
+        width: 100%;
+        border: 1px solid var(--color-green);
+    }
+
+    /* Ensemble des colonnes */
+    .block-title-id, .block-id {
+        display: none;
+    }
+
+    .block-title-pseudo, .block-pseudo {
+        width: 25%;
+    }
+
+    .block-title-mail, .block-mail {
+        width: 60%;
+    }
+
+    .block-title-modif, .block-modif {
+        width: 20%;
+    }
+
+    /* Colonnes séparées des posts */
+    .block-title-id_question, .block-id_question {
+        width: 19%;
+    }
+
+    .block-title-pseudo_post, .block-pseudo_post {
+        width: 29%;
+    }
+
+    .block-title-date, .block-date {
+        width: 32%;
+    }
+
+    .block-title-modif_post, .block-modif_post {
+        width: 20%;
     }
 }
 
@@ -364,25 +431,6 @@
         border-right: none;
     }
 
-    .block-list-member {
-        width: 100%;
-    }
-
-    .block-title-id, .block-id {
-        width: 8%;
-    }
-
-    .block-title-pseudo, .block-pseudo {
-        width: 27%;
-    }
-
-    .block-title-mail, .block-mail {
-        width: 27%;
-    }
-
-    .block-title-modif, .block-modif {
-        width: 38%;
-    }
 }
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END MEDIAQUERIES xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */

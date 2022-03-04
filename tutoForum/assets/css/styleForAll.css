@@ -163,6 +163,9 @@ a, .unselectable {
 }
 
 /* Margin top */
+.margT-xs {
+    margin-top: max(0.5vw, 2px);
+}
 .margT-s {
     margin-top: max(1vw, 5px);
 }
@@ -176,6 +179,9 @@ a, .unselectable {
 }
 
 /* Margin bottom */
+.margB-xs {
+    margin-bottom: max(0.5vw, 2px);
+}
 .margB-s {
     margin-bottom: max(1vw, 5px);
 }

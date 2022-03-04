@@ -26,7 +26,7 @@ if (isset($_GET['categorie'])) {
         if (isset($_POST['topic-validate'])) {
 
             // Vérifie si les 3 champs existent
-            if (isset($_POST['topic-title'], $_POST['topic-description'], $_POST['topic-content'])) {
+            if (!empty($_POST['topic-title']) and !empty($_POST['topic-SubCategory']) and !empty($_POST['topic-description']) and !empty($_POST['topic-content'])) {
 
                 // Sécurise les champs (nl2br permet le saut de ligne)
                 $id_author = $_SESSION['id'];
@@ -46,11 +46,9 @@ if (isset($_GET['categorie'])) {
                 $verify_sc = $verify_sc->rowCount();
                 if ($verify_sc == 1) {
 
-                    // Vérifie si les champs ne sont pas vides
-                    if (!empty($title) and !empty($description) and !empty($content)) {
-
-                        // Limite le nombre de caractères du titre
-                        if (strlen($title) <= 100) {
+                    // Limite le nombre de caractères du titre
+                    if (strlen($title) <= 100) {
+                        if (strlen($description) <= 400) {
 
                             // Vérifie si la notification de mail est coché ou non (la case checkbox indique on ou off)
                             if (isset($_POST['topic-checkbox'])) {
@@ -81,14 +79,16 @@ if (isset($_GET['categorie'])) {
 
                             header('Location: CA-forum-home.php');
                         } else {
-                            $erreur = "Le titre ne doit pas dépasser 100 caractères";
+                            $erreur = "La description ne doit pas dépasser 400 caractères";
                         }
                     } else {
-                        $erreur = "Veuillez compléter tous les champs";
+                        $erreur = "Le titre ne doit pas dépasser 100 caractères";
                     }
                 } else {
                     $erreur = "Sous-catégorie invalide";
                 }
+            } else {
+                $erreur = "Veuillez compléter tous les champs";
             }
         }
     } else {

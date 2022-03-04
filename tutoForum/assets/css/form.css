@@ -32,6 +32,7 @@
     color: var(--color-white);
     border-radius: 5px 5px 0 0;
     letter-spacing: max(0.2vw, 1px);
+    overflow-wrap: break-word;
 }
 
 .description-subject {
@@ -40,6 +41,7 @@
     color: var(--color-black);
     background-color: #ffffff;
     min-height: 5vh;
+    overflow-wrap: break-word;
 }
 
 .content-subject {
@@ -48,6 +50,7 @@
     font-size: max(0.9vw, 12px);
     color: var(--color-black);
     min-height: 5vh;
+    overflow-wrap: break-word;
 }
 
 .authorDate-subject {
