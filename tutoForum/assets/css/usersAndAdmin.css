@@ -15,6 +15,10 @@
     padding-bottom: max(2vw, 10px);
 }
 
+.blockProfilMember {
+    padding-bottom: 0;
+}
+
 .blockProfilPublic {
     margin-top: max(1vw, 10px);
 }
@@ -84,28 +88,50 @@
 }
 
 /* ---------------------------------------------- PAGE EDIT PROFILE ---------------------------------------------- */
+.form_role {
+    padding-top: max(0.5vw, 10px);
+    padding-right: max(1.5vw, 10px);
+    padding-bottom: max(1.5vw, 10px);
+}
 
+.legend-role {
+    font-family: var(--font-roboThin);
+    font-size: max(1.1vw, 12px);
+    margin-bottom: max(0.2vw, 5px);
+    letter-spacing: max(0.1vw, 2px);
+    color: var(--color-font-general);
+}
+
+.label-role {
+    color: var(--color-font-general);
+}
+
+.btn-modifRole {
+    font-size: max(0.8vw, 11px);
+    padding: max(0.1vw, 3px);
+    width: max(4vw, 50px);
+    border-radius: 5px;
+    background-color: #e9e9e9;
+    outline: 2px solid var(--color-green);
+    color: rgb(0, 174, 139);
+    box-shadow:
+        -3px 3px 3px 0px #9b9a9a,
+        inset 1px -1px 2px #b8b7b7,
+        inset -1px 1px 2px #ffffff;
+    transition: 0.3s;
+}
 
 .p-pseudoMailEdit {
     font-size: max(1vw, 12px);
-    margin-top: max(1vw, 1px);
 }
 
 .name-EditProfil, .email-EditProfil {
-    font-size: max(1.5vw, 17px);
+    font-size: max(1.1vw, 14px);
     font-family: var(--font-roboThin);
     color: var(--color-green);
     text-shadow: 0.2px 0.2px 1px rgb(0, 121, 97),
         -0.2px -0.2px 1px rgb(0, 121, 97);
-    margin-bottom: max(1vw, 1px);
     letter-spacing: max(0.1vw, 1px);
-}
-
-.labelInput-edit {
-    margin-top: max(2vw, 30px);
-    margin-bottom: max(2vw, 10px);
-    margin-left: max(2vw, 1px);
-    margin-right: max(2vw, 1px);
 }
 
 .labelProfil-edit {
@@ -126,10 +152,6 @@
     border-radius: 10px;
 }
 
-#updateProfil {
-    margin-top: max(2vw, 30px);
-}
-
 .blockBtn-banish {
     width: 100%;
 }
@@ -137,12 +159,12 @@
 .btn-banish {
     background-color: red;
     color: var(--color-white);
-    font-size: max(1vw, 11px);
-    padding: max(0.4vw, 3px);
-    margin-right: max(2vw, 10px);
-    width: max(8vw, 80px);
+    font-size: max(0.9vw, 11px);
+    padding: max(0.2vw, 3px);
+    width: max(4vw, 50px);
     border-radius: 5px;
     outline: 2px solid var(--color-white);
+    box-shadow: -3px 3px 3px 0px #9b9a9a;
 }
 
 

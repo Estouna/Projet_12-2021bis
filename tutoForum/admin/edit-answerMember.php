@@ -29,7 +29,7 @@ include '../includes/head.php';
                         </div>
 
                         <div class="column centerJust">
-                            <label for="content">Contenu de la réponse</label>
+                            <label for="content">Contenu du commentaire</label>
                             <textarea class="textareaContent neumorph-btn" name="content"><?= $answer_content ?></textarea>
                         </div>
                     </div>

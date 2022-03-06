@@ -30,6 +30,7 @@ if (isset($_SESSION['auth'])) {
 
 
         <nav id="navConnect">
+            
             <?php if ($_SESSION['roles'] === "ADMIN") { ?>
                 <a class="link-profil a-navMenu-green" href="../../tutoForum/admin/home-admin.php"><?= $_SESSION['pseudo'] ?></a>
             <?php } ?>

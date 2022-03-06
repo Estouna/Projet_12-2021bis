@@ -39,9 +39,27 @@ if (isset($_GET['id']) and !empty($_GET['id'])) {
                 $erreur = "Votre pseudo ne doit pas dépasser 20 caractères !";
             }
         }
-
     } else {
         $erreur = "Aucun membre n'a été trouvé";
+    }
+
+
+    if (isset($_POST['checkbox_moderateur']) and !empty($_POST['checkbox_moderateur'])) {
+        $role_moder = $_POST['checkbox_moderateur'];
+        $insert_roleModerateur = $bdd->prepare("UPDATE users SET roles = ? WHERE id = ?");
+        $insert_roleModerateur->execute(array($role_moder, $get_id));
+
+        $valide = "Vos modifications ont été prises en compte !";
+        header("Refresh: 3; URL=edit-profilMember.php?id=$_GET[id]");
+    }
+
+    if (isset($_POST['checkbox_membre']) and !empty($_POST['checkbox_membre'])) {
+        $role_membre = $_POST['checkbox_membre'];
+        $insert_roleMembre = $bdd->prepare("UPDATE users SET roles = ? WHERE id = ?");
+        $insert_roleMembre->execute(array($role_membre, $get_id));
+        
+        $valide = "Vos modifications ont été prises en compte !";
+        header("Refresh: 3; URL=edit-profilMember.php?id=$_GET[id]");
     }
 } else {
     $erreur = "L'identifiant de l'utilisateur n'a pas été récupéré ";

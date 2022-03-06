@@ -29,17 +29,17 @@ include '../tutoForum/includes/head.php';
                         </div>
 
                         <div class="column">
-                            <label for="title">Titre de la question</label>
+                            <label for="title">Titre du sujet</label>
                             <input class="textTitle neumorph-btn" name="title" value="<?= $question_title; ?>">
                         </div>
 
                         <div class="column">
-                            <label for="description">Description de la question</label>
+                            <label for="description">Description du sujet</label>
                             <textarea class="textareaDescription neumorph-btn" name="description"><?= $question_description; ?></textarea>
                         </div>
 
                         <div class="column">
-                            <label for="content">Contenu de la question</label>
+                            <label for="content">Contenu du sujet</label>
                             <textarea class="textareaContent neumorph-btn" name="content"><?= $question_content ?></textarea>
                         </div>
                     </div>

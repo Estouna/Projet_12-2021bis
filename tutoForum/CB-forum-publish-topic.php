@@ -13,9 +13,9 @@ include('../tutoForum/includes/head.php');
             ------------------------------ PUBLISH TOPIC FORM ------------------------------
         -->
         <form method="POST" class="shadow-green">
-            
+
             <div class="neumorph-form formTextarea form form-publish-topic column centerAll">
-                
+
                 <div class="column centerAll">
                     <!-- 
                         ------------------------------ PAGE TITLE ------------------------------
@@ -33,7 +33,7 @@ include('../tutoForum/includes/head.php');
                     <!-- 
                         ------------------------------ TOPIC CATEGORY ------------------------------
                     -->
-                    
+
                     <div class='column centerAll'>
                         <p class="p-category">Catégorie du sujet</p>
                         <div class='cat-title  row centerAll'>
@@ -49,59 +49,59 @@ include('../tutoForum/includes/head.php');
                             <option value="" selected>Choisir une sous-catégorie</option>
                             <?php while ($sc = $sub_category->fetch()) { ?>
                                 <option value="<?= $sc['id'] ?>"><?= $sc['name'] ?></option>
-                                <?php } ?>
-                            </select>
-                        </div>
-                        
-                        <!-- 
+                            <?php } ?>
+                        </select>
+                    </div>
+
+                    <!-- 
                             ------------------------------ TOPIC DESCRIPTION ------------------------------
                         -->
-                        <div class="column">
-                            <label for="description">Description du sujet</label>
-                            <textarea class="textareaDescription neumorph-btn" name="topic-description" maxlength="400"></textarea>
-                        </div>
-                        <!-- 
+                    <div class="column">
+                        <label for="description">Description du sujet</label>
+                        <textarea class="textareaDescription neumorph-btn" name="topic-description" maxlength="400"></textarea>
+                    </div>
+                    <!-- 
                             ------------------------------ TOPIC CONTENT ------------------------------
                         -->
-                        <div class="column">
-                            <label for="content">Contenu du sujet</label>
-                            <textarea class="textareaContent neumorph-btn" name="topic-content"></textarea>
-                        </div>
-                        <!-- 
+                    <div class="column">
+                        <label for="content">Contenu du sujet</label>
+                        <textarea class="textareaContent neumorph-btn" name="topic-content"></textarea>
+                    </div>
+                    <!-- 
                             ------------------------------ TOPIC CHECKBOX NOTIFIED ------------------------------
                         -->
-                        <input class="checkbox-notif" type="checkbox" name="topic-checkbox">
-                        <div class="row centerAll gap">
-                            <label class="label-checkbox-notif" for="content">Me notifier les réponses par email</label>
-                        </div>
-                    </div>
-                    <!-- 
-                        ------------------------------ TOPIC BTN SUBMIT ------------------------------
-                    -->
-                    <div class="row gap centerAll">
-                        <input id="publier" class="btn-green neumorph-btn" type="submit" name="topic-validate" value="PUBLIER">
-                        <a class="a-links" href="../tutoForum/CA-forum-home.php">Retour</a>
-                    </div>
-                    
-                    <!-- 
-                         ------------------------------ ERROR/VALID MESSAGE ------------------------------
-                     -->
-                    <div class="message row centerJust centerAlign">
-                        <?php
-                        if (isset($erreur)) {
-                            echo '<div class="block-mess"><span class="red">' . $erreur . "</span></div>";
-                        }
-                        if (isset($valide)) {
-                            echo '<span class="green">' . $valide . "</span>";
-                        }
-                    
-                        ?>
+                    <input class="checkbox-notif" type="checkbox" name="topic-checkbox">
+                    <div class="row centerAll gap">
+                        <label class="label-checkbox-notif" for="content">Me notifier les réponses par email</label>
                     </div>
                 </div>
-                
-                
-            </form>
-        </section>
-    </main>
-    <!-- ------------------------------ FOOTER ------------------------------ -->
-    <?php include '../tutoForum/includes/footer.php'; ?>
+                <!-- 
+                        ------------------------------ TOPIC BTN SUBMIT ------------------------------
+                    -->
+                <div class="row gap centerAll">
+                    <input id="publier" class="btn-green neumorph-btn" type="submit" name="topic-validate" value="PUBLIER">
+                    <a class="a-links" href="../tutoForum/CA-forum-home.php">Retour</a>
+                </div>
+
+                <!-- 
+                         ------------------------------ ERROR/VALID MESSAGE ------------------------------
+                     -->
+                <div class="message row centerJust centerAlign">
+                    <?php
+                    if (isset($erreur)) {
+                        echo '<div class="block-mess"><span class="red">' . $erreur . "</span></div>";
+                    }
+                    if (isset($valide)) {
+                        echo '<span class="green">' . $valide . "</span>";
+                    }
+
+                    ?>
+                </div>
+            </div>
+
+
+        </form>
+    </section>
+</main>
+<!-- ------------------------------ FOOTER ------------------------------ -->
+<?php include '../tutoForum/includes/footer.php'; ?>

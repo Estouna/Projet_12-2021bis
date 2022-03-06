@@ -51,7 +51,7 @@ include '../includes/head.php';
                                                 <span class="title_topic_subject">Pseudo</span>
                                             </div>
                                             <div class="block-title-mail row centerAll">
-                                                <span class="title_mail">Email</span>
+                                                <span class="title_mail">Rôle</span>
                                             </div>
                                             <div class="block-title-modif row centerAll">
                                                 <span class="title_modif">Modifications</span>
@@ -73,7 +73,7 @@ include '../includes/head.php';
                                                     <a class="a-pseudo" href="../AACA-publicProfil.php?id=<?= $user['id'] ?>"><?= $user['pseudo'] ?></a>
                                                 </div>
                                                 <div class="block-mail row">
-                                                    <span class="a-mail"><?= $user['mail'] ?></span>
+                                                    <span class="a-mail"><?= $user['roles'] ?></span>
                                                 </div>
                                                 <div class="block-modif row spaceAround centerAll">
                                                     <div class="sub-block-pseudoBan row centerJust">
@@ -215,17 +215,6 @@ include '../includes/head.php';
 
                         </div>
                     </div>
-                    <!-- 
-                        MODALS WINDOWS 4
-                    -->
-                    <div id="demo_box8" class="demo-box-gestion">
-                        <div class="row flexEnd close-block2">&times;</div>
-                        <div class="overlayContent display4 column centerAll">
-                            <ul class="ul-home column centerAll gap-l">
-                                <li><a class="a-home" href="#">ça arrive...</a></li>
-                            </ul>
-                        </div>
-                    </div>
 
 
 
@@ -244,10 +233,6 @@ include '../includes/head.php';
 
                         <div id="block7" class="blocks">
                             <p class="a-profil neumorph-btn row centerAll">Afficher les posts</p>
-                        </div>
-
-                        <div id="block8" class="blocks">
-                            <p class="a-profil neumorph-btn row centerAll">Créer un modérateur</p>
                         </div>
 
                         <div id="block" class="blocks">

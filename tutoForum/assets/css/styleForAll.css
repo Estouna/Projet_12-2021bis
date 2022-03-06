@@ -21,8 +21,8 @@
     --color-green-text: rgb(0, 221, 177);
     --color-green: rgb(8, 248, 200);
     --color-red: rgb(255, 95, 95);
-    --color-blue: rgb(255, 95, 95);
-    --color-yellow: rgb(255, 95, 95);
+    --color-blue: rgb(111, 162, 255);
+    --color-yellow: rgb(252, 191, 25);
     /*rgb(8, 248, 200);*/
     /* ---------------Variable font-family------------- */
     --font-roboReg: "Roboto-Regular", arial, sans-serif;
@@ -277,19 +277,19 @@ a, .unselectable {
 }
 
 .header-blue::before {
-    background: var(--color-green);
-    box-shadow: 0 0 5px var(--color-green),
-        0 0 10px var(--color-green),
-        0 0 15px var(--color-green),
-        0 0 30px var(--color-green);
+    background: var(--color-blue);
+    box-shadow: 0 0 5px var(--color-blue),
+        0 0 10px var(--color-blue),
+        0 0 15px var(--color-blue),
+        0 0 30px var(--color-blue);
 }
 
 .header-yellow::before {
-    background: var(--color-green);
-    box-shadow: 0 0 5px var(--color-green),
-        0 0 10px var(--color-green),
-        0 0 15px var(--color-green),
-        0 0 30px var(--color-green);
+    background: var(--color-yellow);
+    box-shadow: 0 0 5px var(--color-yellow),
+        0 0 10px var(--color-yellow),
+        0 0 15px var(--color-yellow),
+        0 0 30px var(--color-yellow);
 }
 
 
@@ -303,11 +303,11 @@ a, .unselectable {
 }
 
 .a-navMenu-blue:hover {
-    color: var(--color-green);
+    color: var(--color-blue);
 }
 
 .a-navMenu-yellow:hover {
-    color: var(--color-green);
+    color: var(--color-yellow);
 }
 
 
@@ -323,13 +323,13 @@ a, .unselectable {
 }
 
 .panel-blue {
-    border-top: 1px solid var(--color-green);
-    border-bottom: 1px solid var(--color-green);
+    border-top: 1px solid var(--color-blue);
+    border-bottom: 1px solid var(--color-blue);
 }
 
 .panel-yellow {
-    border-top: 1px solid var(--color-green);
-    border-bottom: 1px solid var(--color-green);
+    border-top: 1px solid var(--color-yellow);
+    border-bottom: 1px solid var(--color-yellow);
 }
 
 
@@ -345,13 +345,13 @@ a, .unselectable {
 }
 
 .iconPersoCo-blue, .iconPersoDeco-blue {
-    border: 2px solid var(--color-green);
-    color: var(--color-green);
+    border: 2px solid var(--color-blue);
+    color: var(--color-blue);
 }
 
 .iconPersoCo-yellow, .iconPersoDeco-yellow {
-    border: 2px solid var(--color-green);
-    color: var(--color-green);
+    border: 2px solid var(--color-yellow);
+    color: var(--color-yellow);
 }
 
 .iconPersoCo-green:hover, .iconPersoDeco-green:hover,
@@ -394,16 +394,16 @@ a, .unselectable {
 
 .slide-blue, .slide2-blue {
     box-shadow: 0 0 1px var(--color-green),
-        0 0 2px var(--color-green),
-        0 0 4px var(--color-green),
-        0 0 6px var(--color-green);
+        0 0 2px var(--color-blue),
+        0 0 4px var(--color-blue),
+        0 0 6px var(--color-blue);
 }
 
 .slide-yellow, .slide2-yellow {
     box-shadow: 0 0 1px var(--color-green),
-        0 0 2px var(--color-green),
-        0 0 4px var(--color-green),
-        0 0 6px var(--color-green);
+        0 0 2px var(--color-yellow),
+        0 0 4px var(--color-yellow),
+        0 0 6px var(--color-yellow);
 }
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx END COLOR THEME xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
@@ -659,19 +659,19 @@ header {
     }
 
     .navMenu-ul-blue::before {
-        background: var(--color-green);
-        box-shadow: 0 0 5px var(--color-green),
-            0 0 10px var(--color-green),
-            0 0 15px var(--color-green),
-            0 0 30px var(--color-green);
+        background: var(--color-blue);
+        box-shadow: 0 0 5px var(--color-blue),
+            0 0 10px var(--color-blue),
+            0 0 15px var(--color-blue),
+            0 0 30px var(--color-blue);
     }
 
     .navMenu-ul-yellow::before {
-        background: var(--color-green);
-        box-shadow: 0 0 5px var(--color-green),
-            0 0 10px var(--color-green),
-            0 0 15px var(--color-green),
-            0 0 30px var(--color-green);
+        background: var(--color-yellow);
+        box-shadow: 0 0 5px var(--color-yellow),
+            0 0 10px var(--color-yellow),
+            0 0 15px var(--color-yellow),
+            0 0 30px var(--color-yellow);
     }
 
     .navMenu-ul::after {
@@ -702,19 +702,19 @@ header {
     }
 
     .navMenu-ul-blue::after {
-        background: var(--color-green);
-        box-shadow: 0 0 5px var(--color-green),
-            0 0 10px var(--color-green),
-            0 0 15px var(--color-green),
-            0 0 30px var(--color-green);
+        background: var(--color-blue);
+        box-shadow: 0 0 5px var(--color-blue),
+            0 0 10px var(--color-blue),
+            0 0 15px var(--color-blue),
+            0 0 30px var(--color-blue);
     }
 
     .navMenu-ul-yellow::after {
-        background: var(--color-green);
-        box-shadow: 0 0 5px var(--color-green),
-            0 0 10px var(--color-green),
-            0 0 15px var(--color-green),
-            0 0 30px var(--color-green);
+        background: var(--color-yellow);
+        box-shadow: 0 0 5px var(--color-yellow),
+            0 0 10px var(--color-yellow),
+            0 0 15px var(--color-yellow),
+            0 0 30px var(--color-yellow);
     }
 
     .navMenu-ul.active {
@@ -738,12 +738,12 @@ header {
 
     .a-navMenu-blue:hover {
         background-color: transparent;
-        color: var(--color-green);
+        color: var(--color-blue);
     }
 
     .a-navMenu-yellow:hover {
         background-color: transparent;
-        color: var(--color-green);
+        color: var(--color-yellow);
     }
 
     /* Dropdown */
