@@ -1,5 +1,4 @@
 <?php
-
 require('../actions/database.php');
 
 // On se sert de GET pour récupérer l'id dans l'URL et permettre de prendre la bonne réponse à modifier
@@ -16,6 +15,7 @@ if (isset($_GET['id']) and !empty($_GET['id'])) {
 
     // rowcount() compte le nombre de données récupérées et si supérieur à 0 c'est qu' on a récupéré une réponse
     if ($checkIfAnswerExists->rowCount() > 0) {
+        
 
         // Récupérer les données de la réponse
         $answerInfos = $checkIfAnswerExists->fetch();

@@ -43,11 +43,10 @@ include '../includes/head.php';
                     </div>
                 </div>
 
-                <?php $topic = $getAllQuestionsUsers->fetch() ?>
                 <div class="row gap centerJust centerAlign">
-                    <a class="btn-afficher btn-green neumorph-btn row centerJust centerAlign" href="../CD-f-show-topics.php?titre=<?= url_custom_encode($topic['titre']) ?>&id=<?= $topic['id']; ?>">AFFICHER</a>
-                    <input id="modifier" class="btn-modifier btn-green neumorph-btn" type="submit" name="validate" value="MODIFIER">
-                    <a class="btn-effacer row centerJust centerAlign" onclick='return confirm(" Cette action est irréversible, êtes-vous sûr ? ")' href="actions-admin/CD-deleteQuestionAction.php?id=<?= $topic['id'] ?>">EFFACER</a>
+                    <a class="btn-afficher btn-green neumorph-btn row centerJust centerAlign" href="../CD-f-show-topics.php?titre=<?= url_custom_encode($question_title) ?>&id=<?= $_GET['id']; ?>">AFFICHER</a>
+                    <input class="btn-modifier btn-green neumorph-btn" type="submit" name="validate" value="MODIFIER">
+                    <a class="btn-effacer row centerJust centerAlign" onclick='return confirm(" Cette action est irréversible, êtes-vous sûr ? ")' href="actions-admin/CD-deleteQuestionAction.php?id=<?= $_GET['id']; ?>">EFFACER</a>
                 </div>
                 <div class="row centerJust">
                     <a class="a-links-editTopic" href="home-admin.php">Retour</a>

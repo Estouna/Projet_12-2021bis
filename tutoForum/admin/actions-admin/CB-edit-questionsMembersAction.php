@@ -1,7 +1,6 @@
 <?php
-
 require('../actions/database.php');
-
+if (isset($_GET['id']) and !empty($_GET['id'])) {
 // Valide le formulaire quand on clique sur modifier
 if (isset($_POST['validate'])) {
 
@@ -23,4 +22,7 @@ if (isset($_POST['validate'])) {
     } else {
         $erreur = "Veuillez modifier un champ avant de valider.";
     }
+}
+} else {
+    $erreur = "L'identifiant du sujet n'a pas été récupéré ";
 }

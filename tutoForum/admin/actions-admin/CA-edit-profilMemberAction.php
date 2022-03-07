@@ -1,5 +1,4 @@
 <?php
-
 require('../actions/database.php');
 
 // Vérifie que l'id dans l'url existe

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/tutoForum/assets/css/form.css">
     <link rel="stylesheet" href="/tutoForum/assets/css/usersAndAdmin.css">
     <link rel="stylesheet" href="/tutoForum/assets/css/forum.css">
+    <link rel="stylesheet" href="/tutoForum/assets/css/tuto-javascript.css">
     <title>Tutotoform</title>
 </head>
 

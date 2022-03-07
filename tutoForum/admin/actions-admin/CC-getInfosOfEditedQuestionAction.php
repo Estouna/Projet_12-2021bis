@@ -1,5 +1,4 @@
 <?php
-
 require('../actions/database.php');
 
 // On se sert de GET pour récupérer l'id dans l'URL et permettre de prendre la bonne question à modifier
