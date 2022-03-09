@@ -10,7 +10,7 @@ include '../tutoForum/includes/head.php';
     <!-- ------------------------------ NAVBAR ------------------------------ -->
     <?php include '../tutoForum/includes/navbar-green.php'; ?>
 
-    <section class="section-center column centerJust centerAlign">
+    <section class="section-center column centerAlign">
         <!-- 
             ------------------------------ PAGE TITLE ------------------------------
          -->

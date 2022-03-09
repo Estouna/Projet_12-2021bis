@@ -16,7 +16,7 @@ include '../tutoForum/includes/head.php';
             <div class="block-circle column">
                 <div class="block-circle1 flex centerAll">
 
-                    <?php
+                <?php
                     while ($c = $categorie->fetch()) {
                         $subCat->execute(array($c['id']));
                         $sub_categories = '';
@@ -24,56 +24,63 @@ include '../tutoForum/includes/head.php';
                             $sub_categories .= '<li><a class="a-circle" href="../tutoForum/CC-forum-topics-view.php?categorie=' . url_custom_encode($c['name']) . '&souscategorie=' . url_custom_encode($sc['name']) . '">' . $sc['name'] . '</a></li> ';
                         }
                         $sub_categories = substr($sub_categories, 0, -3);
+
+                        if ($c['id'] == 1) {
                     ?>
 
-                        <div class="circle circleAll btn-green  column centerAll">
-                            <h2 class="h2-circle"><a class="h2-a-circle" href="../tutoForum/CC-forum-topics-view.php?categorie=<?= url_custom_encode($c['name']); ?>"><?= $c['name'] ?></a></h2>
-                            <ul class="ul-circle column centerAll gap">
-                                <?= $sub_categories ?>
-                            </ul>
-                        </div>
+                            <div class="circle circle-red column centerAll">
+                                <h2 class="h2-circle"><a class="h2-a-circle" href="../tutoForum/CC-forum-topics-view.php?categorie=<?= url_custom_encode($c['name']); ?>"><?= $c['name'] ?></a></h2>
+                                <ul class="ul-circle column centerAll gap">
+                                    <?= $sub_categories ?>
+                                </ul>
+                            </div>
+                        <?php
+                        }
+                        ?>
+                        <?php if ($c['id'] == 2) { ?>
+                            <div class="circle circle-blue column centerAll">
+                                <h2 class="h2-circle"><a class="h2-a-circle" href="../tutoForum/CC-forum-topics-view.php?categorie=<?= url_custom_encode($c['name']); ?>"><?= $c['name'] ?></a></h2>
+                                <ul class="ul-circle column centerAll gap">
+                                    <?= $sub_categories ?>
+                                </ul>
+                            </div>
+                        <?php
+                        }
+                        ?>
+                        <?php if ($c['id'] == 3) { ?>
+                            <div class="circle circle-yellow column centerAll">
+                                <h2 class="h2-circle"><a class="h2-a-circle" href="../tutoForum/CC-forum-topics-view.php?categorie=<?= url_custom_encode($c['name']); ?>"><?= $c['name'] ?></a></h2>
+                                <ul class="ul-circle column centerAll gap">
+                                    <?= $sub_categories ?>
+                                </ul>
+                            </div>
+                        <?php
+                        }
+                        ?>
+                        <?php if ($c['id'] == 4) { ?>
+                            <div class="circle circle-violet column centerAll">
+                                <h2 class="h2-circle"><a class="h2-a-circle" href="../tutoForum/CC-forum-topics-view.php?categorie=<?= url_custom_encode($c['name']); ?>"><?= $c['name'] ?></a></h2>
+                                <ul class="ul-circle column centerAll gap">
+                                    <?= $sub_categories ?>
+                                </ul>
+                            </div>
+                        <?php
+                        }
+                        ?>
+                        <?php if ($c['id'] == 5) { ?>
+                            <div class="circle circle-green column centerAll">
+                                <h2 class="h2-circle"><a class="h2-a-circle" href="../tutoForum/CC-forum-topics-view.php?categorie=<?= url_custom_encode($c['name']); ?>"><?= $c['name'] ?></a></h2>
+                                <ul class="ul-circle column centerAll gap">
+                                    <?= $sub_categories ?>
+                                </ul>
+                            </div>
 
-                    <?php } ?>
-
+                    <?php
+                        }
+                    }
+                    ?>
 
                 </div>
-                <!--
-
-                    <div class="circle circle-blue column centerAll">
-                        <h2 class="h2-circle">CSS</h2>
-                        <ul class="ul-circle column centerAll gap">
-                            <li><a class="a-circle" href="../tutoForum/CD-f-css-cat1.php">Tutos des membres</a></li>
-                            <li><a class="a-circle" href="../tutoForum/CD-f-css-cat2.php">Poser une question</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="circle circle-yellow column centerAll">
-                        <h2 class="h2-circle">JavaScript</h2>
-                        <ul class="ul-circle column centerAll gap">
-                            <li><a class="a-circle" href="../tutoForum/CE-f-javascript-cat1.php">Tutos des membres</a></li>
-                            <li><a class="a-circle" href="../tutoForum/CE-f-javascript-cat2.php">Poser une question</a></li>
-                        </ul>
-                    </div>
-
-                
-
-                <div class="block-circle2 flex centerAll">
-
-                    <div class="circle circle-violet column centerAll">
-                        <h2 class="h2-circle-general"><a class="a-general" href="../tutoForum/CF-f-general.php">Général</a></h2>
-                    </div>
-
-                    <div class="circle circle-green column centerAll">
-                        <h2 class="h2-circle">Codes</h2>
-                        <ul class="ul-circle column centerAll gap">
-                            <li><a class="a-circle" href="../tutoForum/CG-f-codes-cat1.php">HTML/CSS</a></li>
-                            <li><a class="a-circle" href="../tutoForum/CG-f-codes-cat2.php">JavaScript</a></li>
-                            <li><a class="a-circle" href="../tutoForum/CG-f-codes-cat3.php">Autres</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-                          -->
             </div>
         </div>
     </section>

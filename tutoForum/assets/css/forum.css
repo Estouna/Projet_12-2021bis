@@ -20,8 +20,14 @@
     letter-spacing: 3px;
 }
 
+
 .h2-a-circle, .a-newTopic {
+    transition: 0.3s;
     color: var(--color-white);
+}
+
+.h2-a-circle:hover {
+    color: rgb(117, 255, 225);
 }
 
 .block-newTopic{
@@ -43,36 +49,21 @@
         inset -1px 1px 1px #ffffff;
 }
 
-.h2-circle-general {
-    font-family: var(--font-roboThin);
-    font-size: max(1.6vw, 30px);
-}
-
-.a-general {
-    color: var(--color-white);
-    letter-spacing: 3px;
-    transition: 0.5s;
-}
-
-.a-general:hover {
-    letter-spacing: 6px;
-}
-
 .a-circle {
     font-family: var(--font-roboReg);
     font-size: max(0.6vw, 14px);
     color: var(--color-white);
     letter-spacing: 1px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .a-circle:hover {
-    letter-spacing: 1.3px;
+    color: rgb(117, 255, 225);
 }
 
 .circle {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
     margin: max(1.5vw, 8px);
     border-radius: 50%;
     transition: 0.7s;
@@ -237,10 +228,10 @@
 
 /* ---------------------------------------------- MEDIAQUERIES ---------------------------------------------- */
 
-@media screen and (min-width: 851px) and (max-width: 1450px) {
+@media screen and (min-width: 881px) and (max-width: 1595px) {
     .circle {
-        width: 145px;
-        height: 145px;
+        width: 155px;
+        height: 155px;
     }
 
     .h2-circle {
@@ -253,11 +244,11 @@
     }
 
     .a-circle {
-        font-size: 7px;
+        font-size: 7.5px;
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 880px) {
 
     /* ----------------------- FORUM HOME -----------------------  */
     .block-circle1, .block-circle2 {

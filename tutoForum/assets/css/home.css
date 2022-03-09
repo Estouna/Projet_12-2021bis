@@ -134,7 +134,7 @@
 
 #demo_box1 {
     border: 6px double var(--color-white);
-    background-color: rgb(218, 0, 0);
+    background-color: rgb(194, 0, 0);
     -webkit-animation-name: move1;
     -webkit-animation-duration: 0.6s;
     animation-name: move1;
