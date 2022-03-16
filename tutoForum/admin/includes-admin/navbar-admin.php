@@ -1,6 +1,6 @@
 <?php
 
-if ($_SESSION['roles'] === "ADMIN") {
+if ($_SESSION['roles'] === "ADMIN" OR $_SESSION['roles'] === "MODERATEUR") {
     require('actions-admin/AB-adminProfilAction.php');
 ?>
 

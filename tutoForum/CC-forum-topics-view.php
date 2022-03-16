@@ -16,9 +16,9 @@ include '../tutoForum/includes/head.php';
             <h1 id="h1-html">
                 <?php
                 if (isset($_GET['souscategorie'])) {
-                    echo $_GET['souscategorie'];
+                    echo strtoupper($_GET['souscategorie']);
                 } else {
-                    echo $_GET['categorie'];
+                    echo strtoupper($_GET['categorie']);
                 } ?>
             </h1>
 

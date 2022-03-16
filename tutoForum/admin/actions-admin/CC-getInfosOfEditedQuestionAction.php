@@ -18,7 +18,7 @@ if (isset($_GET['id']) and !empty($_GET['id'])) {
 
         // Récupérer les données de la question
         $questionInfos = $checkIfQuestionExists->fetch();
-        if ($admin) {
+        if ($_SESSION['roles'] === "ADMIN" OR $_SESSION['roles'] === "MODERATEUR") {
 
             $question_title = $questionInfos['titre'];
             $question_description = $questionInfos['description'];

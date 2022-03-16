@@ -22,6 +22,7 @@ if (isset($_GET['id']) and !empty($_GET['id'])) {
 
             // Redirige vers mes réponses
             header('Location: ../home-admin.php');
+            exit();
             
     } else {
         $erreur = "Aucun commentaire n'a été trouvé";

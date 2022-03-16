@@ -17,6 +17,8 @@ if (isset($_POST['validate'])) {
 
         // Redirige vers la page d'affichage des questions de l'utilisateur
         header('Location: AAI-my-answers.php');
+        exit();
+        
     } else {
         $erreur = "Veuillez compléter tous les champs.";
     }

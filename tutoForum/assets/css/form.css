@@ -334,6 +334,19 @@ label, .p-category {
     margin-bottom: max(0.5vw, 9px);
 }
 
+.p-pseudoMailEditProfil {
+    font-size: max(1vw, 11px);
+}
+
+.nameEditProfil, .emailEditProfil {
+    font-size: max(1vw, 11px);
+    font-family: var(--font-roboThin);
+    color: var(--color-green);
+    text-shadow: 0.2px 0.2px 1px rgb(0, 121, 97),
+        -0.2px -0.2px 1px rgb(0, 121, 97);
+    letter-spacing: max(0.1vw, 1px);
+}
+
 /* FORM EDIT QUESTION */
 .textTitle {
     width: max(40vw, 240px);
@@ -440,6 +453,21 @@ textarea {
     border-radius: 10px;
 }
 
+.inputProfilUser-edit {
+    width: max(20vw, 270px);
+    padding: max(0.6vw, 8px);
+    font-size: max(0.8vw, 12px);
+    letter-spacing: max(0.05vw, 1px);
+    color: var(--color-font-general);
+    border: max(0.2vw, 1px) solid transparent;
+    outline: max(0.1vw, 1px) solid var(--color-green);
+    border-radius: 10px;
+}
+
+.block-labelInputEdit {
+    margin: max(0.5vw, 5px);
+}
+
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx TEXTAREA, INPUT (type long), ETC xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 
@@ -459,7 +487,7 @@ textarea {
     letter-spacing: max(0.02vw, 0.2px);
 }
 
-.btn-green2{
+.btn-green2 {
     font-family: var(--font-roboThin);
     width: 90px;
     height: 90px;

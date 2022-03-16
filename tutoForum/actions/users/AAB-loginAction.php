@@ -27,16 +27,18 @@ if (isset($_POST['validate'])) {
                 $_SESSION['mail'] = $usersInfos['mail'];
                 $_SESSION['roles'] = $usersInfos['roles'];
                 // Redirige vers la page profil
-                if ($_SESSION['roles'] === "ADMIN") {
+                if ($_SESSION['roles'] === "ADMIN" || $_SESSION['roles'] === "MODERATEUR") {
                     header('Location: ../tutoForum/admin/home-admin.php ');
+                    exit();
                 }
 
-                if ($_SESSION['roles'] === "MODERATEUR") {
-                    header('Location: ../tutoForum/admin/home-moderateur.php');
-                }
+                // if ($_SESSION['roles'] === "MODERATEUR") {
+                //     header('Location: ../tutoForum/admin/home-moderateur.php');
+                // }
 
                 if ($_SESSION['roles'] === "membre") {
                     header('Location: AAC-profil.php');
+                    exit();
                 }
 
                 

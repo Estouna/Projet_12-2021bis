@@ -166,8 +166,13 @@ a, .unselectable {
 .margT-xs {
     margin-top: max(0.5vw, 2px);
 }
+
 .margT-s {
     margin-top: max(1vw, 5px);
+}
+
+.margT-xm {
+    margin-top: max(2vw, 10px);
 }
 
 .margT-m {
@@ -400,7 +405,7 @@ a, .unselectable {
 }
 
 .slide-yellow, .slide2-yellow {
-    box-shadow: 0 0 1px var(--color-green),
+    box-shadow: 0 0 1px var(--color-yellow),
         0 0 2px var(--color-yellow),
         0 0 4px var(--color-yellow),
         0 0 6px var(--color-yellow);
@@ -755,7 +760,7 @@ header {
     }
 
     .li-dropdown {
-        margin: 20px;
+        margin: 10px;
     }
 
     .panel a {
@@ -790,7 +795,7 @@ header {
 
 @media screen and (orientation: landscape) and (max-height: 800px) {
     .navMenu-ul {
-        padding: 20px 0;
+        padding: 10px 0;
     }
 
     .a-navMenu {
@@ -805,7 +810,7 @@ header {
         bottom: 5%;
     }
 
-    *, .hamburger {
+    .hamburger {
         cursor: none;
     }
 }

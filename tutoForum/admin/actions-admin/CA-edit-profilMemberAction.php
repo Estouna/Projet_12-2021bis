@@ -30,7 +30,8 @@ if (isset($_GET['id']) and !empty($_GET['id'])) {
                     //envoi des nouveaux paramètres
                     $insert_pseudo->execute(array($new_pseudoMember, $_GET['id']));
                     $valide = "Vos modifications ont été prises en compte !";
-                    header("Refresh: 3; URL=edit-profilMember.php?id=$_GET[id]");
+                    header("Refresh: 2; URL=edit-profilMember.php?id=$_GET[id]");
+                    exit();
                 } else {
                     $erreur = "Ce pseudo existe déjà !";
                 }

@@ -9,22 +9,65 @@ include '../tutoForum/includes/head.php';
 
     <section class="section-center column centerAll">
         <!-- 
-            ------------------------------ PAGE TITLE ------------------------------
+            ------------------------------ PAGE TITLE/MIN_NAV ------------------------------
         -->
-        <h1 class="h1Java margT-s">JavaScript</h1>
+        <div class="minMenu minMenu-yellow column centerAll margT-m">
+            <h1 class="margB-s"><span class="slash slash-yellow">//</span> JavaScript <span class="slash slash-yellow">//</span></h1>
+            <nav>
+                <ul class="ul-minMenu row centerAll margT-s">
+                    <li class="li-minMenu margR-s"><a class="a-minMenu a-minMenuYellow" href="EC-tuto-javascript.php">Tutoriel</a></li>
+                    <li class="li-minMenu margL-s"><a class="a-minMenu a-minMenuYellow" href="ECA-ref-javascript.php">Référence</a></li>
+                </ul>
+            </nav>
+        </div>
 
 
+        <!-- ____________________ MENU HAUT DE PAGE ____________________ -->
+        <nav id="nav1" class="unselectable margT-m">
+            <ul class="navul navul_yellow column centerAll">
+                <li><a href="#javascript" class="a-titleMenu a_yellow a-titleMenu_yellow">Qu’est-ce que le JavaScript ?</a></li>
+                <li class="margT-s"><a href="#definition" class="a-subtitleMenu a_yellow">Une définition générale</a></li>
+                <li class="margT-xs"><a href="#peut-faire" class="a-subtitleMenu a_yellow">Que peut-il vraiment faire ?</a></li>
+                <li class="margT-xs"><a href="#que-fait" class="a-subtitleMenu a_yellow">Que fait JavaScript sur votre page ?</a></li>
+
+                <li class="margT-s"><a href="#prem-code" class="a-titleMenu a_yellow a-titleMenu_yellow">Notre premier code JavaScript</a></li>
+                <li class="margT-xs"><a href="#penser-comme" class="a-subtitleMenu a_yellow">Penser comme un programmeur</a></li>
+                <li class="margT-xs"><a href="#ajouter-java" class="a-subtitleMenu a_yellow">Comment ajouter du JavaScript à votre page ?</a></li>
+                <li class="margT-xs"><a href="#ex-jeu" class="a-subtitleMenu a_yellow">Exemple — Jeu : Guess the number</a></li>
+
+                <li class="margT-s"><a href="#debogue" class="a-titleMenu a_yellow a-titleMenu_yellow">Déboguer du code JavaScript</a></li>
+                <li class="margT-xs"><a href="#types-erreurs" class="a-subtitleMenu a_yellow">Types d' erreurs</a></li>
+                <li class="margT-xs"><a href="#reparer" class="a-subtitleMenu a_yellow">Réparer les erreurs de syntaxe</a></li>
+                <li class="margT-xs"><a href="#erreur-logique" class="a-subtitleMenu a_yellow">Une erreur de logique</a></li>
+
+                <li class="margT-s"><a href="#position" class="a-titleMenu a_yellow a-titleMenu_yellow">Les variables</a></li>
+                <li class="margT-xs"><a href="#affichage" class="a-subtitleMenu a_yellow">Qu'est ce qu'une variable ?</a></li>
+                <li class="margT-xs"><a href="#positionnement" class="a-subtitleMenu a_yellow">Déclarer une variable</a></li>
+                <li class="margT-xs"><a href="#varLet" class="a-subtitleMenu a_yellow">La différence entre var et let</a></li>
+
+                <li class="margT-s"><a href="#listes" class="a-titleMenu a_yellow a-titleMenu_yellow">Mathématiques de base en JavaScript</a></li>
+                <li class="margT-xs"><a href="#operateurs" class="a-subtitleMenu a_yellow">Opérateurs arithmétiques</a></li>
+                <li class="margT-xs"><a href="#increDecrem" class="a-subtitleMenu a_yellow">Incrémentation et décrémentation</a></li>
+                <li class="margT-xs"><a href="#assign" class="a-subtitleMenu a_yellow">Opérateurs d'assignation</a></li>
+
+                <li class="margT-s"><a href="#tableaux" class="a-titleMenu a_yellow a-titleMenu_yellow">Chaînes de caractères en JavaScript</a></li>
+                <li class="margT-xs"><a href="#typebordure" class="a-subtitleMenu a_yellow">Chaînes de caractères — les bases</a></li>
+                <li class="margT-xs"><a href="#cellules" class="a-subtitleMenu a_yellow">Concaténation de chaînes</a></li>
+                <li class="margT-xs"><a href="#positiontitre" class="a-subtitleMenu a_yellow">Conclusion</a></li>
+            </ul>
+        </nav>
 
         <!-- ____________________ MENU BURGER ____________________ -->
-        <div id="block-nav">
+        <div id="block-nav" class="flex centerAll">
             <div class="btn">
 
-                <div class="spin-container">
+                <div class="spin-container spin-container_yellow">
                     <div class="front">
                         <div class="barSpin b1"></div>
                         <div class="barSpin b2"></div>
                         <div class="barSpin b3"></div>
                     </div>
+
 
                     <div class="back">
                         <div class="barSpin b1 b-back"></div>
@@ -33,108 +76,59 @@ include '../tutoForum/includes/head.php';
                 </div>
 
             </div>
-            <nav id='nav2' class="unselectable column centerH centerV">
+
+            <nav id='nav2' class="nav2_yellow unselectable column centerAll">
 
                 <div class="menu-wrap1">
-                    <ul class='navul1b'>
-                        <li><a class="nav-link" href="#javascript">Qu’est-ce que le JavaScript ?</a></li>
-                        <li><a class="nav-link" href="#definition"><em>Une définition générale</em></a></li>
-                        <li><a class="nav-link" href="#peut-faire"><em>Que peut-il vraiment faire ?</em></a></li>
-                        <li><a class="nav-link" href="#que-fait"><em>Que fait JavaScript sur votre page ?</em></a></li>
+                    <ul class='navul2 column centerAll'>
+                        <li class="margT-xs"><a href="#javascript" class="a-titleMenu2 a_yellow a-titleMenu_yellow">Qu’est-ce que le JavaScript ?</a></li>
+                        <li class="margT-xs"><a href="#definition" class="a-subtitleMenu a_yellow">Une définition générale</a></li>
+                        <li class="margT-xs"><a href="#peut-faire" class="a-subtitleMenu a_yellow">Que peut-il vraiment faire ?</a></li>
+                        <li class="margT-xs"><a href="#que-fait" class="a-subtitleMenu a_yellow">Que fait JavaScript sur votre page ?</a></li>
                     </ul>
-                    <ul class='navul2b'>
-                        <li><a class="nav-link" href="#prem-code">Premier code JavaScript</a></li>
-                        <li><a class="nav-link" href="#penser-comme"><em>Penser comme un programmeur</em></a></li>
-                        <li><a class="nav-link" href="#ajouter-java"><em>Ajouter du JavaScript à votre page ?</em></a></li>
-                        <li><a class="nav-link" href="#ex-jeu"><em>Exemple — Jeu : Guess the number</em></a></li>
+                    <ul class='navul2 column centerAll'>
+                        <li class="margT-xm"><a href="#prem-code" class="a-titleMenu2 a_yellow a-titleMenu_yellow">Notre premier code JavaScript</a></li>
+                        <li class="margT-xs"><a href="#penser-comme" class="a-subtitleMenu a_yellow">Penser comme un programmeur</a></li>
+                        <li class="margT-xs"><a href="#ajouter-java" class="a-subtitleMenu a_yellow">Comment ajouter du JavaScript à votre page ?</a></li>
+                        <li class="margT-xs"><a href="#ex-jeu" class="a-subtitleMenu a_yellow">Exemple — Jeu : Guess the number</a></li>
                     </ul>
-                    <ul class='navul3b'>
-                        <li><a class="nav-link" href="#debogue">Déboguer du code JavaScript</a></li>
-                        <li><a class="nav-link" href="#types-erreurs"><em>Types d' erreurs</em></a></li>
-                        <li><a class="nav-link" href="#reparer"><em>Réparer les erreurs de syntaxe</em></a></li>
-                        <li><a class="nav-link" href="#erreur-logique"><em>Une erreur de logique</em></a></li>
-                    </ul>
-                    <ul class='navul4b'>
-                        <li><a class="nav-link" href="#position">Les variables</a></li>
-                        <li><a class="nav-link" href="#affichage"><em>Qu'est ce qu'une variable ?</em></a></li>
-                        <li><a class="nav-link" href="#positionnement"><em>Déclarer une variable</em></a></li>
-                        <li><a class="nav-link" href="#varLet"><em>La différence entre var et let</em></a></li>
+                    <ul class='navul2 column centerAll'>
+                        <li class="margT-xm"><a href="#debogue" class="a-titleMenu2 a_yellow a-titleMenu_yellow">Déboguer du code JavaScript</a></li>
+                        <li class="margT-xs"><a href="#types-erreurs" class="a-subtitleMenu a_yellow">Types d' erreurs</a></li>
+                        <li class="margT-xs"><a href="#reparer" class="a-subtitleMenu a_yellow">Réparer les erreurs de syntaxe</a></li>
+                        <li class="margT-xs "><a href="#erreur-logique" class="a-subtitleMenu a_yellow">Une erreur de logique</a></li>
                     </ul>
                 </div>
+
                 <div class="menu-wrap2">
-                    <ul class='navul5b'>
-                        <li><a class="nav-link" href="#listes">Mathématiques de base en JavaScript</a></li>
-                        <li><a class="nav-link" href="#operateurs"><em>Opérateurs arithmétiques</em></a></li>
-                        <li><a class="nav-link" href="#increDecrem"><em>Incrémentation et décrémentation</em></a></li>
-                        <li><a class="nav-link" href="#assign"><em>Opérateurs d'assignation</em></a></li>
+                    <ul class='navul2b column centerAll'>
+                        <li class="margT-xm"><a href="#position" class="a-titleMenu2 a_yellow a-titleMenu_yellow">Les variables</a></li>
+                        <li class="margT-xs"><a href="#affichage" class="a-subtitleMenu a_yellow">Qu'est ce qu'une variable ?</a></li>
+                        <li class="margT-xs"><a href="#positionnement" class="a-subtitleMenu a_yellow">Déclarer une variable</a></li>
+                        <li class="margT-xs"><a href="#varLet" class="a-subtitleMenu a_yellow">La différence entre var et let</a></li>
                     </ul>
-                    <ul class='navul6b'>
-                        <li><a class="nav-link" href="#tableaux">Chaînes de caractères en JavaScript</a></li>
-                        <li><a class="nav-link" href="#typebordure"><em>Chaînes de caractères — les bases</em></a></li>
-                        <li><a class="nav-link" href="#cellules"><em>Concaténation de chaînes</em></a></li>
-                        <li><a class="nav-link" href="#positiontitre"><em>Conclusion</em></a></li>
+                    <ul class='navul2b column centerAll'>
+                        <li class="margT-xm"><a href="#listes" class="a-titleMenu2 a_yellow a-titleMenu_yellow">Mathématiques de base en JavaScript</a></li>
+                        <li class="margT-xs"><a href="#operateurs" class="a-subtitleMenu a_yellow">Opérateurs arithmétiques</a></li>
+                        <li class="margT-xs"><a href="#increDecrem" class="a-subtitleMenu a_yellow">Incrémentation et décrémentation</a></li>
+                        <li class="margT-xs"><a href="#assign" class="a-subtitleMenu a_yellow">Opérateurs d'assignation</a></li>
                     </ul>
-                    <ul class='navul7b'>
-                        <li><a class="nav-link" href="#autres">Les tableaux</a></li>
-                        <li><a class="nav-link" href="#curseur"><em>Qu'est‑ce qu'un tableau ?</em></a></li>
-                        <li><a class="nav-link" href="#commentaires"><em>Affichons les produits !</em></a></li>
+                    <ul class='navul2b column centerAll'>
+                        <li class="margT-xm"><a href="#tableaux" class="a-titleMenu2 a_yellow a-titleMenu_yellow">Chaînes de caractères en JavaScript</a></li>
+                        <li class="margT-xs"><a href="#typebordure" class="a-subtitleMenu a_yellow">Chaînes de caractères — les bases</a></li>
+                        <li class="margT-xs"><a href="#cellules" class="a-subtitleMenu a_yellow">Concaténation de chaînes</a></li>
+                        <li class="margT-xs margB-xs"><a href="#positiontitre" class="a-subtitleMenu a_yellow">Conclusion</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
 
 
-
-        <!-- ____________________ MENU HAUT DE PAGE ____________________ -->
-        <nav id="nav1" class="unselectable column centerH centerV">
-            <ul class='navul1'>
-                <li><a href="#javascript">Qu’est-ce que le JavaScript ?</a></li>
-                <li><a href="#definition"><em>Une définition générale</em></a></li>
-                <li><a href="#peut-faire"><em>Que peut-il vraiment faire ?</em></a></li>
-                <li><a href="#que-fait"><em>Que fait JavaScript sur votre page ?</em></a></li>
-            </ul>
-            <ul class='navul2'>
-                <li><a href="#prem-code">Notre premier code JavaScript</a></li>
-                <li><a href="#penser-comme"><em>Penser comme un programmeur</em></a></li>
-                <li><a href="#ajouter-java"><em>Comment ajouter du JavaScript à votre page ?</em></a></li>
-                <li><a href="#ex-jeu"><em>Exemple — Jeu : Guess the number</em></a></li>
-            </ul>
-            <ul class='navul3'>
-                <li><a href="#debogue">Déboguer du code JavaScript</a></li>
-                <li><a href="#types-erreurs"><em>Types d' erreurs</em></a></li>
-                <li><a href="#reparer"><em>Réparer les erreurs de syntaxe</em></a></li>
-                <li><a href="#erreur-logique"><em>Une erreur de logique</em></a></li>
-            </ul>
-            <ul class='navul4'>
-                <li><a href="#position">Les variables</a></li>
-                <li><a href="#affichage"><em>Qu'est ce qu'une variable ?</em></a></li>
-                <li><a href="#positionnement"><em>Déclarer une variable</em></a></li>
-                <li><a href="#varLet"><em>La différence entre var et let</em></a></li>
-            </ul>
-            <ul class='navul5'>
-                <li><a href="#listes">Mathématiques de base en JavaScript</a></li>
-                <li><a href="#operateurs"><em>Opérateurs arithmétiques</em></a></li>
-                <li><a href="#increDecrem"><em>Incrémentation et décrémentation</em></a></li>
-                <li><a href="#assign"><em>Opérateurs d'assignation</em></a></li>
-            </ul>
-            <ul class='navul6'>
-                <li><a href="#tableaux">Chaînes de caractères en JavaScript</a></li>
-                <li><a href="#typebordure"><em>Chaînes de caractères — les bases</em></a></li>
-                <li><a href="#cellules"><em>Concaténation de chaînes</em></a></li>
-                <li><a href="#positiontitre"><em>Conclusion</em></a></li>
-            </ul>
-            <ul class='navul7'>
-                <li><a href="#autres">Les tableaux</a></li>
-                <li><a href="#curseur"><em>Qu'est‑ce qu'un tableau ?</em></a></li>
-                <li><a href="#commentaires"><em>Affichons les produits !</em></a></li>
-            </ul>
-        </nav>
-
         <section id="section-1">
-            <div class="h2 row centerH">
-                <h2 id="javascript" class="h2Java h2-section1">Qu’est-ce que le JavaScript ?</h2>
+            <div class="h2 row centerJust">
+                <h2 id="javascript" class="h2Java h2-section">Qu’est-ce que le JavaScript ?</h2>
             </div>
-            <h3 id="definition" class="h3Java h3-section1">Une définition générale</h3>
+            <h3 id="definition" class="h3Java h3-section">Une définition générale</h3>
             <p class="p-Java">
                 JavaScript est un langage de programmation qui permet d’implémenter des mécanismes complexes sur une
                 page
@@ -200,7 +194,7 @@ include '../tutoForum/includes/head.php';
                     }
                 </span>
             </p>
-            <div class="p-exemple row centerH centerV">
+            <div class="p-exemple row centerAll">
                 <p class="p-player">
                     PLAYER 1: CHRIS
                 </p>
@@ -218,14 +212,14 @@ include '../tutoForum/includes/head.php';
                     }
                 </span>
             </p>
-            <div class="p-exempleJs row centerH centerV">
+            <div class="p-exempleJs row centerAll">
                 <p class="p-player">
                     PLAYER 1: CHRIS
                 </p>
             </div>
             <p class="p-Java">Essayez de cliquer sur l’étiquette texte pour voir ce qui se passe.</p>
             <hr>
-            <h3 id="peut-faire" class="h3Java h3-section1a">Que peut-il vraiment faire ?</h3>
+            <h3 id="peut-faire" class="h3Java h3-section">Que peut-il vraiment faire ?</h3>
             <p class="p-Java">Le cœur de JavaScript est constitué de fonctionnalités communes de programmation permettant de :</p>
             <ul class="ul-para">
                 <li>
@@ -249,20 +243,20 @@ include '../tutoForum/includes/head.php';
                 <li>
                     <p class="p-Java">
                         exécuter du code en réponse à certains événements se produisant sur une page web.<br>
-                        Dans l’exemple, nous avons utilisé un événement (« event ») click (en-US) pour détecter quand
+                        Dans l’exemple, nous avons utilisé un événement (« event ») click (en-US) pour détecter quand
                         l’utilisateur clique sur le bouton; on exécute alors le code qui met à jour l’étiquette.<br>
                         <span class="ex-code">para.addEventListener('click', updateName);</span>
                     </p>
                 </li>
                 <li>
-                    <p class="p-Java">Et bien plus encore !</p>
+                    <p class="p-Java">Et bien plus encore !</p>
                 </li>
             </ul>
             <br>
             <p class="p-Java">
                 Là où ça devient excitant, c’est que de nombreuses fonctionnalités sont basées sur ce cœur de
                 JavaScript.<br>
-                Les « interfaces de programmation applicatives » (APIs pour « Application Programming Interfaces »)
+                Les « interfaces de programmation applicatives » (APIs pour « Application Programming Interfaces »)
                 donnent
                 accès à des quasi-superpouvoirs dans votre code JavaScript.<br>
                 <br>
@@ -279,13 +273,13 @@ include '../tutoForum/includes/head.php';
                 <br>
                 <br>
                 <br>
-                Elles se divisent généralement en deux catégories :<br>
+                Elles se divisent généralement en deux catégories :<br>
                 <br>
                 <span class="p-gras">Les APIs de navigateur</span> font partie intégrante de votre navigateur web, et
                 peuvent accéder à des données de l’environnement informatique (l’ordinateur), ou faire d'autres choses
                 complexes.<br>
                 <br>
-                Par exemple :
+                Par exemple :
             </p>
             <ul class="ul-para">
                 <li>
@@ -321,7 +315,7 @@ include '../tutoForum/includes/head.php';
                 </li>
             </ul>
             <p class="note">
-                Note : beaucoup des exemples ci-dessus ne fonctionneront pas dans un ancien navigateur.<br>
+                Note : beaucoup des exemples ci-dessus ne fonctionneront pas dans un ancien navigateur.<br>
                 Il vaut mieux utiliser un navigateur moderne comme Firefox, Chrome, Edge ou Opera pour exécuter votre
                 code et faire vos tests.<br>
                 Si vous êtes amené à écrire du code de production (c’est-à-dire destiné à de véritables
@@ -333,7 +327,7 @@ include '../tutoForum/includes/head.php';
                 <span class="p-gras">Les APIs tierces</span> ne font par défaut pas partie de votre navigateur, et vous
                 devrez en général récupérer le code et les informations les concernant quelque part sur le web.<br>
                 <br>
-                Par exemple :
+                Par exemple :
             </p>
             <ul class="ul-para">
                 <li>
@@ -349,7 +343,7 @@ include '../tutoForum/includes/head.php';
                 </li>
             </ul>
             <p class="note">
-                Note : ces APIs sont d’un niveau avancé et nous ne couvrerons aucune d’entre elles dans ce cours, mais
+                Note : ces APIs sont d’un niveau avancé et nous ne couvrerons aucune d’entre elles dans ce cours, mais
                 les liens ci-dessus fournissent une large documentation si vous voulez en savoir davantage.
             </p>
             <br>
@@ -361,7 +355,7 @@ include '../tutoForum/includes/head.php';
             </p>
 
             <hr>
-            <h3 id="que-fait" class="h3Java h3-section1b">Que fait JavaScript sur votre page ?</h3>
+            <h3 id="que-fait" class="h3Java h3-section">Que fait JavaScript sur votre page ?</h3>
             <p class="p-Java">
                 Ici nous allons commencer à réellement nous intéresser au code, et, ce faisant, à explorer ce qui se
                 passe quand vous exécutez du JavaScript dans votre page.<br>
@@ -389,7 +383,7 @@ include '../tutoForum/includes/head.php';
                 bas.<br>
                 Vous devrez donc faire attention à l’ordre dans lequel vous écrivez les choses.<br>
                 <br>
-                Reprenons le bloc de JavaScript vu dans notre premier exemple :<br>
+                Reprenons le bloc de JavaScript vu dans notre premier exemple :<br>
                 <br>
                 // Nous sélectionnons ici un paragraphe de texte //<br>
                 <span class="ex-code">
@@ -403,7 +397,7 @@ include '../tutoForum/includes/head.php';
                 </span>
                 <br>
                 /* Nous ajoutons le bloc de code updateName() (ces blocs de code réutilisables sont appelés
-                « fonctions »)<br>
+                « fonctions »)<br>
                 qui demande à l’utilisateur un nouveau nom, et l’insère dans le paragraphe pour mettre à jour
                 l’affichage.*/<br>
                 <span class="ex-code">
@@ -414,7 +408,7 @@ include '../tutoForum/includes/head.php';
                 </span>
                 <br>
                 Si vous échangiez les deux premières lignes de code, rien ne fonctionnerait plus, vous obtiendriez une
-                erreur dans la console développeur du navigateur :<br>
+                erreur dans la console développeur du navigateur :<br>
                 TypeError: para is undefined.<br>
                 Cela signifie que l’objet para n’existe pas encore, donc nous ne pouvons pas y ajouter d’écouteur
                 d'évènement.<br>
@@ -467,33 +461,26 @@ include '../tutoForum/includes/head.php';
         </section>
 
 
-
-
-
-        <a class="inscription unselectable" href="AAA-signup.php">Inscrivez-vous pour lire la suite</a>
-
-
-
         <!-- ____________________ SECTION 2 ____________________ -->
         <section id="section-2">
             <div class="degrade">
-                <div class="h2 row centerH">
-                    <h2 id="prem-code" class="h2Java h2-section2">Notre premier code JavaScript</h2>
+                <div class="h2 row centerJust">
+                    <h2 id="prem-code" class="h2Java h2-section">Notre premier code JavaScript</h2>
                 </div>
-                <h3 id="penser-comme" class="h3Java h3-section2">Penser comme un programmeur</h3>
+                <h3 id="penser-comme" class="h3Java h3-section">Penser comme un programmeur</h3>
                 <p class="p-Java">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet tempora quam culpa ex minima
                     aliquid
                     alias numquam ipsa reiciendis quae porro dicta, itaque ipsum, nisi modi expedita eaque
                     assumenda!
                     Repellendus!
                 </p>
-                <h3 id="ajouter-java" class="h3Java h3-section2a">Ajouter du JavaScript à votre page ?</h3>
+                <h3 id="ajouter-java" class="h3Java h3-section">Ajouter du JavaScript à votre page ?</h3>
                 <p class="p-Java">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quae ducimus perspiciatis
                     magni
                     sequi ea provident qui magnam optio obcaecati aut quaerat omnis iusto, nam quia ut, velit alias
                     fuga?
                 </p>
-                <h3 id="ex-jeu" class="h3Java h3-section2b">Exemple — Jeu : Guess the number</h3>
+                <h3 id="ex-jeu" class="h3Java h3-section">Exemple — Jeu : Guess the number</h3>
                 <p class="p-Java">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti libero ratione est fugiat
                     porro in
                     totam illum laborum veritatis odio. Quam, error laboriosam laborum aspernatur tempora aliquid
@@ -509,6 +496,8 @@ include '../tutoForum/includes/head.php';
                 </p>
             </div>
         </section>
+
+        <a class="inscription unselectable margB-m" href="AAA-signup.php">Inscrivez-vous pour lire la suite</a>
 
     </section>
 

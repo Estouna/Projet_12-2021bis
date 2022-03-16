@@ -45,7 +45,9 @@ include '../tutoForum/includes/head.php';
                             <input id="connect" class="btn-green neumorph-btn" type="submit" name="validate" value="CONNEXION">
                             <a class="a-links" href="../tutoForum/AAA-signup.php">Pas encore de compte ? S'incrire</a>
                         </div>
+
                     </div>
+                    
                 </div>
                 <!-- 
                     ------------------------------ VALID/ERROR MESSAGES ------------------------------

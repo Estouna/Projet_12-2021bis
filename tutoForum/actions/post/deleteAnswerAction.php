@@ -29,6 +29,8 @@ if (isset($_GET['id']) and !empty($_GET['id'])) {
 
             // Redirige vers mes réponses
             header('Location: ../../AAI-my-answers.php');
+            exit();
+            
         } else {
             $erreur = "Vous n'avez pas le droit de supprimer une réponse qui ne vous appartient pas !";
         }

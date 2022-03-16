@@ -16,6 +16,7 @@ if (isset($_GET['id']) and !empty($_GET['id'])) {
         $banishUser->execute(array($get_id));
 
         header('Location: ../home-admin.php');
+        exit();
 
     } else {
         $erreur = "Aucun membre n'a été trouvé";

@@ -19,6 +19,8 @@ if (isset($_POST['validate'])) {
 
         // Redirige vers la page d'affichage des questions de l'utilisateur
         header('Location: AAE-my-questions.php');
+        exit();
+        
     } else {
         $erreur = "Veuillez modifier un champ avant de valider.";
     }

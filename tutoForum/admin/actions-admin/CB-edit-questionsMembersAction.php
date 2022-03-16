@@ -1,5 +1,6 @@
 <?php
 require('../actions/database.php');
+
 if (isset($_GET['id']) and !empty($_GET['id'])) {
 // Valide le formulaire quand on clique sur modifier
 if (isset($_POST['validate'])) {
@@ -19,6 +20,8 @@ if (isset($_POST['validate'])) {
 
         // Redirige vers la page d'affichage des questions de l'utilisateur
         header("Refresh: 2; URL=edit-topicMember.php?id=$_GET[id]");
+        exit();
+        
     } else {
         $erreur = "Veuillez modifier un champ avant de valider.";
     }

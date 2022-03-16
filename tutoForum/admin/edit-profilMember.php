@@ -72,40 +72,43 @@ include '../includes/head.php';
 
                 </form>
 
-                <form action="" method="POST" class="form_role">
+                <?php if ($_SESSION['roles'] === "ADMIN") { ?>
+                    <form action="" method="POST" class="form_role">
 
-                    <div class="row centerAll">
+                        <div class="row centerAll">
 
-                        <div class="block-role margR-s">
-                            <div class="row centerAll">
-                                <?php if ($user['roles'] === "MODERATEUR") { ?>
-                                    <div>
-                                        <input type="checkbox" id="checkbox_membre" name="checkbox_membre" value="membre">
-                                        <label class="label-role" for="checkbox_membre">Membre</label>
+                            <div class="block-role margR-s">
+                                <div class="row centerAll">
+                                    <?php if ($user['roles'] === "MODERATEUR") { ?>
+                                        <div>
+                                            <input type="checkbox" id="checkbox_membre" name="checkbox_membre" value="membre">
+                                            <label class="label-role" for="checkbox_membre">Membre</label>
+                                        </div>
+                                    <?php } ?>
+                                    <?php if ($user['roles'] === "membre") { ?>
+                                        <div>
+                                            <input type="checkbox" id="checkbox_moderateur" name="checkbox_moderateur" value="MODERATEUR">
+                                            <label class="label-role" for="checkbox_moderateur">Modérateur</label>
+                                        </div>
+                                    <?php } ?>
+
+                                    <div class="row centerAll margL-s">
+                                        <input id="updateRole" class="btn-modifRole" name="updateRole" type="submit" value="Modifier" />
                                     </div>
-                                <?php } ?>
-                                <?php if ($user['roles'] === "membre") { ?>
-                                    <div>
-                                        <input type="checkbox" id="checkbox_moderateur" name="checkbox_moderateur" value="MODERATEUR">
-                                        <label class="label-role" for="checkbox_moderateur">Modérateur</label>
-                                    </div>
-                                <?php } ?>
-
-                                <div class="row centerAll margL-s">
-                                    <input id="updateRole" class="btn-modifRole" name="updateRole" type="submit" value="Modifier" />
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="block-banish margL-m">
-                            <div class="blockBtn-banish row centerJust">
-                                <a class="row centerAll btn-banish" onclick='return confirm(" Cette action est irréversible, êtes-vous sûr ? ")' href="actions-admin/CAB-banishUser.php?id=<?= $user['id']; ?>">Bannir</a>
+                            <div class="block-banish margL-m">
+                                <div class="blockBtn-banish row centerJust">
+                                    <a class="row centerAll btn-banish" onclick='return confirm(" Cette action est irréversible, êtes-vous sûr ? ")' href="actions-admin/CAB-banishUser.php?id=<?= $user['id']; ?>">Bannir</a>
+                                </div>
                             </div>
+
                         </div>
 
-                    </div>
+                    </form>
+                <?php } ?>
 
-                </form>
             </div>
         </div>
 

@@ -29,6 +29,8 @@ if (isset($_GET['id']) and !empty($_GET['id'])) {
 
             // Redirige vers mes questions
             header('Location: ../../AAE-my-questions.php');
+            exit();
+            
         } else {
             $erreur = "Vous n'avez pas le droit de supprimer une question qui ne vous appartient pas !";
         }

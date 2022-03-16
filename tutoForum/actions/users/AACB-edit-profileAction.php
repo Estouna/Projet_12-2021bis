@@ -28,7 +28,10 @@ if (isset($_SESSION['id'])) {
                 //envoi des nouveaux paramètres
                 $insert_pseudo->execute(array($new_pseudo, $_SESSION['id']));
                 $valide = "Vos modifications ont été prises en compte !";
+                
                 header("Refresh: 2; URL=AACB-edit-profile.php");
+                exit();
+
             } else {
                 $erreur = "Ce pseudo existe déjà !";
             }

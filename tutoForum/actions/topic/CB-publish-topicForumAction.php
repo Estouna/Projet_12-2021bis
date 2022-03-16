@@ -78,6 +78,8 @@ if (isset($_GET['categorie'])) {
                             $valide = "Votre sujet a bien été publié sur le site.";
 
                             header('Location: CA-forum-home.php');
+                            exit();
+                            
                         } else {
                             $erreur = "La description ne doit pas dépasser 400 caractères";
                         }

@@ -55,6 +55,8 @@ if (isset($_POST['validate'])) {
 
                                 // On redirige l'utilisateur sur la page login.php
                                 header('Location: AAB-login.php');
+                                exit();
+                                
                             } else
                             {
                                 $erreur = "Vos mots de passes ne correspondent pas";

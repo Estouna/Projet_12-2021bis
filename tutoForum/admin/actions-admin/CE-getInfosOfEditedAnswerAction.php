@@ -19,7 +19,7 @@ if (isset($_GET['id']) and !empty($_GET['id'])) {
 
         // Récupérer les données de la réponse
         $answerInfos = $checkIfAnswerExists->fetch();
-        if ($admin) {
+        if ($_SESSION['roles'] === "ADMIN" OR $_SESSION['roles'] === "MODERATEUR") {
 
             $answer_content = $answerInfos['contenu'];
             // Enlève les balises br affichées de description et contenu

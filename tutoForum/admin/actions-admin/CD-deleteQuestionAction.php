@@ -22,6 +22,8 @@ if (isset($_GET['id']) and !empty($_GET['id'])) {
 
             // Redirige vers mes questions
             header('Location: ../home-admin.php');
+            exit();
+            
     } else {
         $erreur = "Aucune sujet n'a été trouvée";
     }

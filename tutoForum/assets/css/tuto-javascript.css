@@ -1,47 +1,253 @@
-#section-1, #section-2, #section-3 {
-    width: max(57vw, 320px);
+/*____________________COLOR THEME____________________*/
+
+
+/*MINI MENU*/
+
+/*____HTML____*/
+.minMenu-red {
+    border: 5px double var(--color-red);
+    box-shadow:
+        6px 6px 30px 0px rgb(48, 0, 0),
+        inset 100px 10px 80px 0px rgb(29, 0, 0);
+    text-shadow: 2px 2px 0px rgb(68, 0, 0);
+}
+
+.slash-red {
+    color: var(--color-red);
+}
+
+.a-minMenuRed {
+    color: var(--color-red);
+    text-shadow: 3px 3px 4px rgb(97, 78, 13);
+}
+
+/*____ /End HTML ____*/
+
+
+/*____CSS____*/
+.minMenu-blue {
+    border: 5px double var(--color-blue);
+    box-shadow:
+        6px 6px 30px 0px rgb(0, 16, 46),
+        inset 100px 10px 80px 0px rgb(0, 14, 39);
+    text-shadow: 2px 2px 0px rgb(0, 20, 58);
+}
+
+.slash-blue {
+    color: var(--color-blue);
+}
+
+.a-minMenuBlue {
+    color: var(--color-blue);
+    text-shadow: 3px 3px 4px rgb(97, 78, 13);
+}
+
+/*____ /End CSS ____*/
+
+
+/*____JavaScript____*/
+.minMenu-yellow {
+    border: 5px double #f7cf1edb;
+    box-shadow:
+        6px 6px 15px 0px #211b00,
+        inset 100px 10px 80px 0px #271f00;
+    text-shadow: 2px 2px 0px #382e00;
+}
+
+.slash-yellow {
+    color: #f7cf1e;
+}
+
+.a-minMenuYellow {
+    color: #f7cf1e;
+    text-shadow: 3px 3px 4px rgb(97, 78, 13);
+}
+
+/*____ /End JavaScript ____*/
+
+/*END MINI MENU*/
+
+
+
+
+/*SUMMARY TOP PAGE*/
+
+/*____HTML____*/
+.navul_red {
+    border: 5px double var(--color-red);
+}
+
+.a-titleMenu_red {
+    color: var(--color-red);
+}
+
+.a_red:hover {
+    color: rgb(255, 146, 146);
     letter-spacing: 0.5px;
-    line-height: max(1.7vw, 20px);
-    padding: 2vw 2vw;
-    margin: 10vh 0vw 0vh;
-    border-radius: 30px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 8px 8px 15px 0px rgba(0, 0, 0, 0.878);
+}
+/*____End HTML____*/
+
+
+/*____CSS____*/
+.navul_blue {
+    border: 5px double var(--color-blue);
 }
 
-#section-1 {
-    border: 5px double mediumpurple;
-    box-shadow: inset 2px 2px 30px 10px rgb(175, 175, 175);
+.a-titleMenu_blue {
+    color: var(--color-blue);
 }
 
-#section-2 {
-    position: relative;
-    border: 5px double #595efa;
-    box-shadow: inset 2px 2px 30px 10px rgb(175, 175, 175);
+.a_blue:hover {
+    color: rgb(187, 211, 255);
+    letter-spacing: 0.5px;
 }
 
-#section-2:before {
-    content: "";
-    position: absolute;
-    border-radius: 30px 30px 0px 0px;
-    top: -5px;
-    left: -5px;
-    width: 101%;
-    min-height: 100%;
-    background: linear-gradient(to top, white, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
-    box-shadow: 0px 0px 30px 10px white;
+/*____ End CSS ____*/
+
+
+
+/*____JavaScript____*/
+.navul_yellow {
+    border: 5px double #f7cf1e;
 }
+
+.a-titleMenu_yellow {
+    color: #f7cf1e;
+}
+
+.a_yellow:hover {
+    color: #fce57f;
+    letter-spacing: 0.5px;
+}
+
+/*____ /End JavaScript ____*/
+
+/*END SUMMARY TOP PAGE*/
+
+
+
+
+/*MENU BURGER*/
+
+/*____HTML____*/
+.spin-container_red {
+    border: 2px solid var(--color-red);
+}
+
+.nav2_red {
+    border: 5px double var(--color-red);
+}
+
+/*____ End HTML____*/
+
+/*____CSS____*/
+.spin-container_blue {
+    border: 2px solid var(--color-blue);
+}
+
+.nav2_blue {
+    border: 5px double var(--color-blue);
+}
+
+/*____ End CSS____*/
+
+
+/*____JavaScript____*/
+.spin-container_yellow {
+    border: 2px solid #f7cf1e;
+}
+
+.nav2_yellow {
+    border: 5px double #f7cf1e;
+}
+
+/*____ End JavaScript____*/
+
+/*END MENU BURGER*/
+
+/*_XXXXXXXXXXXXXXXXXX_END COLOR THEME_XXXXXXXXXXXXXXXXXX_*/
+
+/*____________________MINI MENU____________________*/
+
+.minMenu {
+    font-family: var(--font-roboThin);
+    font-size: max(1.3vw, 13px);
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 50%;
+    width: max(40vw, 270px);
+    padding-top: max(1.5vw, 20px);
+    padding-bottom: max(2.4vw, 20px);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.slash {
+    font-size: max(2.2vw, 20px);
+}
+
+.a-minMenu {
+    font-family: var(--font-roboReg);
+    display: block;
+    font-size: max(1vw, 12px);
+    letter-spacing: max(0.2vw, 0.5px);
+    width: max(9vw, 80px);
+    padding-top: max(0.3vw, 2px);
+    padding-bottom: max(0.3vw, 2px);
+    text-decoration: none;
+    border-top: 0.10vw solid var(--color-white);
+    border-bottom: 0.10vw solid var(--color-white);
+    transition: 0.7s;
+}
+
+.ul-minMenu li a:hover {
+    letter-spacing: max(0.4vw, 0.7px);
+}
+
+/*_XXXXXXXXXXXXXXXXXX_END MINI MENU_XXXXXXXXXXXXXXXXXX_*/
+
+
+
+/*____________________SUMMARY TOP PAGE____________________*/
+
+.navul {
+    padding: max(2vw, 20px);
+    margin: 0;
+    min-height: 19vh;
+    width: 30vw;
+    min-width: 300px;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.459);
+    border-radius: 10px;
+}
+
+.a-titleMenu {
+    font-size: max(1.1vw, 12px);
+}
+
+.a-subtitleMenu {
+    font-size: max(0.8vw, 10px);
+    font-style: italic;
+    color: var(--color-white);
+    margin-top: max(1vw, 3px);
+}
+
+#nav1 a, #nav2 a {
+    transition: 0.5s;
+}
+
+/*_XXXXXXXXXXXXXXXXXX_END SUMMARY TOP PAGE_XXXXXXXXXXXXXXXXXX_*/
 
 
 /*____________________MENU BURGER____________________*/
 
-/* BOUTON */
+/* BUTTON */
 
 .btn {
     background: transparent;
     position: fixed;
-    top: 60px;
-    left: -43px;
+    top: 55px;
+    left: -35px;
     border: none;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -49,13 +255,12 @@
 }
 
 .spin-container {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     position: relative;
     transition: transform 0.9s ease-in-out;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border: 2px solid var(--color-white);
 }
 
 .spin-container.active {
@@ -72,18 +277,18 @@
 }
 
 .front {
-    background-color: black;
+    background-color: var(--color-black);
 }
 
 .back {
-    background-color: black;
+    background-color: var(--color-black);
     transform: rotateY(180deg);
 }
 
 .barSpin {
     width: 60%;
     height: 2px;
-    background: var(--color-yellow);
+    background: var(--color-white);
     border-radius: 10px;
     position: absolute;
     left: 50%;
@@ -110,20 +315,20 @@
     transform: translate(-50%, -1px) translateZ(20px) rotate(-45deg);
 }
 
-/* FIN BOUTON */
+/* END BUTTON */
 
 
+/* PANEL */
 #block-nav {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -6px;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    width: max(21vw, 270px);
+    width: max(20.5vw, 260px);
     background-color: rgba(0, 0, 0, 0.8);
-    border: 3px double black;
     transform: translateX(100%);
     /*fait passer le menu hors écran sur la droite*/
     transition: transform 0.3s ease-in-out;
@@ -132,222 +337,50 @@
 }
 
 #block-nav.active {
-    transform: translateX(0);
+    transform: translateX(-10px);
 }
 
 #nav2 {
     position: fixed;
     min-height: 98vh;
     z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 0;
     text-align: center;
+    border-radius: 10px;
 }
 
-.navul1b, .navul2b, .navul3b, .navul4b, .navul5b, .navul6b, .navul7b {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: max(1vw, 13px);
-    padding: 0.1vw 0vw;
-    margin: 0;
+.navul2, .navul2b {
+    line-height: max(1vw, 15px);
     width: max(20vw, 260px);
-    min-height: 14vh;
+    min-height: 16vh;
     list-style-type: none;
 }
 
-.navul1b {
-    border: 5px double mediumpurple;
-    border-bottom: none;
-    background-color: rgba(147, 112, 219, 0.6);
-    border-radius: 5px 5px 0px 0px;
-    box-shadow: 5px 0px 10px 0px rgb(90, 66, 138), inset 200px 5px 60px 0px rgb(148, 112, 219);
+.a-titleMenu2 {
+    font-size: max(0.9vw, 12px);
 }
 
-.navul2b {
-    border: 5px double #595efa;
-    border-top: none;
-    border-bottom: none;
-    background-color: rgba(60.4, 67, 247.4, 0.6);
-    box-shadow: 5px 0px 10px 0px rgb(36, 39, 143), inset 200px 0px 60px 0px rgb(60, 66, 247);
-}
+/* END PANEL */
 
-.navul3b {
-    border: 5px double #f8812e;
-    border-top: none;
-    border-bottom: none;
-    background-color: rgba(248.5, 128.9, 45.8, 0.6);
-    box-shadow: 5px 0px 10px 0px rgb(134, 69, 23), inset 200px 0px 60px 0px rgb(249, 131, 46);
-}
-
-.navul4b {
-    border: 5px double #08b265;
-    border-top: none;
-    border-bottom: none;
-    background-color: rgba(8.5, 177.9, 101.4, 0.6);
-    box-shadow: 5px 0px 10px 0px rgb(7, 110, 64), inset 200px 0px 60px 0px rgb(9, 178, 102);
-}
-
-.navul5b {
-    border: 5px double #edb702;
-    border-top: none;
-    border-bottom: none;
-    background-color: rgba(237.5, 183.2, 2.0, 0.6);
-    box-shadow: 5px 0px 10px 0px rgb(128, 98, 1), inset 200px 0px 60px 0px rgb(238, 183, 2);
-}
-
-.navul6b {
-    border: 5px double #7f7d7d;
-    border-top: none;
-    border-bottom: none;
-    background-color: rgba(126.6, 125.2, 125.2, 0.6);
-    box-shadow: 5px 0px 10px 0px rgb(83, 83, 83), inset 200px 0px 60px 0px rgb(127, 125, 125);
-}
-
-.navul7b {
-    border: 5px double #f60c0c;
-    border-top: none;
-    background-color: rgba(246, 12.4, 12.4, 0.6);
-    border-radius: 0px 0px 5px 5px;
-    box-shadow: 5px 2px 10px 0px rgb(138, 8, 8), inset 200px 0px 60px 0px rgb(246, 12, 12);
-    list-style-type: none;
-    margin-top: -0.4vh;
-}
-
-#nav2 em {
-    font-family: 'Poppins-Regular', helvetica, sans-serif;
-    font-size: max(0.6vw, 10px);
-    color: white;
-    letter-spacing: 0.2px;
-    font-weight: bold;
-}
-
-#nav2 a {
-    font-size: max(0.8vw, 12px);
-    color: white;
-    font-family: "Lobster", Arial, "Comic Sans MS", sans-serif;
-    text-decoration: none;
-    letter-spacing: 0.2px;
-    font-weight: bold;
-}
-
-/*_XXXXXXXXXXXXXXXXXX_FIN MENU BURGER_XXXXXXXXXXXXXXXXXX_*/
+/*_XXXXXXXXXXXXXXXXXX_END MENU BURGER_XXXXXXXXXXXXXXXXXX_*/
 
 
-
-/*____________________MENU HAUT DE PAGE____________________*/
-
-#nav1 {
-    padding-top: 4vh;
-}
-
-.navul1, .navul2, .navul3, .navul4, .navul5, .navul6, .navul7 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1vw;
-    margin: 0;
-    min-height: 19vh;
-    width: 30vw;
-    min-width: 300px;
-    list-style-type: none;
-}
-
-.navul1 {
-    border: 5px double mediumpurple;
-    border-bottom: none;
-    background-color: rgba(147, 112, 219, 0.6);
-    border-radius: 30px 30px 0px 0px;
-    box-shadow: 5px 0px 10px 0px rgb(90, 66, 138), inset 200px 5px 60px 0px rgb(148, 112, 219);
-}
-
-.navul2 {
-    border: 5px double #595efa;
-    border-top: none;
-    border-bottom: none;
-    background-color: rgba(60.4, 67, 247.4, 0.6);
-    box-shadow: 5px 0px 10px 0px rgb(36, 39, 143), inset 200px 0px 60px 0px rgb(60, 66, 247);
-}
-
-.navul3 {
-    border: 5px double #f8812e;
-    border-top: none;
-    border-bottom: none;
-    background-color: rgba(248.5, 128.9, 45.8, 0.6);
-    box-shadow: 5px 0px 10px 0px rgb(134, 69, 23), inset 200px 0px 60px 0px rgb(249, 131, 46);
-}
-
-.navul4 {
-    border: 5px double #08b265;
-    border-top: none;
-    border-bottom: none;
-    background-color: rgba(8.5, 177.9, 101.4, 0.6);
-    box-shadow: 5px 0px 10px 0px rgb(7, 110, 64), inset 200px 0px 60px 0px rgb(9, 178, 102);
-}
-
-.navul5 {
-    border: 5px double #edb702;
-    border-top: none;
-    border-bottom: none;
-    background-color: rgba(237.5, 183.2, 2.0, 0.6);
-    box-shadow: 5px 0px 10px 0px rgb(128, 98, 1), inset 200px 0px 60px 0px rgb(238, 183, 2);
-}
-
-.navul6 {
-    border: 5px double #7f7d7d;
-    border-top: none;
-    border-bottom: none;
-    background-color: rgba(126.6, 125.2, 125.2, 0.6);
-    box-shadow: 5px 0px 10px 0px rgb(83, 83, 83), inset 200px 0px 60px 0px rgb(127, 125, 125);
-}
-
-.navul7 {
-    border: 5px double #f60c0c;
-    border-top: none;
-    background-color: rgba(246, 12.4, 12.4, 0.6);
-    border-radius: 0px 0px 30px 30px;
-    box-shadow: 5px 2px 10px 0px rgb(138, 8, 8), inset 200px 0px 60px 0px rgb(246, 12, 12);
-    list-style-type: none;
-    margin-top: -0.4vh;
-}
-
-#nav1 em {
-    font-size: max(0.8vw, 10px);
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-}
-
-#nav1 a {
-    font-size: max(1vw, 12px);
-    color: white;
-    font-family: "Poppins-SemiBold", Arial, "Comic Sans MS", sans-serif;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#nav1 a, #nav2 a, #nav1 a em, #nav2 a em {
-    transition: 0.5s
-}
-
-#nav1 a:hover, #nav2 a:hover, #nav1 a:hover em, #nav2 a:hover em {
-    color: #242424;
+#section-1, #section-2, #section-3 {
+    width: max(57vw, 320px);
     letter-spacing: 0.5px;
+    line-height: max(1.7vw, 20px);
+    padding: 2vw 2vw;
+    margin: 10vh 0vw 0vh;
+    border-radius: 30px;
+    background-color: rgb(247, 247, 247);
+    box-shadow:
+        8px 8px 25px 0px rgb(0, 0, 0),
+        inset 2px 2px 30px 10px rgb(156, 156, 156);
+    border: 5px double #f7cf1e;
 }
 
-/*_XXXXXXXXXXXXXXXXXX_FIN MENU HAUT DE PAGE_XXXXXXXXXXXXXXXXXX_*/
-
-.h1Java{
-    font-family: 'Poppins-SemiBold', helvetica, sans-serif;
-    color: var(--color-white);
-    font-size: max(1.5vw, 14px);
-}
 .h2Java {
-    font-family: 'Poppins-SemiBold', helvetica, sans-serif;
+    font-family: var(--font-roboReg);
     text-align: center;
     font-size: max(1.5vw, 14px);
     border-radius: 50px 3px 50px 3px;
@@ -358,7 +391,7 @@
 }
 
 .h3Java {
-    font-family: 'Poppins-Medium', helvetica, sans-serif;
+    font-family: var(--font-roboReg);
     font-size: max(1.1vw, 12px);
     padding: 8px 0;
     text-align: center;
@@ -368,46 +401,34 @@
 }
 
 .h4Java {
-    font-family: 'Poppins-SemiBold', helvetica, sans-serif;
+    font-family: var(--font-roboReg);
     font-size: max(1vw, 12px);
     margin: 2vh 0vw;
     color: var(--color-black);
 }
 
 em {
-    font-family: 'Poppins-Regular', helvetica, sans-serif;
+    font-family: var(--font-roboReg);
     font-size: max(0.8vw, 12px);
 }
 
 hr {
     margin: 10vh 2vw 0vh 2vw;
-    color: mediumpurple;
+    color: var(--color-black);
 }
 
-.h2-section1 {
-    background-color: rgba(147, 112, 216, 0.9);
-    box-shadow: 5px 5px 5px 0px rgb(52, 39, 79), inset 150px 8px 20px 0px rgb(117, 85, 179);
-    color: white;
+.h2-section {
+    background-color: #ebc416;
+    box-shadow: 5px 5px 5px 0px #796300, inset 150px 8px 40px 0px #ffe364;
+    color: var(--color-black);
+    border: 3px solid var(--color-black);
 }
 
-.h2-section2 {
-    background-color: #595efad0;
-    box-shadow: 5px 5px 5px 0px #26296f, inset 200px 8px 20px 0px #4045c9;
-    color: white;
-    min-width: 240px
-}
-
-.h3-section1, .h3-section1a, .h3-section1b {
-    color: rgb(255, 255, 255);
-    border: 3px double rgb(255, 255, 255);
-    box-shadow: 3px 3px 5px 0px rgb(53, 41, 79), inset 90px 8px 20px 0px rgb(117, 85, 179);
-    background-color: rgba(147, 112, 216, 0.9);
-}
-
-.h3-section2, .h3-section2a, .h3-section2b {
-    color: #595efa;
-    border: 3px double #595efa;
-    box-shadow: 3px 3px 5px 0px #161743, inset 1px 1px 2px 0px #595efa;
+.h3-section {
+    color: var(--color-black);
+    border: 4px double var(--color-black);
+    box-shadow: 5px 5px 5px 0px #796300, inset 90px 8px 20px 0px #ffe364;
+    background-color: #ebc416;
 }
 
 .p-exemple, .p-exempleJs {
@@ -419,7 +440,7 @@ hr {
     border-radius: 10px;
     cursor: pointer;
     padding: 10px;
-    width: max(15vw, 250px);
+    width: max(10vw, 200px);
     margin: 2vw;
 }
 
@@ -435,8 +456,8 @@ hr {
 
 .note {
     padding: 10px;
-    border-left: 9px solid rgb(147, 112, 216);
-    background-color: rgba(147, 112, 216, 0.542);
+    border-left: 7px solid var(--color-black);
+    background-color: #fcde5a;
     margin-top: 4vh;
     color: var(--color-black);
     font-size: max(0.9vw, 12px);
@@ -511,9 +532,9 @@ hr {
     }
 }
 
-@media only screen and (orientation: landscape) and (max-height: 700px) {
+@media only screen and (orientation: landscape) and (max-height: 600px) {
     #block-nav {
-        width: max(60vw, 540px);
+        width: 90vw;
     }
 
     #nav2 {
@@ -522,29 +543,9 @@ hr {
         gap: 30px;
     }
 
-    .navul1b, .navul2b, .navul3b, .navul4b, .navul5b, .navul6b, .navul7b {
-        line-height: max(0.8vw, 11px);
-        width: max(22vw, 240px);
-        height: 24.5vmin;
-    }
-
-    .navul4b {
-        border-radius: 0px 0px 5px 5px;
-        border-bottom: 5px double #08b265;
-    }
-
-    .navul5b {
-        border-top: 5px double #edb702;
-        border-radius: 5px 5px 0px 0px;
-    }
-
-    #nav2 em {
-        font-size: max(0.6vw, 9px);
-    }
-
-    #nav2 a {
-        font-size: max(0.8vw, 11px);
+    .navul2, .navul2b {
+        width: 42vw;
     }
 }
 
-/*_XXXXXXXXXXXXXXXXXX_FIN MEDIAQUERIES_XXXXXXXXXXXXXXXXXX_*/
+/*_XXXXXXXXXXXXXXXXXX_END MEDIAQUERIES_XXXXXXXXXXXXXXXXXX_*/

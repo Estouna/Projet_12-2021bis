@@ -27,8 +27,8 @@ if (isset($_GET['titre'], $_GET['id']) and !empty($_GET['titre']) and !empty($_G
 		// Si les champs existent
 		if (isset($_POST['topic_answer_submit'], $_POST['topic_answer'])) {
 			
-			// Sécurise avec htmlspecialchars()
-			$answer = htmlspecialchars($_POST['topic_answer']);
+			// nl2br() sert à prendre en compte les sauts de ligne, Sécurise avec htmlspecialchars()
+			$answer = nl2br(htmlspecialchars($_POST['topic_answer']));
 			
 			// Si le textarea n'est pas vide
 			if (!empty($answer)) {
@@ -47,12 +47,13 @@ if (isset($_GET['titre'], $_GET['id']) and !empty($_GET['titre']) and !empty($_G
 					$answer_date
 				));
 				
+				// $valide_rep = "Votre réponse a bien été postée";
 				// Rafraîchit la page pour éviter de renvoyer le message en réactualisant la page
-				header("Refresh: 2; URL=CD-f-show-topics.php?titre=$_GET[titre]&id=$_GET[id]&page=$_GET[page]");
-				
-				$valide_rep = "Votre réponse a bien été postée";
-				// Efface les données saisies dans le champ textarea
 				unset($answer);
+				header("Location: CD-f-show-topics.php?titre=$_GET[titre]&id=$_GET[id]&page=$_GET[page]");
+				exit();
+				
+				// Efface les données saisies dans le champ textarea
 			} else {
 				$erreur_rep = "Votre réponse ne peut pas être vide !";
 			}
