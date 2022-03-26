@@ -71,7 +71,7 @@ include '../tutoForum/includes/head.php';
                         ------------------------------ BTN SUBMIT ------------------------------
                     -->
                     <div class="column centerJust centerAlign">
-                        <input id="signup" class="btn-green neumorph-btn" name="validate" type="submit" value="ENVOYER" />
+                        <input id="signup" class="btn-green neumorph-btn" name="validate" type="submit" value="S'INSCRIRE" />
                         <a class="a-links" href="../tutoForum/AAB-login.php">J'ai déjà un compte</a>
                     </div>
                 </div>

@@ -30,8 +30,10 @@ if (isset($_GET['id']) and !empty($_GET['id'])) {
                     //envoi des nouveaux paramètres
                     $insert_pseudo->execute(array($new_pseudoMember, $_GET['id']));
                     $valide = "Vos modifications ont été prises en compte !";
-                    header("Refresh: 2; URL=edit-profilMember.php?id=$_GET[id]");
+                    //header("Refresh: 2; URL=edit-profilMember.php?id=$_GET[id]");
+                    header("Location: edit-profilMember.php?id=$_GET[id]");
                     exit();
+                    
                 } else {
                     $erreur = "Ce pseudo existe déjà !";
                 }
@@ -50,7 +52,7 @@ if (isset($_GET['id']) and !empty($_GET['id'])) {
         $insert_roleModerateur->execute(array($role_moder, $get_id));
 
         $valide = "Vos modifications ont été prises en compte !";
-        header("Refresh: 3; URL=edit-profilMember.php?id=$_GET[id]");
+        header("Location: edit-profilMember.php?id=$_GET[id]");
     }
 
     if (isset($_POST['checkbox_membre']) and !empty($_POST['checkbox_membre'])) {
@@ -59,7 +61,7 @@ if (isset($_GET['id']) and !empty($_GET['id'])) {
         $insert_roleMembre->execute(array($role_membre, $get_id));
         
         $valide = "Vos modifications ont été prises en compte !";
-        header("Refresh: 3; URL=edit-profilMember.php?id=$_GET[id]");
+        header("Location: edit-profilMember.php?id=$_GET[id]");
     }
 } else {
     $erreur = "L'identifiant de l'utilisateur n'a pas été récupéré ";

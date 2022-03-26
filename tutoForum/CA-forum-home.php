@@ -18,12 +18,13 @@ include '../tutoForum/includes/head.php';
 
                 <?php
                     while ($c = $categorie->fetch()) {
+                        // Execute $subcat en lui faisant passer l'id qui est en cours dans la boucle
                         $subCat->execute(array($c['id']));
+                        // Initialise la variable pour pouvoir afficher le contenu
                         $sub_categories = '';
                         while ($sc = $subCat->fetch()) {
                             $sub_categories .= '<li><a class="a-circle" href="../tutoForum/CC-forum-topics-view.php?categorie=' . url_custom_encode($c['name']) . '&souscategorie=' . url_custom_encode($sc['name']) . '">' . $sc['name'] . '</a></li> ';
                         }
-                        $sub_categories = substr($sub_categories, 0, -3);
 
                         if ($c['id'] == 1) {
                     ?>

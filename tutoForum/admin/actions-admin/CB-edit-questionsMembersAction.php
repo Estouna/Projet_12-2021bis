@@ -19,7 +19,7 @@ if (isset($_POST['validate'])) {
         $editQuestionOnWebsite->execute(array($new_question_title, $new_question_description, $new_question_content, $_GET['id'])); // si marche pas utiliser ($_GET['id']) à la place $idOfQuestion 
 
         // Redirige vers la page d'affichage des questions de l'utilisateur
-        header("Refresh: 2; URL=edit-topicMember.php?id=$_GET[id]");
+        header("Location: edit-topicMember.php?id=$_GET[id]");
         exit();
         
     } else {

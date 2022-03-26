@@ -19,14 +19,11 @@ if (isset($_GET['id']) and !empty($_GET['id'])) {
 
         // Récupérer les données de la réponse
         $answerInfos = $checkIfAnswerExists->fetch();
-        if ($_SESSION['roles'] === "ADMIN" OR $_SESSION['roles'] === "MODERATEUR") {
 
             $answer_content = $answerInfos['contenu'];
             // Enlève les balises br affichées de description et contenu
             $answer_content = str_replace('<br />', '', $answer_content);
-        } else {
-            $erreur = "Vous n'êtes pas l'auteur de cette réponse";
-        }
+        
     } else {
         $erreur = "Aucune réponse n'a été trouvée";
     }

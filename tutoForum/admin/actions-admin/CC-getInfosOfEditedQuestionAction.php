@@ -18,7 +18,6 @@ if (isset($_GET['id']) and !empty($_GET['id'])) {
 
         // Récupérer les données de la question
         $questionInfos = $checkIfQuestionExists->fetch();
-        if ($_SESSION['roles'] === "ADMIN" OR $_SESSION['roles'] === "MODERATEUR") {
 
             $question_title = $questionInfos['titre'];
             $question_description = $questionInfos['description'];
@@ -26,10 +25,7 @@ if (isset($_GET['id']) and !empty($_GET['id'])) {
             // Enlève les balises br affichées de description et contenu
             $question_description = str_replace('<br />', '', $question_description);
             $question_content = str_replace('<br />', '', $question_content);
-        } else {
-            header('Location: ../index.php');
-            exit;
-        }
+        
     } else {
         $erreur = "Aucune question n'a été trouvée";
     }

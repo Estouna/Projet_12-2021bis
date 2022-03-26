@@ -15,8 +15,9 @@ if (isset($_POST['validate'])) {
         $editAnswerOnWebsite = $bdd->prepare('UPDATE answers SET contenu = ? WHERE id = ?');
         $editAnswerOnWebsite->execute(array($new_answer_content, $_GET['id'])); // si marche pas utiliser ($_GET['id']) à la place $idOfQuestion 
 
-        // Redirige vers la page d'affichage des questions de l'utilisateur
-        //header("Refresh: 2; URL=edit-answerMember.php?id=$_GET[id]");
+        header("Location: edit-answerMember.php?id=$_GET[id]");
+        exit();
+
     } else {
         $erreur = "Veuillez compléter tous les champs.";
     }

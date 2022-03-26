@@ -32,9 +32,9 @@
     font-size: max(2.3vw, 25px);
     color: var(--color-white);
     letter-spacing: max(0.1vw, 1px);
-    padding-top: clamp(40px, 5vw, 70px);
-    padding-bottom: clamp(40px, 5vw, 70px);
-    width: clamp(280px, 31vw, 500px);
+    padding-top: clamp(35px, 5vw, 70px);
+    padding-bottom: clamp(35px, 5vw, 70px);
+    width: clamp(280px, 26vw, 800px);
     transition: 0.6s;
 }
 
@@ -229,17 +229,15 @@
     height: 100vh;
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 790px) 
+{
     .duo-block {
         flex-direction: column;
     }
 }
 
-@media screen and (orientation: landscape) and (min-width: 600px) and (max-width: 850px) {
-    .block-container {
-        margin-top: -25px;
-    }
-
+@media screen and (orientation: landscape) and (min-width: 600px) and (max-width: 850px) 
+{
     .duo-block {
         flex-direction: row;
     }

@@ -2,7 +2,7 @@
 
 require('actions/database.php');
 
-// Vérifie si l'id de l'utilisateur est dans l'URL
+// Checks if the user id is in the URL
 if (isset($_GET['id']) and !empty($_GET['id'])) {
 
     // Récupère l'id dans l'URL

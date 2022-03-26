@@ -1,6 +1,7 @@
 <?php
 require('actions/database.php');
 
+// Check if session id exists
 if (isset($_SESSION['id'])) {
 
     //requête sur l'utilisateur pour son id
@@ -27,11 +28,9 @@ if (isset($_SESSION['id'])) {
                 $insert_pseudo = $bdd->prepare("UPDATE users SET pseudo = ? WHERE id = ?");
                 //envoi des nouveaux paramètres
                 $insert_pseudo->execute(array($new_pseudo, $_SESSION['id']));
-                $valide = "Vos modifications ont été prises en compte !";
-                
-                header("Refresh: 2; URL=AACB-edit-profile.php");
-                exit();
 
+                header("Location: AACB-edit-profile.php");
+                exit();
             } else {
                 $erreur = "Ce pseudo existe déjà !";
             }
@@ -60,9 +59,9 @@ if (isset($_SESSION['id'])) {
                         $insert_mail = $bdd->prepare("UPDATE users SET mail = ? WHERE id = ?");
                         //requête sql pour update membres mail (WHERE id est très important sinon cela mettrait à jour tous les mails de la table membres)
                         $insert_mail->execute(array($new_mail, $_SESSION['id']));
-                        //envoi des nouveaux paramètres
-                        $valide = "Vos modifications ont été prises en compte !";
-                        header("Refresh: 1; URL=AACB-edit-profile.php");
+
+                        header("Location: AACB-edit-profile.php");
+                        exit();
                     } else {
                         $erreur = "Cette adresse mail est déjà utilisée";
                     }
@@ -89,19 +88,15 @@ if (isset($_SESSION['id'])) {
             $insert_password = $bdd->prepare("UPDATE users SET pass = ? WHERE id = ?");
             //requête sql pour update membres mot de passe (WHERE id est très important sinon cela mettrait à jour tous les mdp de la table membres)
             $insert_password->execute(array($new_password, $_SESSION['id']));
-            //mdp1 ou mdp2 ça revient au même
-            $valide = "Vos modifications ont été prises en compte !";
-            header("Refresh: 1; URL=AACB-edit-profile.php");
+
+            header("Location: AACB-edit-profile.php");
+            exit();
         } else {
             $erreur = "Vos deux mots de passe ne correspondent pas";
         }
     }
 
-    /* 
-    - Ajouter un filter_var du mail pour vérifier si le mail est valide (modèle page inscription)
-    - Faire une requête pour voir si le newmail est bien une adresse valide et s'il n'existe pas dans la bdd pour ne pas avoir de doublons 
-    (modèle page inscription $reqmail prepare execute et $mailexist)
-    - Peut être créer la même chose pour le pseudo
-    - Pour le pseudo mettre la limite de caractère 255 
-    */
+    if (isset($_POST['newPseudo']) and $_POST['newPseudo'] == $user['pseudo'] and $_POST['newMail'] == $user['mail'] and isset($_POST['newPassword']) and empty($_POST['newPassword']) and isset($_POST['newPassword2']) and empty($_POST['newPassword2'])) {
+        $erreur = "Vous devez modifier un champ avant de cliquer";
+    }
 }

@@ -247,7 +247,7 @@
     background: transparent;
     position: fixed;
     top: 55px;
-    left: -35px;
+    left: -38px;
     border: none;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
@@ -327,12 +327,13 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    width: max(20.5vw, 260px);
+    width: max(20.5vw, 270px);
     background-color: rgba(0, 0, 0, 0.8);
     transform: translateX(100%);
     /*fait passer le menu hors écran sur la droite*/
     transition: transform 0.3s ease-in-out;
     /* transition ouvert/fermé */
+    border-radius: 10px;
     z-index: 1;
 }
 
@@ -342,7 +343,7 @@
 
 #nav2 {
     position: fixed;
-    min-height: 98vh;
+    min-height: 100vh;
     z-index: 1;
     margin: 0;
     text-align: center;
@@ -350,7 +351,6 @@
 }
 
 .navul2, .navul2b {
-    line-height: max(1vw, 15px);
     width: max(20vw, 260px);
     min-height: 16vh;
     list-style-type: none;

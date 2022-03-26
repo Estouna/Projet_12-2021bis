@@ -1,1 +1,0 @@
-<a class="a-modif row centerAll" href="home-admin.php?type=membre&supprimer=<?= $user['id'] ?>">Bannir</a>

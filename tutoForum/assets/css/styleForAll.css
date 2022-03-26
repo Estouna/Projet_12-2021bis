@@ -834,9 +834,9 @@ header {
         height: 25px;
     }
 
-    *, .hamburger {
+    /* *, .hamburger {
         cursor: none;
-    }
+    } */
 }
 
 @media screen and (max-width: 345px) {
@@ -858,9 +858,9 @@ header {
         height: 18px;
     }
 
-    *, .hamburger {
+    /* *, .hamburger {
         cursor: none;
-    }
+    } */
 
     /* Menu dropbox */
     .panel {

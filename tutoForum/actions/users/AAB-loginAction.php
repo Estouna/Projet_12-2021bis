@@ -2,7 +2,7 @@
 session_start();
 require('actions/database.php');
 
-// Validation du formulaire
+// Check if submit exists
 if (isset($_POST['validate'])) {
     // Les données de l'utilisateur
     $mailConnect = htmlspecialchars($_POST['mailConnect']);
@@ -31,10 +31,6 @@ if (isset($_POST['validate'])) {
                     header('Location: ../tutoForum/admin/home-admin.php ');
                     exit();
                 }
-
-                // if ($_SESSION['roles'] === "MODERATEUR") {
-                //     header('Location: ../tutoForum/admin/home-moderateur.php');
-                // }
 
                 if ($_SESSION['roles'] === "membre") {
                     header('Location: AAC-profil.php');

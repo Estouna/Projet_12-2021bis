@@ -36,14 +36,14 @@ include '../tutoForum/includes/head.php';
                         <div class="labelInput-edit column">
                             <div class="block-labelInputEdit column">
                                 <label class="labelProfil-edit" for="newPseudo">Modifier mon pseudo</label>
-                                <input type="text" class="inputProfilUser-edit neumorph-btn" name="newPseudo" id="newPseudo" placeholder="Pseudo" />
+                                <input type="text" class="inputProfilUser-edit neumorph-btn" name="newPseudo" id="newPseudo" placeholder="Pseudo" value="<?php echo $user['pseudo']; ?>" />
                             </div>
                         </div>
 
                         <div class="labelInput-edit column centerJust">
                             <div class="block-labelInputEdit column">
                                 <label class="labelProfil-edit" for="newMail">Modifier mon email :</label>
-                                <input type="email" class="inputProfilUser-edit neumorph-btn" name="newMail" id="newMail" placeholder="laurent@gmail.com" />
+                                <input type="email" class="inputProfilUser-edit neumorph-btn" name="newMail" id="newMail" placeholder="laurent@gmail.com" value="<?php echo $user['mail']; ?>" />
                             </div>
 
                             <div class="block-labelInputEdit column">
